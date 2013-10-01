@@ -1,0 +1,123 @@
+//////////////////////////////////////////////////////////////////////
+// ITZULPEN taula                                                   //
+//////////////////////////////////////////////////////////////////////
+//                                                                  //
+// prologetik jasotzen diren ezaugarri izenak XML fitxategietan     // 
+// zein F edo FS-ren kabiaketarekin azaldu behar diren adierazten   //
+// duen taula                                                       //
+//     KODIFIKAZIOA:  prSar xmlEgitura                              //
+//          prSar      -> prologeko ezaugarri baten izena (string)  //
+//          xmlEgitura -> XML F edo FSn kabiaraketarako erabiltzen  //
+//                        diren name edo type atributuen balioa     //
+//                        (string lista bat)                        //
+//                                                                  //
+//////////////////////////////////////////////////////////////////////
+// OHARRA:                                                          //
+// Fitxategi honetan '//' markarekin hasten diren lerroak           //
+// komentarioak dira                                                //
+//                                                                  //
+//////////////////////////////////////////////////////////////////////
+analisia         analisia  
+id               ID*
+
+forma            forma
+goimailakoezaug  goimailako-ezaugarriak goimailako-ezaugarri-lista
+osagai_lista     osagaiak  
+osagaia          osagaia  
+
+oina             oina lema 
+morf_lista       morfemak  
+ezaug            ezaugarriak ezaugarri-lista 
+
+twol             twol
+oin              OIN Gako
+err              ERR Gako
+lema_osatua      lema-osatua
+aldaera_osatua   aldaera-osatua
+elkarketa        elkarketa elkarketaren-osaketa  
+
+morf             morfema
+mugakizuna       mugakizuna lema
+mugatzailea      mugatzailea lema
+adz              ADZ Gako
+hobetsiak        Hobetsiak
+estandarrak      Estandarrak
+
+sarrera          sarrera Gako
+Gako             Gako
+Sarrera          Sarrera
+homografo-id     Homografo-Id
+
+atzl             ATZL 
+aurl             AURL
+
+osa1             OSA1 Gako
+osa2             OSA2 Gako
+
+
+adbm             ADBM
+adm              ADM
+asp              ASP
+adoin            ADOIN
+azp              AZP
+biz              BIZ
+elk              ELK
+erl              ERL
+error-kode       ERROR-KODE
+fsl              FSL
+hit              HIT
+izaur            IZAUR
+kas              KAS
+kas_plus         KAS-PLUS
+kat              KAT
+klm              KLM
+lagm             LAGM
+neur             NEUR
+nmg              NMG
+nor              NOR
+nori             NORI
+nork             NORK
+num              NUM
+mai              MAI
+mdn              MDN
+mod              MOD
+mtkat            MTKAT
+mug              MUG
+per              PER
+plu              PLU
+rare             RARE
+zenb             ZENB
+
+//Gerorako lanak
+erlatz
+//erlatza ERLATZ1 ERLATZ2 ERLATZ3 
+// Medeko aditzen badirudi konpletibo eta denborazkoa ez dela info 
+// nahikoa. Koldok eta Jose Mark proposatu zuten erlatz ezaugarri berria
+// baina XArtola eta Aitorri ez zaie guztiz ondo iruditzen kodifikazio
+// hori zeren ERL eta ATZLezaugarriak batera joan beharko lukete
+// eta modu honetan banatuta daude: PROPOSAMENA
+// <f name="ERL"><fs type="???"><f name="ERL"></f><f type="ATZO"/>
+// moduko zer edo zer izan beharko luke
+// KONTUZ!!! Gaur egun prolog-ek ematen duen irteera ERLATZ 3 pausotan hematen
+// du, hori aldatu beharko da
+
+//GRA kategoriako analisien GRM ezaugarria izenez aldatu da, horain MAI da, segmentaziotik GRM dator eta koldok GRM bezala itzutzen du eta hemen konpontzen da, baina segmentazioan aldatzen igual hemen ere "grm MAI" lerroa "mai MAI" bihurtuko da
+
+//PRT kategoriako analietan MDL ezaugarrik izenez aldatu du, horain MOD da, segmentaziotik MDL dator eta kondok MDL itzultzen du eta hemen konpontzen da, baina segmentazioan aldatzean igual hemen ere "mdl MOD" lerroa "mod MOD" bihurtu beharko da
+
+//ATZ kategoriako analisietan AER eta KER ezaugarriak desagertu dira, horain beste modu batean kodetzen dira, segmentazioan hau konpontzean, morfosintaxia moldatu eta ezaugarri berriak hemen jarri. Antzera gertatzen da AUR kategoriako analisietan
+aer
+ker
+oekatazp
+oinkatazp
+//aer              AER 
+//ker              KER
+//
+
+//Prolog-en barne ezaugarriak ez dira XML-ra itzuli behar
+twolt
+erat
+erat_atz
+
+mdl
+

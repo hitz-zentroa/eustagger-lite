@@ -1,0 +1,132 @@
+#include <pcre++.h>
+#include <string>
+
+using namespace std;
+using namespace pcrepp;
+
+string sortu_cg3rako_lema_info(string lema, string info, bool ezezag) {
+  string infoTmp = info;
+  Pcre adj("ADJ");
+  Pcre te_tze("\\+t(z)?e$");
+  Pcre ar_tar("ar$");
+  Pcre al("al$");
+  Pcre zale("zale$");
+  Pcre ezin("ezin$");
+  
+  if (lema[lema.length()-1] == 'a') {
+    infoTmp += " AORG";
+  }
+  else if (te_tze.search(lema)) {
+    infoTmp += " TE_TZE";
+  }
+  if (ezezag && lema.length() >= 2 && ar_tar.search(lema) && adj.search(info)) {
+    infoTmp += " AR_TAR";
+  }
+  else if (ezezag && lema.length() >= 2 && al.search(lema) && adj.search(info)) {
+    infoTmp += " AL";
+  }
+  else if (ezezag && lema.length() >= 4 && zale.search(lema) && adj.search(info)) {
+    infoTmp += " ZALE";
+  }
+  else if (ezezag && lema.length() >= 4 && ezin.search(lema) && adj.search(info)) {
+    infoTmp += " EZIN";
+  }
+  return infoTmp;
+}
+string sortu_cg3rako_lema(string lema) {
+  Pcre kt("k\\+\\!?t");
+  Pcre tk("t\\+\\!?k");
+  Pcre plus("\\+\\!?");
+  string lemaTmp = lema;
+
+  if (kt.search(lemaTmp))
+    lemaTmp = kt.replace(lemaTmp,"t");
+  if (tk.search(lemaTmp))
+    lemaTmp = tk.replace(lemaTmp,"k");
+  if (tk.search(lema))
+    lemaTmp = kt.replace(lemaTmp,"");
+  return lemaTmp;
+}
+
+string sortu_cg3rako_etiketak(string info) {
+  string infoTmp = info;
+  string infoOut = info;
+  const string tnotPart = "(\\s+ADI\\sSIN)\\s*$";
+  const string tkenPlusMinus = "\\s+(PLU|BIZ|IZAUR|ZENB|NEUR|HBN|LHB)[\\+-]";
+  const string tkenRare = "\\s+(ANB|ABT|LEX)";
+  const string tkenErrorKode = "\\s+(ATZKI|A_FAK|DE_DI|DE_ER|DE_LE|DIAL|ERAT|FO_OK|KONPOS|LD_FO|LD_MA|NEOL)";
+  const string tkenMtkat = "\\s+(SIG|SNB|LAB)";
+  const string tkenKonpa = "\\s+(KONP|GEHI|SUP)(\\s|$)";
+  const string tkenKonpos = "\\s+IZE\\+IZE";
+  const string tzero = "(IZE\\s+(ARR|ZKI|IZB|LIB)|ADJ\\s+(ARR|GAL)|ADI\\sSIN\\s(PART|ADIZE)|DET\\s(BAN|ORD)|DET\\sDZ[GH](\\s(NUMG[SP]|MG))?|DET\\sNOL(GAL|ARR)\\sMG|IOR\\sIZGMGB|ADB\\s(ARR|GAL)|GE[LN](\\s(NUM[SP]\\sMUGM|MG))?|BNK\\sMG|DESK)\\s*$";
+  const string tadiizeeli = "\\s(ADI(ZE)|ADI_IZEELI)\\s";
+  const string tkas = "\\s(ABL|ABS|ABU|ABZ|ALA|BNK|DAT|DES|DESK|ERG|GEL|GEN|INE|INS|MOT|PAR|PRO|SOZ)\\s*$";
+  const string tnoterlt = "\\s+MEN\\s*$";
+  const string tnor = "\\sNR_";
+  const string tnori = "\\sNI_";
+  const string tnork = "\\sNK_";
+  Pcre notPart(tnotPart);
+  Pcre kenPlusMinus(tkenPlusMinus,"g");
+  Pcre kenRare(tkenRare,"g");
+  Pcre kenErrorKode(tkenErrorKode,"g");
+  Pcre kenMtkat(tkenMtkat,"g");
+  Pcre kenKonpa(tkenKonpa,"g");
+  Pcre kenKonpos(tkenKonpos,"g");
+  Pcre kenZuri("\\s+$");
+  Pcre zero(tzero);
+  Pcre adiizeeli(tadiizeeli);
+  Pcre kas(tkas);
+  Pcre noterlt(tnoterlt);
+  Pcre nor(tnor);
+  Pcre nori(tnori);
+  Pcre nork(tnork);
+
+  if (notPart.search(infoTmp)) {
+    infoOut += " NOTPART";
+  }
+  if (kenPlusMinus.search(infoTmp)) {
+    infoTmp = kenPlusMinus.replace(infoTmp,"");
+  }
+  if (kenRare.search(infoTmp)) {
+    infoTmp = kenRare.replace(infoTmp,"");
+  }
+  if (kenErrorKode.search(infoTmp)) {
+    infoTmp = kenErrorKode.replace(infoTmp,"");
+  }
+  if (kenMtkat.search(infoTmp)) {
+    infoTmp = kenMtkat.replace(infoTmp,"");
+  }
+  if (kenKonpa.search(infoTmp)) {
+    infoTmp = kenKonpa.replace(infoTmp," ");
+  }
+  if (kenKonpos.search(infoTmp)) {
+    infoTmp = kenKonpos.replace(infoTmp," ");
+  }
+  if (kenZuri.search(infoTmp)) {
+    infoTmp = kenZuri.replace(infoTmp,"");
+  }
+   if (zero.search(infoTmp)) {
+    infoOut += " ZERO";
+  }
+  if (adiizeeli.search(infoTmp) && kas.search(infoTmp)) {
+    infoOut += " NOTDEK";
+  }
+  if (noterlt.search(infoTmp)) {
+    infoOut += " NOTERLT";
+  }
+  if (nor.search(infoOut) && !nori.search(infoOut) && !nork.search(infoOut))
+    infoOut = nor.replace(infoOut," NOR NR_");
+  if (nor.search(infoOut) && nori.search(infoOut) && !nork.search(infoOut))
+    infoOut = nor.replace(infoOut," NOR_NORI NR_");
+  if (nor.search(infoOut) && !nori.search(infoOut) && nork.search(infoOut))
+    infoOut = nor.replace(infoOut," NOR_NORK NR_");
+  if (nor.search(infoOut) && nori.search(infoOut) && nork.search(infoOut))
+    infoOut = nor.replace(infoOut," NOR_NORI_NORK NR_");
+
+  return infoOut;
+}
+
+// string kendu_cg3rako_etiketak(string info) {
+//   string infoTmp = info;
+//   return infoTmp;
+// }

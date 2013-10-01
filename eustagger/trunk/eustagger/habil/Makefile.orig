@@ -1,0 +1,75 @@
+###########################################################################################
+###########################################################################################
+#
+
+#PROGRAM= haul_bilaketa.cc
+
+#EXEKUTAGARRI=$(PROGRAM:.cc=)
+SOURCES= IM_info.cc int_bikote.cc LEMA.cc HAT.cc $(LEXYACC_IZEN_HASIERA).tab.cc \
+	lex.$(LEXYACC_IZEN_HASIERA).cc HAT_class.cc FORMA.cc HITZ.cc AN.cc HAT_lag.cc
+
+
+INCLUDE= -I. -I$(SOFT_OROKORRA)/include -I../aurreprozesua_raw -I../morfologia
+
+
+MEMBERS=$(SOURCES:.cc=.o)
+
+# LIBRARY= lib_haul_bilaketa.a
+
+# ARFLAGS= rv
+
+CCC=g++
+#CCFLAGS= -g -DYYDEBUG=1
+CCFLAGS= -O
+CPPFLAGS=
+
+
+LEX = flex
+YACC = bison
+LEXYACC_IZEN_HASIERA = hat_karga
+LEXFLAGS = -8 -P$(LEXYACC_IZEN_HASIERA) -olex.$(LEXYACC_IZEN_HASIERA).cc
+YACCFLAGS = -vd -p $(LEXYACC_IZEN_HASIERA) -b $(LEXYACC_IZEN_HASIERA) -o $(LEXYACC_IZEN_HASIERA).tab.cc
+
+LEXFILE = $(LEXYACC_IZEN_HASIERA).l
+YACCFILE = $(LEXYACC_IZEN_HASIERA).y
+
+
+
+COMPILE.cc=$(CCC) $(INCLUDE) $(CCFLAGS) $(CPPFLAGS) -c
+LINK.cc=$(CCC) $(CCFLAGS) $(CPPFLAGS)
+
+.cc.o: 
+	$(COMPILE.cc) $< 
+
+# .c.a:
+# 	$(CCC) $(CCFLAGS) $(CPPFLAGS) $(INCLUDE) -c $<
+# 	ar $(ARFLAGS) $@ $%
+# 	rm $%
+
+all: lexyacc $(MEMBERS)
+
+.KEEP_STATE:
+.PRECIOUS: $(LIBRARY)
+
+lexyacc: FORCE
+	$(LEX) $(LEXFLAGS) $(LEXFILE)
+	$(YACC) $(YACCFLAGS) $(YACCFILE)
+
+$(LIBRARY): $(LIBRARY)($(MEMBERS))
+	ranlib $@
+
+$(MEMBERS): $(SOURCES)
+
+
+$(PROGRAM): $(LIBRARY)
+
+$(EXEKUTAGARRI): $(LIBRARY) $(PROGRAM)
+	$(LINK.cc) -o $@ $@.cc -L$(SOFT_OROKORRA)/lib -lpcre++ $(INCLUDE) $(LIBRARY) ../morfologia/getenvvar.o
+
+
+clean: FORCE
+	rm $(LIBRARY) $(LEXYACC_IZEN_HASIERA).tab.cc $(LEXYACC_IZEN_HASIERA).tab.hh lex.$(LEXYACC_IZEN_HASIERA).cc 
+
+
+FORCE:
+

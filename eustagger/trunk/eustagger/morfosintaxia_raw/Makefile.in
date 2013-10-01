@@ -1,0 +1,53 @@
+# MORFOSINTAXIA MAKEFILE (SWI-PROLOG)
+#
+
+#deps: swi-prolog, flex, bison
+
+#swi prolog
+INCLUDE_SWIPL = @CONF_INCLUDE_SWIPL@
+
+INCLUDE = @CPPFLAGS@ $(INCLUDE_SWIPL)
+
+PROLOG = swi
+FST = foma
+
+LEX = @CONF_FLEX@
+YACC = @CONF_BISON@
+LEXYACC_IZEN_HASIERA = ana2morfsar
+LEXRES = lex.$(LEXYACC_IZEN_HASIERA).cc
+YACCRES = $(LEXYACC_IZEN_HASIERA).tab.cc
+LEXFLAGS = -8 -P$(LEXYACC_IZEN_HASIERA) -o$(LEXRES)
+YACCFLAGS = -vd -p $(LEXYACC_IZEN_HASIERA) -b $(LEXYACC_IZEN_HASIERA) -o $(YACCRES)
+
+LEXFILE = $(LEXYACC_IZEN_HASIERA).l
+YACCFILE = $(LEXYACC_IZEN_HASIERA).y
+
+SOURCES = $(LEXYACC_IZEN_HASIERA).tab.cc lema_aldaera.cc ana2morfsar.cc morfsarFormatu.cc morfosraw.cc morfsar2raw.cc prolog2raw.cc
+MEMBERS = $(SOURCES:.cc=.o)
+
+INCLUDEDIR = $(INCLUDE)
+
+
+CCC = @CXX@
+CPPFLAGS = -D_REENTRANT -D__SWI_PROLOG__ -D__SWI_EMBEDDED__ -D_USE_SWI_ -D__$(OSTYPE)__ -D_USE_FOMA_
+CCFLAGS = -frtti -fpic -O2 -pthread
+COMPILE.cc=$(CCC) $(INCLUDEDIR) $(CPPFLAGS) $(CCFLAGS) -c
+
+all: $(LEXRES) $(YACCRES) $(MEMBERS) 
+
+$(MEMBERS): $(SOURCES)
+
+$(LEXRES):
+	$(LEX) $(LEXFLAGS) $(LEXFILE)
+
+$(YACCRES):
+	$(YACC) $(YACCFLAGS) $(YACCFILE)
+
+clean: FORCE
+	rm -f $(MEMBERS) $(LEXRES) $(YACCRES)
+
+install: FORCE
+	install -d -m 755 $(INSTALL_PATH)/include/
+	install -m 644 *.h $(INSTALL_PATH)/include/
+
+FORCE:

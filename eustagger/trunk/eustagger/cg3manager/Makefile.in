@@ -1,0 +1,36 @@
+# #################
+# CG3 kudeatzeko modulua
+
+#deps: pcre++, vislcg 3, boost
+
+INCLUDE_PCREPLUSPLUS = @CONF_INCLUDE_PCREPLUSPLUS@
+INCLUDE_BOOST = @CONF_INCLUDE_BOOST@
+INCLUDE_CG3 = @CONF_INCLUDE_VISLCG3@
+INCLUDE = @CPPFLAGS@ $(INCLUDE_PCREPLUSPLUS) $(INCLUDE_CG3) $(INCLUDE_BOOST)
+
+SOURCES = cgmanager.cc cgconv.cc
+
+MEMBERS=$(SOURCES:.cc=.o)
+
+CCC=@CXX@
+CPPFLAGS= -DHAVE_BOOST
+CCFLAGS= -O -fpic 
+
+INCLUDEDIR = $(INCLUDE)
+
+COMPILE.cc=$(CCC) $(INCLUDEDIR) $(CCFLAGS) $(CPPFLAGS) -c
+
+all: $(MEMBERS)
+
+
+$(MEMBERS): $(SOURCES)
+
+
+clean: FORCE
+	'rm' -f $(MEMBERS)
+
+install: FORCE
+	install -d -m 755 $(INSTALL_PATH)/include/
+	install -m 644 *.h $(INSTALL_PATH)/include/
+
+FORCE:
