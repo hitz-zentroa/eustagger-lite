@@ -1,0 +1,52 @@
+#
+
+# deps: pcre++.h boost vislcg3 foma  morfologia aurreprezua  morfosintaxia cgmanager 
+
+INCLUDE_BOOST = @CONF_INCLUDE_BOOST@
+INCLUDE_PCREPLUSPLUS = @CONF_INCLUDE_PCREPLUSPLUS@
+INCLUDE_FOMA = @CONF_INCLUDE_FOMA@
+INCLUDE_CG3 = @CONF_INCLUDE_VISLCG3@
+INCLUDE_LOCAL = -I../morfologia -I../aurreprozesua_raw -I../morfosintaxia_raw -I../cg3manager -I../habil
+
+INCLUDE = @CPPFLAGS@ $(INCLUDE_PCREPLUSPLUS) $(INCLUDE_BOOST) $(INCLUDE_CG3) $(INCLUDE_FOMA) $(INCLUDE_LOCAL)
+
+DEFMORFOS = -D_REENTRANT -D__SWI_PROLOG__ -D__SWI_EMBEDDED__ -D_USE_SWI_
+
+MEMBERS=$(SOURCES:.cc=.o)
+
+FST = foma
+VARIANTS = bridge
+
+
+DEFMORF = -D_SUN_CC -D_BOOL_H_ -DNLS_ERRORS -D_USE_FOMA_ -D__BRIDGE_VARIANTS__
+
+
+DEFINE=  -D__$(OSTYPE)__ $(DEFMORF) $(DEFMORFOS)
+
+
+
+CCC= @CXX@
+CCFLAGS= -Wall -frtti -fPIC -O2
+CPPFLAGS= $(DEFINE)  -DHAVE_BOOST
+
+COMPILE.cc=$(CCC) $(INCLUDE) $(CCFLAGS) $(CPPFLAGS) -c 
+
+
+SOURCES = prozesatuseg_raw.cc prozesatumorf_raw.cc prozesatucg3_raw.cc 
+
+MEMBERS = $(SOURCES:.cc=.o)
+
+
+all: $(MEMBERS)
+
+
+$(MEMBERS): $(SOURCES)
+
+
+clean: FORCE
+	'rm' -f *.o
+
+install: 
+
+
+FORCE:

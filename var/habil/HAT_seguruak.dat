@@ -1,0 +1,13360 @@
+A eredu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	A	
+	(LEMA)	eredu	
+	+ ("eredu"  IZE ARR)
+
+a posteriori
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	a	
+	(LEMA)	posteriori	
+	+ ("posteriori"  HAOS)
+
+a priori
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	a	
+	(LEMA)	priori	
+	+ ("priori"  HAOS)
+
+ab aeterno
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ab	
+	(LEMA)	aeterno	
+	+ ("aeterno"  HAOS)
+
+abaroan egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	abaroan	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+abaroan egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	abaroan	
+
+abere xehe
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	abere	
+	(LEMA)	xehe	
+	+ ("xehe"  ADJ ARR)
+
+Aberri Egun
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Aberri	
+	(LEMA)	Egun	
+	+ ("egun"  IZE ARR)
+
+Abertzale Sozialisten Komiteak
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Abertzale	
+	(FORMA)	Sozialisten	
+	(LEMA)	Komiteak	
+	+ ("komite"  IZE ARR)
+
+ad absurdum
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ad	
+	(LEMA)	absurdum	
+	+ ("absurdum"  HAOS)
+
+ad hoc
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ad	
+	(LEMA)	hoc	
+	+ ("hoc"  HAOS)
+
+ad infinitum
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ad	
+	(LEMA)	infinitum	
+	+ ("infinitum"  HAOS)
+
+ad libitum
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ad	
+	(LEMA)	libitum	
+	+ ("libitum"  HAOS)
+
+adi egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	adi	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+adi egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	adi	
+
+adi-adi egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	adi-adi	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+adi-adi egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	adi-adi	
+
+aditz laguntzaile
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aditz	
+	(LEMA)	laguntzaile	
+	+ ("laguntzaile"  ADJ ARR)
+
+aditzera eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aditzera	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+aditzera eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	aditzera	
+
+administrazio publiko
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	administrazio	
+	(LEMA)	publiko	
+	+ ("publiko"  ADJ ARR)
+
+Administrazio Zerbitzuetako Pertsonal
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Administrazio	
+	(FORMA)	Zerbitzuetako	
+	(LEMA)	Pertsonal	
+	+ ("pertsonal"  IZE ARR)
+
+Administrazio-Zerbitzuetako Pertsonal
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Administrazio-Zerbitzuetako	
+	(LEMA)	Pertsonal	
+	+ ("pertsonal"  IZE ARR)
+
+ados egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ados	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+ados egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	ados	
+
+ados etorri
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ados	
+	(LEMA)	etorri	
+	+ ("etorri"  ADI SIN)
+
+ados etorri
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	etorri	
+	+ ("etorri"  ADI SIN)
+	(FORMA)	ados	
+
+ados jarri
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ados	
+	(LEMA)	jarri	
+	+ ("jarri"  ADI SIN)
+
+ados jarri
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	jarri	
+	+ ("jarri"  ADI SIN)
+	(FORMA)	ados	
+
+ageri ukan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ageri	
+	(LEMA)	ukan	
+	+ ("ukan"  ADI SIN)
+
+agur esan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	agur	
+	(LEMA)	esan	
+	+ ("esan"  ADI SIN)
+
+agur esan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	esan	
+	+ ("esan"  ADI SIN)
+	(FORMA)	agur	
+
+ahaide nagusi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ahaide	
+	(LEMA)	nagusi	
+	+ ("nagusi"  ADJ ARR)
+
+ahal adina
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ahal	
+	(LEMA)	adina	
+	+ ("adina"  ADB ARR)
+
+ahal adina
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ahal	
+	(FORMA)	adina	
+
+ahal bezain
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ahal	
+	(FORMA)	bezain	
+
+ahal bezainbat
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ahal	
+	(LEMA)	bezainbat	
+	+ ("bezainbat"  DET DZG)
+
+ahal bezainbat
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ahal	
+	(FORMA)	bezainbat	
+
+ahal bezala
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ahal	
+	(FORMA)	bezala	
+
+ahal bezalako
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ahal	
+	(LEMA)	bezalako	
+	+ ("bezalako"  ADJ ARR)
+
+ahal edin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ahal	
+	(LEMA)	edin	
+	+ ("*edin"  ADI SIN)
+
+ahal ezan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ahal	
+	(LEMA)	ezan	
+	+ ("*ezan"  ADI SIN)
+
+ahalik eta
+	#BST
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ahalik	
+	(FORMA)	eta	
+
+aho batez
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aho	
+	(FORMA)	batez	
+
+aho betean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aho|ahoa	
+	(FORMA)	betean	
+
+aho zabalik
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aho	
+	(FORMA)	zabalik	
+
+aho zabalka
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aho	
+	(FORMA)	zabalka	
+
+ahotan hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ahotan	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+ahotan hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+	(FORMA)	ahotan	
+
+ahotik ahora
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ahotik	
+	(FORMA)	ahora	
+
+ahoz gora
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ahoz	
+	(LEMA)	gora	
+	+ ("gora"  ADB ARR)
+
+aiduru egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aiduru	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+aiduru egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	aiduru	
+
+aiduru gelditu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aiduru	
+	(LEMA)	gelditu	
+	+ ("gelditu"  ADI SIN)
+
+aiduru gelditu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	gelditu	
+	+ ("gelditu"  ADI SIN)
+	(FORMA)	aiduru	
+
+aintzakotzat eduki
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aintzakotzat	
+	(LEMA)	eduki	
+	+ ("eduki"  ADI SIN)
+
+aintzakotzat eduki
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eduki	
+	+ ("eduki"  ADI SIN)
+	(FORMA)	aintzakotzat	
+
+aintzakotzat eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aintzakotzat	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+aintzakotzat eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	aintzakotzat	
+
+aintzakotzat hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aintzakotzat	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+aintzakotzat hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+	(FORMA)	aintzakotzat	
+
+aintzat eduki
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aintzat	
+	(LEMA)	eduki	
+	+ ("eduki"  ADI SIN)
+
+aintzat eduki
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eduki	
+	+ ("eduki"  ADI SIN)
+	(FORMA)	aintzat	
+
+aintzat eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aintzat	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+aintzat eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	aintzat	
+
+aintzat hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aintzat	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+aintzat hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+	(FORMA)	aintzat	
+
+aita besoetako
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aita	
+	(LEMA)	besoetako	
+	+ ("besoetako"  ADJ ARR)
+
+Aita Jainko
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Aita	
+	(LEMA)	Jainko	HAS_MAI
+	+ ("jainko"  IZE ARR)
+
+Aita Jaungoiko
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Aita	
+	(LEMA)	Jaungoiko	HAS_MAI
+	+ ("jaungoiko"  IZE ARR)
+
+aita santu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aita	
+	(LEMA)	santu	
+	+ ("santu"  ADJ ARR)
+
+aitaren batean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aitaren	
+	(FORMA)	batean	
+
+aitaren egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aitaren	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+aitaren egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	aitaren	
+
+aitonen alaba
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aitonen	
+	(LEMA)	alaba	
+	+ ("alaba"  IZE ARR)
+
+aitonen seme
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aitonen	
+	(LEMA)	seme	
+	+ ("seme"  IZE ARR)
+
+aitor egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aitor	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+aitor egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	aitor	
+
+aitor eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aitor	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+aitor eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	aitor	
+
+aitoren alaba
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aitoren	
+	(LEMA)	alaba	
+	+ ("alaba"  IZE ARR)
+
+aitoren seme
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aitoren	
+	(LEMA)	seme	
+	+ ("seme"  IZE ARR)
+
+aitzina eraman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aitzina	
+	(LEMA)	eraman	
+	+ ("eraman"  ADI SIN)
+
+aitzina eraman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eraman	
+	+ ("eraman"  ADI SIN)
+	(FORMA)	aitzina	
+
+alaba besoetako
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	alaba	
+	(LEMA)	besoetako	
+	+ ("besoetako"  ADJ ARR)
+
+albora utzi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	albora	
+	(LEMA)	utzi	
+	+ ("utzi"  ADI SIN)
+
+albora utzi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	utzi	
+	+ ("utzi"  ADI SIN)
+	(FORMA)	albora	
+
+aldare nagusi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aldare	
+	(LEMA)	nagusi	
+	+ ("nagusi"  ADJ ARR)
+
+alde bat utzi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	alde	
+	(FORMA)	bat	
+	(LEMA)	utzi	
+	+ ("utzi"  ADI SIN)
+
+alde batera eta bestera
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	alde	
+	(FORMA)	batera	
+	(FORMA)	eta	
+	(FORMA)	bestera	
+
+alde batera utzi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	alde	
+	(FORMA)	batera	
+	(LEMA)	utzi	
+	+ ("utzi"  ADI SIN)
+
+alde batetik bestera
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	alde	
+	(FORMA)	batetik	
+	(FORMA)	bestera	
+
+alde guztiz
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	alde	
+	(FORMA)	guztiz	
+
+alde hemendik
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	alde	
+	(FORMA)	hemendik	
+
+alde zahar
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	alde	
+	(LEMA)	zahar	
+	+ ("zahar"  ADJ ARR)
+
+Alderdi Sozialdemokrata
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Alderdi	HAS_MAI
+	(LEMA)	Sozialdemokrata	HAS_MAI
+	+ ("sozialdemokrata"  ADJ ARR)
+
+alderen alde
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	alderen	
+	(FORMA)	alde	
+
+aldez alde
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aldez	
+	(FORMA)	alde	
+
+aldez aurreko
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aldez	
+	(LEMA)	aurreko	
+	+ ("aurreko"  IZE ARR)
+
+aldez beste
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aldez	
+	(LEMA)	beste	
+	+ ("beste"  ADB ARR)
+
+aldez edo moldez
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	aldez	
+	(FORMA)	edo	
+	(FORMA)	moldez	
+
+aldi baterako
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aldi	
+	(FORMA)	baterako	
+
+aldi batez
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aldi	
+	(FORMA)	batez	
+
+aldi berean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aldi	
+	(FORMA)	berean	
+
+aldian aldian
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aldian	
+	(FORMA)	aldian	
+
+aldiriko tren
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aldiriko	
+	(LEMA)	tren	
+	+ ("tren"  IZE ARR)
+
+Alemaniako Errepublika Federala
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Alemaniako	
+	(FORMA)	Errepublika	
+	(LEMA)	Federala	
+	+ ("federal"  ADJ ARR)
+
+Alfabetatze Euskalduntzeko Koordinakundea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Alfabetatze	
+	(FORMA)	Euskalduntzeko	
+	(LEMA)	Koordinakundea	
+	+ ("koordinakunde"  IZE ARR)
+
+alferrik galdu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	alferrik	
+	(LEMA)	galdu	
+	+ ("galdu"  ADI SIN)
+
+alferrik galdu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	galdu	
+	+ ("galdu"  ADI SIN)
+	(FORMA)	alferrik	
+
+alma mater
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	alma	
+	(LEMA)	mater	
+	+ ("mater"  HAOS)
+
+alter ego
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	alter	
+	(LEMA)	ego	
+	+ ("ego"  IZE ARR)
+
+alturako arrantza
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	alturako	
+	(LEMA)	arrantza	
+	+ ("arrantza"  IZE ARR)
+
+ama besoetako
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ama	
+	(LEMA)	besoetako	
+	+ ("besoetako"  ADJ ARR)
+
+Ama Birjina
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Ama	HAS_MAI
+	(LEMA)	Birjina	HAS_MAI
+	+ ("birjina"  IZE ARR)
+
+amen batean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	amen	
+	(FORMA)	batean	
+
+amen egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	amen	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+amen esan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	amen	
+	(LEMA)	esan	
+	+ ("esan"  ADI SIN)
+
+amen esan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	esan	
+	+ ("esan"  ADI SIN)
+	(FORMA)	amen	
+
+Amerikako Estatu Batuak
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Amerikako	
+	(FORMA)	Estatu	
+	(LEMA)	Batuak	
+	+ ("batu"  ADJ ARR)
+
+Ameriketako Estatu Batuak
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Ameriketako	
+	(FORMA)	Estatu	
+	(LEMA)	Batuak	
+	+ ("batu"  ADJ ARR)
+
+amets gaizto
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	amets	
+	(LEMA)	gaizto	
+	+ ("gaizto"  ADJ ARR)
+
+amets txar
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	amets	
+	(LEMA)	txar	
+	+ ("txar"  ADJ ARR)
+
+Amnistiaren Aldeko Batzordea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Amnistiaren	
+	(FORMA)	Aldeko	
+	(LEMA)	Batzordea	
+	+ ("batzorde"  IZE ARR)
+
+amona mantangorri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	amona	
+	(LEMA)	mantangorri	
+	+ ("mantangorri"  ADJ ARR)
+
+Andre Maria
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Andre	HAS_MAI
+	(LEMA)	Maria	
+	+ ("Maria"  IZE IZB)
+
+angelu zuzen
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	angelu	
+	(LEMA)	zuzen	
+	+ ("zuzen"  ADJ ARR)
+
+antza denez
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	antza	
+	(FORMA)	denez	
+
+apaiz nagusi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	apaiz	
+	(LEMA)	nagusi	
+	+ ("nagusi"  ADJ ARR)
+
+aparatu elektriko
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aparatu	
+	(LEMA)	elektriko	
+	+ ("elektriko"  ADJ ARR)
+
+apur bat
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	apur	
+	(LEMA)	bat	
+	+ ("bat"  DET DZH)
+
+ardo beltz
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ardo	
+	(LEMA)	beltz	
+	+ ("beltz"  ADJ ARR)
+
+ardo zuri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ardo	
+	(LEMA)	zuri	
+	+ ("zuri"  ADJ ARR)
+
+are ere
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	are	
+	(FORMA)	ere	
+
+are eta
+	#BST
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	are	
+	(FORMA)	eta	
+
+are gehiago
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	are	
+	(FORMA)	gehiago	
+
+are gutxiago
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	are	
+	(FORMA)	gutxiago	
+
+arean bai
+	#IOR IZGMGB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	arean	
+	(FORMA)	bai	
+
+arean ez
+	#IOR IZGMGB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	arean	
+	(FORMA)	ez	
+
+arestiz gero
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	arestiz	
+	(FORMA)	gero	
+
+argi eta garbi
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	argi	
+	(FORMA)	eta	
+	(FORMA)	garbi	
+
+argitara eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	argitara	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+argitara eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	argitara	
+
+ari ukan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ari	
+	(LEMA)	ukan	
+	+ ("ukan"  ADI SIN)
+
+Aro Moderno
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Aro	
+	(LEMA)	Moderno	
+	+ ("moderno"  ADJ ARR)
+
+arra bete
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	arra	
+	(LEMA)	bete	
+	+ ("bete"  ADJ ARR)
+
+arrano beltz
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	arrano	
+	(LEMA)	beltz	
+	+ ("beltz"  ADJ ARR)
+
+arren egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	arren	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+arte eder
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	arte	
+	(LEMA)	eder	
+	+ ("eder"  ADJ ARR)
+
+askoz ere
+	#BST
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	askoz	
+	(FORMA)	ere	
+
+askozaz ere
+	#BST
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	askozaz	
+	(FORMA)	ere	
+
+aspaldiko partez
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aspaldiko	
+	(FORMA)	partez	
+
+aste bete
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aste	
+	(LEMA)	bete	
+	+ ("bete"  ADJ ARR)
+
+Aste Nagusia
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Aste	HAS_MAI
+	(LEMA)	Nagusi	HAS_MAI
+	+ ("nagusi"  ADJ ARR)
+
+Aste Santu
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Aste	
+	(LEMA)	Santu	
+	+ ("santu"  ADJ ARR)
+
+astegun buruzuri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	astegun	
+	(LEMA)	buruzuri	
+	+ ("buruzuri"  ADJ ARR)
+
+atoian eraman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	atoian	
+	(LEMA)	eraman	
+	+ ("eraman"  ADI SIN)
+
+atoian eraman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eraman	
+	+ ("eraman"  ADI SIN)
+	(FORMA)	atoian	
+
+atxilo eraman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	atxilo	
+	(LEMA)	eraman	
+	+ ("eraman"  ADI SIN)
+
+atxilo eraman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eraman	
+	+ ("eraman"  ADI SIN)
+	(FORMA)	atxilo	
+
+atximurka egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	atximurka	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+atximurka egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	atximurka	
+
+atzera egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	atzera	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+atzera egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	atzera	
+
+atzera eta aurrera
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	atzera	
+	(FORMA)	eta	
+	(FORMA)	aurrera	
+
+atzera jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	atzera	
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+
+atzera jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+	(FORMA)	atzera	
+
+aurpegira eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aurpegira	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+aurpegira eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	aurpegira	
+
+aurre egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aurre	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+aurre egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	aurre	
+
+aurre eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aurre	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+aurre eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	aurre	
+
+aurrea hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aurrea	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+aurrea hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+	(FORMA)	aurrea	
+
+aurrera jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aurrera	
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+
+aurrez ikusi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	aurrez	
+	(LEMA)	ikusi	
+	+ ("ikusi"  ADI SIN)
+
+aurrez ikusi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	ikusi	
+	+ ("ikusi"  ADI SIN)
+	(FORMA)	aurrez	
+
+ausiki egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ausiki	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+ausiki egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	ausiki	
+
+auskan egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	auskan	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+autonomi erkidego
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	autonomi	
+	(LEMA)	erkidego	
+	+ ("erkidego"  IZE ARR)
+
+autonomi estatutu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	autonomi	
+	(LEMA)	estatutu	
+	+ ("estatutu"  IZE ARR)
+
+autonomi garapen
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	autonomi	
+	(LEMA)	garapen	
+	+ ("garapen"  IZE ARR)
+
+Auzitegi Konstituzionala
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Auzitegi	
+	(LEMA)	Konstituzionala	
+	+ ("konstituzional"  ADJ ARR)
+
+azido desoxirribonukleiko
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azido	
+	(LEMA)	desoxirribonukleiko	
+	+ ("desoxirribonukleiko"  ADJ ARR)
+
+azido erribonukleiko
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azido	
+	(LEMA)	erribonukleikoa	
+	+ ("erribonukleiko"  ADJ ARR)
+
+azido uriko
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azido	
+	(LEMA)	uriko	
+	+ ("uriko"  ADJ ARR)
+
+azienda beltz
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azienda	
+	(LEMA)	beltz	
+	+ ("beltz"  ADJ ARR)
+
+azienda gorri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azienda	
+	(LEMA)	gorri	
+	+ ("gorri"  ADJ ARR)
+
+azienda larri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azienda	
+	(LEMA)	larri	
+	+ ("larri"  ADJ ARR)
+
+azienda xehe
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azienda	
+	(LEMA)	xehe	
+	+ ("xehe"  ADJ ARR)
+
+azienda zuri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azienda	
+	(LEMA)	zuri	
+	+ ("zuri"  ADJ ARR)
+
+azken aldi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azken	
+	(LEMA)	aldi	
+	+ ("aldi"  IZE ARR)
+
+azken batean
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azken	
+	(FORMA)	batean	
+
+azken buruan
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azken	
+	(FORMA)	buruan	
+
+azken finean
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azken	
+	(FORMA)	finean	
+
+azken hats
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azken	
+	(LEMA)	hats	
+	+ ("hats"  IZE ARR)
+
+azken nahi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azken	
+	(LEMA)	nahi	
+	+ ("nahi"  IZE ARR)
+
+azpiak atera
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azpiak	
+	(LEMA)	atera	
+	+ ("atera"  ADI SIN)
+
+azpiak atera
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	atera	
+	+ ("atera"  ADI SIN)
+	(FORMA)	azpiak	
+
+azpiak egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azpiak	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+azpiak jan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azpiak	
+	(LEMA)	jan	
+	+ ("jan"  ADI SIN)
+
+azpiak jan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	jan	
+	+ ("jan"  ADI SIN)
+	(FORMA)	azpiak	
+
+azpiko arropa
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azpiko	
+	(LEMA)	arropa	
+	+ ("arropa"  IZE ARR)
+
+azpiko gona
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azpiko	
+	(LEMA)	gona	
+	+ ("gona"  IZE ARR)
+
+azpitik eduki
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	azpitik	
+	(LEMA)	eduki	
+	+ ("eduki"  ADI SIN)
+
+azpitik eduki
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eduki	
+	+ ("eduki"  ADI SIN)
+	(FORMA)	azpitik	
+
+B eredu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	B	
+	(LEMA)	eredu	
+	+ ("eredu"  IZE ARR)
+
+baba txiki
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	baba	
+	(LEMA)	txiki	
+	+ ("txiki"  ADJ ARR)
+
+Babes Zibila
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Babes	HAS_MAI
+	(LEMA)	Zibila	HAS_MAI
+	+ ("zibil"  ADJ ARR)
+
+badaezpada ere
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	badaezpada	
+	(FORMA)	ere	
+
+bai zera
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bai	
+	(FORMA)	zera	
+
+baita zera ere
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	baita	
+	(FORMA)	zera	
+	(FORMA)	ere	
+
+baizik eta
+	#LOT JNT
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	baizik	
+	(FORMA)	eta	
+
+bakar batzuk
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bakar	
+	(LEMA)	batzuk	
+	+ ("batzuk"  DET DZG)
+
+bakarren bat
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bakarren	
+	(LEMA)	bat	
+	+ ("bat"  DET DZH)
+
+bakarren batzuk
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bakarren	
+	(LEMA)	batzuk	
+	+ ("batzuk"  DET DZG)
+
+bakeak egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bakeak	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+bakeak egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	bakeak	
+
+baldin eta
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	baldin	
+	(FORMA)	eta	
+
+bale ontzi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bale	
+	(LEMA)	ontzi	
+	+ ("ontzi"  IZE ARR)
+
+bale untzi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bale	
+	(LEMA)	untzi	
+	+ ("untzi"  IZE ARR)
+
+Balio Erantsi Gordin
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Balio	
+	(FORMA)	Erantsi	
+	(LEMA)	Gordin	
+	+ ("gordin"  ADJ ARR)
+
+Balio Erantsi Neto
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Balio	
+	(FORMA)	Erantsi	
+	(LEMA)	Neto	
+	+ ("neto"  ADJ ARR)
+
+Balio Erantsiaren gaineko Zerga
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Balio	
+	(FORMA)	Erantsiaren	
+	(FORMA)	gaineko	
+	(LEMA)	Zerga	
+	+ ("zerga"  IZE ARR)
+
+bana bertze
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bana	
+	(LEMA)	bertze	
+	+ ("bertze"  ADB ARR)
+
+Banku Nazionala
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Banku	HAS_MAI
+	(LEMA)	Nazionala	HAS_MAI
+	+ ("nazional"  ADJ ARR)
+
+barau egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	barau	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+barau egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	barau	
+
+barka eskatu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	barka	
+	(LEMA)	eskatu	
+	+ ("eskatu"  ADI SIN)
+
+barka eskatu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eskatu	
+	+ ("eskatu"  ADI SIN)
+	(FORMA)	barka	
+
+barka eske
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	barka	
+	(FORMA)	eske	
+
+barne hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	barne	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+Barne Produktu Garbi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Barne	
+	(FORMA)	Produktu	
+	(LEMA)	Garbi	
+	+ ("garbi"  ADJ ARR)
+
+Barne Produktu Gordin
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Barne	
+	(FORMA)	Produktu	
+	(LEMA)	Gordin	
+	+ ("gordin"  ADJ ARR)
+
+Barne Produktu Neto
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Barne	
+	(FORMA)	Produktu	
+	(LEMA)	Neto	
+	+ ("neto"  ADJ ARR)
+
+Barne-Produktu Garbi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Barne-Produktu	
+	(LEMA)	Garbi	
+	+ ("garbi"  ADJ ARR)
+
+Barne-Produktu Gordin
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Barne-Produktu	
+	(LEMA)	Gordin	
+	+ ("gordin"  ADJ ARR)
+
+Barne-Produktu Neto
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Barne-Produktu	
+	(LEMA)	Neto	
+	+ ("neto"  ADJ ARR)
+
+barrenez barren
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	barrenez	
+	(FORMA)	barren	
+
+barrengo elastiko
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	barrengo	
+	(LEMA)	elastiko	
+	+ ("elastiko"  IZE ARR)
+
+barruko elastiko
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	barruko	
+	(LEMA)	elastiko	
+	+ ("elastiko"  IZE ARR)
+
+barruko jantzi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	barruko	
+	(LEMA)	jantzi	
+	+ ("jantzi"  IZE ARR)
+
+Barruko Mediku Egoiliar
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Barruko	
+	(FORMA)	Mediku	
+	(LEMA)	Egoiliar	
+	+ ("egoiliar"  IZE ARR)
+
+bat edo bat
+	#IOR IZGMGB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	bat	
+	(FORMA)	edo	
+	(LEMA)	bat	
+	+ ("bat"  DET DZH)
+
+bataz beste
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bataz	
+	(FORMA)	beste	
+
+baten bat
+	#IOR IZGMGB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	baten	
+	(LEMA)	bat	
+	+ ("bat"  DET DZH)
+
+baten batzuk
+	#IOR IZGMGB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	baten	
+	(LEMA)	batzuk	
+	+ ("batzuk"  DET DZG)
+
+batez beste
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	batez	
+	(FORMA)	beste	
+
+batez ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	batez	
+	(FORMA)	ere	
+
+batik bat
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	batik	
+	(FORMA)	bat	
+
+batzar orokor
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	batzar	
+	(LEMA)	orokor	
+	+ ("orokor"  ADJ ARR)
+
+batzuen batzuk
+	#IOR IZGMGB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	batzuen	
+	(LEMA)	batzuk	
+	+ ("batzuk"  DET DZG)
+
+baxurako arrantza
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	baxurako	
+	(LEMA)	arrantza	
+	+ ("arrantza"  IZE ARR)
+
+bazter utzi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bazter	
+	(LEMA)	utzi	
+	+ ("utzi"  ADI SIN)
+
+bazterrera eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bazterrera	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+bazterrera eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	bazterrera	
+
+bazterrera utzi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bazterrera	
+	(LEMA)	utzi	
+	+ ("utzi"  ADI SIN)
+
+bazterrera utzi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	utzi	
+	+ ("utzi"  ADI SIN)
+	(FORMA)	bazterrera	
+
+begi bistatik galdu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	begi	
+	(FORMA)	bistatik	
+	(LEMA)	galdu	
+	+ ("galdu"  ADI SIN)
+
+begi bistatik kendu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	begi	
+	(FORMA)	bistatik	
+	(LEMA)	kendu	
+	+ ("kendu"  ADI SIN)
+
+begi onez
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	begi	
+	(FORMA)	onez	
+
+begi-bistatik galdu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	begi-bistatik	
+	(LEMA)	galdu	
+	+ ("galdu"  ADI SIN)
+
+begi-bistatik galdu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	galdu	
+	+ ("galdu"  ADI SIN)
+	(FORMA)	begi-bistatik	
+
+begi-bistatik kendu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	begi-bistatik	
+	(LEMA)	kendu	
+	+ ("kendu"  ADI SIN)
+
+begi-bistatik kendu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	kendu	
+	+ ("kendu"  ADI SIN)
+	(FORMA)	begi-bistatik	
+
+begien bista
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	begien	
+	(LEMA)	bista	
+	+ ("bista"  IZE ARR)
+
+begien bistatik alde egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	begien	
+	(FORMA)	bistatik	
+	(FORMA)	alde	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+begien bistatik galdu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	begien	
+	(FORMA)	bistatik	
+	(LEMA)	galdu	
+	+ ("galdu"  ADI SIN)
+
+begien bistatik kendu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	begien	
+	(FORMA)	bistatik	
+	(LEMA)	kendu	
+	+ ("kendu"  ADI SIN)
+
+begiko nini
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	begiko	
+	(LEMA)	nini	
+	+ ("nini"  IZE ARR)
+
+begitan hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	begitan	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+begitan hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+	(FORMA)	begitan	
+
+begiz jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	begiz	
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+
+begiz jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+	(FORMA)	begiz	
+
+behar adina
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behar	
+	(LEMA)	adina	
+	+ ("adina"  ADB ARR)
+
+behar adina
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behar	
+	(FORMA)	adina	
+
+behar baino
+	#BST
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behar	
+	(FORMA)	baino	
+
+behar bezain
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behar	
+	(FORMA)	bezain	
+
+behar bezainbat
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behar	
+	(LEMA)	bezainbat	
+	+ ("bezainbat"  DET DZG)
+
+behar bezainbat
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behar	
+	(FORMA)	bezainbat	
+
+behar bezala
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behar	
+	(FORMA)	bezala	
+
+behar bezalako
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behar	
+	(LEMA)	bezalako	
+	+ ("bezalako"  ADJ ARR)
+
+behar hainbat
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behar	
+	(LEMA)	hainbat	
+	+ ("hainbat"  DET DZG)
+
+behar hainbat
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behar	
+	(FORMA)	hainbat	
+
+Behe Nafarroa
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Behe	
+	(LEMA)	Nafarroa	
+	+ ("Nafarroa"  IZE LIB)
+
+behea jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behea	
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+
+behea jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+	(FORMA)	behea	
+
+beheko su
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	beheko	
+	(LEMA)	su	
+	+ ("su"  IZE ARR)
+
+behin batean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behin	
+	(FORMA)	batean	
+
+behin batez
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behin	
+	(FORMA)	batez	
+
+behin betiko
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behin	
+	(FORMA)	betiko	
+
+behin betiko
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behin	
+	(LEMA)	betiko	
+	+ ("betiko"  ADJ ARR)
+
+behin betikoz
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behin	
+	(FORMA)	betikoz	
+
+behin betirako
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behin	
+	(FORMA)	betirako	
+
+behin betirako
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behin	
+	(LEMA)	betirako	
+	+ ("betirako"  ADJ ARR)
+
+behin edo behin
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	behin	
+	(FORMA)	edo	
+	(FORMA)	behin	
+
+behin ere
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behin	
+	(FORMA)	ere	
+
+behin eta berriro
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	behin	
+	(FORMA)	eta	
+	(FORMA)	berriro	
+
+behin eta berriz
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	behin	
+	(FORMA)	eta	
+	(FORMA)	berriz	
+
+behin eta betiko
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	behin	
+	(FORMA)	eta	
+	(FORMA)	betiko	
+
+behin eta betiko
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	behin	
+	(FORMA)	eta	
+	(LEMA)	betiko	
+	+ ("betiko"  ADJ ARR)
+
+behin eta birritan
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	behin	
+	(FORMA)	eta	
+	(FORMA)	birritan	
+
+behinik behin
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	behinik	
+	(FORMA)	behin	
+
+bekatu arin
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bekatu	
+	(LEMA)	arin	
+	+ ("arin"  ADB ARR)
+
+bekatu astun
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bekatu	
+	(LEMA)	astun	
+	+ ("astun"  ADJ ARR)
+
+bekatu larri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bekatu	
+	(LEMA)	larri	
+	+ ("larri"  ADJ ARR)
+
+bekatu mortal
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bekatu	
+	(LEMA)	mortal	
+	+ ("mortal"  ADJ ARR)
+
+bekatuan egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bekatuan	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+bekatuan egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	bekatuan	
+
+bekoz beko
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bekoz	
+	(FORMA)	beko	
+
+bel canto
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bel	
+	(LEMA)	canto	
+	+ ("canto"  HAOS)
+
+belar gaizto
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	belar	
+	(LEMA)	gaizto	
+	+ ("gaizto"  ADJ ARR)
+
+belar txar
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	belar	
+	(LEMA)	txar	
+	+ ("txar"  ADJ ARR)
+
+bere hartan
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bere	
+	(FORMA)	hartan	
+
+bere horretan
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bere	
+	(FORMA)	horretan	
+
+berehalako batean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berehalako	
+	(FORMA)	batean	
+
+bero-bero egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bero-bero	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+berriro ere
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berriro	
+	(FORMA)	ere	
+
+berriz ere
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berriz	
+	(FORMA)	ere	
+
+berrogeita bat
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	bat	
+	+ ("bat"  DET DZH)
+
+berrogeita bat
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	bat	
+	+ ("bat"  IZE ZKI)
+
+berrogeita bederatzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	bederatzi	
+	+ ("bederatzi"  DET DZH)
+
+berrogeita bederatzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	bederatzi	
+	+ ("bederatzi"  IZE ZKI)
+
+berrogeita bi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	bi	
+	+ ("bi"  DET DZH)
+
+berrogeita bi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	bi	
+	+ ("bi"  IZE ZKI)
+
+berrogeita bost
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	bost	
+	+ ("bost"  DET DZH)
+
+berrogeita bost
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	bost	
+	+ ("bost"  IZE ZKI)
+
+berrogeita hamabi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hamabi	
+	+ ("hamabi"  DET DZH)
+
+berrogeita hamabi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hamabi	
+	+ ("hamabi"  IZE ZKI)
+
+berrogeita hamabost
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hamabost	
+	+ ("hamabost"  DET DZH)
+
+berrogeita hamabost
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hamabost	
+	+ ("hamabost"  IZE ZKI)
+
+berrogeita hamahiru
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hamahiru	
+	+ ("hamahiru"  DET DZH)
+
+berrogeita hamahiru
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hamahiru	
+	+ ("hamahiru"  IZE ZKI)
+
+berrogeita hamaika
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hamaika	
+	+ ("hamaika"  DET DZH)
+
+berrogeita hamaika
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hamaika	
+	+ ("hamaika"  IZE ZKI)
+
+berrogeita hamalau
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hamalau	
+	+ ("hamalau"  DET DZH)
+
+berrogeita hamalau
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hamalau	
+	+ ("hamalau"  IZE ZKI)
+
+berrogeita hamar
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hamar	
+	+ ("hamar"  DET DZH)
+
+berrogeita hamar
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hamar	
+	+ ("hamar"  IZE ZKI)
+
+berrogeita hamasei
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hamasei	
+	+ ("hamasei"  DET DZH)
+
+berrogeita hamasei
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hamasei	
+	+ ("hamasei"  IZE ZKI)
+
+berrogeita hamazazpi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hamazazpi	
+	+ ("hamazazpi"  DET DZH)
+
+berrogeita hamazazpi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hamazazpi	
+	+ ("hamazazpi"  IZE ZKI)
+
+berrogeita hamazortzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hamazortzi	
+	+ ("hamazortzi"  DET DZH)
+
+berrogeita hamazortzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hamazortzi	
+	+ ("hamazortzi"  IZE ZKI)
+
+berrogeita hemeretzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hemeretzi	
+	+ ("hemeretzi"  DET DZH)
+
+berrogeita hemeretzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hemeretzi	
+	+ ("hemeretzi"  IZE ZKI)
+
+berrogeita hemezortzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hemezortzi	
+	+ ("hemezortzi"  DET DZH)
+
+berrogeita hemezortzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hemezortzi	
+	+ ("hemezortzi"  IZE ZKI)
+
+berrogeita hiru
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hiru	
+	+ ("hiru"  DET DZH)
+
+berrogeita hiru
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	hiru	
+	+ ("hiru"  IZE ZKI)
+
+berrogeita lau
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	lau	
+	+ ("lau"  DET DZH)
+
+berrogeita lau
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	lau	
+	+ ("lau"  IZE ZKI)
+
+berrogeita sei
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	sei	
+	+ ("sei"  DET DZH)
+
+berrogeita sei
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	sei	
+	+ ("sei"  IZE ZKI)
+
+berrogeita zazpi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	zazpi	
+	+ ("zazpi"  DET DZH)
+
+berrogeita zazpi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	zazpi	
+	+ ("zazpi"  IZE ZKI)
+
+berrogeita zortzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	zortzi	
+	+ ("zortzi"  DET DZH)
+
+berrogeita zortzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	berrogeita	
+	(LEMA)	zortzi	
+	+ ("zortzi"  IZE ZKI)
+
+bertan behera
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bertan	
+	(FORMA)	behera	
+
+bertatik bertara
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bertatik	
+	(FORMA)	bertara	
+
+bertso berri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bertso	
+	(LEMA)	berri	
+	+ ("berri"  ADJ ARR)
+
+bertso zahar
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bertso	
+	(LEMA)	zahar	
+	+ ("zahar"  ADJ ARR)
+
+besoz beso
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	besoz	
+	(FORMA)	beso	
+
+beste behin
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	beste	
+	(FORMA)	behin	
+
+beste gaberik
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	beste	
+	(FORMA)	gaberik	
+
+beste hainbeste
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	beste	
+	(LEMA)	hainbeste	
+	+ ("hainbeste"  DET DZG)
+
+beste honenbeste
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	beste	
+	(LEMA)	honenbeste	
+	+ ("honenbeste"  DET DZG)
+
+beste horrenbeste
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	beste	
+	(LEMA)	horrenbeste	
+	+ ("horrenbeste"  DET DZG)
+
+beste orduz
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	beste	
+	(FORMA)	orduz	
+
+besterik ezean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	besterik	
+	(FORMA)	ezean	
+
+besterik gabe
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	besterik	
+	(FORMA)	gabe	
+
+beti ere
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	beti	
+	(FORMA)	ere	
+
+bide batez
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bide	
+	(FORMA)	batez	
+
+bide egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bide	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+bidez bide
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bidez	
+	(FORMA)	bide	
+
+bien bitartean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bien	
+	(FORMA)	bitartean	
+
+bien bitarteko
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bien	
+	(LEMA)	bitarteko	
+	+ ("bitarteko"  ADJ ARR)
+
+bihar arte
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bihar	
+	(FORMA)	arte	
+
+bihotz eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bihotz	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+bihotz eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	bihotz	
+
+bil-bil egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bil-bil	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+Biltzar Tipia
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Biltzar	
+	(LEMA)	Tipia	
+	+ ("tipi"  ADJ ARR)
+
+Biltzar Txipia
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Biltzar	HAS_MAI
+	(LEMA)	Txipia	HAS_MAI
+	+ ("txipi"  ADJ ARR)
+
+birrin-birrin egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	birrin-birrin	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+birrin-birrin egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	birrin-birrin	
+
+bistan egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bistan	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+bistatik alde egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	bistatik	
+	(FORMA)	alde	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+bistatik galdu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bistatik	
+	(LEMA)	galdu	
+	+ ("galdu"  ADI SIN)
+
+bistatik galdu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	galdu	
+	+ ("galdu"  ADI SIN)
+	(FORMA)	bistatik	
+
+bistatik kendu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bistatik	
+	(LEMA)	kendu	
+	+ ("kendu"  ADI SIN)
+
+bistatik kendu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	kendu	
+	+ ("kendu"  ADI SIN)
+	(FORMA)	bistatik	
+
+bistaz ezagutu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bistaz	
+	(LEMA)	ezagutu	
+	+ ("ezagutu"  ADI SIN)
+
+bistaz ezagutu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	ezagutu	
+	+ ("ezagutu"  ADI SIN)
+	(FORMA)	bistaz	
+
+bizarra egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bizarra	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+bizarra egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	bizarra	
+
+Bizkai Buru Batzarra
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Bizkai	
+	(FORMA)	Buru	
+	(LEMA)	Batzarra	
+	+ ("batzar"  IZE ARR)
+
+Bizkaiko Foru Aldundia
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Bizkaiko	
+	(FORMA)	Foru	
+	(LEMA)	Aldundia	
+	+ ("aldundi"  IZE ARR)
+
+bizkarra berotu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bizkarra	
+	(LEMA)	berotu	
+	+ ("berotu"  ADI SIN)
+
+bizkarra berotu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	berotu	
+	+ ("berotu"  ADI SIN)
+	(FORMA)	bizkarra	
+
+blai egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	blai	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+boladan egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	boladan	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+boladan egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	boladan	
+
+bon vivant
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bon	
+	(LEMA)	vivant	
+	+ ("vivant"  HAOS)
+
+bonba atomiko
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bonba	
+	(LEMA)	atomiko	
+	+ ("atomiko"  ADJ ARR)
+
+bor-bor egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bor-bor	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+bor-bor egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	bor-bor	
+
+borrokan egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	borrokan	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+borrokan egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	borrokan	
+
+botaka egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	botaka	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+botaka egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	botaka	
+
+Brontze Aro
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Brontze	
+	(LEMA)	Aro	
+	+ ("aro"  IZE ARR)
+
+burdin barra
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	burdin	
+	(LEMA)	barra	
+	+ ("barra"  IZE ARR)
+
+burdin hari
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	burdin	
+	(LEMA)	hari	
+	+ ("hari"  IZE ARR)
+
+burdin harri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	burdin	
+	(LEMA)	harri	
+	+ ("harri"  IZE ARR)
+
+burdin sare
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	burdin	
+	(LEMA)	sare	
+	+ ("sare"  IZE ARR)
+
+burdin ur
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	burdin	
+	(LEMA)	ur	
+	+ ("ur"  IZE ARR)
+
+burdin ziri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	burdin	
+	(LEMA)	ziri	
+	+ ("ziri"  IZE ARR)
+
+buru hutsik
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	buru	
+	(FORMA)	hutsik	
+
+buruak eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	buruak	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+buruak eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	buruak	
+
+buruan eduki
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	buruan	
+	(LEMA)	eduki	
+	+ ("eduki"  ADI SIN)
+
+buruan eduki
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eduki	
+	+ ("eduki"  ADI SIN)
+	(FORMA)	buruan	
+
+buruan pasatu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	buruan	
+	(LEMA)	pasatu	
+	+ ("pasatu"  ADI SIN)
+
+buruan pasatu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	pasatu	
+	+ ("pasatu"  ADI SIN)
+	(FORMA)	buruan	
+
+buruan ukan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	buruan	
+	(LEMA)	ukan	
+	+ ("ukan"  ADI SIN)
+
+buruan ukan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	ukan	
+	+ ("ukan"  ADI SIN)
+	(FORMA)	buruan	
+
+buruko min
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	buruko	
+	(LEMA)	min	
+	+ ("min"  IZE ARR)
+
+burura etorri
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	burura	
+	(LEMA)	etorri	
+	+ ("etorri"  ADI SIN)
+
+burura etorri
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	etorri	
+	+ ("etorri"  ADI SIN)
+	(FORMA)	burura	
+
+bururen buru
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	bururen	
+	(FORMA)	buru	
+
+burutan atera
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	burutan	
+	(LEMA)	atera	
+	+ ("atera"  ADI SIN)
+
+burutan atera
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	atera	
+	+ ("atera"  ADI SIN)
+	(FORMA)	burutan	
+
+burutan hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	burutan	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+burutan hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+	(FORMA)	burutan	
+
+burutik beherako
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	burutik	
+	(LEMA)	beherako	
+	+ ("beherako"  IZE ARR)
+
+burutik burura
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	burutik	
+	(FORMA)	burura	
+
+burutik egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	burutik	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+burutik egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	burutik	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+burutik jota
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	burutik	
+	(FORMA)	jota	
+
+burutik kendu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	burutik	
+	(LEMA)	kendu	
+	+ ("kendu"  ADI SIN)
+
+burutik kendu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	kendu	
+	+ ("kendu"  ADI SIN)
+	(FORMA)	burutik	
+
+burutik nahasi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	burutik	
+	(LEMA)	nahasi	
+	+ ("nahasi"  ADI SIN)
+
+burutik nahasi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	nahasi	
+	+ ("nahasi"  ADI SIN)
+	(FORMA)	burutik	
+
+buruz beheiti
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	buruz	
+	(LEMA)	beheiti	
+	+ ("beheiti"  ADB ARR)
+
+buruz gain
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	buruz	
+	(FORMA)	gain	
+
+carpe diem
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	carpe	
+	(FORMA)	diem	
+
+casus belli
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	casus	
+	(LEMA)	belli	
+	+ ("belli"  HAOS)
+
+coitus interruptus
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	coitus	
+	(LEMA)	interruptus	
+	+ ("interruptus"  HAOS)
+
+conditio sine qua non
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	conditio	
+	(FORMA)	sine	
+	(FORMA)	qua	
+	(LEMA)	non	
+	+ ("non"  HAOS)
+
+cum laude
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	cum	
+	(LEMA)	laude	
+	+ ("laude"  HAOS)
+
+cum mica salis
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	cum	
+	(FORMA)	mica	
+	(LEMA)	salis	
+	+ ("salis"  HAOS)
+
+curriculum vitae
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	curriculum	
+	(LEMA)	vitae	
+	+ ("vitae"  HAOS)
+
+D eredu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	D	
+	(LEMA)	eredu	
+	+ ("eredu"  IZE ARR)
+
+dantzan egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	dantzan	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+dantzan egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	dantzan	
+
+dar-dar egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	dar-dar	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+dar-dar egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	dar-dar	
+
+de facto
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	de	
+	(LEMA)	facto	
+	+ ("facto"  HAOS)
+
+deabruak eraman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	deabruak	
+	(LEMA)	eraman	
+	+ ("eraman"  ADI SIN)
+
+deabruak hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	deabruak	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+dela kausa
+	#BST
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	dela	
+	(FORMA)	kausa	
+
+delirium tremens
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	delirium	
+	(LEMA)	tremens	
+	+ ("tremens"  HAOS)
+
+den mendren
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	den	
+	(LEMA)	mendren	
+	+ ("mendren"  HAOS)
+
+dena delako
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	dena	
+	(LEMA)	delako	
+	+ ("delako"  ADJ ARR)
+
+dena den
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	dena	
+	(FORMA)	den	
+
+detektibe pribatu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	detektibe	
+	(LEMA)	pribatu	
+	+ ("pribatu"  ADJ ARR)
+
+deus ere
+	#IOR IZGMGB
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	deus	
+	+ ("deus"  IOR IZGMGB)
+	(FORMA)	ere	
+
+Deus ex machina
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Deus	
+	(FORMA)	ex	
+	(LEMA)	machina	
+	+ ("machina"  HAOS)
+
+deus gutxi
+	#IOR IZGMGB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	deus	
+	(LEMA)	gutxi	
+	+ ("gutxi"  DET DZG)
+
+deus gutxi
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	deus	
+	(LEMA)	gutxi	
+	+ ("gutxi"  ADJ ARR)
+
+dir-dir egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	dir-dir	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+dir-dir egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	dir-dir	
+
+direla kausa
+	#BST
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	direla	
+	(FORMA)	kausa	
+
+diz-diz egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	diz-diz	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+diz-diz egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	diz-diz	
+
+Dokumentazio Zerbitzu Zentrala
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Dokumentazio	
+	(FORMA)	Zerbitzu	
+	(LEMA)	Zentrala	
+	+ ("zentral"  ADJ ARR)
+
+Dokumentazio-Zerbitzu Zentrala
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Dokumentazio-Zerbitzu	
+	(LEMA)	Zentrala	
+	+ ("zentral"  ADJ ARR)
+
+dolce vita
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	dolce	
+	(LEMA)	vita	
+	+ ("vita"  HAOS)
+
+Domu Santu
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Domu	
+	(LEMA)	Santu	
+	+ ("santu"  ADJ ARR)
+
+Domu Santuru
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Domu	
+	(LEMA)	Santuru	
+	+ ("Santuru"  IZE IZB)
+
+ea bada
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ea	
+	(FORMA)	bada	
+
+eder iritzi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	eder	
+	(LEMA)	iritzi	
+	+ ("iritzi"  ADI SIN)
+
+eder iritzi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	iritzi	
+	+ ("iritzi"  ADI SIN)
+	(FORMA)	eder	
+
+egarriak egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	egarriak	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+egarriak egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	egarriak	
+
+egungo egunean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	egungo	
+	(FORMA)	egunean	
+
+Egungo Euskararen Bilketa-lan Sistematikoa
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Egungo	
+	(FORMA)	Euskararen	
+	(FORMA)	Bilketa-lan	
+	(LEMA)	Sistematikoa	
+	+ ("sistematiko"  ADJ ARR)
+
+egur egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	egur	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+eliz atari
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	eliz	
+	(LEMA)	atari	
+	+ ("atari"  IZE ARR)
+
+Eliz Barruti
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Eliz	
+	(LEMA)	Barruti	
+	+ ("barruti"  IZE ARR)
+
+eliz dorre
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	eliz	
+	(LEMA)	dorre	
+	+ ("dorre"  IZE ARR)
+
+eliz otoitz
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	eliz	
+	(LEMA)	otoitz	
+	+ ("otoitz"  IZE ARR)
+
+Eliza-arteko Mundu zabaleko Kontseilua
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Eliza-arteko	
+	(FORMA)	Mundu	
+	(FORMA)	zabaleko	
+	(LEMA)	Kontseilua	
+	+ ("kontseilu"  IZE ARR)
+
+Elizen Kontseilu Ekumenikoa
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Elizen	
+	(FORMA)	Kontseilu	
+	(LEMA)	Ekumenikoa	
+	+ ("ekumeniko"  ADJ ARR)
+
+elkar aditu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	elkar	
+	(LEMA)	aditu	
+	+ ("aditu"  ADI SIN)
+
+elkar hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	elkar	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+Elkargoetako Partaidetza
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Elkargoetako	
+	(LEMA)	Partaidetza	
+	+ ("partaidetza"  IZE ARR)
+
+elorri beltz
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	elorri	
+	(LEMA)	beltz	
+	+ ("beltz"  ADJ ARR)
+
+elorri zuri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	elorri	
+	(LEMA)	zuri	
+	+ ("zuri"  ADJ ARR)
+
+ene fedea
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ene	
+	(FORMA)	fedea	
+
+ene iduriko
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ene	
+	(FORMA)	iduriko	
+
+Energiaren Euskal Erakundea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Energiaren	
+	(FORMA)	Euskal	
+	(LEMA)	Erakundea	
+	+ ("erakunde"  IZE ARR)
+
+entzungor egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	entzungor	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+erakustera eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	erakustera	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+erakustera eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	erakustera	
+
+Erdi Aro
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Erdi	
+	(LEMA)	Aro	
+	+ ("aro"  IZE ARR)
+
+erdi bana
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	erdi	
+	(FORMA)	bana	
+
+erdi bi egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	erdi	
+	(FORMA)	bi	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+erdi lo
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	erdi	
+	(FORMA)	lo	
+
+erdi maila
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	erdi	
+	(LEMA)	maila	
+	+ ("maila"  IZE ARR)
+
+erdi negarrez
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	erdi	
+	(FORMA)	negarrez	
+
+Erdialdeko Amerika
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Erdialdeko	
+	(LEMA)	Amerika	
+	+ ("Amerika"  IZE LIB)
+
+erdialdeko amerikar
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	erdialdeko	
+	(LEMA)	amerikar	
+	+ ("amerikar"  IZE ARR)
+
+erdialdeko amerikar
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	erdialdeko	
+	(LEMA)	amerikar	
+	+ ("amerikar"  ADJ ARR)
+
+eremu magnetiko
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	eremu	
+	(LEMA)	magnetiko	
+	+ ("magnetiko"  ADJ ARR)
+
+ernai egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ernai	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+ernai egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	ernai	
+
+erran gabe doa
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	erran	
+	(FORMA)	gabe	
+	(FORMA)	doa	
+
+Errege Dekretu Lege
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Errege	
+	(FORMA)	Dekretu	
+	(LEMA)	Lege	
+	+ ("lege"  IZE ARR)
+
+Errege-Dekretu Lege
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Errege-Dekretu	
+	(LEMA)	Lege	
+	+ ("lege"  IZE ARR)
+
+erregeen kadira
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	erregeen	
+	(LEMA)	kadira	
+	+ ("kadira"  IZE ARR)
+
+Erregistro Gordineko Tona
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Erregistro	
+	(FORMA)	Gordineko	
+	(LEMA)	Tona	
+	+ ("tona"  IZE ARR)
+
+erreka jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	erreka	
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+
+erreka jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+	(FORMA)	erreka	
+
+errematean atera
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	errematean	
+	(LEMA)	atera	
+	+ ("atera"  ADI SIN)
+
+errematean atera
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	atera	
+	+ ("atera"  ADI SIN)
+	(FORMA)	errematean	
+
+errematean ipini
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	errematean	
+	(LEMA)	ipini	
+	+ ("ipini"  ADI SIN)
+
+errematean ipini
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	ipini	
+	+ ("ipini"  ADI SIN)
+	(FORMA)	errematean	
+
+errematera atera
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	errematera	
+	(LEMA)	atera	
+	+ ("atera"  ADI SIN)
+
+errematera atera
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	atera	
+	+ ("atera"  ADI SIN)
+	(FORMA)	errematera	
+
+erro karratu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	erro	
+	(LEMA)	karratu	
+	+ ("karratu"  ADJ ARR)
+
+erro koadro
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	erro	
+	(LEMA)	koadro	
+	+ ("koadro"  ADJ ARR)
+
+erroak egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	erroak	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+erroak egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	erroak	
+
+Erromako zubi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Erromako	
+	(LEMA)	zubi	
+	+ ("zubi"  IZE ARR)
+
+errotik atera
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	errotik	
+	(LEMA)	atera	
+	+ ("atera"  ADI SIN)
+
+errotik atera
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	atera	
+	+ ("atera"  ADI SIN)
+	(FORMA)	errotik	
+
+Ertzainen Nazional Elkartasuna
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Ertzainen	
+	(FORMA)	Nazional	
+	(LEMA)	Elkartasuna	
+	+ ("elkartasun"  IZE ARR)
+
+esaera zahar
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	esaera	
+	(LEMA)	zahar	
+	+ ("zahar"  ADJ ARR)
+
+esan gabe doa
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	esan	
+	(FORMA)	gabe	
+	(FORMA)	doa	
+
+esate baterako
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	esate	
+	(FORMA)	baterako	
+
+esker gaizto
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	esker	
+	(LEMA)	gaizto	
+	+ ("gaizto"  ADJ ARR)
+
+esker mila
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	esker	
+	(FORMA)	mila	
+
+eskerrik asko
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	eskerrik	
+	(FORMA)	asko	
+
+esku bete
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	esku	
+	(FORMA)	bete	
+
+esku egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	esku	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+esku hutsik
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	esku	
+	(FORMA)	hutsik	
+
+eskumuinak egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	eskumuinak	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+eskumuinak eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	eskumuinak	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+eskumuinak eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	eskumuinak	
+
+eskura eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	eskura	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+eskura eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	eskura	
+
+eskura ordaindu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	eskura	
+	(LEMA)	ordaindu	
+	+ ("ordaindu"  ADI SIN)
+
+eskura ordaindu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	ordaindu	
+	+ ("ordaindu"  ADI SIN)
+	(FORMA)	eskura	
+
+eskutik eraman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	eskutik	
+	(LEMA)	eraman	
+	+ ("eraman"  ADI SIN)
+
+eskutik eraman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eraman	
+	+ ("eraman"  ADI SIN)
+	(FORMA)	eskutik	
+
+eskuz banaka
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	eskuz	
+	(FORMA)	banaka	
+
+eskuz banakako
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	eskuz	
+	(LEMA)	banakako	
+	+ ("banakako"  ADJ ARR)
+
+esneko hortz
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	esneko	
+	(LEMA)	hortz	
+	+ ("hortz"  IZE ARR)
+
+espantu egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	espantu	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+Espiritu Santu
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Espiritu	
+	(LEMA)	Santu	
+	+ ("santu"  ADJ ARR)
+
+estatu batuar
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	estatu	
+	(LEMA)	batuar	
+	+ ("batuar"  ADJ ARR)
+
+estatu batuar
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	estatu	
+	(LEMA)	batuar	
+	+ ("batuar"  ADJ ARR)
+
+Estatuko Buletin Ofiziala
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Estatuko	
+	(FORMA)	Buletin	
+	(LEMA)	Ofiziala	
+	+ ("ofizial"  ADJ ARR)
+
+estu eta larri
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	estu	
+	(FORMA)	eta	
+	(FORMA)	larri	
+
+eta abar
+	#BST
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	eta	
+	(LEMA)	abar	
+	+ ("abar"  IZE ARR)
+
+eta kito
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	eta	
+	(FORMA)	kito	
+
+etxeko jaun
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	etxeko	
+	(LEMA)	jaun	
+	+ ("jaun"  IZE ARR)
+
+etxeko lan
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	etxeko	
+	(LEMA)	lan	
+	+ ("lan"  IZE ARR)
+
+Etxeko Langileen Elkartea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Etxeko	
+	(FORMA)	Langileen	
+	(LEMA)	Elkartea	
+	+ ("elkarte"  IZE ARR)
+
+etxetresna elektriko
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	etxetresna	
+	(LEMA)	elektriko	
+	+ ("elektriko"  ADJ ARR)
+
+Europako Atomo Energiaren Elkartea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Europako	
+	(FORMA)	Atomo	
+	(FORMA)	Energiaren	
+	(LEMA)	Elkartea	
+	+ ("elkarte"  IZE ARR)
+
+Europako Atomo-Energiaren Elkartea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Europako	
+	(FORMA)	Atomo-Energiaren	
+	(LEMA)	Elkartea	
+	+ ("elkarte"  IZE ARR)
+
+Europako Batasuna
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Europako	
+	(LEMA)	Batasuna	HAS_MAI
+	+ ("batasun"  IZE ARR)
+
+Europako Espazio Agentzia
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Europako	
+	(FORMA)	Espazio	
+	(LEMA)	Agentzia	
+	+ ("agentzia"  IZE ARR)
+
+Europako Moneta Akordioa
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Europako	
+	(FORMA)	Moneta	
+	(LEMA)	Akordioa	
+	+ ("akordio"  IZE ARR)
+
+Europako Moneta Sistema
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Europako	
+	(FORMA)	Moneta	
+	(LEMA)	Sistema	
+	+ ("sistema"  IZE ARR)
+
+Europako Moneta-Akordioa
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Europako	
+	(LEMA)	Moneta-Akordioa	
+	+ ("moneta-akordio"  IZE ARR)
+
+Europako Moneta-Sistema
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Europako	
+	(LEMA)	Moneta-Sistema	
+	+ ("moneta-sistema"  IZE ARR)
+
+Europar Batasuna
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Europar	HAS_MAI
+	(LEMA)	Batasuna	HAS_MAI
+	+ ("batasun"  IZE ARR)
+
+Euskadi Buru Batzarra
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskadi	
+	(FORMA)	Buru	
+	(LEMA)	Batzarra	
+	+ ("batzar"  IZE ARR)
+
+Euskadiko Gazteria Gorria
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskadiko	
+	(FORMA)	Gazteria	
+	(LEMA)	Gorria	
+	+ ("gorri"  ADJ ARR)
+
+Euskadiko Irakaskuntzako Langileen Sindikatua
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Euskadiko	
+	(FORMA)	Irakaskuntzako	
+	(FORMA)	Langileen	
+	(LEMA)	Sindikatua	
+	+ ("sindikatu"  IZE ARR)
+
+Euskadiko Komunitate Autonomoa
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskadiko	
+	(FORMA)	Komunitate	
+	(LEMA)	Autonomoa	
+	+ ("autonomo"  ADJ ARR)
+
+Euskadiko Mugimendu Komunista
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskadiko	
+	(FORMA)	Mugimendu	
+	(LEMA)	Komunista	
+	+ ("komunista"  ADJ ARR)
+
+Euskal Artisten Elkartea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskal	
+	(FORMA)	Artisten	
+	(LEMA)	Elkartea	
+	+ ("elkarte"  IZE ARR)
+
+Euskal Estatistika Erakundea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskal	
+	(FORMA)	Estatistika	
+	(LEMA)	Erakundea	
+	+ ("erakunde"  IZE ARR)
+
+euskal filologia
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	euskal	
+	(LEMA)	filologia	
+	+ ("filologia"  IZE ARR)
+
+Euskal Gramatika Lehen Urratsak
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Euskal	
+	(FORMA)	Gramatika	
+	(FORMA)	Lehen	
+	(FORMA)	Urratsak	
+
+Euskal Herrian Euskaraz
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskal	HAS_MAI
+	(FORMA)	Herrian	HAS_MAI
+	(FORMA)	Euskaraz	HAS_MAI
+
+Euskal Herriko Agintaritzaren Aldizkaria
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Euskal	
+	(FORMA)	Herriko	
+	(FORMA)	Agintaritzaren	
+	(LEMA)	Aldizkaria	
+	+ ("aldizkari"  IZE ARR)
+
+Euskal Herriko Buletin Ofiziala
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Euskal	
+	(FORMA)	Herriko	
+	(FORMA)	Buletin	
+	(LEMA)	Ofiziala	
+	+ ("ofizial"  ADJ ARR)
+
+Euskal Herriko Ikastolen Konfederakundea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Euskal	
+	(FORMA)	Herriko	
+	(FORMA)	Ikastolen	
+	(LEMA)	Konfederakundea	
+	+ ("konfederakunde"  IZE ARR)
+
+Euskal Herriko Komunitate Autonomoa
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Euskal	
+	(FORMA)	Herriko	
+	(FORMA)	Komunitate	
+	(LEMA)	Autonomoa	
+	+ ("autonomo"  ADJ ARR)
+
+Euskal Herriko Mendizaleen Elkartea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Euskal	
+	(FORMA)	Herriko	
+	(FORMA)	Mendizaleen	
+	(LEMA)	Elkartea	
+	+ ("elkarte"  IZE ARR)
+
+Euskal Herriko Nekazarien Elkartasuna
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Euskal	
+	(FORMA)	Herriko	
+	(FORMA)	Nekazarien	
+	(LEMA)	Elkartasuna	
+	+ ("elkartasun"  IZE ARR)
+
+euskal herritar
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	euskal	
+	(LEMA)	herritar	
+	+ ("herritar"  IZE ARR)
+
+Euskal Idazleen Elkartea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskal	
+	(FORMA)	Idazleen	
+	(LEMA)	Elkartea	
+	+ ("elkarte"  IZE ARR)
+
+Euskal Ikastolen Erakundea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskal	
+	(FORMA)	Ikastolen	
+	(LEMA)	Erakundea	
+	+ ("erakunde"  IZE ARR)
+
+Euskal Irrati Telebista
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskal	
+	(FORMA)	Irrati	
+	(LEMA)	Telebista	
+	+ ("telebista"  IZE ARR)
+
+Euskal Kirol Institutua
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskal	
+	(FORMA)	Kirol	
+	(LEMA)	Institutua	
+	+ ("institutu"  IZE ARR)
+
+Euskal Mugimendu Abertzalea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskal	
+	(FORMA)	Mugimendu	
+	(LEMA)	Abertzalea	
+	+ ("abertzale"  ADJ ARR)
+
+Euskal Nekazarien Batasuna
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskal	
+	(FORMA)	Nekazarien	
+	(LEMA)	Batasuna	
+	+ ("batasun"  IZE ARR)
+
+Euskal Nortasun Agiria
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskal	
+	(FORMA)	Nortasun	
+	(LEMA)	Agiria	
+	+ ("agiri"  IZE ARR)
+
+Euskal Nortasun-Agiria
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Euskal	
+	(LEMA)	Nortasun-Agiria	
+	+ ("nortasun-agiri"  IZE ARR)
+
+euskal seme
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	euskal	
+	(LEMA)	seme	
+	+ ("seme"  IZE ARR)
+
+euskal sen
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	euskal	
+	(LEMA)	sen	
+	+ ("sen"  IZE ARR)
+
+euskaldun berri
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	euskaldun	
+	(LEMA)	berri	
+	+ ("berri"  ADJ ARR)
+
+euskaldun berri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	euskaldun	
+	(LEMA)	berri	
+	+ ("berri"  ADJ ARR)
+
+euskaldun garbi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	euskaldun	
+	(LEMA)	garbi	
+	+ ("garbi"  ADJ ARR)
+
+Euskalerriaren Alde
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Euskalerriaren	
+	(FORMA)	Alde	HAS_MAI
+
+euskaltzain ohorezko
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	euskaltzain	
+	(LEMA)	ohorezko	
+	+ ("ohorezko"  ADJ ARR)
+
+euskaltzain oso
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	euskaltzain	
+	(LEMA)	oso	
+	+ ("oso"  ADJ ARR)
+
+euskaltzain urgazle
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	euskaltzain	
+	(LEMA)	urgazle	
+	+ ("urgazle"  ADJ ARR)
+
+euskara batu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	euskara	
+	(LEMA)	batu	
+	+ ("batu"  ADJ ARR)
+
+Euskararako Lematizatzaile Etiketatzailea
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskararako	
+	(FORMA)	Lematizatzaile	
+	(LEMA)	Etiketatzailea	
+	+ ("etiketatzaile"  IZE ARR)
+
+Euskararen Aldeko Batzarra
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskararen	
+	(FORMA)	Aldeko	
+	(LEMA)	Batzarra	
+	+ ("batzar"  IZE ARR)
+
+Euskararen Datu Base Lexikala
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Euskararen	
+	(FORMA)	Datu	
+	(FORMA)	Base	
+	(LEMA)	Lexikala	
+	+ ("lexikal"  ADJ ARR)
+
+Euskararen Datu-Base Lexikala
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskararen	
+	(FORMA)	Datu-base	
+	(LEMA)	lexikala	
+	+ ("lexikal"  ADJ ARR)
+
+Euskararen Gaitasun Agiria
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskararen	
+	(FORMA)	Gaitasun	
+	(LEMA)	Agiria	
+	+ ("agiri"  IZE ARR)
+
+Euskararen Gaitasun-Agiria
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Euskararen	
+	(LEMA)	Gaitasun-Agiria	
+	+ ("gaitasun-agiri"  IZE ARR)
+
+Euskararen Normalkuntza Legea
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskararen	
+	(FORMA)	Normalkuntza	
+	(LEMA)	Legea	
+	+ ("lege"  IZE ARR)
+
+Euskararen Normalkuntzako Batzordea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskararen	
+	(FORMA)	Normalkuntzako	
+	(LEMA)	Batzordea	
+	+ ("batzorde"  IZE ARR)
+
+Euskaraz Irakasteko Trebetasun Aitormena
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Euskaraz	
+	(FORMA)	Irakasteko	
+	(FORMA)	Trebetasun	
+	(LEMA)	Aitormena	
+	+ ("aitormen"  IZE ARR)
+
+Euskarazko Kabinete Teknikoa
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euskarazko	
+	(FORMA)	Kabinete	
+	(LEMA)	Teknikoa	
+	+ ("tekniko"  ADJ ARR)
+
+Eusko Abertzale Ekintza
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Eusko	
+	(FORMA)	Abertzale	
+	(LEMA)	Ekintza	
+	+ ("ekintza"  IZE ARR)
+
+Eusko Gaztedi
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Eusko	HAS_MAI
+	(LEMA)	Gaztedi	HAS_MAI
+	+ ("gaztedi"  IZE ARR)
+
+Eusko Jaurlaritza
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Eusko	
+	(LEMA)	Jaurlaritza	
+	+ ("jaurlaritza"  IZE ARR)
+
+Eusko Langileen Alkartasuna
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Eusko	
+	(FORMA)	Langileen	
+	(LEMA)	Alkartasuna	
+	+ ("alkartasun"  IZE ARR)
+
+Eusko Legebiltzarra
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Eusko	
+	(LEMA)	Legebiltzarra	
+	+ ("legebiltzar"  IZE ARR)
+
+Euzkadi Buru Batzar
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euzkadi	
+	(FORMA)	Buru	
+	(LEMA)	Batzar	
+	+ ("batzar"  IZE ARR)
+
+Euzko Alderdi Jeltzalea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euzko	
+	(FORMA)	Alderdi	
+	(LEMA)	Jeltzalea	
+	+ ("jeltzale"  ADJ ARR)
+
+Euzko Gaztedi Indarra
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Euzko	
+	(FORMA)	Gaztedi	
+	(LEMA)	Indarra	
+	+ ("indar"  IZE ARR)
+
+ex aequo
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ex	
+	(LEMA)	aequo	
+	+ ("aequo"  HAOS)
+
+ex cathedra
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ex	
+	(LEMA)	cathedra	
+	+ ("cathedra"  HAOS)
+
+ex nihilo
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ex	
+	(LEMA)	nihilo	
+	+ ("nihilo"  HAOS)
+
+ex professo
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ex	
+	(LEMA)	professo	
+	+ ("professo"  HAOS)
+
+ez bezala
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ez	
+	(FORMA)	bezala	
+
+ez bezalako
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ez	
+	(LEMA)	bezalako	
+	+ ("bezalako"  ADJ ARR)
+
+ez entzun egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	ez	
+	(FORMA)	entzun|entzuna	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+ez eze
+	#LOT JNT
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ez	
+	(FORMA)	eze	
+
+ez ezen
+	#LOT JNT
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ez	
+	(FORMA)	ezen	
+
+ez ezik
+	#LOT JNT
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ez	
+	(FORMA)	ezik	
+
+ez ikusi egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	ez	
+	(FORMA)	ikusi|ikusia	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+ezagutza galdu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ezagutza	
+	(LEMA)	galdu	
+	+ ("galdu"  ADI SIN)
+
+ezagutza galdu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	galdu	
+	+ ("galdu"  ADI SIN)
+	(FORMA)	ezagutza	
+
+ezagutzera eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ezagutzera	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+ezagutzera eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	ezagutzera	
+
+ezen ez
+	#LOT JNT
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ezen	
+	(FORMA)	ez	
+
+ezer ere
+	#IOR IZGMGB
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	ezer	
+	+ ("ezer"  IOR IZGMGB)
+	(FORMA)	ere	
+
+ezer gutxi
+	#IOR IZGMGB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ezer	
+	(LEMA)	gutxi	
+	+ ("gutxi"  DET DZG)
+
+ezertxo ere
+	#IOR IZGMGB
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	ezertxo	
+	+ ("ezertxo"  IOR IZGMGB)
+	(FORMA)	ere	
+
+ezin esan ahala
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	ezin	
+	(FORMA)	esan	
+	(LEMA)	ahala	
+	+ ("ahala"  ADB ARR)
+
+ezin gehiagoan
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ezin	
+	(FORMA)	gehiagoan	
+
+ezin hobe
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ezin	
+	(LEMA)	hobe	
+	+ ("hobe"  ADJ ARR)
+
+ezin konta ahala
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	ezin	
+	(FORMA)	konta	
+	(LEMA)	ahala	
+	+ ("ahala"  ADB ARR)
+
+ezker eta eskuin
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	ezker	
+	(FORMA)	eta	
+	(FORMA)	eskuin	
+
+Ezker Sindikal Koordinakundea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Ezker	
+	(FORMA)	Sindikal	
+	(LEMA)	Koordinakundea	
+	+ ("koordinakunde"  IZE ARR)
+
+ezta hurrik eman ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	ezta	
+	(FORMA)	hurrik	
+	(FORMA)	eman	
+	(FORMA)	ere	
+
+falta gabe
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	falta	
+	(FORMA)	gabe	
+
+fede on
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	fede	
+	(LEMA)	on	
+	+ ("on"  ADJ ARR)
+
+film labur
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	film	
+	(LEMA)	labur	
+	+ ("labur"  ADJ ARR)
+
+film luze
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	film	
+	(LEMA)	luze	
+	+ ("luze"  ADJ ARR)
+
+fleitean egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	fleitean	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+fleitean egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	fleitean	
+
+foie gras
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	foie	
+	(LEMA)	gras	
+	+ ("gras"  HAOS)
+
+Foru Aldundi
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Foru	
+	(LEMA)	Aldundi	
+	+ ("aldundi"  IZE ARR)
+
+Foru Diputazio
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Foru	
+	(LEMA)	Diputazio	
+	+ ("diputazio"  IZE ARR)
+
+Foru Erkidego
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Foru	
+	(LEMA)	Erkidego	
+	+ ("erkidego"  IZE ARR)
+
+fresatzeko makina
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	fresatzeko	
+	(LEMA)	makina	
+	+ ("makina"  IZE ARR)
+
+Gabon zahar
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Gabon	
+	(LEMA)	zahar	
+	+ ("zahar"  ADJ ARR)
+
+gai egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gai	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+gain behera
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gain	
+	(FORMA)	behera	
+
+gain hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gain	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+gaindi egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gaindi	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+gainez gain
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gainez	
+	(FORMA)	gain	
+
+gainezka egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gainezka	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+gainezka egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	gainezka	
+
+gaitz erdi
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gaitz	
+	(FORMA)	erdi	
+
+gaitz erran
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gaitz	
+	(LEMA)	erran	
+	+ ("erran"  ADI SIN)
+
+gaitz esan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gaitz	
+	(LEMA)	esan	
+	+ ("esan"  ADI SIN)
+
+gaitz iritzi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gaitz	
+	(LEMA)	iritzi	
+	+ ("iritzi"  ADI SIN)
+
+galga eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	galga	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+galga eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	galga	
+
+gaur egunean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gaur	
+	(FORMA)	egunean	
+
+gaur gaurkoz
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gaur	
+	(FORMA)	gaurkoz	
+
+gaurko egunean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gaurko	
+	(FORMA)	egunean	
+
+gaurko egunez
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gaurko	
+	(FORMA)	egunez	
+
+gehienez ere
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gehienez	
+	(FORMA)	ere	
+
+geroago eta
+	#BST
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	geroago	
+	(FORMA)	eta	
+
+gerra hotz
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gerra	
+	(LEMA)	hotz	
+	+ ("hotz"  ADJ ARR)
+
+gerra zibil
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gerra	
+	(LEMA)	zibil	
+	+ ("zibil"  ADJ ARR)
+
+gerta ala gerta
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	gerta	
+	(FORMA)	ala	
+	(FORMA)	gerta	
+
+gertakizun egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gertakizun	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+gertakizun egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	gertakizun	
+
+gertu egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gertu	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+gertu egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	gertu	
+
+Gipuzko Buru Batzarra
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Gipuzko	
+	(FORMA)	Buru	
+	(LEMA)	Batzarra	
+	+ ("batzar"  IZE ARR)
+
+giza egitura
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	giza	
+	(LEMA)	egitura	
+	+ ("egitura"  IZE ARR)
+
+giza eskubide
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	giza	
+	(LEMA)	eskubide	
+	+ ("eskubide"  IZE ARR)
+
+giza harreman
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	giza	
+	(LEMA)	harreman	
+	+ ("harreman"  IZE ARR)
+
+giza klase
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	giza	
+	(LEMA)	klase	
+	+ ("klase"  IZE ARR)
+
+giza zientzia
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	giza	
+	(LEMA)	zientzia	
+	+ ("zientzia"  IZE ARR)
+
+globulu gorri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	globulu	
+	(LEMA)	gorri	
+	+ ("gorri"  ADJ ARR)
+
+globulu zuri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	globulu	
+	(LEMA)	zuri	
+	+ ("zuri"  ADJ ARR)
+
+gogait egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gogait	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+gogait eragin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gogait	
+	(LEMA)	eragin	
+	+ ("eragin"  ADI SIN)
+
+Gogo Deun
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Gogo	
+	(LEMA)	Deun	
+	+ ("deun"  ADJ ARR)
+
+gogo eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gogo	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+gogo ukan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gogo	
+	(LEMA)	ukan	
+	+ ("ukan"  ADI SIN)
+
+gogoak eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gogoak	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+gogoak eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	gogoak	
+
+gogoan eduki
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gogoan	
+	(LEMA)	eduki	
+	+ ("eduki"  ADI SIN)
+
+gogoan eduki
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eduki	
+	+ ("eduki"  ADI SIN)
+	(FORMA)	gogoan	
+
+gogoan erabili
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gogoan	
+	(LEMA)	erabili	
+	+ ("erabili"  ADI SIN)
+
+gogoan erabili
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	erabili	
+	+ ("erabili"  ADI SIN)
+	(FORMA)	gogoan	
+
+gogoan eraman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gogoan	
+	(LEMA)	eraman	
+	+ ("eraman"  ADI SIN)
+
+gogoan eraman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eraman	
+	+ ("eraman"  ADI SIN)
+	(FORMA)	gogoan	
+
+gogoan hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gogoan	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+gogoan hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+	(FORMA)	gogoan	
+
+gogoeta egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gogoeta	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+gogor hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gogor	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+gogor hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+	(FORMA)	gogor	
+
+gogora ekarri
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gogora	
+	(LEMA)	ekarri	
+	+ ("ekarri"  ADI SIN)
+
+gogora ekarri
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	ekarri	
+	+ ("ekarri"  ADI SIN)
+	(FORMA)	gogora	
+
+gogora etorri
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	etorri	
+	+ ("etorri"  ADI SIN)
+	(FORMA)	gogora	
+
+gogora etorri
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gogora	
+	(LEMA)	etorri	
+	+ ("etorri"  ADI SIN)
+
+gogoz kontra
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gogoz	
+	(LEMA)	kontra	
+	+ ("kontra"  ADB ARR)
+
+gogoz kontrako
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gogoz	
+	(LEMA)	kontrako	
+	+ ("kontrako"  ADJ ARR)
+
+gonburu egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gonburu	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+gorriak ikusi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gorriak	
+	(LEMA)	ikusi	
+	+ ("ikusi"  ADI SIN)
+
+goseak egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	goseak	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+grosso modo
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	grosso	
+	(LEMA)	modo	
+	+ ("modo"  HAOS)
+
+guardia zibil
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	guardia	
+	(LEMA)	zibil	
+	+ ("zibil"  ADJ ARR)
+
+gur egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gur	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+gur egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	gur	
+
+gura ukan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gura	
+	(LEMA)	ukan	
+	+ ("ukan"  ADI SIN)
+
+gura ukan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	ukan	
+	+ ("ukan"  ADI SIN)
+	(FORMA)	gura	
+
+Gure Aita
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Gure	HAS_MAI
+	(LEMA)	Aita	HAS_MAI
+	+ ("aita"  IZE ARR)
+
+gur-gur egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gur-gur	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+gur-gur egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	gur-gur	
+
+gutxi bat
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gutxi	
+	(LEMA)	bat	
+	+ ("bat"  DET DZH)
+
+gutxi batzuk
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gutxi	
+	(LEMA)	batzuk	
+	+ ("batzuk"  DET DZG)
+
+gutxi gorabehera
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	gutxi	
+	(LEMA)	gorabehera	
+	+ ("gorabehera"  ADB ARR)
+
+guztiarekin ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	guztiarekin	
+	(FORMA)	ere	
+
+habeas corpus
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	habeas	
+	(LEMA)	corpus	
+	+ ("corpus"  IZE ARR)
+
+haginak erakutsi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	haginak	
+	(LEMA)	erakutsi	
+	+ ("erakutsi"  ADI SIN)
+
+haginak erakutsi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	erakutsi	
+	+ ("erakutsi"  ADI SIN)
+	(FORMA)	haginak	
+
+haginetako min
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hagineko|haginetako	
+	(LEMA)	min	
+	+ ("min"  IZE ARR)
+
+haginka egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	haginka	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+haginka egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	haginka	
+
+hain justu ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	hain	
+	(FORMA)	justu	
+	(FORMA)	ere	
+
+hain segur
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hain	
+	(FORMA)	segur	
+
+hain zuzen
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hain	
+	(FORMA)	zuzen	
+
+hain zuzen ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	hain	
+	(FORMA)	zuzen	
+	(FORMA)	ere	
+
+hainbat gaizto
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hainbat	
+	(FORMA)	gaizto	
+
+hainbat gaiztoago
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hainbat	
+	(FORMA)	gaiztoago	
+
+hainbat hobe
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hainbat	
+	(FORMA)	hobe	
+
+hainbat hobeto
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hainbat	
+	(FORMA)	hobeto	
+
+haize alde
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	haize	
+	(LEMA)	alde	
+	+ ("alde"  IZE ARR)
+
+haize egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	haize	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+haize hego
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	haize	
+	(LEMA)	hego	
+	+ ("hego"  IZE ARR)
+
+haize kirri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	haize	
+	(LEMA)	kirri	
+	+ ("kirri"  IZE ARR)
+
+haize kontra
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	haize	
+	(LEMA)	kontra	
+	+ ("kontra"  IZE ARR)
+
+haizea poparean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	haizea	
+	(FORMA)	poparean	
+
+hala ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hala	
+	(FORMA)	ere	
+
+hala eta guztiz
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	hala	
+	(FORMA)	eta	
+	(FORMA)	guztiz	
+
+hala eta guztiz ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	hala	
+	(FORMA)	eta	
+	(FORMA)	guztiz	
+	(FORMA)	ere	
+
+hala nola
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hala	
+	(FORMA)	nola	
+
+halako batean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	halako	
+	(FORMA)	batean	
+
+halarik ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	halarik	
+	(FORMA)	ere	
+
+halaz ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	halaz	
+	(FORMA)	ere	
+
+halaz eta guztiz
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	halaz	
+	(FORMA)	eta	
+	(FORMA)	guztiz	
+
+halaz eta guztiz ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	halaz	
+	(FORMA)	eta	
+	(FORMA)	guztiz	
+	(FORMA)	ere	
+
+halaz guztiz
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	halaz	
+	(FORMA)	guztiz	
+
+halaz guztiz ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	halaz	
+	(FORMA)	guztiz	
+	(FORMA)	ere	
+
+hamarreko txiki
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hamarreko	
+	(LEMA)	txiki	
+	+ ("txiki"  ADJ ARR)
+
+hanka egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hanka	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+hanka hutsik
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	hanka	
+	 ("hanka"  IZE ARR)
+	(LEMA)	hutsik	
+	 ("hutsik"  ADB ARR)
+
+hara ba
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hara	
+	(FORMA)	ba	
+
+hara bada
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hara	
+	(FORMA)	bada	
+
+hara han
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hara	
+	(FORMA)	han	
+
+hara hemen
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hara	
+	(FORMA)	hemen	
+
+hara hor
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hara	
+	(FORMA)	hor	
+
+hara non
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hara	
+	(FORMA)	non	
+
+haragi egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	haragi	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+harez gero
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	harez	
+	(FORMA)	gero	
+
+harik eta
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	harik	
+	(FORMA)	eta	
+
+harira etorri
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	harira	
+	(LEMA)	etorri	
+	+ ("etorri"  ADI SIN)
+
+harira etorri
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	etorri	
+	+ ("etorri"  ADI SIN)
+	(FORMA)	harira	
+
+haritz zuri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	haritz	
+	(LEMA)	zuri	
+	+ ("zuri"  ADJ ARR)
+
+harri bitxi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	harri	
+	(LEMA)	bitxi	
+	+ ("bitxi"  ADJ ARR)
+
+harri bizi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	harri	
+	(LEMA)	bizi	
+	+ ("bizi"  ADJ ARR)
+
+harri eta belarri
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	harri	
+	(FORMA)	eta	
+	(FORMA)	belarri	
+
+harri eta zur
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	harri	
+	(FORMA)	eta	
+	(FORMA)	zur	
+
+harri preziatu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	harri	
+	(LEMA)	preziatu	
+	+ ("preziatu"  ADJ ARR)
+
+harri xehe
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	harri	
+	(LEMA)	xehe	
+	+ ("xehe"  ADJ ARR)
+
+harri zabal
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	harri	
+	(LEMA)	zabal	
+	+ ("zabal"  ADJ ARR)
+
+hartz zuri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hartz	
+	(LEMA)	zuri	
+	+ ("zuri"  ADJ ARR)
+
+hasian hasi
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hasian	
+	(FORMA)	hasi	
+
+hatz egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hatz	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+haur besoetako
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	haur	
+	(LEMA)	besoetako	
+	+ ("besoetako"  ADJ ARR)
+
+hausnar egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hausnar	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+hausnar egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	hausnar	
+
+hauts bihurtu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hauts	
+	(LEMA)	bihurtu	
+	+ ("bihurtu"  ADI SIN)
+
+hauts bihurtu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	bihurtu	
+	+ ("bihurtu"  ADI SIN)
+	(FORMA)	hauts	
+
+hauts egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hauts	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+hazka egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hazka	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+hebain-hebain egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hebain-hebain	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+hegan egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hegan	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+hegan egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	hegan	
+
+hegaz egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hegaz	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+hegaz egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	hegaz	
+
+hegiz hegi
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hegiz	
+	(FORMA)	hegi	
+
+Hego Afrika
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Hego	
+	(LEMA)	Afrika	
+	+ ("Afrika"  IZE LIB)
+
+Hego Amerika
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Hego	
+	(LEMA)	Amerika	
+	+ ("Amerika"  IZE LIB)
+
+Hego Euskadi
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Hego	
+	(LEMA)	Euskadi	
+	+ ("Euskadi"  IZE LIB)
+
+Hego Euskal Herria
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Hego	
+	(FORMA)	Euskal	
+	(LEMA)	Herria	
+	+ ("herri"  IZE ARR)
+
+hein bat
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hein	
+	(FORMA)	bat	
+
+hein batean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hein	
+	(FORMA)	batean	
+
+hein berean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hein	
+	(FORMA)	berean	
+
+hein handi batean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	hein	
+	(FORMA)	handi	
+	(FORMA)	batean	
+
+hel egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hel	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+hemendik aitzina
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hemendik	
+	(LEMA)	aitzina	
+	+ ("aitzina"  ADB ARR)
+
+herren egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	herren	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+herren egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	herren	
+
+Herri Arduralaritzaren Euskal Erakundea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Herri	
+	(FORMA)	Arduralaritzaren	
+	(FORMA)	Euskal	
+	(LEMA)	Erakundea	
+	+ ("erakunde"  IZE ARR)
+
+herri xehe
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	herri	
+	(LEMA)	xehe	
+	+ ("xehe"  ADJ ARR)
+
+herri xume
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	herri	
+	(LEMA)	xume	
+	+ ("xume"  ADJ ARR)
+
+Herriko Alderdi Sozialista Iraultzailea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Herriko	
+	(FORMA)	Alderdi	
+	(FORMA)	Sozialista	
+	(LEMA)	Iraultzailea	
+	+ ("iraultzaile"  ADJ ARR)
+
+herriko mutil
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	herriko	
+	(LEMA)	mutil	
+	+ ("mutil"  IZE ARR)
+
+heste itsu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	heste	
+	(LEMA)	itsu	
+	+ ("itsu"  ADJ ARR)
+
+heste lodi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	heste	
+	(LEMA)	lodi	
+	+ ("lodi"  ADJ ARR)
+
+heste mehar
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	heste	
+	(LEMA)	mehar	
+	+ ("mehar"  ADJ ARR)
+
+hic et nunc
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	hic	
+	(FORMA)	et	
+	(LEMA)	nunc	
+	+ ("nunc"  HAOS)
+
+hil ala bizi
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	hil	
+	(FORMA)	ala	
+	(FORMA)	bizi	
+
+hil edo bizi
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	hil	
+	(FORMA)	edo	
+	(FORMA)	bizi	
+
+hileta jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hileta	
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+
+hileta jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+	(FORMA)	hileta	
+
+hiletak egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hiletak	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+hiri nagusi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hiri	
+	(LEMA)	nagusi	
+	+ ("nagusi"  ADJ ARR)
+
+hirugarren adin
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirugarren	
+	(LEMA)	adin	
+	+ ("adin"  IZE ARR)
+
+hirugarren mundu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirugarren	
+	(LEMA)	mundu	
+	+ ("mundu"  IZE ARR)
+
+hiruki zuzen
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hiruki	
+	(LEMA)	zuzen	
+	+ ("zuzen"  ADJ ARR)
+
+hiruretan hogei
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hiruretan	
+	(LEMA)	hogei	
+	+ ("hogei"  DET DZH)
+
+hiruretan hogei
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hiruretan	
+	(LEMA)	hogei	
+	+ ("hogei"  IZE ZKI)
+
+hirurogeita bat
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	bat	
+	+ ("bat"  DET DZH)
+
+hirurogeita bat
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	bat	
+	+ ("bat"  IZE ZKI)
+
+hirurogeita bederatzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	bederatzi	
+	+ ("bederatzi"  DET DZH)
+
+hirurogeita bederatzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	bederatzi	
+	+ ("bederatzi"  IZE ZKI)
+
+hirurogeita bi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	bi	
+	+ ("bi"  DET DZH)
+
+hirurogeita bi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	bi	
+	+ ("bi"  IZE ZKI)
+
+hirurogeita bost
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	bost	
+	+ ("bost"  DET DZH)
+
+hirurogeita bost
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	bost	
+	+ ("bost"  IZE ZKI)
+
+hirurogeita hamabi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hamabi	
+	+ ("hamabi"  DET DZH)
+
+hirurogeita hamabi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hamabi	
+	+ ("hamabi"  IZE ZKI)
+
+hirurogeita hamabost
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hamabost	
+	+ ("hamabost"  DET DZH)
+
+hirurogeita hamabost
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hamabost	
+	+ ("hamabost"  IZE ZKI)
+
+hirurogeita hamahiru
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hamahiru	
+	+ ("hamahiru"  DET DZH)
+
+hirurogeita hamahiru
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hamahiru	
+	+ ("hamahiru"  IZE ZKI)
+
+hirurogeita hamaika
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hamaika	
+	+ ("hamaika"  DET DZH)
+
+hirurogeita hamaika
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hamaika	
+	+ ("hamaika"  IZE ZKI)
+
+hirurogeita hamalau
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hamalau	
+	+ ("hamalau"  DET DZH)
+
+hirurogeita hamalau
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hamalau	
+	+ ("hamalau"  IZE ZKI)
+
+hirurogeita hamar
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hamar	
+	+ ("hamar"  DET DZH)
+
+hirurogeita hamar
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hamar	
+	+ ("hamar"  IZE ZKI)
+
+hirurogeita hamasei
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hamasei	
+	+ ("hamasei"  DET DZH)
+
+hirurogeita hamasei
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hamasei	
+	+ ("hamasei"  IZE ZKI)
+
+hirurogeita hamazazpi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hamazazpi	
+	+ ("hamazazpi"  DET DZH)
+
+hirurogeita hamazazpi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hamazazpi	
+	+ ("hamazazpi"  IZE ZKI)
+
+hirurogeita hamazortzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hamazortzi	
+	+ ("hamazortzi"  DET DZH)
+
+hirurogeita hamazortzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hamazortzi	
+	+ ("hamazortzi"  IZE ZKI)
+
+hirurogeita hemeretzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hemeretzi	
+	+ ("hemeretzi"  DET DZH)
+
+hirurogeita hemeretzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hemeretzi	
+	+ ("hemeretzi"  IZE ZKI)
+
+hirurogeita hemezortzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hemezortzi	
+	+ ("hemezortzi"  DET DZH)
+
+hirurogeita hemezortzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hemezortzi	
+	+ ("hemezortzi"  IZE ZKI)
+
+hirurogeita hiru
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hiru	
+	+ ("hiru"  DET DZH)
+
+hirurogeita hiru
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	hiru	
+	+ ("hiru"  IZE ZKI)
+
+hirurogeita lau
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	lau	
+	+ ("lau"  DET DZH)
+
+hirurogeita lau
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	lau	
+	+ ("lau"  IZE ZKI)
+
+hirurogeita sei
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	sei	
+	+ ("sei"  DET DZH)
+
+hirurogeita sei
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	sei	
+	+ ("sei"  IZE ZKI)
+
+hirurogeita zazpi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	zazpi	
+	+ ("zazpi"  DET DZH)
+
+hirurogeita zazpi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	zazpi	
+	+ ("zazpi"  IZE ZKI)
+
+hirurogeita zortzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	zortzi	
+	+ ("zortzi"  DET DZH)
+
+hirurogeita zortzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hirurogeita	
+	(LEMA)	zortzi	
+	+ ("zortzi"  IZE ZKI)
+
+hitz eragin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hitz	
+	(LEMA)	eragin	
+	+ ("eragin"  ADI SIN)
+
+hitz eta pitz
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	hitz	
+	(FORMA)	eta	
+	(FORMA)	pitz	
+
+hitz lau
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hitz	
+	(LEMA)	lau	
+	+ ("lau"  ADJ ARR)
+
+hitz neurtu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hitz	
+	(LEMA)	neurtu	
+	+ ("neurtu"  ADJ ARR)
+
+hitza atxiki
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hitza	
+	(LEMA)	atxiki	
+	+ ("atxiki"  ADI SIN)
+
+hitza atxiki
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	atxiki	
+	+ ("atxiki"  ADI SIN)
+	(FORMA)	hitza	
+
+hitza bete
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hitza	
+	(LEMA)	bete	
+	+ ("bete"  ADI SIN)
+
+hitza bete
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	bete	
+	+ ("bete"  ADI SIN)
+	(FORMA)	hitza	
+
+hitzari eutsi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hitzari	
+	(LEMA)	eutsi	
+	+ ("eutsi"  ADI SIN)
+
+hitzari eutsi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eutsi	
+	+ ("eutsi"  ADI SIN)
+	(FORMA)	hitzari	
+
+hizkuntz eredu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hizkuntz	
+	(LEMA)	eredu	
+	+ ("eredu"  IZE ARR)
+
+hizkuntz irakaskuntza
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hizkuntz	
+	(LEMA)	irakaskuntza	
+	+ ("irakaskuntza"  IZE ARR)
+
+hizkuntz komunitate
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hizkuntz	
+	(LEMA)	komunitate	
+	+ ("komunitate"  IZE ARR)
+
+hizkuntz politika
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hizkuntz	
+	(LEMA)	politika	
+	+ ("politika"  IZE ARR)
+
+hizpidean egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hizpidean	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+hizpidean egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	hizpidean	
+
+Hiztegi Sistema Urgazle Adimenduna
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Hiztegi	
+	(FORMA)	Sistema	
+	(FORMA)	Urgazle	
+	(LEMA)	Adimenduna	
+	+ ("adimendun"  ADJ ARR)
+
+hobe beharrez
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hobe	
+	(FORMA)	beharrez	
+
+hobe beharrezko
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hobe	
+	(LEMA)	beharrezko	
+	+ ("beharrezko"  ADJ ARR)
+
+hobe ustean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hobe	
+	(FORMA)	ustean	
+
+hobe ustez
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hobe	
+	(FORMA)	ustez	
+
+hobeki esan
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hobeki	
+	(FORMA)	esan	
+
+hoben astun
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hoben	
+	(LEMA)	astun	
+	+ ("astun"  ADJ ARR)
+
+hogeita bat
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	bat	
+	+ ("bat"  DET DZH)
+
+hogeita bat
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	bat	
+	+ ("bat"  IZE ZKI)
+
+hogeita bederatzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	bederatzi	
+	+ ("bederatzi"  DET DZH)
+
+hogeita bederatzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	bederatzi	
+	+ ("bederatzi"  IZE ZKI)
+
+hogeita bi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	bi	
+	+ ("bi"  DET DZH)
+
+hogeita bi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	bi	
+	+ ("bi"  IZE ZKI)
+
+hogeita bost
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	bost	
+	+ ("bost"  DET DZH)
+
+hogeita bost
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	bost	
+	+ ("bost"  IZE ZKI)
+
+hogeita hamabi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hamabi	
+	+ ("hamabi"  DET DZH)
+
+hogeita hamabi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hamabi	
+	+ ("hamabi"  IZE ZKI)
+
+hogeita hamabost
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hamabost	
+	+ ("hamabost"  DET DZH)
+
+hogeita hamabost
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hamabost	
+	+ ("hamabost"  IZE ZKI)
+
+hogeita hamahiru
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hamahiru	
+	+ ("hamahiru"  DET DZH)
+
+hogeita hamahiru
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hamahiru	
+	+ ("hamahiru"  IZE ZKI)
+
+hogeita hamaika
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hamaika	
+	+ ("hamaika"  DET DZH)
+
+hogeita hamaika
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hamaika	
+	+ ("hamaika"  IZE ZKI)
+
+hogeita hamalau
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hamalau	
+	+ ("hamalau"  DET DZH)
+
+hogeita hamalau
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hamalau	
+	+ ("hamalau"  IZE ZKI)
+
+hogeita hamar
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hamar	
+	+ ("hamar"  DET DZH)
+
+hogeita hamar
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hamar	
+	+ ("hamar"  IZE ZKI)
+
+hogeita hamasei
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hamasei	
+	+ ("hamasei"  DET DZH)
+
+hogeita hamasei
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hamasei	
+	+ ("hamasei"  IZE ZKI)
+
+hogeita hamazazpi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hamazazpi	
+	+ ("hamazazpi"  DET DZH)
+
+hogeita hamazazpi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hamazazpi	
+	+ ("hamazazpi"  IZE ZKI)
+
+hogeita hamazortzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hamazortzi	
+	+ ("hamazortzi"  DET DZH)
+
+hogeita hamazortzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hamazortzi	
+	+ ("hamazortzi"  IZE ZKI)
+
+hogeita hemeretzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hemeretzi	
+	+ ("hemeretzi"  DET DZH)
+
+hogeita hemeretzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hemeretzi	
+	+ ("hemeretzi"  IZE ZKI)
+
+hogeita hemezortzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hemezortzi	
+	+ ("hemezortzi"  DET DZH)
+
+hogeita hemezortzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hemezortzi	
+	+ ("hemezortzi"  IZE ZKI)
+
+hogeita hiru
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hiru	
+	+ ("hiru"  DET DZH)
+
+hogeita hiru
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	hiru	
+	+ ("hiru"  IZE ZKI)
+
+hogeita lau
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	lau	
+	+ ("lau"  DET DZH)
+
+hogeita lau
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	lau	
+	+ ("lau"  IZE ZKI)
+
+hogeita sei
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	sei	
+	+ ("sei"  DET DZH)
+
+hogeita sei
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	sei	
+	+ ("sei"  IZE ZKI)
+
+hogeita zazpi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	zazpi	
+	+ ("zazpi"  DET DZH)
+
+hogeita zazpi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	zazpi	
+	+ ("zazpi"  IZE ZKI)
+
+hogeita zortzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	zortzi	
+	+ ("zortzi"  DET DZH)
+
+hogeita zortzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hogeita	
+	(LEMA)	zortzi	
+	+ ("zortzi"  IZE ZKI)
+
+hona hemen
+	#BST
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hona	
+	(FORMA)	hemen	
+
+hona non
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hona	
+	(FORMA)	non	
+
+honez gain
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	honez	
+	(FORMA)	gain	
+
+honez gainera
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	honez	
+	(FORMA)	gainera	
+
+honez gero
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	honez	
+	(FORMA)	gero	
+
+honoris causa
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	honoris	
+	(LEMA)	causa	
+	+ ("causa"  HAOS)
+
+hor konpon
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hor	
+	(FORMA)	konpon	
+
+hor nonbait
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hor	
+	(FORMA)	nonbait	
+
+horma lehor
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	horma	
+	(LEMA)	lehor	
+	+ ("lehor"  ADJ ARR)
+
+horra ba
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	horra	
+	(FORMA)	ba	
+
+horra bada
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	horra	
+	(FORMA)	bada	
+
+horra hor
+	#BST
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	horra	
+	(FORMA)	hor	
+
+horra non
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	horra	
+	(FORMA)	non	
+
+horrez gain
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	horrez	
+	(FORMA)	gain	
+
+horrez gainera
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	horrez	
+	(FORMA)	gainera	
+
+horrez gero
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	horrez	
+	(FORMA)	gero	
+
+hortzetako eskuila
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hortzetako	
+	(LEMA)	eskuila	
+	+ ("eskuila"  IZE ARR)
+
+hortzetako pasta
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hortzetako	
+	(LEMA)	pasta	
+	+ ("pasta"  IZE ARR)
+
+hosto erorkor
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hosto	
+	(LEMA)	erorkor	
+	+ ("erorkor"  ADJ ARR)
+
+hosto galkor
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hosto	
+	(LEMA)	galkor	
+	+ ("galkor"  ADJ ARR)
+
+hosto iraunkor
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hosto	
+	(LEMA)	iraunkor	
+	+ ("iraunkor"  ADJ ARR)
+
+hots egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hots	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+hots eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hots	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+hurren arte
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hurren	
+	(FORMA)	arte	
+
+huts ala kausi
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	huts	
+	(FORMA)	ala	
+	(FORMA)	kausi	
+
+huts edo bete
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	huts	
+	(FORMA)	edo	
+	(FORMA)	bete	
+
+huts edo kausi
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	huts	
+	(FORMA)	edo	
+	(FORMA)	kausi	
+
+hutsaren truk
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hutsaren	
+	(FORMA)	truk	
+
+hutsaren truke
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	hutsaren	
+	(FORMA)	truke	
+
+i greko
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	i	
+	(LEMA)	greko	
+	+ ("greko"  ADJ ARR)
+
+Identifikazio Fiskaleko Kode
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Identifikazio	
+	(FORMA)	Fiskaleko	
+	(LEMA)	Kode	
+	+ ("kode"  IZE ARR)
+
+igeri egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	igeri	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+igeri egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	igeri	
+
+igeri egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	igeri	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+igeri egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	igeri	
+
+ihesari eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ihesari	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+ihesari lotu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ihesari	
+	(LEMA)	lotu	
+	+ ("lotu"  ADI SIN)
+
+ihesari lotu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	lotu	
+	+ ("lotu"  ADI SIN)
+	(FORMA)	ihesari	
+
+ikara egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ikara	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+ikara egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	ikara	
+
+ikara ibili
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ikara	
+	(LEMA)	ibili	
+	+ ("ibili"  ADI SIN)
+
+ikara ibili
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	ibili	
+	+ ("ibili"  ADI SIN)
+	(FORMA)	ikara	
+
+ilar biribil
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ilar	
+	(LEMA)	biribil	
+	+ ("biribil"  ADJ ARR)
+
+ilar xabal
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ilar	
+	(LEMA)	xabal	
+	+ ("xabal"  ADJ ARR)
+
+ilar xehe
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ilar	
+	(LEMA)	xehe	
+	+ ("xehe"  ADJ ARR)
+
+ilargi berri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ilargi	
+	(LEMA)	berri	
+	+ ("berri"  ADJ ARR)
+
+ilargi bete
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ilargi	
+	(LEMA)	bete	
+	+ ("bete"  ADJ ARR)
+
+ile alde
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ile	
+	(FORMA)	alde	
+
+ile kontra
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ile	
+	(LEMA)	kontra	
+	+ ("kontra"  ADB ARR)
+
+iloba txiki
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	iloba	
+	(LEMA)	txiki	
+	+ ("txiki"  ADJ ARR)
+
+in abstracto
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	in	
+	(LEMA)	abstracto	
+	+ ("abstracto"  HAOS)
+
+in actu
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	in	
+	(LEMA)	actu	
+	+ ("actu"  HAOS)
+
+in aeternum
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	in	
+	(LEMA)	aeternum	
+	+ ("aeternum"  HAOS)
+
+in extremis
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	in	
+	(LEMA)	extremis	
+	+ ("extremis"  HAOS)
+
+in fraganti
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	in	
+	(LEMA)	fraganti	
+	+ ("fraganti"  HAOS)
+
+in medias res
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	in	
+	(FORMA)	medias	
+	(LEMA)	res	
+	+ ("res"  HAOS)
+
+in memoriam
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	in	
+	(LEMA)	memoriam	
+	+ ("memoriam"  HAOS)
+
+in nomine
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	in	
+	(LEMA)	nomine	
+	+ ("nomine"  HAOS)
+
+in partibus
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	in	
+	(LEMA)	partibus	
+	+ ("partibus"  HAOS)
+
+in pectore
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	in	
+	(LEMA)	pectore	
+	+ ("pectore"  HAOS)
+
+in praesenti
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	in	
+	(LEMA)	praesenti	
+	+ ("praesenti"  HAOS)
+
+in sacris
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	in	
+	(LEMA)	sacris	
+	+ ("sacris"  HAOS)
+
+in saecula saeculorum
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	in	
+	(FORMA)	saecula	
+	(LEMA)	saeculorum	
+	+ ("saeculorum"  HAOS)
+
+in situ
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	in	
+	(LEMA)	situ	
+	+ ("situ"  HAOS)
+
+in vitro
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	in	
+	(LEMA)	vitro	
+	+ ("vitro"  HAOS)
+
+in vivo
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	in	
+	(LEMA)	vivo	
+	+ ("vivo"  HAOS)
+
+indar eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	indar	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+indar eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	indar	
+
+Indi gaztaina
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Indi	
+	(LEMA)	gaztaina	
+	+ ("gaztaina"  IZE ARR)
+
+indoeuropar hizkuntza
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	indoeuropar	
+	(LEMA)	hizkuntza	
+	+ ("hizkuntza"  IZE ARR)
+
+industri ingeniari
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	industri	
+	(LEMA)	ingeniari	
+	+ ("ingeniari"  IZE ARR)
+
+industri ingeniaritza
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	industri	
+	(LEMA)	ingeniaritza	
+	+ ("ingeniaritza"  IZE ARR)
+
+industri injinerutza
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	industri	
+	(LEMA)	injinerutza	
+	+ ("injinerutza"  IZE ARR)
+
+industri iraultza
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	industri	
+	(LEMA)	iraultza	
+	+ ("iraultza"  IZE ARR)
+
+industri jarduera
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	industri	
+	(LEMA)	jarduera	
+	+ ("jarduera"  IZE ARR)
+
+industri sail
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	industri	
+	(LEMA)	sail	
+	+ ("sail"  IZE ARR)
+
+Informatika eta Mikroelektronika Industrian
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Informatika	
+	(FORMA)	eta	
+	(FORMA)	Mikroelektronika	
+	(FORMA)	Industrian	
+
+inoiz edo behin
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	inoiz	
+	(FORMA)	edo	
+	(FORMA)	behin	
+
+inoiz ere
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	inoiz	
+	(FORMA)	ere	
+
+inola ere
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	inola	
+	(FORMA)	ere	
+
+inolaz ere
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	inolaz	
+	(FORMA)	ere	
+
+inondik ere
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	inondik	
+	(FORMA)	ere	
+
+inondik inora
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	inondik	
+	(FORMA)	inora	
+
+inor ere
+	#IOR IZGMGB
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	inor	
+	+ ("inor"  IOR IZGMGB)
+	(FORMA)	ere	
+
+inor gutxi
+	#IOR IZGMGB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	inor	
+	(LEMA)	gutxi	
+	+ ("gutxi"  DET DZG)
+
+inortxo ere
+	#IOR IZGMGB
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	inortxo	
+	+ ("inortxo"  IOR IZGMGB)
+	(FORMA)	ere	
+
+intxaur beltz
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	intxaur	
+	(LEMA)	beltz	
+	+ ("beltz"  ADJ ARR)
+
+Ipar Afrika
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Ipar	
+	(LEMA)	Afrika	
+	+ ("Afrika"  IZE LIB)
+
+Ipar Amerika
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Ipar	
+	(LEMA)	Amerika	
+	+ ("Amerika"  IZE LIB)
+
+Ipar Euskadi
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Ipar	
+	(LEMA)	Euskadi	
+	+ ("Euskadi"  IZE LIB)
+
+Ipar Euskal Herria
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Ipar	
+	(FORMA)	Euskal	
+	(LEMA)	Herria	
+	+ ("herri"  IZE ARR)
+
+ipso facto
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ipso	
+	(LEMA)	facto	
+	+ ("facto"  HAOS)
+
+Irakaskuntza Bateratuen Ikastetxe
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Irakaskuntza	
+	(FORMA)	Bateratuen	
+	(LEMA)	Ikastetxe	
+	+ ("ikastetxe"  IZE ARR)
+
+Irakaskuntza Ertainen Erreforma
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Irakaskuntza	
+	(FORMA)	Ertainen	
+	(LEMA)	Erreforma	
+	+ ("erreforma"  IZE ARR)
+
+Irakaslegoaren Alfabetatze Euskalduntzea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Irakaslegoaren	
+	(FORMA)	Alfabetatze	
+	(LEMA)	Euskalduntzea	
+	+ ("euskalduntze"  IZE ARR)
+
+iratze ar
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	iratze	
+	(LEMA)	ar	
+	+ ("ar"  ADJ ARR)
+
+iratze eme
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	iratze	
+	(LEMA)	eme	
+	+ ("eme"  ADJ ARR)
+
+irrist egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	irrist	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+istant batean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	istant	
+	(FORMA)	batean	
+
+itsas aingira
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itsas	
+	(LEMA)	aingira	
+	+ ("aingira"  IZE ARR)
+
+itsas arrano
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itsas	
+	(LEMA)	arrano	
+	+ ("arrano"  IZE ARR)
+
+itsas gaztaina
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itsas	
+	(LEMA)	gaztaina	
+	+ ("gaztaina"  IZE ARR)
+
+itsas handi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itsas	
+	(LEMA)	handi	
+	+ ("handi"  ADJ ARR)
+
+itsas hegi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itsas	
+	(LEMA)	hegi	
+	+ ("hegi"  IZE ARR)
+
+itsas hondo
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itsas	
+	(LEMA)	hondo	
+	+ ("hondo"  IZE ARR)
+
+itsas izar
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itsas	
+	(LEMA)	izar	
+	+ ("izar"  IZE ARR)
+
+itsas kabra
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itsas	
+	(LEMA)	kabra	
+	+ ("kabra"  IZE ARR)
+
+itsas korronte
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itsas	
+	(LEMA)	korronte	
+	+ ("korronte"  IZE ARR)
+
+itsas lehoi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itsas	
+	(LEMA)	lehoi	
+	+ ("lehoi"  IZE ARR)
+
+itsas lore
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itsas	
+	(LEMA)	lore	
+	+ ("lore"  IZE ARR)
+
+itsas otso
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itsas	
+	(LEMA)	otso	
+	+ ("otso"  IZE ARR)
+
+itsas portu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itsas	
+	(LEMA)	portu	
+	+ ("portu"  IZE ARR)
+
+itsas triku
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itsas	
+	(LEMA)	triku	
+	+ ("triku"  IZE ARR)
+
+itsas txakur
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itsas	
+	(LEMA)	txakur	
+	+ ("txakur"  IZE ARR)
+
+itsas zabal
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itsas	
+	(LEMA)	zabal	
+	+ ("zabal"  ADJ ARR)
+
+itsas zaldi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itsas	
+	(LEMA)	zaldi	
+	+ ("zaldi"  IZE ARR)
+
+itsaso handi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itsaso	
+	(LEMA)	handi	
+	+ ("handi"  ADJ ARR)
+
+itsaso zabal
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itsaso	
+	(LEMA)	zabal	
+	+ ("zabal"  ADJ ARR)
+
+itxura denez
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itxura	
+	(FORMA)	denez	
+
+Itzulpenean laguntzeko hiztegi-sistema eleanitza
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Itzulpenean	
+	(FORMA)	laguntzeko	
+	(FORMA)	hiztegi-sistema	
+	(LEMA)	eleanitza	
+	+ ("eleanitz"  ADJ ARR)
+
+Itzulpenetarako Hiztegi Sistema Lagungarria
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Itzulpenetarako	
+	(FORMA)	Hiztegi	
+	(FORMA)	Sistema	
+	(LEMA)	Lagungarria	
+	+ ("lagungarri"  ADJ ARR)
+
+itzuri ibili
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itzuri	
+	(LEMA)	ibili	
+	+ ("ibili"  ADI SIN)
+
+itzuri ibili
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	ibili	
+	+ ("ibili"  ADI SIN)
+	(FORMA)	itzuri	
+
+itzuri joan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	itzuri	
+	(LEMA)	joan	
+	+ ("joan"  ADI SIN)
+
+itzuri joan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	joan	
+	+ ("joan"  ADI SIN)
+	(FORMA)	itzuri	
+
+izan ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	izan	
+	(FORMA)	ere	
+
+izan ezik
+	#LOT JNT
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	izan	
+	(FORMA)	ezik	
+
+izar loka
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	izar	
+	(LEMA)	loka	
+	+ ("loka"  ADJ ARR)
+
+izen propio
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	izen	
+	(LEMA)	propio	
+	+ ("propio"  ADJ ARR)
+
+izorra egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	izorra	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+izorra egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	izorra	
+
+Izpiritu Saindu
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Izpiritu	
+	(LEMA)	Saindu	
+	+ ("saindu"  ADJ ARR)
+
+jabe egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	jabe	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+jabe egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	jabe	
+
+jabego pribatu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	jabego	
+	(LEMA)	pribatu	
+	+ ("pribatu"  ADJ ARR)
+
+jai eduki
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	jai	
+	(LEMA)	eduki	
+	+ ("eduki"  ADI SIN)
+
+Jainko Aita
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Jainko	
+	(LEMA)	Aita	
+	+ ("aita"  IZE ARR)
+
+Jainko Jaun
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Jainko	
+	(LEMA)	Jaun	
+	+ ("jaun"  IZE ARR)
+
+jakinaren gainean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	jakinaren	
+	(FORMA)	gainean	
+
+jakitera eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	jakitera	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+jakitera eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	jakitera	
+
+jakitun egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	jakitun	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+jakitun egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	jakitun	
+
+jakitun egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	jakitun	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+jakitun egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	jakitun	
+
+jakitun ipini
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	jakitun	
+	(LEMA)	ipini	
+	+ ("ipini"  ADI SIN)
+
+jakitun ipini
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	ipini	
+	+ ("ipini"  ADI SIN)
+	(FORMA)	jakitun	
+
+jan berri
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	jan	
+	(LEMA)	berri	
+	+ ("berri"  ADJ ARR)
+
+Japoniako mizpirondo
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Japoniako	
+	(LEMA)	mizpirondo	
+	+ ("mizpirondo"  IZE ARR)
+
+jatorrizko bekatu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	jatorrizko	
+	(LEMA)	bekatu	
+	+ ("bekatu"  IZE ARR)
+
+Jauna hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Jauna	HAS_MAI
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+jo eta jo
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	jo	
+	(FORMA)	eta	
+	(FORMA)	jo	
+
+jo eta ke
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	jo	
+	(FORMA)	eta	
+	(FORMA)	ke	
+
+jo eta su
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	jo	
+	(FORMA)	eta	
+	(FORMA)	su	
+
+josteko makina
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	josteko	
+	(LEMA)	makina	
+	+ ("makina"  IZE ARR)
+
+kaka zaharra
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kaka	
+	(FORMA)	zaharra	
+
+kale nagusi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kale	
+	(LEMA)	nagusi	
+	+ ("nagusi"  ADJ ARR)
+
+kana bete
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kana	
+	(LEMA)	bete	
+	+ ("bete"  ADJ ARR)
+
+kanpo utzi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kanpo	
+	(LEMA)	utzi	
+	+ ("utzi"  ADI SIN)
+
+karrika egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	karrika	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+kartoi mehe
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kartoi	
+	(LEMA)	mehe	
+	+ ("mehe"  ADJ ARR)
+
+kilimon egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kilimon	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+kito egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kito	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+kobrutan ipini
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kobrutan	
+	(LEMA)	ipini	
+	+ ("ipini"  ADI SIN)
+
+kobrutan ipini
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	ipini	
+	+ ("ipini"  ADI SIN)
+	(FORMA)	kobrutan	
+
+koloka egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	koloka	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+koloka egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	koloka	
+
+kolokan egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kolokan	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+kolokan egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	kolokan	
+
+Kolonia ur
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Kolonia	
+	(LEMA)	ur	
+	+ ("ur"  IZE ARR)
+
+konparazio baterako
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	konparazio	
+	(FORMA)	baterako	
+
+kontrako eztarri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kontrako	
+	(LEMA)	eztarri	
+	+ ("eztarri"  IZE ARR)
+
+Kontsumorako Prezioen Indizea
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Kontsumorako	
+	(FORMA)	Prezioen	
+	(LEMA)	Indizea	
+	+ ("indize"  IZE ARR)
+
+kontu egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kontu	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+kontu hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kontu	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+kontu korronte
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kontu	
+	(LEMA)	korronte	
+	+ ("korronte"  IZE ARR)
+
+kontuak atera
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kontuak	
+	(LEMA)	atera	
+	+ ("atera"  ADI SIN)
+
+kontuak atera
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	atera	
+	+ ("atera"  ADI SIN)
+	(FORMA)	kontuak	
+
+kontuak egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kontuak	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+kontuan eduki
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kontuan	
+	(LEMA)	eduki	
+	+ ("eduki"  ADI SIN)
+
+kontuan hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kontuan	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+kontutan eduki
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kontutan	
+	(LEMA)	eduki	
+	+ ("eduki"  ADI SIN)
+
+kontutan hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kontutan	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+kontuz ibili
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kontuz	
+	(LEMA)	ibili	
+	+ ("ibili"  ADI SIN)
+
+kontuz ibili
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	ibili	
+	+ ("ibili"  ADI SIN)
+	(FORMA)	kontuz	
+
+Koordinakunde Abertzale Sozialista
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Koordinakunde	
+	(FORMA)	Abertzale	
+	(LEMA)	Sozialista	
+	+ ("sozialista"  ADJ ARR)
+
+kopla zahar
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kopla	
+	(LEMA)	zahar	
+	+ ("zahar"  ADJ ARR)
+
+korrok egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	korrok	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+korrok egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	korrok	
+
+kosk egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kosk	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+kosk egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	kosk	
+
+kosta ahala kosta
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	kosta	
+	(FORMA)	ahala	
+	(FORMA)	kosta	
+
+kuku egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kuku	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+kuku egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	kuku	
+
+kuku jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kuku	
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+
+kuku jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+	(FORMA)	kuku	
+
+kukuak jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kukuak	
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+
+kukuak jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+	(FORMA)	kukuak	
+
+kultur bide
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kultur	
+	(LEMA)	bide	
+	+ ("bide"  IZE ARR)
+
+kultur ekintza
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kultur	
+	(LEMA)	ekintza	
+	+ ("ekintza"  IZE ARR)
+
+kultur elkarte
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kultur	
+	(LEMA)	elkarte	
+	+ ("elkarte"  IZE ARR)
+
+Kultur eta Turismo Ekintzetxea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Kultur	
+	(FORMA)	eta	
+	(FORMA)	Turismo	
+	(LEMA)	Ekintzetxea	
+	+ ("ekintzetxe"  IZE ARR)
+
+kultur etxe
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kultur	
+	(LEMA)	etxe	
+	+ ("etxe"  IZE ARR)
+
+kultur maila
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kultur	
+	(LEMA)	maila	
+	+ ("maila"  IZE ARR)
+
+kultur sail
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kultur	
+	(LEMA)	sail	
+	+ ("sail"  IZE ARR)
+
+Kultura eta Turismo Saila
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Kultura	
+	(FORMA)	eta	
+	(FORMA)	Turismo	
+	(LEMA)	Saila	
+	+ ("sail"  IZE ARR)
+
+Kultura eta Turismo-Saila
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Kultura	
+	(FORMA)	eta	
+	(LEMA)	Turismo-Saila	
+	+ ("turismo-sail"  IZE ARR)
+
+kyrie eleison
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	kyrie	
+	(FORMA)	eleison	
+
+labe garai
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	labe	
+	(LEMA)	garai	
+	+ ("garai"  ADJ ARR)
+
+lagun hurko
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lagun	
+	(LEMA)	hurko	
+	+ ("hurko"  ADJ ARR)
+
+laineza eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laineza	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+laineza eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	laineza	
+
+laineza hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laineza	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+laineza hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+	(FORMA)	laineza	
+
+lan eragin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lan	
+	(LEMA)	eragin	
+	+ ("eragin"  ADI SIN)
+
+Lanbide Teknikoetarako Prestakuntza
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Lanbide	
+	(FORMA)	Teknikoetarako	
+	(LEMA)	Prestakuntza	
+	+ ("prestakuntza"  IZE ARR)
+
+Langile Abertzaleen Batzordeak
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Langile	
+	(FORMA)	Abertzaleen	
+	(LEMA)	Batzordeak	
+	+ ("batzorde"  IZE ARR)
+
+Langileen Sindikal Batasuna
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Langileen	
+	(FORMA)	Sindikal	
+	(LEMA)	Batasuna	
+	+ ("batasun"  IZE ARR)
+
+laprast egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laprast	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+laprast egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	laprast	
+
+lapsus calami
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lapsus	
+	(LEMA)	calami	
+	+ ("calami"  HAOS)
+
+lapsus linguae
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lapsus	
+	(LEMA)	linguae	
+	+ ("linguae"  HAOS)
+
+larru gorrian
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	larru	
+	(FORMA)	gorrian	
+
+larrutik pagatu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	larrutik	
+	(LEMA)	pagatu	
+	+ ("pagatu"  ADI SIN)
+
+larrutik pagatu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	pagatu	
+	+ ("pagatu"  ADI SIN)
+	(FORMA)	larrutik	
+
+laster batean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laster	
+	(FORMA)	batean	
+
+lasterka egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lasterka	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+lau haizetara
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lau	
+	(FORMA)	haizetara	
+
+lau hankan
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lau	
+	(FORMA)	hankan	
+
+lau oinean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lau	
+	(FORMA)	oinean	
+
+lauki zuzen
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lauki	
+	(LEMA)	zuzen	
+	+ ("zuzen"  ADJ ARR)
+
+lauretan hogei
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lauretan	
+	(LEMA)	hogei	
+	+ ("hogei"  DET DZH)
+
+lauretan hogei
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lauretan	
+	(LEMA)	hogei	
+	+ ("hogei"  IZE ZKI)
+
+laurogeita bat
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	bat	
+	+ ("bat"  DET DZH)
+
+laurogeita bat
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	bat	
+	+ ("bat"  IZE ZKI)
+
+laurogeita bederatzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	bederatzi	
+	+ ("bederatzi"  DET DZH)
+
+laurogeita bederatzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	bederatzi	
+	+ ("bederatzi"  IZE ZKI)
+
+laurogeita bi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	bi	
+	+ ("bi"  DET DZH)
+
+laurogeita bi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	bi	
+	+ ("bi"  IZE ZKI)
+
+laurogeita bost
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	bost	
+	+ ("bost"  DET DZH)
+
+laurogeita bost
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	bost	
+	+ ("bost"  IZE ZKI)
+
+laurogeita hamabi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hamabi	
+	+ ("hamabi"  DET DZH)
+
+laurogeita hamabi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hamabi	
+	+ ("hamabi"  IZE ZKI)
+
+laurogeita hamabost
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hamabost	
+	+ ("hamabost"  DET DZH)
+
+laurogeita hamabost
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hamabost	
+	+ ("hamabost"  IZE ZKI)
+
+laurogeita hamahiru
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hamahiru	
+	+ ("hamahiru"  DET DZH)
+
+laurogeita hamahiru
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hamahiru	
+	+ ("hamahiru"  IZE ZKI)
+
+laurogeita hamaika
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hamaika	
+	+ ("hamaika"  DET DZH)
+
+laurogeita hamaika
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hamaika	
+	+ ("hamaika"  IZE ZKI)
+
+laurogeita hamalau
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hamalau	
+	+ ("hamalau"  DET DZH)
+
+laurogeita hamalau
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hamalau	
+	+ ("hamalau"  IZE ZKI)
+
+laurogeita hamar
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hamar	
+	+ ("hamar"  DET DZH)
+
+laurogeita hamar
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hamar	
+	+ ("hamar"  IZE ZKI)
+
+laurogeita hamasei
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hamasei	
+	+ ("hamasei"  DET DZH)
+
+laurogeita hamasei
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hamasei	
+	+ ("hamasei"  IZE ZKI)
+
+laurogeita hamazazpi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hamazazpi	
+	+ ("hamazazpi"  DET DZH)
+
+laurogeita hamazazpi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hamazazpi	
+	+ ("hamazazpi"  IZE ZKI)
+
+laurogeita hamazortzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hamazortzi	
+	+ ("hamazortzi"  DET DZH)
+
+laurogeita hamazortzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hamazortzi	
+	+ ("hamazortzi"  IZE ZKI)
+
+laurogeita hemeretzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hemeretzi	
+	+ ("hemeretzi"  DET DZH)
+
+laurogeita hemeretzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hemeretzi	
+	+ ("hemeretzi"  IZE ZKI)
+
+laurogeita hemezortzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hemezortzi	
+	+ ("hemezortzi"  DET DZH)
+
+laurogeita hemezortzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hemezortzi	
+	+ ("hemezortzi"  IZE ZKI)
+
+laurogeita hiru
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hiru	
+	+ ("hiru"  DET DZH)
+
+laurogeita hiru
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	hiru	
+	+ ("hiru"  IZE ZKI)
+
+laurogeita lau
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	lau	
+	+ ("lau"  DET DZH)
+
+laurogeita lau
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	lau	
+	+ ("lau"  IZE ZKI)
+
+laurogeita sei
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	sei	
+	+ ("sei"  DET DZH)
+
+laurogeita sei
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	sei	
+	+ ("sei"  IZE ZKI)
+
+laurogeita zazpi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	zazpi	
+	+ ("zazpi"  DET DZH)
+
+laurogeita zazpi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	zazpi	
+	+ ("zazpi"  IZE ZKI)
+
+laurogeita zortzi
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	zortzi	
+	+ ("zortzi"  DET DZH)
+
+laurogeita zortzi
+	#IZE ZKI
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laurogeita	
+	(LEMA)	zortzi	
+	+ ("zortzi"  IZE ZKI)
+
+laztan eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	laztan	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+laztan eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	laztan	
+
+lege nagusi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lege	
+	(LEMA)	nagusi	
+	+ ("nagusi"  ADJ ARR)
+
+lege zahar
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lege	
+	(LEMA)	zahar	
+	+ ("zahar"  ADJ ARR)
+
+lehen baino lehen
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	lehen	
+	(FORMA)	baino	
+	(FORMA)	lehen	
+
+lehen bait lehen
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	lehen	
+	(FORMA)	bait	
+	(FORMA)	lehen	
+
+lehen buruan
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lehen	
+	(FORMA)	buruan	
+
+lehen mailako atentzio
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	lehen	
+	(FORMA)	mailako	
+	(LEMA)	atentzio	
+	+ ("atentzio"  IZE ARR)
+
+lehen ministro
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lehen	
+	(LEMA)	ministro	
+	+ ("ministro"  IZE ARR)
+
+lehenengo eta behin
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	lehenengo	
+	(FORMA)	eta	
+	(FORMA)	behin	
+
+lehengo batean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lehengo	
+	(FORMA)	batean	
+
+lehenik eta behin
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	lehenik	
+	(FORMA)	eta	
+	(FORMA)	behin	
+
+leher egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	leher	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+leher eragin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	leher	
+	(LEMA)	eragin	
+	+ ("eragin"  ADI SIN)
+
+leher eragin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eragin	
+	+ ("eragin"  ADI SIN)
+	(FORMA)	leher	
+
+leher eta zapart egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	leher	
+	(FORMA)	eta	
+	(FORMA)	zapart	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+leher gaizto egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	leher	
+	(FORMA)	gaizto	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+leherrenak egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	leherrenak	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+lekuan lekuko
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lekuan	
+	(LEMA)	lekuko	
+	+ ("leku"  IZE ARR)
+
+lepo egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lepo	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+lepo egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	lepo	
+
+lepoa egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lepoa	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+lepoa egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	lepoa	
+
+lepoa ipini
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lepoa	
+	(LEMA)	ipini	
+	+ ("ipini"  ADI SIN)
+
+lepoa ipini
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	ipini	
+	+ ("ipini"  ADI SIN)
+	(FORMA)	lepoa	
+
+lepoa jokatu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lepoa	
+	(LEMA)	jokatu	
+	+ ("jokatu"  ADI SIN)
+
+lepoa jokatu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	jokatu	
+	+ ("jokatu"  ADI SIN)
+	(FORMA)	lepoa	
+
+ler beltz
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ler	
+	(LEMA)	beltz	
+	+ ("beltz"  ADJ ARR)
+
+ler gorri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ler	
+	(LEMA)	gorri	
+	+ ("gorri"  ADJ ARR)
+
+letra larri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	letra	
+	(LEMA)	larri	
+	+ ("larri"  ADJ ARR)
+
+letra xehe
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	letra	
+	(LEMA)	xehe	
+	+ ("xehe"  ADJ ARR)
+
+Lexikologi Erizpideen Finkapena
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Lexikologi	
+	(FORMA)	Erizpideen	
+	(LEMA)	Finkapena	
+	+ ("finkapen"  IZE ARR)
+
+libera esterlina
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	libera	
+	(LEMA)	esterlina	
+	+ ("esterlina"  ADJ ARR)
+
+liburu saindu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	liburu	
+	(LEMA)	saindu	
+	+ ("saindu"  ADJ ARR)
+
+liburu santu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	liburu	
+	(LEMA)	santu	
+	+ ("santu"  ADJ ARR)
+
+Liga Komunista Iraultzailea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Liga	
+	(FORMA)	Komunista	
+	(LEMA)	Iraultzailea	
+	+ ("iraultzaile"  ADJ ARR)
+
+literatur tradizio
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	literatur	
+	(LEMA)	tradizio	
+	+ ("tradizio"  IZE ARR)
+
+lixatzeko makina
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lixatzeko	
+	(LEMA)	makina	
+	+ ("makina"  IZE ARR)
+
+lo eragin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lo	
+	(LEMA)	eragin	
+	+ ("eragin"  ADI SIN)
+
+lo eragin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eragin	
+	+ ("eragin"  ADI SIN)
+	(FORMA)	lo	
+
+loak hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	loak	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+loak hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+	(FORMA)	loak	
+
+lotsa gaizto
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lotsa	
+	(LEMA)	gaizto	
+	+ ("gaizto"  ADJ ARR)
+
+lotsa-lotsa egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lotsa-lotsa	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+lur eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lur	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+lur eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	lur	
+
+lur jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	lur	
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+
+Lurralde Historikoen Legea
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Lurralde	
+	(FORMA)	Historikoen	
+	(LEMA)	Legea	
+	+ ("lege"  IZE ARR)
+
+luza gabe
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	luza	
+	(FORMA)	gabe	
+
+luzaro gabe
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	luzaro	
+	(LEMA)	gabe	
+	+ ("gabe"  ADB ARR)
+
+luze gabe
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	luze	
+	(FORMA)	gabe	
+
+maite egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	maite	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+maite-maite egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	maite-maite	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+maite-maite egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	maite-maite	
+
+maiz aski
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	maiz	
+	(FORMA)	aski	
+
+makil dantza
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	makil	
+	(LEMA)	dantza	
+	+ ("dantza"  IZE ARR)
+
+malba zuri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	malba	
+	(LEMA)	zuri	
+	+ ("zuri"  ADJ ARR)
+
+manu militari
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	manu	
+	(LEMA)	militari	
+	+ ("militari"  HAOS)
+
+mare magnum
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	mare	
+	(LEMA)	magnum	
+	+ ("magnum"  IZE ARR)
+
+marmarka jardun
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	marmarka	
+	(LEMA)	jardun	
+	+ ("jardun"  ADI SIN)
+
+marmarka jardun
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	jardun	
+	+ ("jardun"  ADI SIN)
+	(FORMA)	marmarka	
+
+marrazki bizidun
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	marrazki	
+	(LEMA)	bizidun	
+	+ ("bizidun"  ADJ ARR)
+
+martin arrantzale
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	martin	
+	(LEMA)	arrantzale	
+	+ ("arrantzale"  IZE ARR)
+
+martxan jarri
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	martxan	
+	(LEMA)	jarri	
+	+ ("jarri"  ADI SIN)
+
+martxan jarri
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	jarri	
+	+ ("jarri"  ADI SIN)
+	(FORMA)	martxan	
+
+mea culpa
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	mea	
+	(LEMA)	culpa	
+	+ ("culpa"  HAOS)
+
+mehe egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	mehe	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+mela-mela egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	mela-mela	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+men egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	men	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+men egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	men	
+
+mendean hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	mendean	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+mendean hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+	(FORMA)	mendean	
+
+mendebal alde
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	mendebal	
+	(LEMA)	alde	
+	+ ("alde"  IZE ARR)
+
+Mendebaldar Europaren Batasuna
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Mendebaldar	
+	(FORMA)	Europaren	
+	(LEMA)	Batasuna	
+	+ ("batasun"  IZE ARR)
+
+merezi onez
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	merezi	
+	(FORMA)	onez	
+
+merkatu beltz
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	merkatu	
+	(LEMA)	beltz	
+	+ ("beltz"  ADJ ARR)
+
+merkatu libre
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	merkatu	
+	(LEMA)	libre	
+	+ ("libre"  ADJ ARR)
+
+metal preziatu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	metal	
+	(LEMA)	preziatu	
+	+ ("preziatu"  ADJ ARR)
+
+metro karratu
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	metro	
+	(LEMA)	karratu	
+	+ ("karratu"  ADJ ARR)
+
+metro koadro
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	metro	
+	(LEMA)	koadro	
+	+ ("koadro"  ADJ ARR)
+
+metro kubiko
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	metro	
+	(LEMA)	kubiko	
+	+ ("kubiko"  ADJ ARR)
+
+metro kubo
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	metro	
+	(LEMA)	kubo	
+	+ ("kubo"  IZE ARR)
+
+meza nagusi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	meza	
+	(LEMA)	nagusi	
+	+ ("nagusi"  ADJ ARR)
+
+mila esker
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	mila	
+	(FORMA)	esker	
+
+ministro nagusi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ministro	
+	(LEMA)	nagusi	
+	+ ("nagusi"  ADJ ARR)
+
+modan egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	modan	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+modan egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	modan	
+
+modan jarri
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	modan	
+	(LEMA)	jarri	
+	+ ("jarri"  ADI SIN)
+
+modan jarri
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	jarri	
+	+ ("jarri"  ADI SIN)
+	(FORMA)	modan	
+
+modu onean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	modu	
+	(FORMA)	onean	
+
+modus operandi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	modus	
+	(LEMA)	operandi	
+	+ ("operandi"  HAOS)
+
+modus vivendi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	modus	
+	(LEMA)	vivendi	
+	+ ("vivendi"  HAOS)
+
+motu proprio
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	motu	
+	(LEMA)	proprio	
+	+ ("proprio"  HAOS)
+
+muin egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	muin	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+muin egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	muin	
+
+muin eragin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	muin	
+	(LEMA)	eragin	
+	+ ("eragin"  ADI SIN)
+
+murgil egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	murgil	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+murgil egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	murgil	
+
+musu truk
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	musu	
+	(FORMA)	truk	
+
+mutil koskor
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	mutil	
+	(LEMA)	koskor	
+	+ ("koskor"  ADJ ARR)
+
+Nafarroa Beherea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Nafarroa	
+	(LEMA)	Beherea	
+	+ ("behere"  ADJ ARR)
+
+Nafarroako Unibertsitate Publikoa
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Nafarroako	
+	(FORMA)	Unibertsitate	
+	(LEMA)	Publikoa	
+	+ ("publiko"  ADJ ARR)
+
+nagiak atera
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nagiak	
+	(LEMA)	atera	
+	+ ("atera"  ADI SIN)
+
+nagiak atera
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	atera	
+	+ ("atera"  ADI SIN)
+	(FORMA)	nagiak	
+
+nahi adina
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nahi	
+	(FORMA)	adina	
+
+nahi adina
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nahi	
+	(LEMA)	adina	
+	+ ("adina"  ADB ARR)
+
+nahi ala ez
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	nahi	
+	(FORMA)	ala	
+	(FORMA)	ez	
+
+nahi baino
+	#BST
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nahi	
+	(FORMA)	baino	
+
+nahi bezain
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nahi	
+	(FORMA)	bezain	
+
+nahi bezainbat
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nahi	
+	(LEMA)	bezainbat	
+	+ ("bezainbat"  DET DZG)
+
+nahi bezainbat
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nahi	
+	(FORMA)	bezainbat	
+
+nahi bezala
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nahi	
+	(FORMA)	bezala	
+
+nahi bezalako
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nahi	
+	(LEMA)	bezalako	
+	+ ("bezalako"  ADJ ARR)
+
+nahi eta nahi ez
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	nahi	
+	(FORMA)	eta	
+	(FORMA)	nahi	
+	(FORMA)	ez	
+
+nahi hainbat
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nahi	
+	(LEMA)	hainbat	
+	+ ("hainbat"  DET DZG)
+
+nahi hainbat
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nahi	
+	(FORMA)	hainbat	
+
+nahi ukan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nahi	
+	(LEMA)	ukan	
+	+ ("ukan"  ADI SIN)
+
+nahita ere
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nahita	
+	(FORMA)	ere	
+
+nahiz eta
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nahiz	
+	(FORMA)	eta	
+
+Napar Buru Batzarra
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Napar	
+	(FORMA)	Buru	
+	(LEMA)	Batzarra	
+	+ ("batzar"  IZE ARR)
+
+natur zientzia
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	natur	
+	(LEMA)	zientzia	
+	+ ("zientzia"  IZE ARR)
+
+Nazio Askapenerako Euskal Mugimendua
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Nazio	
+	(FORMA)	Askapenerako	
+	(FORMA)	Euskal	
+	(LEMA)	Mugimendua	
+	+ ("mugimendu"  IZE ARR)
+
+Nazio Batuen Erakundea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Nazio	
+	(FORMA)	Batuen	
+	(LEMA)	Erakundea	
+	+ ("erakunde"  IZE ARR)
+
+nec plus ultra
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	nec	
+	(FORMA)	plus	
+	(LEMA)	ultra	
+	+ ("ultra"  IZE ARR)
+
+negar batean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	negar	
+	(FORMA)	batean	
+
+negarrari eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	negarrari	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+negarrari eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	negarrari	
+
+nehoiz ere
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nehoiz	
+	(FORMA)	ere	
+
+nehor ere
+	#IOR IZGMGB
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	nehor	
+	+ ("nehor"  IOR IZGMGB)
+	(FORMA)	ere	
+
+nemine discrepante
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nemine	
+	(LEMA)	discrepante	
+	+ ("discrepante"  HAOS)
+
+neska koskor
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	neska	
+	(LEMA)	koskor	
+	+ ("koskor"  ADJ ARR)
+
+nobela beltz
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nobela	
+	(LEMA)	beltz	
+	+ ("beltz"  ADJ ARR)
+
+noiz baino noiz
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	noiz	
+	(FORMA)	baino	
+	(FORMA)	noiz	
+
+noiz behinka
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	noiz	
+	(LEMA)	behinka	
+	+ ("behinka"  HAOS)
+
+noiz edo behin
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	noiz	
+	(FORMA)	edo	
+	(FORMA)	behin	
+
+noiz edo noiz
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	noiz	
+	(FORMA)	edo	
+	(FORMA)	noiz	
+
+noiz ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	noiz	
+	(FORMA)	ere	
+
+noiz eta ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	noiz	
+	(FORMA)	eta	
+	(FORMA)	ere	
+
+noiz nola
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	noiz	
+	(FORMA)	nola	
+
+noizean behinka
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	noizean	
+	(FORMA)	behinka	
+
+noizean noiz
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	noizean	
+	(FORMA)	noiz	
+
+noizetik noizera
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	noizetik	
+	(FORMA)	noizera	
+
+noizik behinean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	noizik	
+	(FORMA)	behinean	
+
+noizik behinka
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	noizik	
+	(FORMA)	behinka	
+
+noizik noizera
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	noizik	
+	(FORMA)	noizera	
+
+noiznahi den
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	noiznahi	
+	(FORMA)	den	
+
+nola edo hala
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	nola	
+	(FORMA)	edo	
+	(FORMA)	hala	
+
+nola eta ez
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	nola	
+	(FORMA)	eta	
+	(FORMA)	ez	
+
+nola hala
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nola	
+	(FORMA)	hala	
+
+nolabait ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nolabait	
+	(FORMA)	ere	
+
+nolanahi ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nolanahi	
+	(FORMA)	ere	
+
+non edo han
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	non	
+	(FORMA)	edo	
+	(FORMA)	han	
+
+non edo non
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	non	
+	(FORMA)	edo	
+	(FORMA)	non	
+
+non ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	non	
+	(FORMA)	ere	
+
+non eta ez
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	non	
+	(FORMA)	eta	
+	(FORMA)	ez	
+
+non plus ultra
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	non	
+	(FORMA)	plus	
+	(LEMA)	ultra	
+	 ("ultra"  IZE ARR)
+
+nonahi den
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nonahi	
+	(FORMA)	den	
+
+nonbait han
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nonbait	
+	(FORMA)	han	
+
+nonbait hor
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nonbait	
+	(FORMA)	hor	
+
+nondik edo handik
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	nondik	
+	(FORMA)	edo	
+	(FORMA)	handik	
+
+nondik ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nondik	
+	(FORMA)	ere	
+
+nondik nora
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nondik	
+	(FORMA)	nora	
+
+non-nahi den
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	non-nahi	
+	(FORMA)	den	
+
+nor edo nor
+	#IOR IZGMGB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	nor	
+	(FORMA)	edo	
+	(LEMA)	nor	
+	+ ("nor"  IOR IZGGAL)
+
+nora edo hara
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	nora	
+	(FORMA)	edo	
+	(FORMA)	hara	
+
+nora ezean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nora	
+	(FORMA)	ezean	
+
+nora gabe
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	nora	
+	(FORMA)	gabe	
+
+Nortasun Agiri Nazional
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Nortasun	
+	(FORMA)	Agiri	
+	(LEMA)	Nazional	
+	+ ("nazional"  ADJ ARR)
+
+Nortasun-Agiri Nazional
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Nortasun-Agiri	
+	(LEMA)	Nazional	
+	+ ("nazional"  ADJ ARR)
+
+ñañan egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ñañan	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+ñañan egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	ñañan	
+
+ñir-ñir egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ñir-ñir	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+ñir-ñir egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	ñir-ñir	
+
+ñirñir egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ñirñir	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+ñirñir egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	ñirñir	
+
+Objektu Hegalari Ezezaguna
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Objektu	
+	(FORMA)	Hegalari	
+	(LEMA)	Ezezaguna	
+	+ ("ezezagun"  ADJ ARR)
+
+odol bero
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	odol	
+	(LEMA)	bero	
+	+ ("bero"  ADJ ARR)
+
+odol gaizto
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	odol	
+	(LEMA)	gaizto	
+	+ ("gaizto"  ADJ ARR)
+
+odol hotzean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	odol	
+	(FORMA)	hotzean	
+
+ogi arraila
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ogi	
+	(LEMA)	arraila	
+	+ ("arrail"  ADJ ARR)
+
+ohi bezala
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ohi	
+	(FORMA)	bezala	
+
+ohi bezalako
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ohi	
+	(LEMA)	bezalako	
+	+ ("bezalako"  ADJ ARR)
+
+ohi ez bezala
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	ohi	
+	(FORMA)	ez	
+	(FORMA)	bezala	
+
+ohi ez bezalako
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	ohi	
+	(FORMA)	ez	
+	(LEMA)	bezalako	
+	+ ("bezalako"  ADJ ARR)
+
+ohiz kanpoko
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ohiz	
+	(LEMA)	kanpoko	
+	+ ("kanpoko"  ADJ ARR)
+
+ohorezko euskaltzain
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	ohorezko	
+	 ("ohorezko"  ADJ ARR)
+	(LEMA)	euskaltzain	
+	+ ("euskaltzain"  IZE ARR)
+
+oihuz egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	oihuz	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+oihuz egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	oihuz	
+
+oin hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	oin	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+oina eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	oina	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+oina eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	oina	
+
+Oinarrizko Hezkuntza Orokorra
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Oinarrizko	
+	(FORMA)	Hezkuntza	
+	(LEMA)	Orokorra	
+	+ ("orokor"  ADJ ARR)
+
+Oinarrizko Irakaskuntza
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Oinarrizko	
+	(LEMA)	Irakaskuntza	
+	+ ("irakaskuntza"  IZE ARR)
+
+ok egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ok	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+ok eragin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ok	
+	(LEMA)	eragin	
+	+ ("eragin"  ADI SIN)
+
+oka egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	oka	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+oka egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	oka	
+
+oka eragin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	oka	
+	(LEMA)	eragin	
+	+ ("eragin"  ADI SIN)
+
+oker ibili
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	oker	
+	(LEMA)	ibili	
+	+ ("ibili"  ADI SIN)
+
+oker ibili
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	ibili	
+	+ ("ibili"  ADI SIN)
+	(FORMA)	oker	
+
+Olinpiadetarako Nazioarteko Batzordea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Olinpiadetarako	
+	(FORMA)	Nazioarteko	
+	(LEMA)	Batzordea	
+	+ ("batzorde"  IZE ARR)
+
+olo gaizto
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	olo	
+	(LEMA)	gaizto	
+	+ ("gaizto"  ADJ ARR)
+
+on beharrez
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	on	
+	(FORMA)	beharrez	
+
+on iritzi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	on	
+	(LEMA)	iritzi	
+	+ ("iritzi"  ADI SIN)
+
+ondasun higiezin
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ondasun	
+	(LEMA)	higiezin	
+	+ ("higiezin"  ADJ ARR)
+
+ondoz ondo
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ondoz	
+	(FORMA)	ondo	
+
+ondoz ondoko
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ondoz	
+	(LEMA)	ondoko	
+	+ ("ondoko"  ADJ ARR)
+
+onez onean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	onez	
+	(FORMA)	onean	
+
+onez onez
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	onez	
+	(FORMA)	onez	
+
+onezkoak egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	onezkoak	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+onezkoak egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	onezkoak	
+
+onik onenean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	onik	
+	(FORMA)	onenean	
+
+ontza urre
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ontza	
+	(LEMA)	urre	
+	+ ("urre"  IZE ARR)
+
+ontzako urre
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ontzako	
+	(LEMA)	urre	
+	+ ("urre"  IZE ARR)
+
+ontzat eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ontzat	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+ontzat eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	ontzat	
+
+opa egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	opa	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+opa ukan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	opa	
+	(LEMA)	ukan	
+	+ ("ukan"  ADI SIN)
+
+oraindik ere
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	oraindik	
+	(FORMA)	ere	
+
+oraindik orain
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	oraindik	
+	(LEMA)	orain	
+	+ ("orain"  ADB ARR)
+
+ordu arte
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ordu	
+	(FORMA)	arte	
+
+ordu ezkero
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ordu	
+	(FORMA)	ezkero	
+
+ordu gaiztoan
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ordu	
+	(FORMA)	gaiztoan	
+
+ordu onean
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ordu	
+	(FORMA)	onean	
+
+ordura arte
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ordura	
+	(FORMA)	arte	
+
+ordurik hona
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ordurik	
+	(FORMA)	hona	
+
+ordutik hona
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ordutik	
+	(FORMA)	hona	
+
+orduz geroz
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	orduz	
+	(LEMA)	geroz	
+	+ ("geroz"  ADB ARR)
+
+orduz geroztik
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	orduz	
+	(LEMA)	geroztik	
+	+ ("geroztik"  ADB ARR)
+
+oro har
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	oro	
+	(FORMA)	har	
+
+ororen buru
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ororen	
+	(FORMA)	buru	
+
+ororen buruan
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ororen	
+	(FORMA)	buruan	
+
+ororen gainetik
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ororen	
+	(FORMA)	gainetik	
+
+orotan gaindi
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	orotan	
+	(FORMA)	gaindi	
+
+oroz gain
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	oroz	
+	(FORMA)	gain	
+
+oroz gainetik
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	oroz	
+	(FORMA)	gainetik	
+
+orpoz orpo
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	orpoz	
+	(FORMA)	orpo	
+
+orro egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	orro	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+orro egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	orro	
+
+ospa egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ospa	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+ospa egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	ospa	
+
+ostatuz egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ostatuz	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+ostatuz egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	ostatuz	
+
+ostegun gizen
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ostegun	
+	(LEMA)	gizen	
+	+ ("gizen"  ADJ ARR)
+
+ostera ere
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ostera	
+	(FORMA)	ere	
+
+ostikoz jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ostikoz	
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+
+ostikoz jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+	(FORMA)	ostikoz	
+
+ote beltz
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ote	
+	(LEMA)	beltz	
+	+ ("beltz"  ADJ ARR)
+
+ote zuri
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ote	
+	(LEMA)	zuri	
+	+ ("zuri"  ADJ ARR)
+
+otoi egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	otoi	
+
+otoz otoan
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	otoz	
+	(FORMA)	otoan	
+
+oxido nitriko
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	oxido	
+	(LEMA)	nitriko	
+	+ ("nitriko"  ADJ ARR)
+
+pa eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	pa	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+pa eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	pa	
+
+Palestinaren Askapenerako Erakundea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Palestinaren	
+	(FORMA)	Askapenerako	
+	(LEMA)	Erakundea	
+	+ ("erakunde"  IZE ARR)
+
+pane lucrando
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	pane	
+	(LEMA)	lucrando	
+	+ ("lucrando"  HAOS)
+
+panem et circenses
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	panem	
+	(FORMA)	et	
+	(LEMA)	circenses	
+	+ ("circenses"  HAOS)
+
+paradisuko hegazti
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	paradisuko	
+	(LEMA)	hegazti	
+	+ ("hegazti"  IZE ARR)
+
+parez pare
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	parez	
+	(FORMA)	pare	
+
+parte zahar
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	parte	
+	(LEMA)	zahar	
+	+ ("zahar"  ADJ ARR)
+
+partila egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	partila	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+peccata minuta
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	peccata	
+	(LEMA)	minuta	
+	+ ("minuta"  IZE ARR)
+
+per capita
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	per	
+	(LEMA)	capita	
+	+ ("capita"  HAOS)
+
+per se
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	per	
+	(LEMA)	se	
+	+ ("se"  HAOS)
+
+pertsona fisiko
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	pertsona	
+	(LEMA)	fisiko	
+	+ ("fisiko"  ADJ ARR)
+
+pertsona juridiko
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	pertsona	
+	(LEMA)	juridiko	
+	+ ("juridiko"  ADJ ARR)
+
+petit comit
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	petit	
+	(LEMA)	comit	
+	+ ("comit"  HAOS)
+
+pikutara bidali
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	pikutara	
+	(LEMA)	bidali	
+	+ ("bidali"  ADI SIN)
+
+pikutara bidali
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	bidali	
+	+ ("bidali"  ADI SIN)
+	(FORMA)	pikutara	
+
+pikutara bota
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	pikutara	
+	(LEMA)	bota	
+	+ ("bota"  ADI SIN)
+
+pikutara bota
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	bota	
+	+ ("bota"  ADI SIN)
+	(FORMA)	pikutara	
+
+pikutara joan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	pikutara	
+	(LEMA)	joan	
+	+ ("joan"  ADI SIN)
+
+pikutara joan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	joan	
+	+ ("joan"  ADI SIN)
+	(FORMA)	pikutara	
+
+piper egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	piper	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+pipiak jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	pipiak	
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+
+pipiak jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+	(FORMA)	pipiak	
+
+pisu molekular
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	pisu	
+	(LEMA)	molekular	
+	+ ("molekular"  ADJ ARR)
+
+pixka bat
+	#DET DZG
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	pixka	
+	(LEMA)	bat	
+	+ ("bat"  DET DZH)
+
+planto egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	planto	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+planto egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	planto	
+
+post mortem
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	post	
+	(FORMA)	mortem	
+
+post scriptum
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	post	
+	(LEMA)	scriptum	
+	+ ("scriptum"  HAOS)
+
+pot egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	pot	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+pot egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	pot	
+
+poxi bat
+	#DET DZH
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	poxi	
+	(LEMA)	bat	
+	+ ("bat"  DET DZH)
+
+pozaren pozez
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	pozaren	
+	(FORMA)	pozez	
+
+praktikan jarri
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	praktikan	
+	(LEMA)	jarri	
+	+ ("jarri"  ADI SIN)
+
+praktikan jarri
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	jarri	
+	+ ("jarri"  ADI SIN)
+	(FORMA)	praktikan	
+
+preso altxatu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	preso	
+	(LEMA)	altxatu	
+	+ ("altxatu"  ADI SIN)
+
+preso altxatu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	altxatu	
+	+ ("altxatu"  ADI SIN)
+	(FORMA)	preso	
+
+prest egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	prest	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+prest egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	prest	
+
+prima facie
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	prima	
+	(LEMA)	facie	
+	+ ("facie"  HAOS)
+
+primus inter pares
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	primus	
+	(FORMA)	inter	
+	(LEMA)	pares	
+	+ ("pares"  HAOS)
+
+Probintziako Buletin Ofiziala
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Probintziako	
+	(FORMA)	Buletin	
+	(LEMA)	Ofiziala	
+	+ ("ofizial"  ADJ ARR)
+
+publikoarentzako salneurria
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	publikoarentzako	
+	(LEMA)	salneurria	
+	+ ("salneurri"  IZE ARR)
+
+puiesak eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	puiesak	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+puiesak eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	puiesak	
+
+puntu kardinal
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	puntu	
+	(LEMA)	kardinal	
+	+ ("kardinal"  ADJ ARR)
+
+pure egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	pure	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+purrust egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	purrust	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+purrust egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	purrust	
+
+putz egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	putz	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+putz egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	putz	
+
+putzak eduki
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	putzak	
+	(LEMA)	eduki	
+	+ ("eduki"  ADI SIN)
+
+putzak eduki
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eduki	
+	+ ("eduki"  ADI SIN)
+	(FORMA)	putzak	
+
+putzak eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	putzak	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+putzak eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	putzak	
+
+putzak hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	putzak	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+putzak hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+	(FORMA)	putzak	
+
+quid pro quo
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	quid	
+	(FORMA)	pro	
+	(LEMA)	quo	
+	+ ("quo"  HAOS)
+
+saka egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	saka	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+saka egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	saka	
+
+salbu eta
+	#LOT JNT
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	salbu	
+	(FORMA)	eta	
+
+Sanitate Urgazle Teknikoa
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Sanitate	
+	(FORMA)	Urgazle	
+	(LEMA)	Teknikoa	
+	+ ("tekniko"  IZE ARR)
+
+Santa Ageda
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Santa	
+	(LEMA)	Ageda	
+	+ ("Ageda"  IZE IZB)
+
+santa sekula
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	santa	
+	(FORMA)	sekula	
+
+santa sekulan
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	santa	
+	(FORMA)	sekulan	
+
+sardina zahar
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	sardina	
+	(LEMA)	zahar	
+	+ ("zahar"  ADJ ARR)
+
+sarri arte
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	sarri	
+	(FORMA)	arte	
+
+sarri askotan
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	sarri	
+	(FORMA)	askotan	
+
+segan egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	segan	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+segan egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	segan	
+
+segun eta
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	segun	
+	(FORMA)	eta	
+
+segur aski
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	segur	
+	(FORMA)	aski	
+
+Segurtasun Nuklearreko Kontseilua
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Segurtasun	
+	(FORMA)	Nuklearreko	
+	(LEMA)	Kontseilua	
+	+ ("kontseilu"  IZE ARR)
+
+seguru asko
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	seguru	
+	(FORMA)	asko	
+
+seguru egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	seguru	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+seguru egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	seguru	
+
+sekula ere
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	sekula	
+	(FORMA)	ere	
+
+sekula guztian
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	sekula	
+	(FORMA)	guztian	
+
+sekula santan
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	sekula	
+	(FORMA)	santan	
+
+seme besoetako
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	seme	
+	(LEMA)	besoetako	
+	+ ("besoetako"  ADJ ARR)
+
+senetik atera
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	senetik	
+	(LEMA)	atera	
+	+ ("atera"  ADI SIN)
+
+senetik atera
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	atera	
+	+ ("atera"  ADI SIN)
+	(FORMA)	senetik	
+
+senperrenak ikusi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	senperrenak	
+	(LEMA)	ikusi	
+	+ ("ikusi"  ADI SIN)
+
+senperrenak ikusi
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	ikusi	
+	+ ("ikusi"  ADI SIN)
+	(FORMA)	senperrenak	
+
+sine die
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	sine	
+	(FORMA)	die	
+
+so egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	so	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+so egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	so	
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+
+so egon
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egon	
+	+ ("egon"  ADI SIN)
+	(FORMA)	so	
+
+Sobiet Batasuna
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Sobiet	
+	(LEMA)	Batasuna	
+	+ ("batasun"  IZE ARR)
+
+Sobietar Batasuna
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	Sobietar	
+	(LEMA)	Batasuna	
+	+ ("batasun"  IZE ARR)
+
+Sobietar Errepublika Sozialisten Batasuna
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Sobietar	
+	(FORMA)	Errepublika	
+	(FORMA)	Sozialisten	
+	(LEMA)	Batasuna	
+	+ ("batasun"  IZE ARR)
+
+sor eta gor
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	sor	
+	(FORMA)	eta	
+	(FORMA)	gor	
+
+sor eta lor
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	sor	
+	(FORMA)	eta	
+	(FORMA)	lor	
+
+sotto voce
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	sotto	
+	(LEMA)	voce	
+	+ ("voce"  HAOS)
+
+sozietate anonimo
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	sozietate	
+	(LEMA)	anonimo	
+	+ ("anonimo"  ADJ ARR)
+
+statu quo
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	statu	
+	(LEMA)	quo	
+	+ ("quo"  HAOS)
+
+strictu sensu
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	strictu	
+	(LEMA)	sensu	
+	+ ("sensu"  HAOS)
+
+su artifizial
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	su	
+	(LEMA)	artifizial	
+	+ ("artifizial"  ADJ ARR)
+
+su eta gar
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	su	
+	(FORMA)	eta	
+	(FORMA)	gar	
+
+suak hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	suak	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+suak hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+	(FORMA)	suak	
+
+sub conditione
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	sub	
+	(LEMA)	conditione	
+	+ ("conditione"  HAOS)
+
+sui generis
+	#ADJ ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	sui	
+	(LEMA)	generis	
+	+ ("generis"  HAOS)
+
+sukar beltz
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	sukar	
+	(LEMA)	beltz	
+	+ ("beltz"  ADJ ARR)
+
+sukar ustel
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	sukar	
+	(LEMA)	ustel	
+	+ ("ustel"  ADJ ARR)
+
+sursum corda
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	sursum	
+	(LEMA)	corda	
+	+ ("corda"  HAOS)
+
+tai gabe
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	tai	
+	(LEMA)	gabe	
+	+ ("gabe"  ADB ARR)
+
+talka jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	talka	
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+
+talka jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+	(FORMA)	talka	
+
+tamaina hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	tamaina	
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+
+tamaina hartu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	hartu	
+	+ ("hartu"  ADI SIN)
+	(FORMA)	tamaina	
+
+tati egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	tati	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+telefonoz deitu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	telefonoz	
+	(LEMA)	deitu	
+	+ ("deitu"  ADI SIN)
+
+telefonoz deitu
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	deitu	
+	+ ("deitu"  ADI SIN)
+	(FORMA)	telefonoz	
+
+tenk egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	tenk	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+tenk egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	tenk	
+
+tira ahala
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	tira	
+	(FORMA)	ahala	
+
+tira ahala tira
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	tira	
+	(FORMA)	ahala	
+	(FORMA)	tira	
+
+tok pisin
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	tok	
+	(LEMA)	pisin	
+	+ ("pisin"  IZE ARR)
+
+topo egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	topo	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+topo egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	topo	
+
+topo eragin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	topo	
+	(LEMA)	eragin	
+	+ ("eragin"  ADI SIN)
+
+topoz topo
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	topoz	
+	(FORMA)	topo	
+
+topoz topo egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	topoz	
+	(FORMA)	topo	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+Trafiko eta Aparkamenduaren Ordenamendua
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Trafiko	
+	(FORMA)	eta	
+	(FORMA)	Aparkamenduaren	
+	(LEMA)	Ordenamendua	
+	+ ("ordenamendu"  IZE ARR)
+
+trankart egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	trankart	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+tren laster
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	tren	
+	(LEMA)	laster	
+	+ ("laster"  ADJ ARR)
+
+trikun-trakun egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	trikun-trakun	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+tripako min
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	tripako	
+	(LEMA)	min	
+	+ ("min"  IZE ARR)
+
+triska egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	triska	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+tse-tse euli
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	tse-tse	
+	(LEMA)	euli	
+	+ ("euli"  IZE ARR)
+
+tu egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	tu	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+tu egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	tu	
+
+tupust egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	tupust	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+tupust egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	tupust	
+
+tupust eragin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	tupust	
+	(LEMA)	eragin	
+	+ ("eragin"  ADI SIN)
+
+tupust eragin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eragin	
+	+ ("eragin"  ADI SIN)
+	(FORMA)	tupust	
+
+turrut egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	turrut	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+txiki-txiki egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	txiki-txiki	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+txiki-txiki egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	txiki-txiki	
+
+txil egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	txil	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+txil egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	txil	
+
+txitxarro beltz
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	txitxarro	
+	(LEMA)	beltz	
+	+ ("beltz"  ADJ ARR)
+
+txorta jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	txorta	
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+
+txorta jo
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	jo	
+	+ ("jo"  ADI SIN)
+	(FORMA)	txorta	
+
+txortan egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	txortan	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+txortan egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	txortan	
+
+Udako Euskal Unibertsitatea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Udako	
+	(FORMA)	Euskal	
+	(LEMA)	Unibertsitatea	
+	+ ("unibertsitate"  IZE ARR)
+
+Umetoki Barneko Gailua
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Umetoki	
+	(FORMA)	Barneko	
+	(LEMA)	Gailua	
+	+ ("gailu"  IZE ARR)
+
+Unibertsitate Zerbitzuetarako Euskal Ikastetxea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	Unibertsitate	
+	(FORMA)	Zerbitzuetarako	
+	(FORMA)	Euskal	
+	(LEMA)	Ikastetxea	
+	+ ("ikastetxe"  IZE ARR)
+
+Unibertsitatearen Erreformarako Legea
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Unibertsitatearen	
+	(FORMA)	Erreformarako	
+	(LEMA)	Legea	
+	+ ("lege"  IZE ARR)
+
+Unibertsitateko Irakasleriarako Batzordea
+	#IZE LIB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Unibertsitateko	
+	(FORMA)	Irakasleriarako	
+	(LEMA)	Batzordea	
+	+ ("batzorde"  IZE ARR)
+
+Unibertsitatera Bideratzeko Ikasturte
+	#IZE IZB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	Unibertsitatera	
+	(FORMA)	Bideratzeko	
+	(LEMA)	Ikasturte	
+	+ ("ikasturte"  IZE ARR)
+
+ur azpi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ur	
+	(LEMA)	azpi	
+	+ ("azpi"  IZE ARR)
+
+ur handi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ur	
+	(LEMA)	handi	
+	+ ("handi"  ADJ ARR)
+
+urinean eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	urinean	
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+
+urinean eman
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eman	
+	+ ("eman"  ADI SIN)
+	(FORMA)	urinean	
+
+urte natural
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	urte	
+	(LEMA)	natural	
+	+ ("natural"  ADJ ARR)
+
+usin egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	usin	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+usin egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	usin	
+
+uste bezain
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	uste	
+	(FORMA)	bezain	
+
+uste on
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	uste	
+	(LEMA)	on	
+	+ ("on"  ADJ ARR)
+
+uste ukan
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	uste	
+	(LEMA)	ukan	
+	+ ("ukan"  ADI SIN)
+
+uve bikoitz
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	uve	
+	(LEMA)	bikoitz	
+	+ ("bikoitz"  ADJ ARR)
+
+uzkur egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	uzkur	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+uzkur egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	uzkur	
+
+uztarri motz
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	uztarri	
+	(LEMA)	motz	
+	+ ("motz"  ADJ ARR)
+
+vis a vis
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	vis	
+	(FORMA)	a	
+	(LEMA)	vis	
+	+ ("vis"  HAOS)
+
+vox Dei
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	vox	
+	(LEMA)	Dei	
+	+ ("Dei"  HAOS)
+
+vox populi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	vox	
+	(LEMA)	populi	
+	+ ("populi"  HAOS)
+
+web gune
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	web	
+	(LEMA)	gune	
+	+ ("gune"  IZE ARR)
+
+zabu egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	zabu	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+zanpa-zanpa egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	zanpa-zanpa	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+zapart egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	zapart	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+zapart egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	zapart	
+
+zart egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	zart	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+zein ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	zein	
+	+ ("zein"  DET NOLGAL)
+	(FORMA)	ere	
+
+zenbaki erreal
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	zenbaki	
+	(LEMA)	erreal	
+	+ ("erreal"  ADJ ARR)
+
+zenbat ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	zenbat	
+	(FORMA)	ere	
+
+zer edo zer
+	#IOR IZGMGB
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	zer	
+	(FORMA)	edo	
+	(LEMA)	zer	
+	+ ("zer"  DET NOLGAL)
+
+zer ere
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	zer	
+	+ ("zer"  DET NOLGAL)
+	(FORMA)	ere	
+
+zer gerta ere
+	#ITJ
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	zer	
+	(FORMA)	gerta	
+	(FORMA)	ere	
+
+zeren eta
+	#LOT LOK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	zeren	
+	(FORMA)	eta	
+
+zinak eta minak
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	zinak	
+	(FORMA)	eta	
+	(FORMA)	minak	
+
+zintz egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	zintz	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+zintz egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+	(FORMA)	zintz	
+
+zintz eragin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	zintz	
+	(LEMA)	eragin	
+	+ ("eragin"  ADI SIN)
+
+zintz eragin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(LEMA)	eragin	
+	+ ("eragin"  ADI SIN)
+	(FORMA)	zintz	
+
+zirt edo zart
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	zirt	
+	(FORMA)	edo	
+	(LEMA)	zart	
+	+ ("zart"  ITJ)
+
+zirt edo zart egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	4
+	(FORMA)	zirt	
+	(FORMA)	edo	
+	(FORMA)	zart	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+zirt eta zart
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	zirt	
+	(FORMA)	eta	
+	(FORMA)	zart	
+
+ziur aski
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ziur	
+	(FORMA)	aski	
+
+ziur asko
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	ziur	
+	(FORMA)	asko	
+
+zor edo lor
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	zor	
+	(FORMA)	edo	
+	(FORMA)	lor	
+
+zor eta lor
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	zor	
+	(FORMA)	eta	
+	(FORMA)	lor	
+
+zor nahiz lor
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	zor	
+	(FORMA)	nahiz	
+	(FORMA)	lor	
+
+zor publiko
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	zor	
+	(LEMA)	publiko	
+	+ ("publiko"  ADJ ARR)
+
+zortziko handi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	zortziko	
+	(LEMA)	handi	
+	+ ("handi"  ADJ ARR)
+
+zortziko nagusi
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	zortziko	
+	(LEMA)	nagusi	
+	+ ("nagusi"  ADJ ARR)
+
+zortziko txiki
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	zortziko	
+	(LEMA)	txiki	
+	+ ("txiki"  ADJ ARR)
+
+zotz egin
+	#ADI ADK
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	zotz	
+	(LEMA)	egin	
+	+ ("egin"  ADI SIN)
+
+zulo beltz
+	#IZE ARR
+	(BAI)
+	(OSAGAIAK)	2
+	(FORMA)	zulo	
+	(LEMA)	beltz	
+	+ ("beltz"  ADJ ARR)
+
+zur eta lur
+	#ADB ARR
+	(BAI)
+	(OSAGAIAK)	3
+	(FORMA)	zur	
+	(FORMA)	eta	
+	(FORMA)	lur	
+

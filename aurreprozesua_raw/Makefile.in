@@ -1,0 +1,30 @@
+# Hau erabiltzeko honako ingurune aldagaiak definitu behar dira:
+
+#deps: morfologia
+
+INCLUDE= @CPPFLAGS@ -I../morfologia
+
+SOURCES= automata.cc token_raw.cc file_mng_raw.cc status_raw.cc an_lex_raw.cc aurreproz_raw.cc
+
+INCLUDEMORF=$(INCLUDE) 
+
+MEMBERS=$(SOURCES:.cc=.o)
+
+
+CCC= @CXX@
+CCFLAGS= -O -fpic -Wall
+CPPFLAGS= -D_SUN_CC  -D__$(OSTYPE)__
+
+COMPILE.cc=$(CCC) $(CCFLAGS) $(CPPFLAGS) $(INCLUDE) -c
+
+all: $(MEMBERS)
+
+
+$(MEMBERS): $(SOURCES)
+
+
+clean: FORCE
+	rm -f $(MEMBERS)
+
+
+FORCE:
