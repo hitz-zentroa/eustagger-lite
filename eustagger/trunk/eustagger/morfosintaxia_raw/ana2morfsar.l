@@ -113,3 +113,9 @@ int ana2morfsarwrap(){
    return (1);
 }
 
+void bufferParse(char *buffer, int size) {
+  bStateAna2Morfsar = yy_scan_buffer(buffer,size);
+  yy_switch_to_buffer(bStateAna2Morfsar);
+  yyparse();
+  yy_delete_buffer(bStateAna2Morfsar);
+}

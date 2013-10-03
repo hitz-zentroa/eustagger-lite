@@ -43,7 +43,7 @@ class fileMngRaw
   
  private:
   
-  void kargatuStdBufferra();                // bufferra berritu sarrera estandarrarekin
+  int kargatuStdBufferra();                // bufferra berritu sarrera estandarrarekin
 
 };
 

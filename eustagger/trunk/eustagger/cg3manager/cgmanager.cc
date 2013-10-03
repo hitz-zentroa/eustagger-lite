@@ -102,8 +102,9 @@ int cgManager::initGrammar(string grammarFileName, int sections, char prefix, in
 }
 
 int cgManager::applyGrammar() { // Momentuz kargatutako sekzio guztiak
+  CG3::istream instream(this->ux_stdin);
   try {
-    this->applicator->runGrammarOnText(this->ux_stdin, this->ux_stdout);
+    this->applicator->runGrammarOnText(instream, this->ux_stdout); //this->ux_stdin
   }
   catch (exception& e) {
     cerr << e.what();

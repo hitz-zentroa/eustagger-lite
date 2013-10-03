@@ -174,7 +174,7 @@ correct         ^[C|X]
                    yyout = irteera_fitx;
                    fclose(yyin);
 
-                   YY_BUFFER_STATE bStateHat = yy_scan_buffer(testu_buffer,buffer_size);
+                   bStateHat = yy_scan_buffer(testu_buffer,buffer_size);
                    yy_switch_to_buffer(bStateHat); 
 
                    BEGIN(testua);

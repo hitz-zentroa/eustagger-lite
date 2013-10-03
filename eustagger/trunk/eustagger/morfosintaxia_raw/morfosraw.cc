@@ -1,5 +1,6 @@
 #include "morfosraw.h"
 #include "ana2morfsar.h"
+#include <stdlib.h>
 #include <iostream>
 #include <fstream>
 #include <sstream>
