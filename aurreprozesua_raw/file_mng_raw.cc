@@ -96,9 +96,8 @@ long  fileMngRaw::non()                     // offset-a ematen du
 char  fileMngRaw::get() {                    // hurrengo karakterea lortu
 
   char uneko_c;
-  int zenbat;
 
-  if (this->posizioa == this->bufferLuzera) zenbat = this->kargatuStdBufferra();
+  if (this->posizioa == this->bufferLuzera) this->kargatuStdBufferra();
   if (!this->sarreraAmaitua) { 
     uneko_c = this->buffer[this->posizioa];
     this->posizioa++;
@@ -116,14 +115,9 @@ void fileMngRaw::close() {                   // fitxategia itxi
 }
 
 int fileMngRaw::eof() {                      // fitxategia bukatu den
-        
-  if (this->posizioa == this->bufferLuzera) {
-    
-    if (this->kargatuStdBufferra() == 0) 
-      {this->sarreraAmaitua = true; return 1;}
-    return 0;
-  }
-  else return 0;  
+
+  if (this->posizioa == this->bufferLuzera) this->kargatuStdBufferra();
+  return this->sarreraAmaitua;
 }
 
 
@@ -133,7 +127,7 @@ fileMngRaw::~fileMngRaw()                // funtzio suntsitzailea
    this->fitxategia.close();
 }
 
-int fileMngRaw::kargatuStdBufferra() {
+void fileMngRaw::kargatuStdBufferra() {
 
   char buf[MAX_BUFFER];
   if (this->sarreraEstandarra)
@@ -145,6 +139,7 @@ int fileMngRaw::kargatuStdBufferra() {
   this->bufferLuzera = this->buffer.size();
   this->posizioa = 0;
   this->stdLerroa++;
-  return  this->bufferLuzera - 1;
+  if (this->bufferLuzera == 1) // "\n" gehitzen zaio
+    this->sarreraAmaitua = true; 
 }
 
