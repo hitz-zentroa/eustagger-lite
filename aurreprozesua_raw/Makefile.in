@@ -12,8 +12,8 @@ MEMBERS=$(SOURCES:.cc=.o)
 
 
 CCC= @CXX@
-CCFLAGS= -O -fpic -Wall
-CPPFLAGS= -D_SUN_CC  -D__$(OSTYPE)__
+CCFLAGS= -O -fpic -Wall -fpermissive
+CPPFLAGS= 
 
 COMPILE.cc=$(CCC) $(CCFLAGS) $(CPPFLAGS) $(INCLUDE) -c
 

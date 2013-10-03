@@ -33,7 +33,7 @@ LD_FOMA = -lfoma
 #vislcg3
 DEFINE_CG3 = -DHAVE_BOOST
 INCLUDE_CG3 = @CONF_INCLUDE_VISLCG3@
-LD_CG3 = -lcg3
+LD_CG3 = -lcg3 -licuuc -licuio
 
 #swi prolog
 INCLUDE_SWIPL = @CONF_INCLUDE_SWIPL@
@@ -42,7 +42,7 @@ SWIPLLD_BINDIR = @CONF_SWIPLLD@
 export PATH := $(SWIPLLD_BINDIR):$(PATH)
 
 # morfologia
-DEFINE_MORFOLOGIA = -D_SUN_CC -D_BOOL_H_ -DNLS_ERRORS -D_USE_FOMA_ -D__BRIDGE_VARIANTS__
+DEFINE_MORFOLOGIA = -D_BOOL_H_ -DNLS_ERRORS -D_USE_FOMA_ -D__BRIDGE_VARIANTS__
 
 # morfosintaxia
 DEFINE_MORFOSINTAXIA = -D_REENTRANT -D__SWI_PROLOG__ -D__SWI_EMBEDDED__ -D_USE_SWI_
@@ -63,7 +63,7 @@ MEMBERS=$(DIRS:%=%/*.o)
 
 # konf orokorrak:
 
-DEFINE=  -D__$(OSTYPE)__ $(DEFINE_MORFOLOGIA) $(DEFINE_MORFOSINTAXIA) $(DEFINE_CG3)
+DEFINE=  $(DEFINE_MORFOLOGIA) $(DEFINE_MORFOSINTAXIA) $(DEFINE_CG3)
 INCLUDE= @CPPFLAGS@ $(INCLUDE_LOCAL)
 LDLIBS = @LDFLAGS@ $(LD_PCREPLUSPLUS) $(LD_FOMA) $(LD_CG3) $(LD_SWIPL)
 CCC= @CXX@
@@ -72,8 +72,8 @@ CCFLAGS= -Wall -frtti -fPIC -O2
 CPPFLAGS= $(DEFINE)  
 
 
-LINK.cc = swipl-ld -fpic -goal true -D_USE_SWI_ $(CPPFLAGS) -o $(BINPROGRAM) $(SOURCE) $(INCLUDE) $(LDLIBS) -L./ -leustagger var/morfosintaxia/prolog-swi/chart_parser_2004_morf.pl var/morfosintaxia/prolog-swi/morfosintaxia_gramatika_441.pl
-LINK_MORFOS.cc = swipl-ld -fpic -goal true -D_USE_SWI_ $(CPPFLAGS) -o $(BINPROGRAM_MORFOSINTAXIA) $(SOURCE_MORFOSINTAXIA) $(INCLUDE) $(LDLIBS) -L./ -leustagger var/morfosintaxia/prolog-swi/chart_parser_2004_morf.pl var/morfosintaxia/prolog-swi/morfosintaxia_gramatika_441.pl
+LINK.cc = swipl-ld -fpic -goal true -D_USE_SWI_ $(CPPFLAGS) -o $(BINPROGRAM) $(SOURCE) $(INCLUDE) -L./ -leustagger $(LDLIBS) var/morfosintaxia/prolog-swi/chart_parser_2004_morf.pl var/morfosintaxia/prolog-swi/morfosintaxia_gramatika_441.pl
+LINK_MORFOS.cc = swipl-ld -fpic -goal true -D_USE_SWI_ $(CPPFLAGS) -o $(BINPROGRAM_MORFOSINTAXIA) $(SOURCE_MORFOSINTAXIA) $(INCLUDE) -L./ -leustagger $(LDLIBS) var/morfosintaxia/prolog-swi/chart_parser_2004_morf.pl var/morfosintaxia/prolog-swi/morfosintaxia_gramatika_441.pl
 
 .PHONY: $(DIRS) clean
 

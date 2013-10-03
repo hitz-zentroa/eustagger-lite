@@ -5,6 +5,7 @@
 #ifdef _USE_SWI_
 #include "SWI-cpp.h"
 #endif
+#include <unistd.h>
 #include <stdio.h>
 #include <string>
 #include <iostream>

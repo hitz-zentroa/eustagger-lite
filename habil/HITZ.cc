@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include "HITZ.h"
 #include "bereiz_etq.h"
+#include <string.h>
 #include <string>
 #include <algorithm>
 #include <pcre++.h>

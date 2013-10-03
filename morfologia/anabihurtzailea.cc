@@ -1,4 +1,5 @@
 #include "anabihurtzailea.h"
+#include <string.h>
 #include <fstream>
 extern void bihur_asteris_maj(char *,char *);
 extern void bihur_maj_asteris(char *,char *);

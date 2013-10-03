@@ -9,6 +9,7 @@
  * **************************************************** */
 
 #include "morfsarFormatu.h"
+#include <string.h>
 #include <iostream>
 #include <sstream>
 #include <fstream>

@@ -58,7 +58,7 @@ int prozesatuCG3Raw(int maila, int cg3form, string &oinIzen) {
   
   
   cgApp.clean();
-  cgApp.close();
+  // cgApp.close();
   
   // Hemen lematizazioa sortu
   

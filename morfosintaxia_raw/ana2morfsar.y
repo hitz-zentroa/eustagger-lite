@@ -4,6 +4,7 @@
 %{
 #include <locale.h>
 #include <sstream>
+#include <string.h>
 #include <string>
 #include <iostream>
 #include "morfsarFormatu.h"
@@ -736,10 +737,3 @@ void  lortu_sarrera_homografo( char *cpLiteral, char *cpLema2, char *cpHomId, ch
   }
 }
 
-
-void bufferParse(char *buffer, int size) {
-  YY_BUFFER_STATE bStateAna2Morfsar = yy_scan_buffer(buffer,size);
-  yy_switch_to_buffer(bStateAna2Morfsar);
-  yyparse();
-  yy_delete_buffer(bStateAna2Morfsar);
-}

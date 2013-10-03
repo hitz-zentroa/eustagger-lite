@@ -1,4 +1,4 @@
-Terminals which are not used
+Terminals unused in grammar
 
    t_koma
 
@@ -23,16 +23,16 @@ Grammar
     9 analisiak: analisiak analisia
    10          | analisia
 
-   11 @1: /* empty */
+   11 $@1: /* empty */
 
-   12 analisia: t_erregela @1 t_paren_ireki anal lem_morf t_paren_itxi
+   12 analisia: t_erregela $@1 t_paren_ireki anal lem_morf t_paren_itxi
 
    13 anal: t_paren_ireki t_anal t_sinbolo t_paren_itxi
    14     | t_paren_ireki t_anal t_dolar t_sinbolo t_paren_itxi
 
-   15 @2: /* empty */
+   15 $@2: /* empty */
 
-   16 lem_morf: @2 lem_morfak
+   16 lem_morf: $@2 lem_morfak
 
    17 lem_morfak: lem_morfak lema
    18           | lem_morfak morfema
@@ -57,15 +57,15 @@ Grammar
 
    30 morfema_nor: t_paren_ireki t_morfema t_literal t_paren_itxi
 
-   31 @3: /* empty */
+   31 $@3: /* empty */
 
-   32 @4: /* empty */
+   32 $@4: /* empty */
 
-   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera @3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura @4 besteak t_paren_itxi
+   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura $@4 besteak t_paren_itxi
 
-   34 @5: /* empty */
+   34 $@5: /* empty */
 
-   35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera sarrera @5 sarrera_twol besteak t_paren_itxi
+   35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera sarrera $@5 sarrera_twol besteak t_paren_itxi
 
    36 lotura: t_paren_ireki t_lhb t_sinbolo t_paren_itxi
    37       | ezaugarria
@@ -165,13 +165,13 @@ analisiak (32)
     on left: 9 10, on right: 4 9
 analisia (33)
     on left: 12, on right: 9 10
-@1 (34)
+$@1 (34)
     on left: 11, on right: 12
 anal (35)
     on left: 13 14, on right: 12
 lem_morf (36)
     on left: 16, on right: 12
-@2 (37)
+$@2 (37)
     on left: 15, on right: 16
 lem_morfak (38)
     on left: 17 18 19 20, on right: 16 17 18
@@ -193,11 +193,11 @@ morfema_nor (46)
     on left: 30, on right: 28
 ezaugarriak (47)
     on left: 33 35, on right: 22 23 28
-@3 (48)
+$@3 (48)
     on left: 31, on right: 33
-@4 (49)
+$@4 (49)
     on left: 32, on right: 33
-@5 (50)
+$@5 (50)
     on left: 34, on right: 35
 lotura (51)
     on left: 36 37, on right: 33
@@ -342,11 +342,11 @@ state 11
 
 state 12
 
-   12 analisia: t_erregela . @1 t_paren_ireki anal lem_morf t_paren_itxi
+   12 analisia: t_erregela . $@1 t_paren_ireki anal lem_morf t_paren_itxi
 
-    $default  reduce using rule 11 (@1)
+    $default  reduce using rule 11 ($@1)
 
-    @1  go to state 17
+    $@1  go to state 17
 
 
 state 13
@@ -383,7 +383,7 @@ state 16
 
 state 17
 
-   12 analisia: t_erregela @1 . t_paren_ireki anal lem_morf t_paren_itxi
+   12 analisia: t_erregela $@1 . t_paren_ireki anal lem_morf t_paren_itxi
 
     t_paren_ireki  shift, and go to state 20
 
@@ -404,7 +404,7 @@ state 19
 
 state 20
 
-   12 analisia: t_erregela @1 t_paren_ireki . anal lem_morf t_paren_itxi
+   12 analisia: t_erregela $@1 t_paren_ireki . anal lem_morf t_paren_itxi
 
     t_paren_ireki  shift, and go to state 21
 
@@ -421,12 +421,12 @@ state 21
 
 state 22
 
-   12 analisia: t_erregela @1 t_paren_ireki anal . lem_morf t_paren_itxi
+   12 analisia: t_erregela $@1 t_paren_ireki anal . lem_morf t_paren_itxi
 
-    $default  reduce using rule 15 (@2)
+    $default  reduce using rule 15 ($@2)
 
     lem_morf  go to state 24
-    @2        go to state 25
+    $@2       go to state 25
 
 
 state 23
@@ -440,14 +440,14 @@ state 23
 
 state 24
 
-   12 analisia: t_erregela @1 t_paren_ireki anal lem_morf . t_paren_itxi
+   12 analisia: t_erregela $@1 t_paren_ireki anal lem_morf . t_paren_itxi
 
     t_paren_itxi  shift, and go to state 28
 
 
 state 25
 
-   16 lem_morf: @2 . lem_morfak
+   16 lem_morf: $@2 . lem_morfak
 
     t_paren_ireki  shift, and go to state 29
 
@@ -472,7 +472,7 @@ state 27
 
 state 28
 
-   12 analisia: t_erregela @1 t_paren_ireki anal lem_morf t_paren_itxi .
+   12 analisia: t_erregela $@1 t_paren_ireki anal lem_morf t_paren_itxi .
 
     $default  reduce using rule 12 (analisia)
 
@@ -495,7 +495,7 @@ state 29
 
 state 30
 
-   16 lem_morf: @2 lem_morfak .
+   16 lem_morf: $@2 lem_morfak .
    17 lem_morfak: lem_morfak . lema
    18           | lem_morfak . morfema
 
@@ -659,8 +659,8 @@ state 49
 
 state 50
 
-   33 ezaugarriak: t_paren_ireki . t_paren_ireki t_aldaera @3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura @4 besteak t_paren_itxi
-   35            | t_paren_ireki . t_paren_ireki t_sarrera sarrera @5 sarrera_twol besteak t_paren_itxi
+   33 ezaugarriak: t_paren_ireki . t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura $@4 besteak t_paren_itxi
+   35            | t_paren_ireki . t_paren_ireki t_sarrera sarrera $@5 sarrera_twol besteak t_paren_itxi
 
     t_paren_ireki  shift, and go to state 61
 
@@ -737,8 +737,8 @@ state 60
 
 state 61
 
-   33 ezaugarriak: t_paren_ireki t_paren_ireki . t_aldaera @3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura @4 besteak t_paren_itxi
-   35            | t_paren_ireki t_paren_ireki . t_sarrera sarrera @5 sarrera_twol besteak t_paren_itxi
+   33 ezaugarriak: t_paren_ireki t_paren_ireki . t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura $@4 besteak t_paren_itxi
+   35            | t_paren_ireki t_paren_ireki . t_sarrera sarrera $@5 sarrera_twol besteak t_paren_itxi
 
     t_aldaera  shift, and go to state 69
     t_sarrera  shift, and go to state 70
@@ -795,16 +795,16 @@ state 68
 
 state 69
 
-   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera . @3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura @4 besteak t_paren_itxi
+   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera . $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura $@4 besteak t_paren_itxi
 
-    $default  reduce using rule 31 (@3)
+    $default  reduce using rule 31 ($@3)
 
-    @3  go to state 73
+    $@3  go to state 73
 
 
 state 70
 
-   35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera . sarrera @5 sarrera_twol besteak t_paren_itxi
+   35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera . sarrera $@5 sarrera_twol besteak t_paren_itxi
 
     t_anal     shift, and go to state 74
     t_sarrera  shift, and go to state 75
@@ -830,7 +830,7 @@ state 72
 
 state 73
 
-   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera @3 . aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura @4 besteak t_paren_itxi
+   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 . aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura $@4 besteak t_paren_itxi
 
     t_anal     shift, and go to state 74
     t_sarrera  shift, and go to state 75
@@ -863,11 +863,11 @@ state 76
 
 state 77
 
-   35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera sarrera . @5 sarrera_twol besteak t_paren_itxi
+   35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera sarrera . $@5 sarrera_twol besteak t_paren_itxi
 
-    $default  reduce using rule 34 (@5)
+    $default  reduce using rule 34 ($@5)
 
-    @5  go to state 81
+    $@5  go to state 81
 
 
 state 78
@@ -881,7 +881,7 @@ state 78
 
 state 79
 
-   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera @3 aldaeraosoa . t_paren_ireki t_sarrera sarrera sarrera_twol lotura @4 besteak t_paren_itxi
+   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa . t_paren_ireki t_sarrera sarrera sarrera_twol lotura $@4 besteak t_paren_itxi
 
     t_paren_ireki  shift, and go to state 84
 
@@ -897,7 +897,7 @@ state 80
 
 state 81
 
-   35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera sarrera @5 . sarrera_twol besteak t_paren_itxi
+   35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera sarrera $@5 . sarrera_twol besteak t_paren_itxi
 
     t_paren_ireki  shift, and go to state 86
 
@@ -923,7 +923,7 @@ state 83
 
 state 84
 
-   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera @3 aldaeraosoa t_paren_ireki . t_sarrera sarrera sarrera_twol lotura @4 besteak t_paren_itxi
+   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki . t_sarrera sarrera sarrera_twol lotura $@4 besteak t_paren_itxi
 
     t_sarrera  shift, and go to state 91
 
@@ -955,7 +955,7 @@ state 86
 
 state 87
 
-   35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera sarrera @5 sarrera_twol . besteak t_paren_itxi
+   35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera sarrera $@5 sarrera_twol . besteak t_paren_itxi
 
     t_paren_ireki  shift, and go to state 99
 
@@ -991,7 +991,7 @@ state 90
 
 state 91
 
-   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera @3 aldaeraosoa t_paren_ireki t_sarrera . sarrera sarrera_twol lotura @4 besteak t_paren_itxi
+   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera . sarrera sarrera_twol lotura $@4 besteak t_paren_itxi
 
     t_anal     shift, and go to state 74
     t_sarrera  shift, and go to state 75
@@ -1092,7 +1092,7 @@ state 99
 
 state 100
 
-   35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera sarrera @5 sarrera_twol besteak . t_paren_itxi
+   35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera sarrera $@5 sarrera_twol besteak . t_paren_itxi
 
     t_paren_itxi  shift, and go to state 116
 
@@ -1120,7 +1120,7 @@ state 102
 
 state 103
 
-   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera @3 aldaeraosoa t_paren_ireki t_sarrera sarrera . sarrera_twol lotura @4 besteak t_paren_itxi
+   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera . sarrera_twol lotura $@4 besteak t_paren_itxi
 
     t_paren_ireki  shift, and go to state 86
 
@@ -1247,7 +1247,7 @@ state 115
 
 state 116
 
-   35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera sarrera @5 sarrera_twol besteak t_paren_itxi .
+   35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera sarrera $@5 sarrera_twol besteak t_paren_itxi .
 
     $default  reduce using rule 35 (ezaugarriak)
 
@@ -1261,7 +1261,7 @@ state 117
 
 state 118
 
-   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera @3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol . lotura @4 besteak t_paren_itxi
+   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol . lotura $@4 besteak t_paren_itxi
 
     t_paren_ireki  shift, and go to state 135
 
@@ -1413,11 +1413,11 @@ state 135
 
 state 136
 
-   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera @3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura . @4 besteak t_paren_itxi
+   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura . $@4 besteak t_paren_itxi
 
-    $default  reduce using rule 32 (@4)
+    $default  reduce using rule 32 ($@4)
 
-    @4  go to state 142
+    $@4  go to state 142
 
 
 state 137
@@ -1459,7 +1459,7 @@ state 141
 
 state 142
 
-   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera @3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura @4 . besteak t_paren_itxi
+   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura $@4 . besteak t_paren_itxi
 
     t_paren_ireki  shift, and go to state 99
 
@@ -1495,7 +1495,7 @@ state 145
 
 state 146
 
-   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera @3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura @4 besteak . t_paren_itxi
+   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura $@4 besteak . t_paren_itxi
 
     t_paren_itxi  shift, and go to state 149
 
@@ -1516,6 +1516,6 @@ state 148
 
 state 149
 
-   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera @3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura @4 besteak t_paren_itxi .
+   33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura $@4 besteak t_paren_itxi .
 
     $default  reduce using rule 33 (ezaugarriak)

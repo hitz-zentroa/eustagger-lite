@@ -1,4 +1,6 @@
 #include "file_mng_raw.h"
+#include <stdio.h>
+#include <stdlib.h>
 #include <string.h>
 #include <iostream>
 #include <fstream>
@@ -48,18 +50,13 @@ void  fileMngRaw::init( const string & fitxIzen ) // hasieraketa funtzioa
   }
     
   // sarrera estandarra bada
+  this->kargatuStdBufferra();
 
-  if (fitxIzen == "stdin") {
-      
-    this->kargatuStdBufferra();
+  if (fitxIzen == "stdin") {    
     this->sarreraEstandarra = 1;
-      
   }
-  
   else {
-
-    this->sarreraEstandarra = 0;      
-
+    this->sarreraEstandarra = 0;
   }
   
 }
@@ -67,33 +64,18 @@ void  fileMngRaw::init( const string & fitxIzen ) // hasieraketa funtzioa
 void  fileMngRaw::reset()                   // fitxategia lehen posizioan kokatu
 {
 
-  if (this->sarreraEstandarra) this->posizioa=0;
-  else this->fitxategia.seekg(0);
+  this->posizioa=0;
 
 }
 
 int   fileMngRaw::back(long offset)         // fitxategia birkokatu
 {
   
-  if (this->sarreraEstandarra) {
-    
-    if (offset <= this->posizioa) {
-      
-      this->posizioa = (int)offset;
-      return (1);
-      
-    }
-    else return (0);
+  if (offset <= this->posizioa) {    
+    this->posizioa = (int)offset;
+    return (1);
   }
-  else {
-    
-    int pos1 = this->fitxategia.tellg();
-    this->fitxategia.seekg(offset);
-    int pos2 = this->fitxategia.tellg();
-    if (pos1 != pos2) return 1;
-    else return 0;
-    
-  }
+  else return (0);
   
 }
 
@@ -108,82 +90,61 @@ int   fileMngRaw::back_token(long offset_pre, long offset)
 
 long  fileMngRaw::non()                     // offset-a ematen du
 {
-
-  if (this->sarreraEstandarra) return (this->posizioa);
-  else return(this->fitxategia.tellg());
-
+  return (this->posizioa);
 }
 
 char  fileMngRaw::get() {                    // hurrengo karakterea lortu
 
   char uneko_c;
+  int zenbat;
 
-  if (!this->sarreraAmaitua) {
-  
-    if (this->sarreraEstandarra) {
-		  
-      if (this->posizioa == this->bufferLuzera) this->kargatuStdBufferra();
-      uneko_c = this->buffer[this->posizioa];
-      this->posizioa++;
-      return uneko_c;
-      
-    }
-    else  {
-	
-      char kar;
-      this->fitxategia.get(kar);
-      return kar;
-      
-    }
-      
-  } else return (0);
+  if (this->posizioa == this->bufferLuzera) zenbat = this->kargatuStdBufferra();
+  if (!this->sarreraAmaitua) { 
+    uneko_c = this->buffer[this->posizioa];
+    this->posizioa++;
+    return uneko_c;
+  }
+  else return (0);
    
 }
 
 
 void fileMngRaw::close() {                   // fitxategia itxi
-  
-  this->fitxategia.close();
-  
+  if (!this->sarreraEstandarra) {    
+    this->fitxategia.close();
+  }
 }
 
 int fileMngRaw::eof() {                      // fitxategia bukatu den
+        
+  if (this->posizioa == this->bufferLuzera) {
     
-  if (this->sarreraEstandarra) {     
-    
-    if (this->posizioa == this->bufferLuzera) {
-      
-      if (cin.eof()) {this->sarreraAmaitua = true; return 1;}
-      this->kargatuStdBufferra();
-      return 0;
-      
-    }
-    else return 0;
-    
+    if (this->kargatuStdBufferra() == 0) 
+      {this->sarreraAmaitua = true; return 1;}
+    return 0;
   }
-  else 
-    
-    if (this->fitxategia.eof()) {this->sarreraAmaitua = true; return 1;}
-    else return 0;
-  
+  else return 0;  
 }
 
 
 fileMngRaw::~fileMngRaw()                // funtzio suntsitzailea
 {
- if (this->fitxategia.is_open())
+ if (!this->sarreraEstandarra && this->fitxategia.is_open())
    this->fitxategia.close();
 }
 
-void fileMngRaw::kargatuStdBufferra() {
+int fileMngRaw::kargatuStdBufferra() {
 
   char buf[MAX_BUFFER];
-  cin.getline(buf,MAX_BUFFER);
+  if (this->sarreraEstandarra)
+    cin.getline(buf,MAX_BUFFER);
+  else
+    this->fitxategia.getline(buf,MAX_BUFFER);
   this->buffer = buf;
   this->buffer = this->buffer + "\n";
   this->bufferLuzera = this->buffer.size();
   this->posizioa = 0;
   this->stdLerroa++;
-  
+  return  this->bufferLuzera - 1;
 }
 
