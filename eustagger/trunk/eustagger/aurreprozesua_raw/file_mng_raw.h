@@ -39,11 +39,11 @@ class fileMngRaw
   void close();                             // fitxategia itxi
   int eof();                                // fitxategia bukatu den
 
-  ~fileMngRaw();                              // funtzio suntsitzailea
+  ~fileMngRaw();                            // funtzio suntsitzailea
   
  private:
   
-  int kargatuStdBufferra();                // bufferra berritu sarrera estandarrarekin
+  void kargatuStdBufferra();                // bufferra berritu 
 
 };
 

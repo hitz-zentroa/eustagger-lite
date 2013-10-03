@@ -1,5 +1,5 @@
 "<Etorriko>"<HAS_MAI>"
-	"etorri" ADI SIN PART GEL NUMS MUGM HAS_MAI @IZLG> @<IZLG 
+	"etorri" ADI SIN PART ABS MG HAS_MAI @OBJ @PRED @SUBJ 
 "<zela>"
 	"izan" ADL KONPL B1 NOR NR_HURA @+JADLAG_MP @+JADNAG_MP 
 	"izan" ADL MOD/DENB B1 NOR NR_HURA @+JADLAG_MP @+JADNAG_MP 
@@ -13,7 +13,7 @@
 	"*edun" ADL ZHG B1 NOR_NORK NR_HURA NK_HARK @+JADLAG_MP_OBJ @+JADNAG_MP_OBJ 
 	"*edun" ADL MOS B1 NOR_NORK NR_HURA NK_HARK @+JADNAG_MP @+JADLAG_MP 
 "<$.>"<PUNT_PUNT>"
-	PUNT_PUNT
+	 PUNT_PUNT
 
 "<Ura>"<HAS_MAI>"
 	"ur" IZE ARR BIZ- ABS NUMS MUGM HAS_MAI @OBJ @PRED @SUBJ 
@@ -33,7 +33,7 @@
 	"izan" ADT PNT ZHG B1 NOR NR_HURA @+JADLAG_MP_OBJ @+JADNAG_MP_OBJ 
 	"izan" ADT PNT MOS B1 NOR NR_HURA @+JADNAG_MP @+JADLAG_MP 
 "<$.>"<PUNT_PUNT>"
-	PUNT_PUNT
+	 PUNT_PUNT
 
 "<Zu>"<HAS_MAI>"
 	"zu" IOR PERARR ZU ABS NUMS MUGM HAS_MAI @OBJ @PRED @SUBJ 
@@ -44,27 +44,27 @@
 "<da>"
 	"izan" ADT PNT A1 NOR NR_HURA @+JADNAG 
 "<$.>"<PUNT_PUNT>"
-	PUNT_PUNT
+	 PUNT_PUNT
 
 "<Ehundaka>"<HAS_MAI>"
-	"Ehundaka" IZE IZB PLU- ZERO AORG HAS_MAI @KM> 
-	"Ehundaka" IZE IZB PLU- ABS NUMS MUGM AORG HAS_MAI @OBJ @PRED @SUBJ 
+	"Ehundaka" IZE IZB PLU- ZERO HAS_MAI @KM> 
+	"Ehundaka" IZE IZB PLU- ABS NUMS MUGM HAS_MAI @OBJ @PRED @SUBJ 
 "<pertsona>"
-	"pertsona" IZE ARR BIZ+ ABS NUMS MUGM AORG @OBJ @PRED @SUBJ 
-	"pertsona" IZE ARR BIZ+ ZERO AORG @KM> 
+	"pertsona" IZE ARR BIZ+ ABS NUMS MUGM @OBJ @PRED @SUBJ 
+	"pertsona" IZE ARR BIZ+ ZERO @KM> 
 "<bar>"
 	"bar" IZE ARR BIZ- ZERO @KM> 
 	"bar" IZE ARR BIZ- ABS MG @OBJ @PRED @SUBJ 
 "<horretako>"
-	"hori" DET ERKARR GEL NUMS MUGM @<IZLG @IZLG> 
+	"hori" DET ERKARR GEL NUMS MUGM ZERO @<IZLG @IZLG> 
 "<aktuazioan>"
 	"aktuazio" IZE ARR INE NUMS MUGM @ADLG 
 "<sartzen>"
 	"sartu" ADI SIN MOD INE @OBJ 
-	"sartu" ADI SIN ADIZE KONPL INE @OBJ 
+	"sartu" ADI SIN ADIZE KONPL INE NOTDEK @OBJ 
 	"sartu" ADI SIN EZBU @-JADNAG 
 "<$.>"<PUNT_PUNT>"
-	PUNT_PUNT
+	 PUNT_PUNT
 
 "<Mendi>"<HAS_MAI>"
 	"Mendi" IZE LIB PLU- ZERO HAS_MAI @KM> 
@@ -84,7 +84,7 @@
 "<da>"
 	"izan" ADT PNT A1 NOR NR_HURA @+JADNAG 
 "<$.>"<PUNT_PUNT>"
-	PUNT_PUNT
+	 PUNT_PUNT
 
 "<Ez>"<HAS_MAI>"
 	"ez" PRT EGI HAS_MAI @PRT 
@@ -93,7 +93,7 @@
 "<esan>"
 	"esan" ADI SIN BURU 
 "<nora>"
-	"nora" ADB GAL ZERO AORG @ADLG 
+	"nora" ADB GAL ZERO @ADLG 
 "<joango>"
 	"joan" ADI SIN GERO @-JADNAG 
 "<den>"
@@ -106,7 +106,7 @@
 "<messik>"
 	"mess" IZE ARR PAR MG @OBJ @SUBJ 
 "<$.>"<PUNT_PUNT>"
-	PUNT_PUNT
+	 PUNT_PUNT
 
 "<Atsedena>"<HAS_MAI>"
 	"atseden" ADI SIN PART ABS NUMS MUGM HAS_MAI @OBJ @PRED @SUBJ 
@@ -115,9 +115,15 @@
 "<dut>"
 	"ukan" ADT PNT A1 NOR_NORK NR_HURA NK_NIK @-JADNAG 
 "<,>"<PUNT_KOMA>"
-	PUNT_KOMA
-"<hala_eta_guztiz_ere>"<HAUL_EDBL>"
-	"hala_eta_guztiz_ere" LOT LOK HAUL_EDBL 
+	 PUNT_KOMA
+"<hala>"
+	"hala" ADB ARR ZERO @ADLG 
+"<eta>"
+	"eta" LOT JNT EMEN @PJ 
+"<guztiz>"
+	"guztiz" ADB ARR ZERO @ADLG 
+"<ere>"
+	"ere" LOT LOK EMEN @LOK 
 "<ez>"
 	"ez" PRT EGI @PRT 
 "<naiz>"
@@ -125,28 +131,30 @@
 "<gelditzen>"
 	"gelditu" ADI SIN EZBU @-JADNAG 
 "<$.>"<PUNT_PUNT>"
-	PUNT_PUNT
+	 PUNT_PUNT
 
-"<Aita_Santua>"<HAUL_EDBL>"
-	"aita_santu" IZE ARR ABS NUMS MUGM HAUL_EDBL @OBJ @PRED @SUBJ 
-"<,>"<PUNT_KOMA>"
-	PUNT_KOMA
 "<Aita>"<HAS_MAI>"
-	"aita" IZE ARR ABS NUMS MUGM AORG HAS_MAI @OBJ @PRED @SUBJ 
-	"aita" IZE ARR ZERO AORG HAS_MAI @KM> 
+	"aita" IZE ARR ZERO HAS_MAI @KM> 
+"<Santua>"<HAS_MAI>"
+	"santu" ADJ ARR IZAUR- ABS NUMS MUGM HAS_MAI @OBJ @PRED @SUBJ 
+"<,>"<PUNT_KOMA>"
+	 PUNT_KOMA
+"<Aita>"<HAS_MAI>"
+	"aita" IZE ARR ABS NUMS MUGM HAS_MAI @OBJ @PRED @SUBJ 
+	"aita" IZE ARR ZERO HAS_MAI @KM> 
 "<Ponteko>"<HAS_MAI>"
-	"ponte" IZE ARR BIZ- BNK MG HAS_MAI @ADLG 
+	"ponte" IZE ARR BIZ- BNK MG ZERO HAS_MAI @ADLG 
 	"ponte" IZE ARR BIZ- ABS MG HAS_MAI @SUBJ @OBJ @PRED 
 "<,>"<PUNT_KOMA>"
-	PUNT_KOMA
+	 PUNT_KOMA
 "<Euskal>"<HAS_MAI>"
 	"euskal" IZE ARR ZERO HAS_MAI @KM> 
 "<Herria>"<HAS_MAI>"
 	"herri" IZE ARR ABS NUMS MUGM HAS_MAI @OBJ @PRED @SUBJ 
 "<eta>"
-	"eta" LOT JNT EMEN AORG @PJ 
+	"eta" LOT JNT EMEN @PJ 
 "<listo>"
 	"listo" ADJ ARR IZAUR- ABS MG @SUBJ @OBJ @PRED 
 "<$.>"<PUNT_PUNT>"
-	PUNT_PUNT
+	 PUNT_PUNT
 
