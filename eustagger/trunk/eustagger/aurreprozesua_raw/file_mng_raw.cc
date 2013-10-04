@@ -128,18 +128,22 @@ fileMngRaw::~fileMngRaw()                // funtzio suntsitzailea
 }
 
 void fileMngRaw::kargatuStdBufferra() {
+  string buf;
+  // char buf[MAX_BUFFER];
 
-  char buf[MAX_BUFFER];
-  if (this->sarreraEstandarra)
-    cin.getline(buf,MAX_BUFFER);
-  else
-    this->fitxategia.getline(buf,MAX_BUFFER);
+  if (this->sarreraEstandarra) {
+    if (!getline(cin,buf,'\n')) this->sarreraAmaitua = true;
+    // cin.getline(buf,MAX_BUFFER);
+  }
+  else {
+    if (!getline(this->fitxategia,buf,'\n')) this->sarreraAmaitua = true;
+    // this->fitxategia.getline(buf,MAX_BUFFER);
+  }
   this->buffer = buf;
   this->buffer = this->buffer + "\n";
   this->bufferLuzera = this->buffer.size();
   this->posizioa = 0;
   this->stdLerroa++;
-  if (this->bufferLuzera == 1) // "\n" gehitzen zaio
-    this->sarreraAmaitua = true; 
+ 
 }
 
