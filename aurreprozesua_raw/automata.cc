@@ -142,11 +142,17 @@ int automata::mugitu(char kar)
        // ala ez itzultzen du emaitza gisa.
 {
  int i = 0;
- char *multzoan;
+ char *multzoan,*multzotmp;
 
- multzoan = strchr(multzoak[i++].c_str(),kar);
- while ((multzoan == NULL) && (i<ZUTABEAK-2)) 
-   multzoan = strchr(multzoak[i++].c_str(),kar);
+ multzotmp = strdup(multzoak[i++].c_str());
+ multzoan = strchr(multzotmp,kar);
+ while ((multzoan == NULL) && (i<ZUTABEAK-2)){ 
+   free(multzotmp);
+   multzotmp = strdup(multzoak[i++].c_str());
+   multzoan = strchr(multzotmp,kar);
+   //   multzoan = strchr(multzoak[i++].c_str(),kar);
+ }
+
  if (multzoan == NULL)       // ez badago multzoen artean, transizio ez-posiblea
  {                    // estadua dagoen moduan utzi
 //  estadua = 0;

@@ -168,62 +168,11 @@ const string anaBihurtzailea::lispifikatu (char *analisia,int ident_da,int zen_d
     if (morfema_da) {
       morfema=bihurtu_xerox_lemati(morfema);
       sar = hmorf.replace(sar,"(morf \""+morfema+"\")((");
-      if (edbl_bertsioa >= 5) {
-	string morfpatt = morfema;
-	Pcre escape("\\*","g");
-	if (escape.search(morfpatt)) {
-	  morfpatt = escape.replace(morfpatt,"\\*");
-	}
-	string patt = "\\(morf \""+morfpatt+"\"\\)\\(\\(Sarrera([^\\)]+)\\)\\(([^\\s]+)";
-	Pcre sarrera5 = patt;
-	if (sarrera5.search(sar)) {
-	  string hur = sarrera5.get_match(1);
-	  if (hur != "STwol")
-	    sar = sarrera5.replace(sar,"(morf \""+morfema+"\")((Sarrera$1)(STwol "+morfema+")($2");
-	  //	  sar = sarrera5.replace(sar,"(morf \""+morfpatt+"\")((Sarrera$1)(STwol "+morfema+")");
-	  else {
-	    // Errepikatu ahal diren morfemak, adibidez 0
-	    string patt2 = "\\(morf \""+morfpatt+"\"\\)\\(\\(Sarrera([^\\)]+)\\)\\(KAT";
-	    sarrera5 = patt2;
-	    if (sarrera5.search(sar)) {
-	      sar = sarrera5.replace(sar,"(morf \""+morfema+"\")((Sarrera$1)(STwol "+morfema+")(KAT");
-	    }
-	    else {
-	      cerr << "<<" << sar <<" >> ezin da aldatu" << endl;
-	    }
-	  }
-	}
-      }
     }
     else {
       if (!ident_da && !zen_dek_da && !zen_da && !errom_da)
 	morfema=bihurtu_xerox_lemati(morfema);
       sar = hmorf.replace(sar,"(lema \""+morfema+"\")((");
-      if (edbl_bertsioa >= 5) {
-	string morfpatt = morfema;
-	Pcre escape("\\*","g");
-	if (escape.search(morfpatt)) {
-	  morfpatt = escape.replace(morfpatt,"\\*");
-	}
-	string patt = "\\(lema \""+morfpatt+"\"\\)\\(\\(Sarrera([^\\)]+)\\)\\(([^\\s]+)";
-	Pcre sarrera5 = patt;
-	if (sarrera5.search(sar)) {
-	  string hur = sarrera5.get_match(1);
-	  if (hur != "STwol")
-	    sar = sarrera5.replace(sar,"(lema \""+morfema+"\")((Sarrera$1)(STwol "+morfema+")($2");
-	  else {
-	    // Errepikatu ahal diren morfemak, adibidez 0
-	    string patt2 = "\\(lema \""+morfpatt+"\"\\)\\(\\(Sarrera([^\\)]+)\\)\\(KAT";
-	    sarrera5 = patt2;
-	    if (sarrera5.search(sar)) {
-	      sar = sarrera5.replace(sar,"(lema \""+morfema+"\")((Sarrera$1)(STwol "+morfema+")(KAT");
-	    }
-	    else {
-	      cerr << "<<" << sar <<" >> ezin da aldatu" << endl;
-	    }
-	  }
-	}
-      }
     }
   }
   else {
@@ -250,57 +199,6 @@ const string anaBihurtzailea::lispifikatu (char *analisia,int ident_da,int zen_d
       else {
 	sar = hald.replace(sar,"(lema $ \""+morfema+"\")(ald \""+aldaera+"\"");
       }
-      if (edbl_bertsioa >= 5) {
-	string aldpatt = aldaera;
-	Pcre escape("\\*","g");
-	if (escape.search(aldpatt)) {
-	  aldpatt = escape.replace(aldpatt,"\\*");
-	}
-	string patt = "\\(ald \""+aldpatt+"\"\\)\\(\\(Sarrera([^\\)]+)\\)";
-	Pcre sarrera5 = patt;
-	if (sarrera5.search(sar)) {
-	  char aldcstr[LUZMAXAN],aldcstrirt[LUZMAXAN];
-	  string aldTwol=aldaera;
-	  aldcstr[0] = '\0';
-          aldcstrirt[0] = '\0';
-	  strcpy(aldcstr,aldaera.c_str());
-	  kendu_marka_lex(aldcstr,aldcstr,0);
-	  aldaera = aldcstr;
-	  string sarMatch = sarrera5.get_match(0);
-	  sarMatch = sarMatch.substr(1,sarMatch.length()-7); // kendu zuriune/azpimarra eta homografo...
-
-	  Pcre lortuAdoin("\\(ADOIN ([^\\)]+)\\)");
-	    
-	  if (lortuAdoin.search(sar)) {
-	    string adoinSar=lortuAdoin.get_match(0);
-	    if (sarMatch.length() > adoinSar.length()) { // ez du zertan morfema bera izan!! ber+aditza
-	      string atzizki = sarMatch.substr(adoinSar.length(),string::npos);
-	      if ((aldaera[aldaera.length()-1] == 'l' || aldaera[aldaera.length()-1] == 'n') &&
-		  atzizki[0] == 't') atzizki[0] = 'd';
-	      aldaera += atzizki;
-	    }
-	  }
-	  if (escape.search(aldaera)) { // '*' badago, bihurtu maiuskula
-	    strcpy(aldcstr,aldaera.c_str());
-	    bihur_asteris_maj(aldcstr,aldcstrirt);
-	    aldaera = aldcstrirt;
-	  }
-	  sar = sarrera5.replace(sar,"(ald \""+aldTwol+"\")((Aldaera "+aldaera+"--0---)(ATwol "+aldTwol+")(Sarrera$1)(STwol "+morfema+")(LHB -)");
-	}
-	else {
-	  string patt2 = "\\(ald \""+aldpatt+"\"\\)\\(\\(Aldaera([^\\)]+)\\)\\(Sarrera([^\\)]+)\\)";
-	  Pcre sarrera52 = patt2;
-	  if (sarrera52.search(sar)) {
-	    char aldcstr[LUZMAXAN];
-	    string aldTwol=aldaera;
-	    aldcstr[0] = '\0';
-	    strcpy(aldcstr,aldaera.c_str());
-	    kendu_marka_lex(aldcstr,aldcstr,0);
-	    aldaera = aldcstr;
-	    sar = sarrera52.replace(sar,"(ald \""+aldTwol+"\")((Aldaera$1)(ATwol "+aldTwol+")(Sarrera$2)(STwol "+morfema+")");
-	  }
-	}
-      }
     }
   }
   while (morf.search(sar)) {
@@ -319,68 +217,11 @@ const string anaBihurtzailea::lispifikatu (char *analisia,int ident_da,int zen_d
     else
       morfema = morf.get_match(1);
     morfema=bihurtu_xerox_lemati(morfema);
-//     if (morfema[morfema.length()-1] == '+') { // falta da + hori kentzea HAU EZ DA GERTATZEN???
-//       morfema_da = 1;
-//     }
-//     if (morfema == "ba" || morfema == "bait") { // hau bakarrik lehenengo morfema bezala
-//       morfema_da = 1;
-//     }
     if (morfema_da) {
       sar = morf.replace(sar,")))\n   ((morf \""+morfema+"\")((");
-      if (edbl_bertsioa >= 5) {
-	string morfpatt = morfema;
-	Pcre escape("\\*","g");
-	if (escape.search(morfpatt)) {
-	  morfpatt = escape.replace(morfpatt,"\\*");
-	}
-	string patt = "\\(morf \""+morfpatt+"\"\\)\\(\\(Sarrera([^\\)]+)\\)\\(([^\\s]+)";
-	Pcre sarrera5 = patt;
-	if (sarrera5.search(sar)) {
-	  string hur = sarrera5.get_match(1);
-	  if (hur != "STwol")
-	    sar = sarrera5.replace(sar,"(morf \""+morfema+"\")((Sarrera$1)(STwol "+morfema+")($2");
-	  //	  sar = sarrera5.replace(sar,"(morf \""+morfpatt+"\")((Sarrera$1)(STwol "+morfema+")");
-	  else {
-	    // Errepikatu ahal diren morfemak, adibidez 0
-	    string patt2 = "\\(morf \""+morfpatt+"\"\\)\\(\\(Sarrera([^\\)]+)\\)\\(KAT";
-	    sarrera5 = patt2;
-	    if (sarrera5.search(sar)) {
-	      sar = sarrera5.replace(sar,"(morf \""+morfema+"\")((Sarrera$1)(STwol "+morfema+")(KAT");
-	    }
-	    else {
-	      cerr << "<<" << sar <<" >> ezin da aldatu" << endl;
-	    }
-	  }
-	}
-      }
     }
     else {
       sar = morf.replace(sar,")))\n   ((lema \""+morfema+"\")((");
-      if (edbl_bertsioa >= 5) {
-	string morfpatt = morfema;
-	Pcre escape("\\*","g");
-	if (escape.search(morfpatt)) {
-	  morfpatt = escape.replace(morfpatt,"\\*");
-	}
-	string patt = "\\(lema \""+morfpatt+"\"\\)\\(\\(Sarrera([^\\)]+)\\)\\(([^\\s]+)";
-	Pcre sarrera5 = patt;
-	if (sarrera5.search(sar)) {
-	  string hur = sarrera5.get_match(1);
-	  if (hur != "STwol")
-	    sar = sarrera5.replace(sar,"(lema \""+morfema+"\")((Sarrera$1)(STwol "+morfema+")($2");
-	  else {
-	    // Errepikatu ahal diren morfemak, adibidez 0
-	    string patt2 = "\\(lema \""+morfpatt+"\"\\)\\(\\(Sarrera([^\\)]+)\\)\\(KAT";
-	    sarrera5 = patt2;
-	    if (sarrera5.search(sar)) {
-	      sar = sarrera5.replace(sar,"(lema \""+morfema+"\")((Sarrera$1)(STwol "+morfema+")(KAT");
-	    }
-	    else {
-	      cerr << "<<" << sar <<" >> ezin da aldatu" << endl;
-	    }
-	  }
-	}
-      }
     }
   }
 
@@ -416,58 +257,6 @@ const string anaBihurtzailea::lispifikatu (char *analisia,int ident_da,int zen_d
     }
     else
       sar = ald.replace(sar,")))\n   ((lema $ \""+morfema+"\")(ald \""+aldaera+"\"");
-    if (edbl_bertsioa >= 5) {
-      string aldpatt = aldaera;
-      Pcre escape("\\*","g");
-      if (escape.search(aldpatt)) {
-	aldpatt = escape.replace(aldpatt,"\\*");
-      }
-      string patt = "\\(ald \""+aldpatt+"\"\\)\\(\\(Sarrera([^\\)]+)\\)";
-      Pcre sarrera5 = patt;
-      if (sarrera5.search(sar)) {
-	char aldcstr[LUZMAXAN],aldcstrirt[LUZMAXAN];
-	string aldTwol=aldaera;
-	aldcstr[0] = '\0';
-        aldcstrirt[0] = '\0';
-	strcpy(aldcstr,aldaera.c_str());
-	kendu_marka_lex(aldcstr,aldcstr,0);
-	aldaera = aldcstr;
-	if (escape.search(aldaera)) { // '*' badago, bihurtu maiuskula
-	  strcpy(aldcstr,aldaera.c_str());
-	  bihur_asteris_maj(aldcstr,aldcstrirt);
-	  aldaera = aldcstrirt;
-	}
-
-	string sarMatch = sarrera5.get_match(0);
-	sarMatch = sarMatch.substr(1,sarMatch.length()-7); // kendu zuriune/azpimarra
-	sarMatch = sarMatch.substr(1,string::npos); // kendu zuriune/azpimarra
-	Pcre lortuAdoin("\\(ADOIN ([^\\)]+)\\)");
-
-	if (lortuAdoin.search(sar)) {
-	  string adoinSar=lortuAdoin.get_match(0);
-	  if (sarMatch.length()>adoinSar.length()) {// ez du zertan morfema bera izan!! ber+aditza
-	    string atzizki = sarMatch.substr(adoinSar.length(),string::npos);
-	    if ((aldaera[aldaera.length()-1] == 'l' || aldaera[aldaera.length()-1] == 'n') &&
-		atzizki[0] == 't') atzizki[0] = 'd';
-	    aldaera += atzizki;
-	  }
-	}
-	sar = sarrera5.replace(sar,"(ald \""+aldTwol+"\")((Aldaera "+aldaera+"--0---)(ATwol "+aldTwol+")(Sarrera$1)(STwol "+morfema+")(LHB -)");
-      }
-      else {
-	string patt2 = "\\(ald \""+aldpatt+"\"\\)\\(\\(Aldaera([^\\)]+)\\)\\(Sarrera([^\\)]+)\\)";
-	Pcre sarrera52 = patt2;
-	if (sarrera52.search(sar)) {
-	  char aldcstr[LUZMAXAN];
-	  string aldTwol=aldaera;
-	  aldcstr[0] = '\0';
-	  strcpy(aldcstr,aldaera.c_str());
-	  kendu_marka_lex(aldcstr,aldcstr,0);
-	  aldaera = aldcstr;
-	  sar = sarrera52.replace(sar,"(ald \""+aldTwol+"\")((Aldaera$1)(ATwol "+aldTwol+")(Sarrera$2)(STwol "+morfema+")");
-	}
-      }
-    }
   }
 
   // (ERR *xxxx--3)) beharrean (ERR 7xxxx--3) 

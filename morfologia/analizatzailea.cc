@@ -318,9 +318,13 @@ void analizatzailea::lortu_lema_zen_dek(char *lema_ident) {
   }
 }
 
-void analizatzailea::inprimatu_ident_analisia(char *analisia, int *ident_analisia, char *lema_ident, vector<string>* emaitza) {
+void analizatzailea::inprimatu_ident_analisia(char *analisiaorig, int *ident_analisia, char *lema_ident, vector<string>* emaitza) {
   //  char *phasi,*padoin;
   int SARda = 0;
+  char analisia[LUZMAXAN];
+  analisia[0] = '\0';
+  strcpy(analisia,analisiaorig);
+
   // Filtratu soilik IZE direnak eta lema generikoa dutenak lema generikoak: cc ala co
   if ((strstr(analisia,"KAT_IZE") != NULL ) && analisia[strlen("cc")] == '[') {
     char lerroa_ident[LUZMAXAN];
@@ -371,15 +375,17 @@ void analizatzailea::inprimatu_ident_analisia(char *analisia, int *ident_analisi
   }
 }
 
-void analizatzailea::inprimatu_lexgabeko_analisia(char *analisia, int *i,char *lema_ident, vector<string>* emaitza) {
+void analizatzailea::inprimatu_lexgabeko_analisia(char *analisiaorig, int *i,char *lema_ident, vector<string>* emaitza) {
   char lerroa_gabekoa[LUZMAXAN];
   char lema_gabekoa[LUZMAXAN],aurrizki_bim[LUZMAXAN];
   char sarrera_gabekoa[LUZMAXAN];
-  char analisia2[LUZMAXAN];
+  char analisia[LUZMAXAN],analisia2[LUZMAXAN];
   char *phasi,*padoin,*pbuk;
   int lehenengoa = 1;
   int BEREZIAK_SOILIK = 0;
 
+  analisia[0] = '\0';
+  strcpy(analisia,analisiaorig);
   aurrizki_bim[0] = '\0';
   if (kar_ber || ident_da) {
     if ( strchr(MAJ,forma_ident[strlen(lema_ident)-1]) )
@@ -541,8 +547,13 @@ void analizatzailea::inprimatu_lexgabeko_analisia(char *analisia, int *i,char *l
   *i = *i + 1;
 }
 
-void analizatzailea::inprimatu_aldaera_analisia( char *analisia, int *i, int dist, char *lema_ident, vector<string>* emaitza ){
+void analizatzailea::inprimatu_aldaera_analisia( char *analisiaorig, int *i, int dist, char *lema_ident, vector<string>* emaitza ){
   char *phasi,*pbuk;
+  char analisia[LUZMAXAN];
+
+  analisia[0] = '\0';
+  strcpy(analisia,analisiaorig);
+
   if (zen_dek_da || zen_da || errom_da) {
     if ( lema_ident[0] == 'I' && 
 	 ( lema_ident[1] == '.' || lema_ident[1] == '\0') &&
@@ -619,8 +630,12 @@ void analizatzailea::inprimatu_aldaera_analisia( char *analisia, int *i, int dis
   *i = *i + 1;
 }
 
-void analizatzailea::inprimatu_estandar_analisia( char *analisia, int *i, char *lema_ident, vector<string>* emaitza ){
+void analizatzailea::inprimatu_estandar_analisia( char *analisiaorig, int *i, char *lema_ident, vector<string>* emaitza ){
   char *phasi,*pbuk;
+  char analisia[LUZMAXAN];
+
+  analisia[0] = '\0';
+  strcpy(analisia,analisiaorig);
 
   if (zen_dek_da || zen_da || errom_da) {
     if ( lema_ident[0] == 'I' && 
