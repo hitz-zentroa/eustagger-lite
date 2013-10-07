@@ -75,11 +75,11 @@ void analizatzailea::hasieraketak(int sar_lem, int lex_uzei, int bigarren, int e
   if (lex_ald) {
     ondo = transFoma.ireki_erab_lex(lexiko_izena,0,IMREKIN);
     if (!ondo) {
-    	lex_ald=0;
-    	fprintf(stderr,"Arazoa %s lexikoa kargatzen\n", lexiko_izena.c_str());
+      lex_ald=0;
+      fprintf(stderr,"Arazoa %s lexikoa kargatzen\n", lexiko_izena.c_str());
     }
     else {
-			fprintf(stderr,"Ondo kargatu dut erabiltzailearen lexikoa\n");
+      fprintf(stderr,"Ondo kargatu dut erabiltzailearen lexikoa\n");
     }
   }
 #endif // not _USE_FOMA_
@@ -379,8 +379,8 @@ void analizatzailea::inprimatu_lexgabeko_analisia(char *analisiaorig, int *i,cha
   char lerroa_gabekoa[LUZMAXAN];
   char lema_gabekoa[LUZMAXAN],aurrizki_bim[LUZMAXAN];
   char sarrera_gabekoa[LUZMAXAN];
-  char analisia[LUZMAXAN],analisia2[LUZMAXAN];
-  char *phasi,*padoin,*pbuk;
+  char analisia[2*LUZMAXAN],analisia2[2*LUZMAXAN],ezaug[LUZMAXAN];
+  char *phasi,*padoin,*pbuk,*pezaug;
   int lehenengoa = 1;
   int BEREZIAK_SOILIK = 0;
 
@@ -414,22 +414,35 @@ void analizatzailea::inprimatu_lexgabeko_analisia(char *analisiaorig, int *i,cha
     lema_gabekoa[strlen(analisia)-strlen(phasi)+strlen(aurrizki_bim)] = '\0';
     pbuk = strstr(analisia,"]]");
     strcpy(analisia,pbuk+2);
+    if (analisia[0] == '[') { // morfemaren amaieran, FSen ostean, ezaugarriren bat gehiago dago
+      ezaug[0] = '\0';
+      pezaug = strstr(analisia,"]]");
+      strcpy(ezaug,analisia);
+      ezaug[strlen(analisia)-strlen(pezaug)+2] = '\0';
+      //     strcat(lerroa_gabekoa,ezaug);
+      strcpy(analisia,pezaug+2);
+    }
     strcpy(analisia2,&analisia2[strlen(lema_gabekoa)-strlen(aurrizki_bim)]);
     analisia2[strlen(analisia2)-strlen(analisia)] = '\0';
     if ( lema_gabekoa[0] == ASTERIS  && 
-	 !strstr(analisia2,"AZP_IZB")&&!strstr(analisia2,"AZP_LIB") )
+	 !strstr(analisia2,"AZP_IZB")&&!strstr(analisia2,"AZP_LIB") ) {
       // IZE, ADJ, ADI, LAB edo BST -> minuskulaz
       ken_maiuskulak(lema_gabekoa);
-    else if (lema_gabekoa[0] == ASTERIS && !strstr(analisia2,"SIG"))
-      // IZB edo LIB baina ez SIG -> Lehenengoa kenduta, gainerakoa minuskulaz
-      if (kar_ber)
-	ken_maiuskulak(&lema_gabekoa[1+strlen(aurrizki_bim)]);
-      else
-	if (strstr(lema_gabekoa,"-") != NULL)
-	  // marratxoa badu, marratxo ondorengoa ere maiuskulaz
-	  ken_majusk_marratxo(&lema_gabekoa[1]);
-	else
-	  ken_maiuskulak(&lema_gabekoa[1]);
+    }
+    else { 
+      if (lema_gabekoa[0] == ASTERIS && !strstr(analisia2,"SIG")) {
+	// IZB edo LIB baina ez SIG -> Lehenengoa kenduta, gainerakoa minuskulaz
+	if (kar_ber)
+	  ken_maiuskulak(&lema_gabekoa[1+strlen(aurrizki_bim)]);
+	else {
+	  if (strstr(lema_gabekoa,"-") != NULL)
+	    // marratxoa badu, marratxo ondorengoa ere maiuskulaz
+	    ken_majusk_marratxo(&lema_gabekoa[1]);
+	  else
+	    ken_maiuskulak(&lema_gabekoa[1]);
+	}
+      }
+    }
     strcat(lerroa_gabekoa,lema_gabekoa);
     strcpy(sarrera_gabekoa,lema_gabekoa);
     kendu_marka_lex(sarrera_gabekoa,sarrera_gabekoa,0);
@@ -512,6 +525,7 @@ void analizatzailea::inprimatu_lexgabeko_analisia(char *analisiaorig, int *i,cha
       strcpy(analisia2,phasi);
     }
     strcat(lerroa_gabekoa,analisia2);
+    analisia2[0] = '\0';
     strcpy(analisia2,analisia);
   }
   strcat(lerroa_gabekoa,analisia);
@@ -545,6 +559,7 @@ void analizatzailea::inprimatu_lexgabeko_analisia(char *analisiaorig, int *i,cha
     emaitza->push_back(lerr);
   }
   *i = *i + 1;
+
 }
 
 void analizatzailea::inprimatu_aldaera_analisia( char *analisiaorig, int *i, int dist, char *lema_ident, vector<string>* emaitza ){
@@ -932,7 +947,7 @@ void analizatzailea::analizatu_hitza_trans(char hitza[], int modua, vector<strin
     }
 #endif // __BRIDGE_VARIANTS__
   }
-  if ((m || m_aur) && Sarrera_berezia)
+  if ((m || m_aur) && Sarrera_berezia) {
     if (irteera_nola == ESTANDAR_AN || irteera_nola == ESTANDAR_PIPE)
       printf("\n)\n");
     else {
@@ -941,6 +956,7 @@ void analizatzailea::analizatu_hitza_trans(char hitza[], int modua, vector<strin
       sprintf(lerr,"\n)\n");
       emaitza->push_back(lerr);	  
     }
+  }
   if (irteera_nola == ESTANDAR_PIPE)
     printf("#\n");
   fflush(stdout);
@@ -2226,14 +2242,14 @@ int analizatzailea::lortu_distantzia(char an_lag[],char hitza[],char banaketa[],
 
 void analizatzailea::lortu_hitza(char *hitza,vector<string> *sarrerako_taula,vector<string> *emaitza,int *indizea)
 {
- char forma[LUZMAXAN];
+  // char forma[LUZMAXAN];
  int jarraitu = 1;
  int sar_luz, luzera=0;
  static char lerroa[LUZMAXAN];
  string llag;
- static int lehena = 1;
+ // static int lehena = 1;
  hitza[0] = '\0';
- forma[0] = '\0';
+ // forma[0] = '\0';
  kar_ber = 0;
  if (irteera_nola == TAULAN)
    luzera = sarrerako_taula->size();
@@ -2269,18 +2285,18 @@ void analizatzailea::lortu_hitza(char *hitza,vector<string> *sarrerako_taula,vec
      }
    }
  }
- else
+ else {
    if (*indizea < sar_luz) {
      llag = (*sarrerako_taula)[*indizea];
      strcpy(lerroa,llag.c_str());
      *indizea = *indizea + 1;
      hitza[0] = '\0';
-  }
+   }
    else jarraitu=0;
- 
+ }
 //  if (!lehena && (strstr(lerroa,"<ID>") == NULL)) aurrekoa_puntua = 0;
 
- while (jarraitu && (irteera_nola == ESTANDAR_AN && !feof(stdin) || irteera_nola == TAULAN && *indizea <= sar_luz) ) {
+ while (jarraitu && ((irteera_nola == ESTANDAR_AN && !feof(stdin)) || (irteera_nola == TAULAN && *indizea <= sar_luz)) ) {
    if (strstr(lerroa,">/<IDENT>/") != NULL ) {
      // forma eta lema aldatu behar dira
      ident_da = 1;
@@ -2408,7 +2424,7 @@ void analizatzailea::lortu_hitza(char *hitza,vector<string> *sarrerako_taula,vec
        *indizea = *indizea+1;
      }
    }
-   lehena = 0;
+   //   lehena = 0;
  }
 }
 
@@ -2430,7 +2446,7 @@ void analizatzailea::lortu_hitza(char *hitza,vector<string> *sarrerako_taula,vec
 
 
 int analizatzailea::analizatuErabLex(char *hitza,int m, char anal[][LUZMAXAN], int *beste_analisia, char *lema_ident,  vector<string> *emaitza) {
-  int m_lag,m_lag2,dena_majusk_al=0;
+  int m_lag,m_lag2;//,dena_majusk_al=0;
   char hitza2[LUZMAXAN],analErabLex[LUZMAXAN];
   int SARda=0;
   string analisia;
@@ -2452,11 +2468,11 @@ int analizatzailea::analizatuErabLex(char *hitza,int m, char anal[][LUZMAXAN], i
     m_lag=analizatu_hitza(LEX_GABE,hitza,anal);
     #endif
   m_lag2=0;
-  if ((!errom_da && strstr(&hitza[1],"9")) ||
-      (errom_da && strstr(&hitza2[1],"9")))
-    dena_majusk_al=1;
-  else
-    dena_majusk_al=0;
+  // if ((!errom_da && strstr(&hitza[1],"9")) ||
+  //     (errom_da && strstr(&hitza2[1],"9")))
+  //   dena_majusk_al=1;
+  // else
+  //   dena_majusk_al=0;
 
   if (m_lag > 0) {
     analisia =  &anal[0][0]; 

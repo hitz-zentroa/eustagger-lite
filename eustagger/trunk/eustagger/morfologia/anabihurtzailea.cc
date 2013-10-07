@@ -5,6 +5,8 @@ extern void bihur_asteris_maj(char *,char *);
 extern void bihur_maj_asteris(char *,char *);
 extern int kendu_marka_lex(char *,char *,int);
 
+using namespace pcrepp;
+
 anaBihurtzailea::anaBihurtzailea() {
 
   Pcre tez_zenb("[^0-9]");
@@ -204,7 +206,8 @@ const string anaBihurtzailea::lispifikatu (char *analisia,int ident_da,int zen_d
   while (morf.search(sar)) {
     // gainerako morfema estandarrak prozesatu
     string plus = morf.get_match(0);
-    string morfema;
+    string morfema,morfemaAld;
+    string sarTmp = sar;
     morfema_da = 0;
     if (plus.length() == 1)
       morfema_da = 1;
@@ -216,12 +219,23 @@ const string anaBihurtzailea::lispifikatu (char *analisia,int ident_da,int zen_d
     }
     else
       morfema = morf.get_match(1);
-    morfema=bihurtu_xerox_lemati(morfema);
+    morfemaAld=bihurtu_xerox_lemati(morfema);
+    if ((morfema[morfema.length()-1] == '\\') && morfema[morfema.length()-2] != '\\') {
+      morfema += "\\";
+    }
+    if (morfema[morfema.length()-1] == '^') {
+      morfema[morfema.length()-1] = '\\';
+      morfema += "^";
+    }
     if (morfema_da) {
-      sar = morf.replace(sar,")))\n   ((morf \""+morfema+"\")((");
+      string patt = "\\)\\)[+]"+morfema+"\\(\\(";
+      Pcre morfAld=patt;
+      sar = morfAld.replace(sarTmp,")))\n   ((morf \""+morfemaAld+"\")((");
     }
     else {
-      sar = morf.replace(sar,")))\n   ((lema \""+morfema+"\")((");
+      string patt = "\\)\\)"+morfema+"\\(\\(";
+      Pcre morfAld = patt;
+      sar = morfAld.replace(sarTmp,")))\n   ((lema \""+morfemaAld+"\")((");
     }
   }
 
