@@ -12,7 +12,7 @@ MEMBERS=$(SOURCES:.cc=.o)
 
 
 CCC= @CXX@
-CCFLAGS= -O -fpic -Wall -fpermissive
+CCFLAGS= -O -fpic -Wall 
 CPPFLAGS= 
 
 COMPILE.cc=$(CCC) $(CCFLAGS) $(CPPFLAGS) $(INCLUDE) -c
