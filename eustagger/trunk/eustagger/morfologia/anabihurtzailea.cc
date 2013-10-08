@@ -33,9 +33,13 @@ anaBihurtzailea::anaBihurtzailea() {
   Pcre tbilatuHasiera("(\\[ERAKAT_)");
   Pcre taldatuEraazp("(\\[ERAAZP_)");
   Pcre taldatuAoi("(\\[AOI_)(a+)");
-  Pcre taldatuSar("(\\[\\SAR_)([Aa]+)([^\\]]*)");
+  Pcre taldatuAoiPar("(\\(AOI )(a+)");
+  Pcre taldatuSar("(\\[\\SAR_)([Aa]+)\\]");
+  Pcre taldatuSarPar("(\\(\\SAR )([Aa]+)\\)");
   Pcre taldatuAdoin("(\\[ADOIN_)(a+)");
-  Pcre taldatuSarrera("\\[\\Sarrera_([Aa]+)([^\\]]*)");
+  Pcre taldatuAdoinPar("(\\(ADOIN )(a+)");
+  Pcre taldatuSarrera("(\\[\\Sarrera_)([Aa]+)\\]");
+  Pcre taldatuSarreraPar("(\\(\\Sarrera )([Aa]+)\\)");
   Pcre tkat("(\\[KAT_[^\\[\\]]+\\])");
   Pcre tazp("(\\[AZP_[^\\[\\]]+\\])");
   Pcre tmtkat("(\\[MTKAT_[^\\[\\]]+\\])");
@@ -67,8 +71,12 @@ anaBihurtzailea::anaBihurtzailea() {
   aldatuEraazp = taldatuEraazp;
   aldatuAdoin = taldatuAdoin;
   aldatuAoi = taldatuAoi;
+  aldatuAdoinPar = taldatuAdoinPar;
+  aldatuAoiPar = taldatuAoiPar;
   aldatuSar = taldatuSar;
   aldatuSarrera = taldatuSarrera;
+  aldatuSarPar = taldatuSarPar;
+  aldatuSarreraPar = taldatuSarreraPar;
   kat = tkat;
   azp = tazp;
   mtkat = tmtkat;
@@ -175,6 +183,8 @@ const string anaBihurtzailea::lispifikatu (char *analisia,int ident_da,int zen_d
       if (!ident_da && !zen_dek_da && !zen_da && !errom_da)
 	morfema=bihurtu_xerox_lemati(morfema);
       sar = hmorf.replace(sar,"(lema \""+morfema+"\")((");
+      if (aldatuSarreraPar.search(sar) || aldatuSarPar.search(sar))
+	sar = this->aldatuSarInfoPar(sar,morfema.c_str(), 0);
     }
   }
   else {
@@ -200,6 +210,8 @@ const string anaBihurtzailea::lispifikatu (char *analisia,int ident_da,int zen_d
       }
       else {
 	sar = hald.replace(sar,"(lema $ \""+morfema+"\")(ald \""+aldaera+"\"");
+	if (aldatuSarreraPar.search(sar) || aldatuSarPar.search(sar))
+	  sar = this->aldatuSarInfoPar(sar,morfema.c_str(), 0);
       }
     }
   }
@@ -236,6 +248,8 @@ const string anaBihurtzailea::lispifikatu (char *analisia,int ident_da,int zen_d
       string patt = "\\)\\)"+morfema+"\\(\\(";
       Pcre morfAld = patt;
       sar = morfAld.replace(sarTmp,")))\n   ((lema \""+morfemaAld+"\")((");
+      if (aldatuSarreraPar.search(sar) || aldatuSarPar.search(sar))
+	sar = this->aldatuSarInfoPar(sar,morfemaAld.c_str(), 0);
     }
   }
 
@@ -269,8 +283,11 @@ const string anaBihurtzailea::lispifikatu (char *analisia,int ident_da,int zen_d
     if (morfema_da) {
       sar = ald.replace(sar,")))\n   ((morf $ \""+morfema+"\")(ald \""+aldaera+"\"");
     }
-    else
+    else {
       sar = ald.replace(sar,")))\n   ((lema $ \""+morfema+"\")(ald \""+aldaera+"\"");
+      if (aldatuSarreraPar.search(sar) || aldatuSarPar.search(sar))
+	sar = this->aldatuSarInfoPar(sar,morfema.c_str(), 0);
+    }
   }
 
   // (ERR *xxxx--3)) beharrean (ERR 7xxxx--3) 
@@ -1158,38 +1175,85 @@ int anaBihurtzailea::desanbKatTrig(int m, vector<string> &ema_ana,char mot[], va
 
 string anaBihurtzailea::aldatuSarInfo(const string analisia, char bim_erab[], int SARda) {
   string analisiAldatua = analisia;
-  char aldaketa[LUZMAXAN];
+  char aldaketa[LUZMAXAN],sar[LUZMAXAN],irt[LUZMAXAN];
   aldaketa[0] = '\0'; 
+  sar[0] = '\0';
+  irt[0] = '\0';
+
+  strcpy(sar,bim_erab);
+  bihur_asteris_maj(sar,irt);
 
   // ADI direnetan bi lekutan aldatu behar da aaaaa(tu): Sarrera eta ADOIN edo SAR eta AOI
   
   if (SARda) {
     if (aldatuAoi.search(analisiAldatua)) {
       strcpy(aldaketa,"[AOI_");
-      strcat(aldaketa,bim_erab);
+      strcat(aldaketa,irt);
       analisiAldatua = aldatuAoi.replace(analisiAldatua,aldaketa);
     }
     if (aldatuSar.search(analisiAldatua)) {
       strcpy(aldaketa,"[SAR_");
-      strcat(aldaketa,bim_erab);
-      strcat(aldaketa,"$2");
+      strcat(aldaketa,irt);
+      strcat(aldaketa,"]");
       analisiAldatua = aldatuSar.replace(analisiAldatua,aldaketa);
     }
   }
   else {
     if (aldatuAdoin.search(analisiAldatua)) {
       strcpy(aldaketa,"[ADOIN_");
-      strcat(aldaketa,bim_erab);
+      strcat(aldaketa,irt);
       analisiAldatua = aldatuAdoin.replace(analisiAldatua,aldaketa);
     }
 
-    Pcre taldatuSarrera("\\[\\Sarrera_([Aa]+)([^\\]]*)");
+    //    Pcre taldatuSarrera("\\[\\Sarrera_([Aa]+)\\]]");
     // gehitu homografo ID Momentuz 0 baina 1 beharko luke
-    if (taldatuSarrera.search(analisiAldatua)) {
+    if (aldatuSarrera.search(analisiAldatua)) {
       strcpy(aldaketa,"[Sarrera_");
-      strcat(aldaketa,bim_erab);
-      strcat(aldaketa,"$2--0");
-      analisiAldatua = taldatuSarrera.replace(analisiAldatua,aldaketa);
+      strcat(aldaketa,irt);
+      strcat(aldaketa,"--0]");
+      analisiAldatua = aldatuSarrera.replace(analisiAldatua,aldaketa);
+    }
+  }
+  return analisiAldatua;
+}
+string anaBihurtzailea::aldatuSarInfoPar(const string analisia, const char bim_erab[], int SARda) {
+  string analisiAldatua = analisia,sarreraTmp;
+  char aldaketa[LUZMAXAN],sar[LUZMAXAN],irt[LUZMAXAN];
+  aldaketa[0] = '\0'; 
+  sar[0] = '\0';
+  irt[0] = '\0';
+  strcpy(sar,bim_erab);
+  bihur_asteris_maj(sar,irt);
+
+  // ADI direnetan bi lekutan aldatu behar da aaaaa(tu): Sarrera eta ADOIN edo SAR eta AOI
+  
+  if (SARda) {
+    if (aldatuAoiPar.search(analisiAldatua)) {
+      strcpy(aldaketa,"(AOI ");
+      strcat(aldaketa,irt);
+      analisiAldatua = aldatuAoiPar.replace(analisiAldatua,aldaketa);
+    }
+    if (aldatuSarPar.search(analisiAldatua)) {
+      strcpy(aldaketa,"(SAR ");
+      strcat(aldaketa,irt);
+      strcat(aldaketa,")");
+      analisiAldatua = aldatuSarPar.replace(analisiAldatua,aldaketa);
+    }
+  }
+  else {
+    if (aldatuAdoinPar.search(analisiAldatua)) {
+      strcpy(aldaketa,"(ADOIN ");
+      strcat(aldaketa,irt);
+      analisiAldatua = aldatuAdoinPar.replace(analisiAldatua,aldaketa);
+    }
+
+    //    Pcre taldatuSarrera("\\(\\Sarrera [Aa]+\\)");
+    // gehitu homografo ID Momentuz 0 baina 1 beharko luke
+    if (aldatuSarreraPar.search(analisiAldatua)) {
+      strcpy(aldaketa,"(Sarrera ");
+      strcat(aldaketa,irt);
+      strcat(aldaketa,"--0)");
+      analisiAldatua = aldatuSarreraPar.replace(analisiAldatua,aldaketa);
     }
   }
   return analisiAldatua;

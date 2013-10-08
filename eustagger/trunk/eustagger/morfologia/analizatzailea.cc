@@ -379,13 +379,12 @@ void analizatzailea::inprimatu_lexgabeko_analisia(char *analisiaorig, int *i,cha
   char lerroa_gabekoa[LUZMAXAN];
   char lema_gabekoa[LUZMAXAN],aurrizki_bim[LUZMAXAN];
   char sarrera_gabekoa[LUZMAXAN];
-  char analisia[2*LUZMAXAN],analisia2[2*LUZMAXAN],ezaug[LUZMAXAN];
-  char *phasi,*padoin,*pbuk,*pezaug;
+  // char analisia[2*LUZMAXAN],analisia2[2*LUZMAXAN],ezaug[LUZMAXAN];
+  // char *phasi,*padoin,*pbuk,*pezaug;
   int lehenengoa = 1;
   int BEREZIAK_SOILIK = 0;
 
-  analisia[0] = '\0';
-  strcpy(analisia,analisiaorig);
+  strcpy(lerroa_gabekoa,analisiaorig);
   aurrizki_bim[0] = '\0';
   if (kar_ber || ident_da) {
     if ( strchr(MAJ,forma_ident[strlen(lema_ident)-1]) )
@@ -396,139 +395,7 @@ void analizatzailea::inprimatu_lexgabeko_analisia(char *analisiaorig, int *i,cha
     strcat(aurrizki_bim,&lema_ident[strlen(lema_ident)-1]);
   }
   if (kar_ber && BEREZIAK_SOILIK && 
-      !strstr(analisia,"AZP_IZB") && !strstr(analisia,"AZP_LIB") ) return;
-  lerroa_gabekoa[0] = '\0';
-  analisia2[0] = '\0';
-  strcpy(analisia2,analisia);
-  while ( (phasi=strstr(analisia2,"[[")) != NULL ) {
-    lema_gabekoa[0] = '\0';
-    sarrera_gabekoa[0] = '\0';
-    if (kar_ber && lehenengoa) {
-      lehenengoa = 0;
-      strcpy(lema_gabekoa,aurrizki_bim);
-    }
-    else {
-      aurrizki_bim[0] = '\0';
-    }
-    strcat(lema_gabekoa,analisia);
-    lema_gabekoa[strlen(analisia)-strlen(phasi)+strlen(aurrizki_bim)] = '\0';
-    pbuk = strstr(analisia,"]]");
-    strcpy(analisia,pbuk+2);
-    if (analisia[0] == '[') { // morfemaren amaieran, FSen ostean, ezaugarriren bat gehiago dago
-      ezaug[0] = '\0';
-      pezaug = strstr(analisia,"]]");
-      strcpy(ezaug,analisia);
-      ezaug[strlen(analisia)-strlen(pezaug)+2] = '\0';
-      //     strcat(lerroa_gabekoa,ezaug);
-      strcpy(analisia,pezaug+2);
-    }
-    strcpy(analisia2,&analisia2[strlen(lema_gabekoa)-strlen(aurrizki_bim)]);
-    analisia2[strlen(analisia2)-strlen(analisia)] = '\0';
-    if ( lema_gabekoa[0] == ASTERIS  && 
-	 !strstr(analisia2,"AZP_IZB")&&!strstr(analisia2,"AZP_LIB") ) {
-      // IZE, ADJ, ADI, LAB edo BST -> minuskulaz
-      ken_maiuskulak(lema_gabekoa);
-    }
-    else { 
-      if (lema_gabekoa[0] == ASTERIS && !strstr(analisia2,"SIG")) {
-	// IZB edo LIB baina ez SIG -> Lehenengoa kenduta, gainerakoa minuskulaz
-	if (kar_ber)
-	  ken_maiuskulak(&lema_gabekoa[1+strlen(aurrizki_bim)]);
-	else {
-	  if (strstr(lema_gabekoa,"-") != NULL)
-	    // marratxoa badu, marratxo ondorengoa ere maiuskulaz
-	    ken_majusk_marratxo(&lema_gabekoa[1]);
-	  else
-	    ken_maiuskulak(&lema_gabekoa[1]);
-	}
-      }
-    }
-    strcat(lerroa_gabekoa,lema_gabekoa);
-    strcpy(sarrera_gabekoa,lema_gabekoa);
-    kendu_marka_lex(sarrera_gabekoa,sarrera_gabekoa,0);
-    bihur_asteris_maj(sarrera_gabekoa,sarrera_gabekoa);
-    if (strstr(analisia2,"[[SAR_aaaaatu") != NULL) {
-      strcat(lerroa_gabekoa,"[[SAR_");
-      strcat(lerroa_gabekoa,sarrera_gabekoa);
-//       if (lerroa_gabekoa[strlen(lerroa_gabekoa)-1] == 't')
-// 	strcat(lerroa_gabekoa,"u");
-//       else 
-      if (lerroa_gabekoa[strlen(lerroa_gabekoa)-2] == 't' &&
-	  (strchr("szx",lerroa_gabekoa[strlen(lerroa_gabekoa)-1]) != NULL)) {
-	lerroa_gabekoa[strlen(lerroa_gabekoa)-2] = lerroa_gabekoa[strlen(lerroa_gabekoa)-1];
-	lerroa_gabekoa[strlen(lerroa_gabekoa)-1] = 't';
-	strcat(lerroa_gabekoa,"u");
-	// tz+tu = ztu
-      }
-      else if (lerroa_gabekoa[strlen(lerroa_gabekoa)-1] == 'n')
-	strcat(lerroa_gabekoa,"du");
-      else
-	strcat(lerroa_gabekoa,"tu");
-      phasi = analisia2 + strlen("[[SAR_aaaaatu");
-      strcpy(analisia2,phasi);
-      if ((padoin = strstr(analisia2,"[AOI_aaaaa")) != NULL) {
-	analisia2[strlen(analisia2)-strlen(padoin)] = '\0';
-	strcat(lerroa_gabekoa,analisia2);
-	strcat(lerroa_gabekoa,"[AOI_");
-	strcat(lerroa_gabekoa,sarrera_gabekoa);
-	phasi = padoin + strlen("[AOI_aaaaa");
-	strcpy(analisia2,phasi);
-      }
-    }
-    else if ( (strstr(analisia2,"[[SAR_aaaaa") != NULL)||
-	      (strstr(analisia2,"[[SAR_Aaaaa") != NULL) ||
-	      (strstr(analisia2,"[[SAR_AAAAA") != NULL) ){
-      strcat(lerroa_gabekoa,"[[SAR_");
-      strcat(lerroa_gabekoa,sarrera_gabekoa);
-      phasi = analisia2 + strlen("[[SAR_aaaaa");
-      strcpy(analisia2,phasi);
-    }
-    else if (strstr(analisia2,"[[Sarrera_aaaaatu") != NULL) {
-      strcat(lerroa_gabekoa,"[[Sarrera_");
-      strcat(lerroa_gabekoa,sarrera_gabekoa);
-//       if (lerroa_gabekoa[strlen(lerroa_gabekoa)-1] == 't')
-// 	strcat(lerroa_gabekoa,"u--0");
-//       else 
-      if (lerroa_gabekoa[strlen(lerroa_gabekoa)-2] == 't' &&
-	  (strchr("szx",lerroa_gabekoa[strlen(lerroa_gabekoa)-1]) != NULL)) {
-	lerroa_gabekoa[strlen(lerroa_gabekoa)-2] = lerroa_gabekoa[strlen(lerroa_gabekoa)-1];
-	lerroa_gabekoa[strlen(lerroa_gabekoa)-1] = 't';
-	strcat(lerroa_gabekoa,"u--0");
-	// tz+tu = ztu
-      }
-      else if (lerroa_gabekoa[strlen(lerroa_gabekoa)-1] == 'n')
-	strcat(lerroa_gabekoa,"du--0");
-      else
-	strcat(lerroa_gabekoa,"tu--0");
-      if (edbl_bertsioa>4)
- 	strcat(lerroa_gabekoa,"---"); // HBn arautu gabe
-      phasi = analisia2 + strlen("[[Sarrera_aaaaatu");
-      strcpy(analisia2,phasi);
-      if ((padoin=strstr(analisia2,"[ADOIN_aaaaa")) != NULL) {
-	analisia2[strlen(analisia2)-strlen(padoin)] = '\0';
-	strcat(lerroa_gabekoa,analisia2);
-	strcat(lerroa_gabekoa,"[ADOIN_");
-	strcat(lerroa_gabekoa,sarrera_gabekoa);
-	phasi = padoin + strlen("[ADOIN_aaaaa");
-	strcpy(analisia2,phasi);
-      }
-    }
-    else if ( (strstr(analisia2,"[[Sarrera_aaaaa") != NULL)||
-	      (strstr(analisia2,"[[Sarrera_Aaaaa") != NULL) ||
-	      (strstr(analisia2,"[[Sarrera_AAAAA") != NULL) )  {
-      strcat(lerroa_gabekoa,"[[Sarrera_");
-      strcat(lerroa_gabekoa,sarrera_gabekoa);
-      strcat(lerroa_gabekoa,"--0");
-      if (edbl_bertsioa>4)
- 	strcat(lerroa_gabekoa,"---"); // HBn arautu gabe
-      phasi = analisia2 + strlen("[[Sarrera_aaaaa");
-      strcpy(analisia2,phasi);
-    }
-    strcat(lerroa_gabekoa,analisia2);
-    analisia2[0] = '\0';
-    strcpy(analisia2,analisia);
-  }
-  strcat(lerroa_gabekoa,analisia);
+      !strstr(analisiaorig,"AZP_IZB") && !strstr(analisiaorig,"AZP_LIB") ) return;
 
   if(irteera_nola == ESTANDAR_AN || irteera_nola == ESTANDAR_PIPE)
     if (Sarrera_berezia){
@@ -2444,7 +2311,7 @@ void analizatzailea::lortu_hitza(char *hitza,vector<string> *sarrerako_taula,vec
 //   return(1);
 // }
 
-
+using namespace pcrepp;
 int analizatzailea::analizatuErabLex(char *hitza,int m, char anal[][LUZMAXAN], int *beste_analisia, char *lema_ident,  vector<string> *emaitza) {
   int m_lag,m_lag2;//,dena_majusk_al=0;
   char hitza2[LUZMAXAN],analErabLex[LUZMAXAN];
@@ -2536,7 +2403,3 @@ int analizatzailea::analizatuErabLex(char *hitza,int m, char anal[][LUZMAXAN], i
   }
   return m;
 }
-
-
-
- 
