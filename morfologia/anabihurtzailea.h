@@ -25,7 +25,7 @@ class anaBihurtzailea {
  Pcre ez_zenb, diak, diak_98, bat, bi, hiru, lau, zortzi, bederatzi;
  Pcre kenAld, kenSar, kenSarrera, kenAldaera, kenTwol, kenPlusMinus, kenErrorKode, kenAoi, kenAdoin, kenBim, kenBimG;
  Pcre lorBim,bst;
- Pcre bilatuHasiera, aldatuEraazp, aldatuAdoin, aldatuAoi, aldatuSar, aldatuSarrera;
+ Pcre bilatuHasiera, aldatuEraazp, aldatuAdoin, aldatuAoi, aldatuSar, aldatuSarrera, aldatuAdoinPar, aldatuAoiPar, aldatuSarPar, aldatuSarreraPar;
  Pcre kat, azp, mtkat;
  typedef pair<string,string> tag_trig;
  map<tag_trig,int> trigramak;
@@ -43,6 +43,7 @@ class anaBihurtzailea {
  const string lortuBim(const string analisiOsoa);
  const string aldatuBim(string analisiOsoa, string bimStr);
  string aldatuSarInfo(const string analisia, char bim_erab[], int SARda);
+ string aldatuSarInfoPar(const string analisia, const char bim_erab[], int SARda);
  const string bihurtu_xerox_lemati (string aldatzeko);
  const string lortuErabLexInfo(string bimStr, string analisia);
 };
