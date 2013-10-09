@@ -36,17 +36,23 @@ void segmentazioaSortuRaw(string &fitxategiIzena, string &segIrteera) {
   string lerro,segFitx;
   vector<string> emaitza;
   string amaraunIzena;
+  char *autoFil=strdup("autofiltro2.dat");
+  char *autoAurre=strdup(AURREAN_LEX);
 
-  irakur_automata("autofiltro2.dat",&autofil2,ESTADU2_MAX,MULTZO2_MAX);
+  irakur_automata(autoFil,&autofil2,ESTADU2_MAX,MULTZO2_MAX);
+  free(autoFil);
 
-
-  if (fitxategiIzena.length() == 0) 
-    proz.init(AURREAN_LEX,"stdin");
+  if (fitxategiIzena.length() == 0) {
+   char *stdIn=strdup("stdin");
+   proz.init(autoAurre,stdIn);
+   free(stdIn);
+  }
   else {
     char *sarfitx = strdup(fitxategiIzena.c_str());
-    proz.init(AURREAN_LEX,sarfitx);
+    proz.init(autoAurre,sarfitx);
     free(sarfitx);
   }
+  free(autoAurre);
   proz.aurreprozesua(ANALIRA,&emaitza);
   emaitza = anali.analizatu(TAULAN,&emaitza);
 

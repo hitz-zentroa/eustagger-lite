@@ -31,7 +31,7 @@ public:
   int  getAnaTam();
   
   void add2Gorputza(std::string type, std::string value, bool symBal=false);
-  void setForma(std::string forma);
+  void setForma(std::string forma,const std::string bereiz);
   void morfemaBerria();
   void analisiaBukatu();
 

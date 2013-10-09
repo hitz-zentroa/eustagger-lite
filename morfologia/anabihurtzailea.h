@@ -31,6 +31,9 @@ class anaBihurtzailea {
  map<tag_trig,int> trigramak;
  map<string,int> zenbat_etiketako;
  int edbl_bertsioa;
+ string kenduMaj(const string & str);
+ string jarriMaj(const string & str);
+
  public:
  anaBihurtzailea();
  const string lispifikatu(char *analisia,int ident_da,int zen_da, int zen_dek_da, int errom_da);

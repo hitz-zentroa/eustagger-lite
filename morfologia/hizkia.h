@@ -86,8 +86,9 @@ extern int erantsi_erab(char *lema, int mota, int r_gogorra);
 extern int ezabatu_erab(char *lema, int mota, int r_gogorra);
 */
 
-/* MAJUSKULEN ARAZOA KONPONTZEKO */
+/* MAIUSKULEN ARAZOA KONPONTZEKO */
 #define ASTERIS '9' /* XEROXEKO TRESNETAN * GAZIKI DABIL */
 #define ASTERIS_R "9r" /* XEROXEKO TRESNETAN * GAZIKI DABIL */
 #define ASTERIS_A "9a" /* XEROXEKO TRESNETAN * GAZIKI DABIL */
+#define ASTERIS_X '*' /* XEROXEKO TRESNETAN * GAZIKI DABIL */
  

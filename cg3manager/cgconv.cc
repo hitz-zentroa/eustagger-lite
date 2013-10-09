@@ -36,15 +36,18 @@ string sortu_cg3rako_lema_info(string lema, string info, bool ezezag) {
 string sortu_cg3rako_lema(string lema) {
   Pcre kt("k\\+\\!?t");
   Pcre tk("t\\+\\!?k");
-  Pcre plus("\\+\\!?");
+  Pcre plus("\\+\\!?","g");
+  Pcre garren("\\+garren\\!");
   string lemaTmp = lema;
 
   if (kt.search(lemaTmp))
     lemaTmp = kt.replace(lemaTmp,"t");
   if (tk.search(lemaTmp))
     lemaTmp = tk.replace(lemaTmp,"k");
-  if (tk.search(lema))
-    lemaTmp = kt.replace(lemaTmp,"");
+  if (garren.search(lema))
+    lemaTmp = garren.replace(lemaTmp,".");
+  if (plus.search(lema))
+    lemaTmp = plus.replace(lemaTmp,"");
   return lemaTmp;
 }
 

@@ -81,7 +81,7 @@ kohorteak    : kohorteak kohortea
 kohortea     : forma_lerro t_paren_ireki forma analisiak t_paren_itxi
              | forma_lerro t_paren_ireki forma t_paren_itxi
              | forma_lerro {
-                yyparseAna2Morfsar->setForma(formaString);
+                yyparseAna2Morfsar->setForma(formaString,"NULL");
 		yyparseAna2Morfsar->add2Gorputza(ID, formaLerro);
 		yyparseAna2Morfsar->add2Gorputza(FORMA, "NULL");
 		yyparseAna2Morfsar->add2Gorputza(EDBL_SARRERA, "NULL");
@@ -181,7 +181,7 @@ anal         : t_paren_ireki t_anal t_sinbolo t_paren_itxi
 lem_morf     : {
                 lehenMorfema = true;
 		ezaugOrd=0;
-                yyparseAna2Morfsar->setForma(formaString);
+                yyparseAna2Morfsar->setForma(formaString,"NOTNULL");
 		stringstream tmpIdLerro;
 		tmpIdLerro << analisiMota[0] << formaLerro;
 		yyparseAna2Morfsar->add2Gorputza(ID, tmpIdLerro.str());
