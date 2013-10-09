@@ -377,25 +377,8 @@ void analizatzailea::inprimatu_ident_analisia(char *analisiaorig, int *ident_ana
 
 void analizatzailea::inprimatu_lexgabeko_analisia(char *analisiaorig, int *i,char *lema_ident, vector<string>* emaitza) {
   char lerroa_gabekoa[LUZMAXAN];
-  char lema_gabekoa[LUZMAXAN],aurrizki_bim[LUZMAXAN];
-  char sarrera_gabekoa[LUZMAXAN];
-  // char analisia[2*LUZMAXAN],analisia2[2*LUZMAXAN],ezaug[LUZMAXAN];
-  // char *phasi,*padoin,*pbuk,*pezaug;
-  int lehenengoa = 1;
-  int BEREZIAK_SOILIK = 0;
 
   strcpy(lerroa_gabekoa,analisiaorig);
-  aurrizki_bim[0] = '\0';
-  if (kar_ber || ident_da) {
-    if ( strchr(MAJ,forma_ident[strlen(lema_ident)-1]) )
-      BEREZIAK_SOILIK = 1;
-    strcpy(aurrizki_bim,lema_ident);
-    aurrizki_bim[strlen(lema_ident)-1] = '\0';
-    bihur_maj_asteris(aurrizki_bim,aurrizki_bim);
-    strcat(aurrizki_bim,&lema_ident[strlen(lema_ident)-1]);
-  }
-  if (kar_ber && BEREZIAK_SOILIK && 
-      !strstr(analisiaorig,"AZP_IZB") && !strstr(analisiaorig,"AZP_LIB") ) return;
 
   if(irteera_nola == ESTANDAR_AN || irteera_nola == ESTANDAR_PIPE)
     if (Sarrera_berezia){
@@ -612,22 +595,22 @@ vector<string> analizatzailea::analizatu(int modua, vector<string> *sarrerako_ta
   char hitza[LUZMAXAN];
   vector<string> emaitza;
   int indizea=0;
-
+  int hm=-1;
   irteera_nola = modua;
 
   if (Sarrera_berezia)
     lortu_hitza(hitza,sarrerako_taula,&emaitza,&indizea);
   else 
-    scanf("%s",hitza) ;
+    hm=scanf("%s",hitza) ;
 
-  while ((Sarrera_berezia && strlen(hitza)) || (!Sarrera_berezia && !feof(stdin)))
+  while ((Sarrera_berezia && strlen(hitza)) || (!Sarrera_berezia && !feof(stdin) && hm != -1))
     {
       analizatu_hitza_trans(hitza,modua,sarrerako_taula,&emaitza,&indizea);
 
       if (Sarrera_berezia)
 	lortu_hitza(hitza,sarrerako_taula,&emaitza,&indizea);
       else 
-	scanf("%s",hitza) ;
+	hm=scanf("%s",hitza) ;
     }
 
   if (Sarrera_berezia) {
@@ -2138,11 +2121,12 @@ void analizatzailea::lortu_hitza(char *hitza,vector<string> *sarrerako_taula,vec
  zen_da = 0;
  zen_dek_da = 0;
  errom_da = 0;
+ char *getRet;
 
  if(irteera_nola == ESTANDAR_AN) {
-   fgets(lerroa,LUZMAXAN-1,stdin);
+   getRet = fgets(lerroa,LUZMAXAN-1,stdin); 
  //   gets(lerroa);
-   if (strlen(lerroa)>0 && lerroa[0] != '/') {
+   if (getRet != NULL && strlen(lerroa)>0 && lerroa[0] != '/') {
      strcpy(hitza,lerroa);
      if (hitza[strlen(hitza)-1] == '\n')
        hitza[strlen(hitza)-1] = '\0';
@@ -2279,7 +2263,7 @@ void analizatzailea::lortu_hitza(char *hitza,vector<string> *sarrerako_taula,vec
      }
      if (irteera_nola == ESTANDAR_AN){
        lerroa[0] = '\0';
-       fgets(lerroa,LUZMAXAN-1,stdin);
+        getRet = fgets(lerroa,LUZMAXAN-1,stdin);
        //	   gets(lerroa);
      }
      else {
@@ -2296,25 +2280,10 @@ void analizatzailea::lortu_hitza(char *hitza,vector<string> *sarrerako_taula,vec
 }
 
 
-// int analizatzailea::ken_majusk (char *str)
-// {
-//   int i,j,l;
-  
-//   l = strlen(str);
-//   for (i=0,j=0;i<l;i++)
-//     if (str[i] != '9' && str[i] != '*')
-//       {
-// 	str[j] = str[i];
-// 	j++;
-//       }
-//   str[j] = '\0';
-//   return(1);
-// }
-
 using namespace pcrepp;
 int analizatzailea::analizatuErabLex(char *hitza,int m, char anal[][LUZMAXAN], int *beste_analisia, char *lema_ident,  vector<string> *emaitza) {
   int m_lag,m_lag2;//,dena_majusk_al=0;
-  char hitza2[LUZMAXAN],analErabLex[LUZMAXAN];
+  char analErabLex[LUZMAXAN];
   int SARda=0;
   string analisia;
   Pcre SAR("\\[SAR_");
@@ -2403,3 +2372,5 @@ int analizatzailea::analizatuErabLex(char *hitza,int m, char anal[][LUZMAXAN], i
   }
   return m;
 }
+
+

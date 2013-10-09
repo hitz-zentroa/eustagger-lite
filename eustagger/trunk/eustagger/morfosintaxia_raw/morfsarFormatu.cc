@@ -192,11 +192,11 @@ void MorfsarFormatu::add2Gorputza(string type, string value, bool symBal) {
 
 /* **************************************************** */
 
-void MorfsarFormatu::setForma(string forma) {
+void MorfsarFormatu::setForma(string forma,const std::string bereiz) {
   // forma mantentzen bada analisi beraren intertretazio berria bestela Analisi guztiz berri bat.
   this->morfKont=0;
-  if (aurrekoForma == forma) {
-    interprKont++;
+  if (aurrekoForma == forma && bereiz != "NULL") {
+     interprKont++;
   }
   else {
     analisiKont++;
@@ -205,7 +205,7 @@ void MorfsarFormatu::setForma(string forma) {
     vector<MorfsarSar> anaBerri;
     emaitzaV.push_back(anaBerri);
   }
-
+  
   Indizeak hasInd(analisiKont,0,0);
   mSar.hasInd = hasInd;
   

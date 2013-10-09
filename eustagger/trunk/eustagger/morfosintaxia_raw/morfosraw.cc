@@ -27,7 +27,10 @@ void MorfosRaw::debugControl(int type, int kont, string tmpFitx) {
   if (this->debug) {;
     switch (type) {
     case RESET:{
-      system ("mkdir ./debug");
+      int k =  system ("mkdir ./debug");
+      if (k == -1) {
+	printErr(string("EXEKUTATZEAN"),string("mkdir ./debug"),0 );  
+      }
       this->kont2tmpAmaraun.clear();
       this->kont2fsT.clear();
       this->kont2addT.clear();
@@ -70,7 +73,10 @@ void MorfosRaw::debugControl(int type, int kont, string tmpFitx) {
 	this->kont2fsT[kont]=difftime(t,fsTmpT);
 	string tmpMorfsar=tmpFitx +".morfsar";
 	string cmd= "cp " + tmpMorfsar + " ./" + kont2tmpAmaraun[kont];
-	system(cmd.c_str());
+	int k = system(cmd.c_str());
+	if (k == -1) {
+	  printErr(string("EXEKUTATZEAN"),cmd,0 );  
+	}
 	unlink(tmpMorfsar.c_str());
       }
       break;

@@ -18,8 +18,6 @@ void aurreprozRaw::init(char *auto_izena, char *sarrera_izena)
 }
 
 extern void aztertu_zenbakia(char *,char *);
-extern void bihur_maj_asteris(char *, char *);
-extern void bihur_asteris_maj(char *, char *);
 extern int berdinak(char *, char *); 
 extern void Maiuskulak(char *, char *, char *);
 extern int erromatarra_da(char *);

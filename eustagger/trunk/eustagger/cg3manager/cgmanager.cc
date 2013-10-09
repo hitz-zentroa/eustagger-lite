@@ -22,9 +22,10 @@ cgManager::cgManager () {
     std::cerr << "Error: Cannot initialize ICU. Status = " << u_errorName(status) << std::endl;
     CG3Quit(1);
   }
-  this->codepage_default = ucnv_getDefaultName();
   ucnv_setDefaultName("UTF-8");
-  this->locale_default = "eu_ES.UTF-8"; //uloc_getDefault();
+  this->codepage_default = ucnv_getDefaultName();
+  uloc_setDefault("eu_ES", &status);
+  this->locale_default = uloc_getDefault();
 
   this->ux_stdin = u_finit(stdin, locale_default, codepage_default);
   this->ux_stdout = u_finit(stdout, locale_default, codepage_default);
@@ -62,7 +63,11 @@ int cgManager::initGrammar(string grammarFileName, int sections, char prefix, in
   if (in == NULL || ferror(in)) {
     return 0;
   }
-  fread(&CG3::cbuffers[0][0], 1, 4, in);
+  size_t hm;
+  if ((hm=fread(&CG3::cbuffers[0][0], 1, 4, in)) != 4) {
+    std::cerr << "Error in grammar detected " << std::endl;
+    CG3Quit(1);
+  }
   fclose(in);
   this->trace = trace;
   if (CG3::cbuffers[0][0] == 'C' && CG3::cbuffers[0][1] == 'G' && 

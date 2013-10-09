@@ -56,7 +56,7 @@ class MorfsarFormatu {
   void addMorfsarSar(std::string & mSarStr);  //osatuta dagoen  prolog sarrera txertatzen du
 
   void add2Gorputza(std::string type, std::string value, bool symBal=false);
-  void setForma(std::string forma);
+  void setForma(std::string forma,const std::string bereiz);
   void morfemaBerria();
   void analisiaBukatu();
 

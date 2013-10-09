@@ -33,11 +33,10 @@ string izen_luze, eslaxvar;
     exit(1);
  }
 
- if ((aut = fopen(izen_luze.c_str(),"r")) == NULL)
-   {
-    printf("\nErrorea %s irekitzean\n",fitxategi);
-    exit(1);
-   }
+ if ((aut = fopen(izen_luze.c_str(),"r")) == NULL)  {
+   printf("\nErrorea %s irekitzean\n",fitxategi);
+   exit(1);
+ }
 
 // Hasierako komentarioa pasa (komila artean)
 
@@ -49,10 +48,15 @@ string izen_luze, eslaxvar;
 
 
 // Irakurri Lerro eta zutabe kopurua
-
- fscanf(aut," %d ",&LERROAK);
- fscanf(aut," %d \n",&ZUTABEAK);
-
+ int kop;
+ if ((kop = fscanf(aut," %d ",&LERROAK)) != 1) {
+   printf("\nErrorea automataren lerroak irakurtzean\n");
+   exit(1);
+ }
+ if ((kop = fscanf(aut," %d \n",&ZUTABEAK)) != 1) {
+   printf("\nErrorea automataren zutabeak irakurtzean\n");
+   exit(1);
+ }
 // Sortu memoria transizioak, finalak, etiketak eta tratamenduak gordetzeko
 
  transizioak = new (int *[LERROAK] ); 
@@ -70,7 +74,11 @@ string izen_luze, eslaxvar;
     char str_lag[20];
     int k = 0;
 
-    fscanf(aut," %d",&est);
+    if ((kop = fscanf(aut," %d",&est)) != 1) {
+      printf("\nErrorea automatan egoera irakurtzean\n");
+      exit(1);
+    }
+
     if (est != (i+1))
       {
        printf("\n Errorea. %s fitxategia gaizki eratua\n",fitxategi);
@@ -78,15 +86,21 @@ string izen_luze, eslaxvar;
       }
     fin=fgetc(aut);                              // irakurri finala den
     finalak[i] = (fin == ':') ? 1 : 0;
-    for (int j=0;j<ZUTABEAK-2;j++)
-      fscanf(aut," %d ",&transizioak[i][j]); // irakurri transizioak
+    for (int j=0;j<ZUTABEAK-2;j++) {
+      if (( kop = fscanf(aut," %d ",&transizioak[i][j])) != 1) { // irakurri transizioak
+	printf("\nErrorea automatan trantsizioak irakurtzean\n");
+	exit(1);
+      }
+    }
 
     while (fgetc(aut) != '\"');                  // irakurri etiketa
     while ((str_lag[k]=fgetc(aut)) != '\"') k++;
     str_lag[k] = '\0';
     etiketak[i] = str_lag;
-    fscanf(aut," %d",&tratamenduak[i]);          // irakurri tratamendua
-//    fgetc(aut);                                  // irakurri lerro bukaera 
+    if ((kop = fscanf(aut," %d",&tratamenduak[i])) != 1) {  // irakurri tratamendua
+      printf("\nErrorea automatan tratamenduak irakurtzean\n");
+      exit(1);
+    }
    } 
 
 

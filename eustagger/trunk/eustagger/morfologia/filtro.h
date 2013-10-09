@@ -42,7 +42,7 @@
 #define MAJ "ABCDEFGHIJKLMN\321OPQRSTUVWXYZ"
  
 #ifdef FUNDEF
- char *multzoak[MULTZO_MAX]=
+ char multzoak[][128]=
      {
        ":@",
        " \t",

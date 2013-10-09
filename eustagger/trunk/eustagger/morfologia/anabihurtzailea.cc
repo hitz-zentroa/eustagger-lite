@@ -1,6 +1,8 @@
 #include "anabihurtzailea.h"
 #include <string.h>
 #include <fstream>
+#include "filtro.h"
+
 extern void bihur_asteris_maj(char *,char *);
 extern void bihur_maj_asteris(char *,char *);
 extern int kendu_marka_lex(char *,char *,int);
@@ -568,11 +570,16 @@ int anaBihurtzailea::desanbAldaerak(int m, char anal[][LUZMAXAN],char motak[],in
 	analisia = aldaeraEdbl.replace(analisia,"][error-kode_");
 	// ez errepikatzeko leku berean
       }
-      if (aldKop - edblKop != distantziak[k])
-	if (aldKop+edblKop>0 && aldKop - edblKop >= 0)
+      if (aldKop - edblKop != distantziak[k]) {
+	if (aldKop+edblKop>0 && aldKop - edblKop >= 0) {
 	 distantziak[k] = aldKop - edblKop;
-	else if (aldKop+edblKop>0)
-	  distantziak[k] = 0;
+	}
+	else {
+	  if (aldKop+edblKop>0) {
+	    distantziak[k] = 0;
+	  }
+	}
+      }
       if (distantziak[k] == 0) {
 	// garbitu, MAPean sartu eta k gorde emaitzan
 	map<string,int>::iterator dago;
@@ -593,7 +600,7 @@ int anaBihurtzailea::desanbAldaerak(int m, char anal[][LUZMAXAN],char motak[],in
     // bigarren bueltan dist>0 dutenetan ikusteko ea badagoen analisi baliokiderik EDBLko informazioan oinarrituta
     // DISTANTZIA PARAMETRIZATU
     for (int k=0;k<m;k++) {
-      if (!distantzia_minimoa || distantzia_minimoa && !zerokoak_daude && distantziak[k] > 0 && distantziak[k] < 2) {
+      if (!distantzia_minimoa || (distantzia_minimoa && !zerokoak_daude && distantziak[k] > 0 && distantziak[k] < 2)) {
 	// garbitu, MAPean begiratu eta k gorde emaitzan ez badago baliokiderik
 	map<string,int>::iterator dago;
 
@@ -618,10 +625,10 @@ int anaBihurtzailea::desanbAldaerak(int m, char anal[][LUZMAXAN],char motak[],in
 	    matchk = kenErrorKode.matches();
 	  if (kenErrorKode.search(anal[non]))
 	    matchnon =kenErrorKode.matches();
-	  if (distantziak[non] == distantziak[k] 
+	  if ((distantziak[non] == distantziak[k] 
 // 	      && strstr(&anal[k][0],"[ERROR-KODE_") == 0
 // 	      &&strstr(&anal[non][0],"[ERROR-KODE_") != 0 
-	      && matchk < matchnon
+	       && matchk < matchnon)
 	      || distantziak[non] > distantziak[k]
 	      ) {
 	    // ordezkatu
@@ -652,7 +659,7 @@ int anaBihurtzailea::desanbAldaerak(int m, char anal[][LUZMAXAN],char motak[],in
 
 
 int anaBihurtzailea::desanbLexGabe(int m, char anal[][LUZMAXAN],char motak[],int distantziak[], string forma){
- int ema_indizeak[ANMAX];
+ // int ema_indizeak[ANMAX];
  valarray<int> dist(distantziak,m); 
  vector<string> ema_ana;
  char mot[ANMAX];
@@ -675,7 +682,9 @@ int anaBihurtzailea::desanbLexGabe(int m, char anal[][LUZMAXAN],char motak[],int
  Pcre tmarratxoa("([^-]+)-[^-]+");
  Pcre tden_mai("^([A-Z\321]+)-?[a-z]+");
  Pcre tizar("\\*","g");
+ Pcre trare("\\[RARE_");
 
+ Pcre rare = trare;
  Pcre admadoin = tadmadoin;
  Pcre izblib = tizblib;
  Pcre par = tpar;
@@ -739,7 +748,7 @@ int anaBihurtzailea::desanbLexGabe(int m, char anal[][LUZMAXAN],char motak[],int
    den_mai_da = 0;
 
  for (int k=0;k<m;k++) {
-   ema_indizeak[k] = -1; // defektuz ez gorde emaitza
+   // ema_indizeak[k] = -1; // defektuz ez gorde emaitza
    // filtratu
    analisia = &anal[k][0];
    lema = lortuBim(analisia);
@@ -758,6 +767,9 @@ int anaBihurtzailea::desanbLexGabe(int m, char anal[][LUZMAXAN],char motak[],int
    if (lema.length() > 4 && bst.search(analisia)) {
      //     cerr << "deslok 1: BST+|lema|>4 "<<analisia <<"\n";
      // edo BST izanda ere, ez badator bat maiuskulaz agertzen den zatiarekin, kendu
+     continue;
+   }
+   if (rare.search(analisia)) {
      continue;
    }
 //    if (Aorg.search(lema) && izblib.search(analisia)==0) {
@@ -807,7 +819,7 @@ int anaBihurtzailea::desanbLexGabe(int m, char anal[][LUZMAXAN],char motak[],int
      continue;
    }
    // hona iritsi direnak gorde
-   ema_indizeak[k] = j;
+   // ema_indizeak[k] = j;
    ema_ana.push_back(&anal[k][0]);
    mot[j] = motak[k];
    dist[j] = distantziak[k];
@@ -833,7 +845,7 @@ int anaBihurtzailea::desanbLexGabe(int m, char anal[][LUZMAXAN],char motak[],int
     }
     if (lema[lema.length()-1] == 'R') lema[lema.length()-1] = 'r';
      if (!marraAurrekoa || 
-	  marraAurrekoa && (lema.compare(formaHas) == 0 || lema.compare(formaHasmin) == 0)) {
+	 (marraAurrekoa && (lema.compare(formaHas) == 0 || lema.compare(formaHasmin) == 0))) {
        // formak marratxoa (edo DEN_MAIdek) badu eta baldin badago analisirik marratxo aurreko lemarekin, horiek utzi
        //     strcpy(anal[i],ema_ana[k].c_str());
        ema_ana[i] = analisia;
@@ -877,7 +889,7 @@ int anaBihurtzailea::desanbLexGabe(int m, char anal[][LUZMAXAN],char motak[],int
 
 
 int anaBihurtzailea::desanbEstandar(int m, char anal[][LUZMAXAN],char motak[],int distantziak[], string forma){
- int ema_indizeak[ANMAX];
+ // int ema_indizeak[ANMAX];
  valarray<int> dist(distantziak,m); 
  vector<string> ema_ana;
  char mot[ANMAX];
@@ -965,7 +977,7 @@ int anaBihurtzailea::desanbEstandar(int m, char anal[][LUZMAXAN],char motak[],in
    den_mai_da = 0;
 
  for (int k=0;k<m;k++) {
-   ema_indizeak[k] = -1; // defektuz ez gorde emaitza
+   // ema_indizeak[k] = -1; // defektuz ez gorde emaitza
    // filtratu
    analisia = &anal[k][0];
    lema = lortuBim(analisia);
@@ -1015,7 +1027,7 @@ int anaBihurtzailea::desanbEstandar(int m, char anal[][LUZMAXAN],char motak[],in
      continue;
    }
    // hona iritsi direnak gorde
-   ema_indizeak[k] = j;
+   // ema_indizeak[k] = j;
    ema_ana.push_back(&anal[k][0]);
    mot[j] = motak[k];
    dist[j] = distantziak[k];
@@ -1041,7 +1053,7 @@ int anaBihurtzailea::desanbEstandar(int m, char anal[][LUZMAXAN],char motak[],in
     }
     if (lema[lema.length()-1] == 'R') lema[lema.length()-1] = 'r';
      if (!marraAurrekoa || 
-	  marraAurrekoa && (lema.compare(formaHas) == 0 || lema.compare(formaHasmin) == 0)) {
+	 (marraAurrekoa && (lema.compare(formaHas) == 0 || lema.compare(formaHasmin) == 0))) {
        // formak marratxoa (edo DEN_MAIdek) badu eta baldin badago analisirik marratxo aurreko lemarekin, horiek utzi
        //     strcpy(anal[i],ema_ana[k].c_str());
        ema_ana[i] = analisia;
@@ -1171,17 +1183,88 @@ int anaBihurtzailea::desanbKatTrig(int m, vector<string> &ema_ana,char mot[], va
 }
 
 
+string anaBihurtzailea::kenduMaj(const string & str) {
+  string lag = str; 
+  string ema;
+  
+  for (unsigned int i = 0; i <  str.size(); i++) {
+
+    if (isupper(lag[i]) && (lag[i]!=NI_T) && (lag[i]!=NI_H)) {
+      
+      ema.append(1,ASTERIS);
+      char c = tolower(lag[i]);
+      ema.append(1,c);
+      
+    }
+    else if (lag[i]==NI_H) {
+
+      ema.append(1,ASTERIS);
+      ema.append(1,NI_GUZTIENTZAT);
+
+    }
+    else if (lag[i]==NI_T) {
+
+      ema.append(1,NI_GUZTIENTZAT);
+
+    }
+    else if (lag[i]==' ') {
+
+      ema.append(1,'_');
+
+    }
+    else if (lag[i]!='\222' && lag[i] != '\'' && lag[i] != '\"') ema.append(1,lag[i]);
+    
+  }
+  
+  return ema;
+  
+}
+
+
+string anaBihurtzailea::jarriMaj(const string & str) {
+  
+  string lag = str; 
+  string ema;
+  
+  for (unsigned int i = 0; i <  str.size(); i++) {
+
+    if (lag[i] == ASTERIS_X) {
+
+      if (lag[i+1] == NI_GUZTIENTZAT) ema.append(1,NI_H);
+      else {
+	
+	char c = toupper(lag[i+1]);
+	ema.append(1,c); 
+
+      }
+      
+      i++;
+
+    }
+    else if (lag[i] == NI_GUZTIENTZAT) ema.append(1,NI_T);
+    else if (lag[i]=='_') ema.append(1,' ');
+    else ema.append(1,lag[i]);
+    
+  }
+  
+  return ema;
+
+}
 
 
 string anaBihurtzailea::aldatuSarInfo(const string analisia, char bim_erab[], int SARda) {
   string analisiAldatua = analisia;
-  char aldaketa[LUZMAXAN],sar[LUZMAXAN],irt[LUZMAXAN];
+  char aldaketa[LUZMAXAN],irt[LUZMAXAN];
+  string sar;
   aldaketa[0] = '\0'; 
-  sar[0] = '\0';
   irt[0] = '\0';
 
-  strcpy(sar,bim_erab);
-  bihur_asteris_maj(sar,irt);
+  strcpy(irt,bim_erab);
+  kendu_marka_lex(irt,irt,0);
+  sar = irt;
+  sar = this->jarriMaj(sar);
+  strcpy(irt,sar.c_str());
+
 
   // ADI direnetan bi lekutan aldatu behar da aaaaa(tu): Sarrera eta ADOIN edo SAR eta AOI
   
@@ -1218,12 +1301,16 @@ string anaBihurtzailea::aldatuSarInfo(const string analisia, char bim_erab[], in
 }
 string anaBihurtzailea::aldatuSarInfoPar(const string analisia, const char bim_erab[], int SARda) {
   string analisiAldatua = analisia,sarreraTmp;
-  char aldaketa[LUZMAXAN],sar[LUZMAXAN],irt[LUZMAXAN];
+  char aldaketa[LUZMAXAN],irt[LUZMAXAN];
+  string sar;
   aldaketa[0] = '\0'; 
-  sar[0] = '\0';
   irt[0] = '\0';
-  strcpy(sar,bim_erab);
-  bihur_asteris_maj(sar,irt);
+
+  strcpy(irt,bim_erab);
+  kendu_marka_lex(irt,irt,0);
+  sar = irt;
+  sar = this->jarriMaj(sar);
+  strcpy(irt,sar.c_str());
 
   // ADI direnetan bi lekutan aldatu behar da aaaaa(tu): Sarrera eta ADOIN edo SAR eta AOI
   

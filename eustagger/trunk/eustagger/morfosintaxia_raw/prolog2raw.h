@@ -21,7 +21,7 @@
 
 #define DEBUG_MODE
 
-typedef enum ZerMotaType {
+/* typedef */ enum ZerMotaType {
   ERRORE_ZM = 0,
   STR_ZM = 1,
   PLUSMINUS_ZM = 2,
@@ -30,7 +30,7 @@ typedef enum ZerMotaType {
   ID_ZM = 5
 };
 
-typedef enum ReturnType {
+/* typedef */ enum ReturnType {
   FS_RETURN = 0,
   F_RETURN  = 1
 };

@@ -13,7 +13,7 @@ int ireki_maiztasun_handikoak() {
   char fitxIzena[200];
   FILE* MHINPUT;
   INIT = 0;
-  int kopurua;
+  int kopurua,hm=2;
   char hitza[100];
   if ( (tmp = getenv("IXA_PREFIX")) != 0 ){
     strcpy( fitxIzena , tmp);
@@ -22,8 +22,8 @@ int ireki_maiztasun_handikoak() {
   strcat( fitxIzena, "/var/morfologia/maiztasun_handikoak.dat" );
   if((MHINPUT=fopen(fitxIzena,"r"))==NULL)
     fprintf(stderr,"ezin izan dugu %s ireki", fitxIzena);
-  while(!feof(MHINPUT)){
-    fscanf(MHINPUT,"%d %s",&kopurua,hitza);
+  while(!feof(MHINPUT) && hm==2){
+    hm=fscanf(MHINPUT,"%d %s",&kopurua,hitza);
     mhmap[hitza]=kopurua;
   }
   INIT = 1;

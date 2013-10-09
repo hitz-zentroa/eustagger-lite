@@ -211,11 +211,10 @@ string Prolog2Raw::sortuF (vector <string> xmlEgituraV, PlTerm plBalio) throw(ch
 	    sym = fName + balio;
 	  else
 	    sym = balio;
-	  if (f.length() > 0)
-	    f = f + " " + sym;
-	  else
-	    f = sym;
-
+	    if (f.length() > 0)
+	      f = f + " " + sym;
+	    else
+	      f = sym;
 	}
 	else {
 	  try {
@@ -251,7 +250,15 @@ string Prolog2Raw::sortuF (vector <string> xmlEgituraV, PlTerm plBalio) throw(ch
 }
 
 /* ******************************************************************* */
-string sortuLema(string sarrera) {return sarrera;}
+// #include <pcre++.h>
+// using namespace pcrepp;
+string sortuLema(string sarrera) {
+  // Pcre tplus("\\+\\!?");
+  // if (tplus.search(sarrera)) {
+  //   sarrera = tplus.replace(sarrera,"");
+  // }
+  return sarrera;
+}
 
 string Prolog2Raw::sortuF_BalAtom (string ezaugIzen, PlTerm plBalio) throw(char*) {
   string balio;
@@ -287,7 +294,7 @@ string Prolog2Raw::sortuF_BalAtom (string ezaugIzen, PlTerm plBalio) throw(char*
       return "";
     }
     else balio = "\"" + balio + "\"";
-    if (ezaugIzen != SARRERA && ezaugIzen != EDBL_SARRERA && ezaugIzen != FORMA && ezaugIzen != ADOIN)
+    if (ezaugIzen != SARRERA && ezaugIzen != TWOL && ezaugIzen != EDBL_SARRERA && ezaugIzen != FORMA && ezaugIzen != ADOIN)
       return balio;
     else
       return "";
@@ -369,6 +376,10 @@ string Prolog2Raw::sortuForFS(PlTerm plstruct,string & fs, string & f, ReturnTyp
     string msg = "itzulpen taulan ez da ezaugarri hau definitzen ->" + ezaugIzen + "\n";
     throw (char*)msg.c_str();
   }
+  if (ezaugIzen == OINA) {
+    f = "";
+    fs = "";
+  }
   return ezaugIzen;
 }
 
@@ -399,6 +410,7 @@ void Prolog2Raw::sortuAnalisiak(PlTerm plstruct) {
 
   while(tail.next(e)) {
     bool lehena = true;
+    bool analisirik = false;
     PlTail tail2(e);
     PlTerm e2;
     string etiketa, forma;
@@ -412,11 +424,14 @@ void Prolog2Raw::sortuAnalisiak(PlTerm plstruct) {
 	if (lehena) {
 	  if (cg3form) {
 	    string hasierakoaCG3 = hasierakoLerroa;
-	    while (hasierakoaCG3.find("/") != string::npos) {
-	      hasierakoaCG3.replace(hasierakoaCG3.find("/"),1,"\"");
+	    while (hasierakoaCG3.find("/<") != string::npos) {
+	      hasierakoaCG3.replace(hasierakoaCG3.find("/<"),2,"\"<");
+	    }
+	    if (hasierakoaCG3.find(">/") != string::npos) {
+	      hasierakoaCG3.replace(hasierakoaCG3.find(">/"),2,">\"");
 	    }
 	    
-	    if (hasierakoaCG3.find(">\"")) {
+	    if (hasierakoaCG3.find(">\"") != string::npos) {
 	      string tmpZ = hasierakoaCG3.substr(hasierakoaCG3.find(">\""),string::npos);
 	      forma = hasierakoaCG3.substr(2,hasierakoaCG3.length()-tmpZ.length()-2);
 	      if (forma == "." || forma == ";" || forma == ":" || forma == "!" || forma == "?") {
@@ -424,7 +439,7 @@ void Prolog2Raw::sortuAnalisiak(PlTerm plstruct) {
 		hasierakoaCG3.replace(hasierakoaCG3.find(forma),1,formaDolar);
 	      }
 	    }
-	    if (hasierakoaCG3.find(">\"<")) {	    
+	    if (hasierakoaCG3.find(">\"<") != string::npos) {	    
 	      string tmpZ = hasierakoaCG3.substr(hasierakoaCG3.find(">\"<")+3,string::npos);
 	      etiketa = tmpZ.substr(0,tmpZ.length()-2);
 	    }
@@ -470,10 +485,14 @@ void Prolog2Raw::sortuAnalisiak(PlTerm plstruct) {
 
 
 	    // Inprimatu aurreprozesuaren etiketa
-	    if (etiketa.length() > 0)
+	    if (etiketa.length() > 0) {
 	      morfDoc << " " << etiketa;
-	    if (fsLista.length()>0)
+	      lehena = false;
+	    }
+	    if (fsLista.length()>0) {
 	      morfDoc << " " << fsLista << endl;
+	      analisirik = true;
+	    }
 	    else
 	      morfDoc << endl;
 	  }
@@ -491,8 +510,10 @@ void Prolog2Raw::sortuAnalisiak(PlTerm plstruct) {
 	      else
 	         morfDoc << this->aldaeraOsatua << " ";
 	    morfDoc << " " << fs ;
-	    if (fsLista.length()>0)
+	    if (fsLista.length()>0) {
 	      morfDoc << " " << fsLista << ")" << endl; 
+	      analisirik = true;
+	    }
 	    else
 	      morfDoc << ")" << endl; 
 	  }
@@ -500,6 +521,7 @@ void Prolog2Raw::sortuAnalisiak(PlTerm plstruct) {
 	}
 	else if (cg3form) { 
 	  morfDoc << "\t" << " " << etiketa << endl;
+	  analisirik = true;
 	}
       } catch (char* msg) {
 	cerr << msg << endl;
