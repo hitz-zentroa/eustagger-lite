@@ -129,7 +129,20 @@ string sortu_cg3rako_etiketak(string info) {
   return infoOut;
 }
 
-// string kendu_cg3rako_etiketak(string info) {
-//   string infoTmp = info;
-//   return infoTmp;
-// }
+string kendu_cg3rako_etiketak(string info) {
+  string infotmp = info;
+  Pcre kendu("\\s+(ZERO|NOTDEK|NOTPART|NOTERLT|AORG|TE_TZE|AR_TAR|AL|ZALE|EZIN)(\\s|$)","g");
+  Pcre kenduNNN("\\s+(NOR|NOR_NORI|NOR_NORK|NOR_NORI_NORK)\\s");
+  Pcre aurrepr("\\s+(BEREIZ|ZEN|ZEN_DEK|BAK|HAS_MAI|LAB_DEK|DEN_MAI|DEN_MAI_DEK|SIG_MIN_DEK|SIG_MIN|SIG_MAI|SIG_MAI_DEK_|ID|PUNT_HIRU|IDENT|KAR_BER|ERROM|PUNT_ESKL|PUNT_GALD|PUNT_PUNT_KOMA|PUNT_BI_PUNT|PUNT_KOMA|PUNT_PUNT)(\\s|$)");
+  if (kendu.search(infotmp)) {
+    infotmp = kendu.replace(infotmp," ");
+  }
+  if (kenduNNN.search(infotmp)) {
+    infotmp = kenduNNN.replace(infotmp," ");
+  }
+  if (aurrepr.search(infotmp)) {
+    infotmp = aurrepr.replace(infotmp," ");
+  }
+  
+  return infotmp;
+}
