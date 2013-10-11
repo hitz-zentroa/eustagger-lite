@@ -11,9 +11,9 @@
 # define SET     2
 # define ANY     3
  
-#ifndef _BOOL_H_
-#include "bool.h"  /*** 94/2/9 */
-#endif /* _BOOL_H_ */
+/* #ifndef _BOOL_H_ */
+/* #include "bool.h"  /\*** 94/2/9 *\/ */
+/* #endif /\* _BOOL_H_ *\/ */
 
 # define ESTADU_MAX 68 /*** 98/12/11 */
 # define MULTZO_MAX 14

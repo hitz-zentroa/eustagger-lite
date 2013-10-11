@@ -131,7 +131,7 @@ const string anaBihurtzailea::lispifikatu (char *analisia,int ident_da,int zen_d
   Pcre tzuriune2("Sarrera__-","g");
   Pcre tamaierakoplus("[+]$");
   Pcre tlehenplus("\\)\\)([+])([^\\(\\)+\\s]+)");
-  
+
   Pcre hmorf = thmorf;
   Pcre hald = thald;
   Pcre banz = tbanz;
@@ -146,7 +146,7 @@ const string anaBihurtzailea::lispifikatu (char *analisia,int ident_da,int zen_d
   Pcre amaierakoplus = tamaierakoplus;
   Pcre lehenplus = tlehenplus;
 
-  string sar=analisia;
+  string sar = analisia;
   if (banz.search(sar)) {
     sar=banz.replace(sar,"(");
   }
@@ -320,7 +320,7 @@ const string anaBihurtzailea::bihurtu_xerox_lemati (string aldatzeko) {
       hitza=lau.replace(hitza,"!");
     }
     if (zortzi.search(hitza)) {
-      hitza=zortzi.replace(hitza,"ñ");
+      hitza=zortzi.replace(hitza,"\303\261");
     }
     Pcre tbederatzi("9","g");
     if (tbederatzi.search(hitza)) {
@@ -711,6 +711,7 @@ int anaBihurtzailea::desanbLexGabe(int m, char anal[][LUZMAXAN],char motak[],int
  strcpy(sar,forma.c_str());
  bihur_asteris_maj(sar,irt);
  formaTmp = irt;
+ formaHas = forma;
 
  if (marratxoa.search(forma))
    formaHas = marratxoa.get_match(0);
@@ -752,7 +753,14 @@ int anaBihurtzailea::desanbLexGabe(int m, char anal[][LUZMAXAN],char motak[],int
    // filtratu
    analisia = &anal[k][0];
    lema = lortuBim(analisia);
+   lema = bihurtu_xerox_lemati(lema);
+
 //    analisia = kenduInfoEzKonparagarria(&anal[k][0]);
+   if (lema[0] == '*' && !izblib.search(analisia)) {
+       // Maiuskulaz baina ez IZB/LIB
+     //     cerr << "deslok 2: Maiusk+ !izblib "<<analisia <<"\n";
+     continue;
+   }
    if (izar.search(lema.substr(1,string::npos))) {
      //kendu '*' luzerak kontuan hartzeko
      if (lema[0] == '*')
@@ -962,7 +970,6 @@ int anaBihurtzailea::desanbEstandar(int m, char anal[][LUZMAXAN],char motak[],in
    partForma = formaHasmin;
  }
 
-
  if (izar.search(formaHasmin)) {
    formaHasmin=izar.replace(formaHasmin,"");
  }
@@ -981,6 +988,13 @@ int anaBihurtzailea::desanbEstandar(int m, char anal[][LUZMAXAN],char motak[],in
    // filtratu
    analisia = &anal[k][0];
    lema = lortuBim(analisia);
+   lema = bihurtu_xerox_lemati(lema);
+
+   if (lema[0] == '*' && !izblib.search(analisia)) {
+       // Maiuskulaz baina ez IZB/LIB
+     //     cerr << "deslok 2: Maiusk+ !izblib "<<analisia <<"\n";
+     continue;
+   }
    if (izar.search(lema.substr(1,string::npos))) {
      //kendu '*' luzerak kontuan hartzeko
      if (lema[0] == '*')
@@ -1230,7 +1244,10 @@ string anaBihurtzailea::jarriMaj(const string & str) {
 
     if (lag[i] == ASTERIS_X) {
 
-      if (lag[i+1] == NI_GUZTIENTZAT) ema.append(1,NI_H);
+      if (lag[i+1] == NI_GUZTIENTZAT) {
+	ema.append(1,'\303');
+	ema.append(1,'\221');
+      }
       else {
 	
 	char c = toupper(lag[i+1]);
@@ -1241,7 +1258,10 @@ string anaBihurtzailea::jarriMaj(const string & str) {
       i++;
 
     }
-    else if (lag[i] == NI_GUZTIENTZAT) ema.append(1,NI_T);
+    else if (lag[i] == NI_GUZTIENTZAT) {
+	ema.append(1,'\303');
+	ema.append(1,'\261');
+    }
     else if (lag[i]=='_') ema.append(1,' ');
     else ema.append(1,lag[i]);
     
