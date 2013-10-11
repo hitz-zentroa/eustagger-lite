@@ -250,8 +250,6 @@ string Prolog2Raw::sortuF (vector <string> xmlEgituraV, PlTerm plBalio) throw(ch
 }
 
 /* ******************************************************************* */
-// #include <pcre++.h>
-// using namespace pcrepp;
 string sortuLema(string sarrera) {
   // Pcre tplus("\\+\\!?");
   // if (tplus.search(sarrera)) {
@@ -402,11 +400,20 @@ string sortu_cg3rako_etiketak(string info);
 string sortu_cg3rako_lema_info(string lema, string info, bool ezezag);
 string sortu_cg3rako_lema(string lema);
 
+#include <pcre++.h>
+#include "filtro.h"
+using namespace pcrepp;
+
 void Prolog2Raw::sortuAnalisiak(PlTerm plstruct) {
 
   PlTail tail(plstruct);
   PlTerm e;
   string ezaugIzen;
+  stringstream sni_t,sni_h;
+  sni_t<< NI_T;
+  Pcre ni_t(sni_t.str(),"g");
+  sni_h<< NI_H;
+  Pcre ni_h(sni_h.str(),"g");
 
   while(tail.next(e)) {
     bool lehena = true;
@@ -421,6 +428,12 @@ void Prolog2Raw::sortuAnalisiak(PlTerm plstruct) {
       try {
 	string fs = sortuFS(e2,ezaugIzen);
 	hasierakoLerroa = hasierakoLerroa.substr(hasierakoLerroa.find("/"),string::npos);
+	if (ni_t.search(hasierakoLerroa)) {
+	  hasierakoLerroa = ni_t.replace(hasierakoLerroa,"\303\261");
+	}
+	if (ni_h.search(hasierakoLerroa)) {
+	  hasierakoLerroa = ni_h.replace(hasierakoLerroa,"\303\221");
+	}
 	if (lehena) {
 	  if (cg3form) {
 	    string hasierakoaCG3 = hasierakoLerroa;
@@ -469,11 +482,24 @@ void Prolog2Raw::sortuAnalisiak(PlTerm plstruct) {
 	    // Hemen bihurtu fs CG3ra (kalkulatu etiketak eta inprimatu)
 	    string cg3formatua = sortu_cg3rako_etiketak(fs);
 	    if (lemaOsatua.length() > 0) {
+	      if (ni_t.search(lemaOsatua)) {
+		lemaOsatua = ni_t.replace(lemaOsatua,"\303\261");
+	      }
+	      if (ni_h.search(lemaOsatua)) {
+		lemaOsatua = ni_h.replace(lemaOsatua,"\303\221");
+	      }
 	      cg3formatua = sortu_cg3rako_lema_info(this->lemaOsatua,cg3formatua,anMota=='G');
 	      this->lemaOsatua = sortu_cg3rako_lema(this->lemaOsatua);
 	      morfDoc << "\t" << this->lemaOsatua << " ";
 	    }
 	    if (this->aldaeraOsatua.length()> 0) {
+	      if (ni_t.search(aldaeraOsatua)) {
+		aldaeraOsatua = ni_t.replace(aldaeraOsatua,"\303\261");
+	      }
+	      if (ni_h.search(aldaeraOsatua)) {
+		aldaeraOsatua = ni_h.replace(aldaeraOsatua,"\303\221");
+	      }
+
 	      cg3formatua = sortu_cg3rako_lema_info(aldaeraOsatua,cg3formatua,anMota=='G');
 	      this->aldaeraOsatua = sortu_cg3rako_lema(this->aldaeraOsatua);
 	      morfDoc << this->aldaeraOsatua << " ";
@@ -502,13 +528,31 @@ void Prolog2Raw::sortuAnalisiak(PlTerm plstruct) {
 	      this->lemaOsatua = "";
 	      morfDoc << "\t(\"\" ";
 	    }
-	    if (lemaOsatua.length() > 0)
+	    if (lemaOsatua.length() > 0) {
+
+	      if (ni_t.search(lemaOsatua)) {
+		lemaOsatua = ni_t.replace(lemaOsatua,"\303\261");
+	      }
+	      if (ni_h.search(lemaOsatua)) {
+		lemaOsatua = ni_h.replace(lemaOsatua,"\303\221");
+	      }
+
 	      morfDoc << "\t(" << this->lemaOsatua << " "; 
-	    if (this->aldaeraOsatua.length()> 0)
+	    }
+	    if (this->aldaeraOsatua.length()> 0) {
+
+	      if (ni_t.search(aldaeraOsatua)) {
+		aldaeraOsatua = ni_t.replace(aldaeraOsatua,"\303\261");
+	      }
+	      if (ni_h.search(aldaeraOsatua)) {
+		aldaeraOsatua = ni_h.replace(aldaeraOsatua,"\303\221");
+	      }
+
 	      if (anMota == 'G')
 		morfDoc << "/" << this->aldaeraOsatua.substr(1,this->aldaeraOsatua.length()-2) << "/ " ;
 	      else
 	         morfDoc << this->aldaeraOsatua << " ";
+	    }
 	    morfDoc << " " << fs ;
 	    if (fsLista.length()>0) {
 	      morfDoc << " " << fsLista << ")" << endl; 

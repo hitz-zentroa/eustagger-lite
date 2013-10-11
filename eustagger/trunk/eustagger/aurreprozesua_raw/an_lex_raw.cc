@@ -1,6 +1,7 @@
 #include "an_lex_raw.h"
 #include "token_raw.h"
 #include "dat_orok.h"
+#include "filtro.h"
 
 #define LEMA_GENERIKOA_BOK "cc"
 #define LEMA_GENERIKOA_KON "co"
@@ -82,8 +83,12 @@ int anLexRaw::trans_berria(char *kar)
  if (sarrera->eof())
    return 0;
  *kar = sarrera->get();
-// if (*kar < 0)
-//   return 0;
+ // if (*kar == '\303')  *kar = sarrera->get();
+
+ if (*kar == '\221') 
+   *kar=NI_H;
+ if (*kar == '\261') 
+   *kar=NI_T;
  trans = aurre_auto.mugitu(*kar);
  if (trans == 0)
    {
@@ -167,7 +172,27 @@ int   anLexRaw::next_token()
     if (!berezia) {
       irakurritakoaeg[luz_ie++] = kar;
     }
-    irakurritakoa[luz_i++] = kar;
+    if (kar == NI_H ) { 
+      if (luz_i>0 && irakurritakoa[luz_i-1] == '\303')
+	irakurritakoa[luz_i++] = '\221';
+      else {
+	if (luz_i==0 || irakurritakoa[luz_i-1] != '\303')
+	  irakurritakoa[luz_i++] = '\303';
+	irakurritakoa[luz_i++] = '\221';
+      }
+    }
+    else if (kar == NI_T) {
+      if (luz_i>0 && irakurritakoa[luz_i-1] == '\303')
+	irakurritakoa[luz_i++] = '\261';
+      else {
+	if (luz_i==0 || irakurritakoa[luz_i-1] != '\303')
+	  irakurritakoa[luz_i++] = '\303';
+	irakurritakoa[luz_i++] = '\261';
+      }
+    }
+    else {
+      irakurritakoa[luz_i++] = kar;
+    }
     berezia = 0;
     irakurritakoa[luz_i] = '\0';
     irakurritakoaeg[luz_ie] = '\0';

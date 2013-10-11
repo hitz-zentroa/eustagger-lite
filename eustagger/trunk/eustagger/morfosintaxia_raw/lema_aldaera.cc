@@ -15,7 +15,7 @@ void bihur_asteris_maiuskula(char *st1,char *st2) {
   if (st1[i]=='*')
     {
       i++;
-      st2[j]=(st1[i]==NI_T)?NI_H:toupper(st1[i]);
+      st2[j]=(st1[i]=='\261')?'\221':toupper(st1[i]);
       i++;
     }
   else 

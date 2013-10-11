@@ -110,7 +110,7 @@ string izen_luze, eslaxvar;
  while (fgetc(aut) != '\"');
  fgetc(aut);                                    // irakurri lerro bukaera
 
- char mul_lag[40];
+ char mul_lag[ZUTABEAK];
 
  for (int j=0;j<ZUTABEAK-2;j++)                 // multzoak irakurri 
    {

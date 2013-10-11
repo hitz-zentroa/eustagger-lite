@@ -353,7 +353,7 @@ void  aurreprozRaw::tratatu_hitza()  // tratamendua egin hitzaren gainean
  }
  default : {break;}
  }
- if (hitza.e_tratamendua() == 3) return;
+ if (hitza.e_tratamendua() == 3 || hitza.e_tratamendua() == 5) return;
  egiaz[0] = '\0';
  strcpy(tmp2,hitza.e_hitza().c_str());
  string bidali = string(tmp2);
@@ -415,20 +415,20 @@ string aurreprozRaw::kenduMaj(const string & str) {
   
   for (unsigned int i = 0; i <  str.size(); i++) {
 
-    if (isupper(lag[i]) && (lag[i]!=NI_T) && (lag[i]!=NI_H)) {
+    if (isupper(lag[i]) && (lag[i]!='\321') && (lag[i]!='\361')) {
       
       ema.append(1,ASTERIS);
       char c = tolower(lag[i]);
       ema.append(1,c);
       
     }
-    else if (lag[i]==NI_H) {
+    else if (lag[i]=='\321') {
 
       ema.append(1,ASTERIS);
       ema.append(1,NI_GUZTIENTZAT);
 
     }
-    else if (lag[i]==NI_T) {
+    else if (lag[i]=='\361') {
 
       ema.append(1,NI_GUZTIENTZAT);
 
