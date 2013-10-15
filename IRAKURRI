@@ -1,0 +1,95 @@
+EUSTAGGER INSTALATZEKO
+======================
+
+Dependentziak instalatu:
+
+Horietako batzuk linux banaketaren pakete ofizialak jarriz instalatu ahal izango dira:
+
+Ubuntu:
+=======
+
+	$ apt-get install subversion make cmake cpp libicu48 libicu-dev autoconf bison \
+	  flex swi-prolog zlib1g zlib1g-dev libpcre3 libpcre3-dev libpcre++0 libpcre++-dev libboost-all-dev
+
+Fedora:
+=======
+
+	$ yum install subversion make cmake gcc-c++ libicu libicu-devel autoconf bison \
+	  flex pl pl-devel zlib zlib-devel pcre pcre-devel boost boost-devel
+
+
+Fedoran pcre++ eskuz instalatu behar da. Horretarako 
+
+	$ wget http://www.daemon.de/idisk/Apps/pcre++/pcre++-0.9.5.tar.gz
+
+	Deskonprimitu eta nahi duzun prefix-ean instalatu:
+
+	$ ./configure; make; make install
+
+(lehenetsitako instalazio prefix-a /usr/local da, aldatzeko ./configure --prefix=path)
+
+foma:
+=====
+
+Deskargatu:
+
+	$ wget https://foma.googlecode.com/files/foma-0.9.17.tar.gz
+
+Deskonprimitu, konpilatu eta instalatu:
+
+	$ make
+	$ make install
+
+(lehenetsitako instalazio prefix-a /usr/local da, aldatzeko editatu Makefile fitxategia)
+
+vislcg3:
+========
+
+Deskargatu:
+
+	$ wget http://beta.visl.sdu.dk/download/vislcg3/vislcg3-20130826.tar.gz
+
+Deskonprimitu, konpilatu eta instalatu (cmake erabiltzen da):
+
+	$ ./cmake.sh
+	$ make -j3
+	$ make install
+
+*.h eta *.hpp fitxategiak eskuz kopiatu behar dira nahi erabakitako prefix-era:
+
+	$ cp src/*.h src/*.cc /gure_prefix_include
+
+(prefix-a aldatzeko cmake.sh-ri  -DCMAKE_INSTALL_PREFIX=/path parametroa pasatzea dago)
+(boost liburutegia topatuko ez balu export BOOST_ROOT=/boost_kokapena)
+
+eustagger: 
+==========
+
+Eskuratu eustagger:
+
+	$ svn co https://siuc05.si.ehu.es/svn/eustagger/trunk/eustagger
+
+Konpilatu eta instalatzeko (goiko dependentziak ):
+
+	$ cd eustagger
+	$ ./configure
+	$ make
+	$ make install
+
+Lehenetsitako instalazio prefix-a /usr/local da. Aldatzeko --prefix aukera
+erabili ./configure egikaritzean. Liburutegiren bat topatuko ez balu configure-ri
+badago esatea non dagoen. Aukera guztiak ikusteko './configure --help'.
+
+Badirudi linux banaketa bakoitzak swipl header-ak nahi duen lekuan instalatzen
+dituela. Adibidez ubuntun  --with-swipl-include=/usr/lib/swi-prolog/include erabili
+behar da header-ak topatzeko.
+
+
+Azkenik, eustagger probatzeko ingurunean aldaketa hauek egin:
+
+	$ export IXA_PREFIX=gure_prefix
+	$ export LD_LIBRARY_PATH=gure_prefix/lib:$LD_LIBRARY_PATH
+
+eustagger egikaritzeko prest gaude:
+
+	$ eustagger_swi sarrera_fitx.txt
