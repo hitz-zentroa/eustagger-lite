@@ -55,7 +55,7 @@ Deskonprimitu, konpilatu eta instalatu (cmake erabiltzen da):
 	$ make -j3
 	$ make install
 
-*.h eta *.hpp fitxategiak eskuz kopiatu behar dira nahi erabakitako prefix-era:
+*.h eta *.hpp fitxategiak eskuz kopiatu behar dira erabakitako prefix-era:
 
 	$ cp src/*.h src/*.hpp /gure_prefix_include
 
@@ -72,6 +72,7 @@ Eskuratu eustagger:
 Konpilatu eta instalatzeko (goiko dependentziak ):
 
 	$ cd eustagger
+	$ autoconf
 	$ ./configure
 	$ make
 	$ make install
