@@ -57,7 +57,7 @@ Deskonprimitu, konpilatu eta instalatu (cmake erabiltzen da):
 
 *.h eta *.hpp fitxategiak eskuz kopiatu behar dira nahi erabakitako prefix-era:
 
-	$ cp src/*.h src/*.cc /gure_prefix_include
+	$ cp src/*.h src/*.hpp /gure_prefix_include
 
 (prefix-a aldatzeko cmake.sh-ri  -DCMAKE_INSTALL_PREFIX=/path parametroa pasatzea dago)
 (boost liburutegia topatuko ez balu export BOOST_ROOT=/boost_kokapena)
