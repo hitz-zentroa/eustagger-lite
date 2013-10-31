@@ -1,13 +1,16 @@
 #include <stdio.h>
 #include <iostream>
 #include <fstream>
-#include <vector>
-#include "euparole.h"
-#include <pcre++.h>
+#include <string>
+#include "freeling.h"
 #include "freeling/morfo/util.h"
+#include <pcre++.h>
+
+#include "euparole.h"
 
 using namespace std;
 using namespace pcrepp;
+//using namespace freeling;
 
 string getEnvVar(string const& key);
 

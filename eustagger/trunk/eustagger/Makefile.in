@@ -10,7 +10,6 @@
 # Emaitza: eustagger
 #
 #
-# n.ezeiza@ehu.es
 #
 
 FST = foma
@@ -41,6 +40,13 @@ LD_SWIPL = -lswipl
 SWIPLLD_BINDIR = @CONF_SWIPLLD@
 export PATH := $(SWIPLLD_BINDIR):$(PATH)
 
+#freeling
+INCLUDE_FREELING = @CONF_INCLUDE_FREELING@
+LD_FREELING = -lfreeling
+FREELING_BINDIR = @CONF_FREELING@
+export PATH := $(FREELING_BINDIR):$(PATH)
+
+
 # morfologia
 DEFINE_MORFOLOGIA = -D_BOOL_H_ -DNLS_ERRORS -D_USE_FOMA_ -D__BRIDGE_VARIANTS__
 
@@ -50,10 +56,10 @@ DEFINE_MORFOSINTAXIA = -D_REENTRANT -D__SWI_PROLOG__ -D__SWI_EMBEDDED__ -D_USE_S
 # include local
 INCLUDE_LOCAL = $(DIRS:%=-I./%)
 
-SOURCE= eustagger_raw.cc
+SOURCE= eustagger_lite.cc
 SOURCE_MORFOSINTAXIA= morfosintaxia_raw/morfosintaxia_raw.cc
 
-BINPROGRAM=$(SOURCE:%_raw.cc=%_swi)
+BINPROGRAM=$(SOURCE:%.cc=%)
 BINPROGRAM_MORFOSINTAXIA=morfosintaxia_raw_swi
 
 DIRS = aurreprozesua_raw morfologia morfosintaxia_raw habil cg3manager analisitresnak
@@ -64,7 +70,7 @@ MEMBERS=$(DIRS:%=%/*.o)
 # konf orokorrak:
 
 DEFINE=  $(DEFINE_MORFOLOGIA) $(DEFINE_MORFOSINTAXIA) $(DEFINE_CG3)
-INCLUDE= @CPPFLAGS@ $(INCLUDE_LOCAL)
+INCLUDE= @CPPFLAGS@ $(INCLUDE_LOCAL) $(INCLUDE_FREELING)
 LDLIBS = @LDFLAGS@ $(LD_PCREPLUSPLUS) $(LD_FOMA) $(LD_CG3) $(LD_SWIPL)
 CCC= @CXX@
 #CCFLAGS= -Wall -frtti -fPIC -g
@@ -107,7 +113,7 @@ install: FORCE
 	install -m 755 $(LIBRARY) $(INSTALL_DIR)/lib
 	cp -r var/* $(INSTALL_DIR)/var
 	@(echo "")
-	@(echo "WARNING: To run eustagger you must set IXA_PREFIX environment var to $(INSTALL_DIR)")
+	@(echo "WARNING: To run eustagger_lite you must set IXA_PREFIX environment var to $(INSTALL_DIR)")
 
 FORCE:
 
