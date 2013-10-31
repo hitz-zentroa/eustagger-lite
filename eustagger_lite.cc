@@ -24,7 +24,7 @@ extern void segAmaierakoak();
 
 extern void segmentazioaSortuRaw(string &fitxategiIzena, string &segIrteera);
 extern void morfosintaxiaSortuRaw(string &fitxategiIzena, string &segIrteera, bool haul_seguruak, bool cg3form);
-extern int prozesatuCG3Raw(int maila, int cg3form, string &oinIzen);
+extern int prozesatuCG3Raw(int maila, string &oinIzen);
 
 void help() {
   stringstream eustaggerVersion;
@@ -46,12 +46,14 @@ void help() {
 #endif //__BRIDGE_VARIANTS__
 
   cerr << "Erabilera:" <<endl;
-  cerr << "eustagger_raw [-hs] [-m maila]" << endl;
+  cerr << "eustagger_lite [-hs] [-m maila]" << endl;
   cerr << "-h laguntza hau" << endl;
   cerr << "-s HAUL seguruak prozesatu (defektuz ez)" << endl;
-  cerr << "-m [1|2|3] (defektuz 2)" << endl;
+  cerr << "-m [0|1|2|3|4] (defektuz 2)" << endl;
+  cerr << "-m 0 denean ez du desanbiguatuko" << endl;  
+  cerr << "-m 4 denean bakarrik aplikatuko du CG3 desanbiguatzeko" << endl;
   cerr << eustaggerVersion.str() ;
-  exit(1);
+  exit(EXIT_FAILURE);
 }
 
 
@@ -69,7 +71,7 @@ int main(int argc, char *argv[])
  int deslokala = 1;
  int parentizatua = 1;
  bool haul_seguruak = false;
- int cg3form = OUT_MG; // Defektuz hau beharko luke: OUT_LEM;
+ int cg3form = OUT_LEM; // Defektuz hau beharko luke: OUT_LEM;
  char c;
  string lex_izena; 
  int IRT = IN_MORF;
@@ -101,9 +103,9 @@ int main(int argc, char *argv[])
      string fitxategiIzena = argv[i];
      string segIrteera;
      segmentazioaSortuRaw(fitxategiIzena,segIrteera);
-     morfosintaxiaSortuRaw(fitxategiIzena,segIrteera,haul_seguruak,cg3form == OUT_MG); // Honek sortzen du .morf/.hat?
+     morfosintaxiaSortuRaw(fitxategiIzena,segIrteera,haul_seguruak,OUT_MG); // Honek sortzen du .morf/.hat?
      // Hemen faltako litzateke CG3 formatua sortzea beharrezkoa balitz
-     prozesatuCG3Raw(maila, cg3form, fitxategiIzena) ;
+     prozesatuCG3Raw(maila,fitxategiIzena) ;
 
    }
  }
