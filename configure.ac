@@ -1,4 +1,4 @@
-AC_INIT(eustagger_raw.cc)
+AC_INIT(eustagger_lite.cc)
 
 dnl flag orokorrak zehaztu
 
