@@ -144,6 +144,27 @@ AC_ARG_WITH(flex,
             fi ,
             CONF_FLEX="")
 
+dnl Freeling goiburuak non daude?
+AC_ARG_WITH(freeling-include,
+            [  --with-freeling-include=DIR			Path of Freeling 3.0 headers],
+            if test [ x$withval != x ] -a [ -d $withval ]; then
+            CONF_INCLUDE_FREELING=$withval
+            else
+            AC_MSG_ERROR([Please specify a suitable Freeling 3.0 include directory: --with-freeling-include=DIR"])
+            fi ,
+            CONF_INCLUDE_FREELING="")
+
+dnl Freeling liburutegia non dago?
+AC_ARG_WITH(freeling-lib,
+            [  --with-freeling-lib=DIR			Path of Freeling 3.0 lib],
+            if test [ x$withval != x ] -a [ -d $withval ]; then
+            CONF_LD_FREELING=-L$withval;
+	    [LDFLAGS="${LDFLAGS} -L${withval}"]
+            else
+            AC_MSG_ERROR([Please specify a suitable Freeling 3.0 library directory: --with-freeling-lib=DIR])
+            fi ,
+            )
+
 dnl boost bilatu, kasu hoentan config.hpp bilatuko dugu
 
 if test "$CONF_INCLUDE_BOOST" = "" ; then
@@ -163,8 +184,6 @@ else
 fi
 
 AC_SUBST(CONF_INCLUDE_PCREPLUSPLUS)
-
-
 
 dnl pcre++ liburutegia bilatu
 AC_CHECK_LIB(pcre++,
@@ -263,6 +282,27 @@ if test "$CONF_FLEX" = "" ; then
 fi
 
 AC_SUBST(CONF_FLEX)
+
+dnl freeling goiburuak bilatu
+
+if test "$CONF_INCLUDE_PCREPLUSPLUS" = "" ; then
+   AC_CHECK_HEADER(freeling.h,, AC_MSG_ERROR([Please specify a suitable Freeling 3.0 include directory: --with-freeling-include=DIR]))
+else
+   AC_CHECK_FILE($CONF_INCLUDE_FREELING/freeling.h,CONF_INCLUDE_FREELING=-I$CONF_INCLUDE_FREELING,AC_MSG_ERROR([Please specify a suitable Freeling include directory: --with-freeling-include=DIR]))
+fi
+
+AC_SUBST(CONF_INCLUDE_FREELING)
+
+dnl freeling liburutegia bilatu
+AC_CHECK_LIB(freeling,
+	     main,
+	     ,
+	     AC_MSG_ERROR([libfreeling not found. Please specify a suitable Freeling 3.0 library directory: --with-freeling-lib=DIR]))
+
+AC_SUBST(CONF_LD_FREELING)
+
+
+
 
 dnl Makefilean aldagaiak ordeztu
 
