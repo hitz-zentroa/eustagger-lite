@@ -13,7 +13,7 @@
 
 using namespace std;
 using namespace pcrepp;
-//using namespace freeling;
+using namespace freeling;
 
 
 string getEnvVar(string const& key);
@@ -96,8 +96,12 @@ void desHMM(int maila, string &desIrteera,string &oinIzen) {
     cerr << "prozesatuCG3Raw => ERRORE LARRIA: 'IXA_PREFIX' ingurune aldagaia ezin daiteke atzitu" << endl;
     exit(EXIT_FAILURE);
   }
+
   wstring tagDat = util::string2wstring(tmpName);
-  hmm_tagger taggerEu(L"eu",tagDat, false, FORCE_TAGGER,1);
+  hmm_tagger taggerEu(tagDat, false, FORCE_TAGGER,1);
+  tmpName = tmpVar + "probabilitateak.dat";
+  wstring probDat = util::string2wstring(tmpName);
+  probabilities probs(probDat,0.001);
   stringstream irt;
   
   if (!in) {
@@ -107,7 +111,7 @@ void desHMM(int maila, string &desIrteera,string &oinIzen) {
   getline(in,sars);
   while (sars.length()>0) {
     string formL;
-    wstring form,lemma,tag;
+    wstring form,lemma,tag,ambclass;
     Pcre firstL("\\\"<\\$?(.[^>]*)>\\\"");
     if (firstL.search(sars)) {
       string formTmp = firstL.get_match(0);
@@ -121,21 +125,26 @@ void desHMM(int maila, string &desIrteera,string &oinIzen) {
       if (lemma.length()>0) {
 	analysis an(lemma,tag);
 	w.add_analysis(an);
+	if (ambclass.length()) ambclass += L"-";
+	ambclass += tag;
       }
       else if (tag.length()>0) {
 	lemma = form;
 	analysis an(lemma,tag);
 	w.add_analysis(an);
+	if (ambclass.length()) ambclass += L"-";
+	ambclass += tag;
       }
       sars.clear();
       getline(in,sars);
     }
     //set prob
-    int anNum = w.get_n_analysis();
-    for (word::iterator an = w.analysis_begin();an != w.analysis_end();an++) {
-      an->set_prob(1/anNum);
-    }
-    
+    wstring fakeform = ambclass + L"&-&";
+    fakeform = fakeform + form;
+    w.set_form(fakeform);
+    probs.annotate_word(w);
+    w.set_form(form);
+
     lws.push_back(w);
     if (form == L"." || form == L"!" || form == L"?") {
       ls.push_back(lws);
