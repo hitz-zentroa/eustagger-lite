@@ -90,7 +90,7 @@ string euParole::toParole(const string analysis) {
 	match = true;
       }
       else if (i == 0) {
-	Pcre izeeli("(.+)(_IZEELI)+");
+	Pcre izeeli("([^_]+)(_IZEELI)+");
 	if (izeeli.search(*t)) {
 	  string kat = izeeli.get_match(0);
 	  tmp[0] = euPar[0][kat];
