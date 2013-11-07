@@ -10,7 +10,7 @@
 
 using namespace std;
 using namespace pcrepp;
-//using namespace freeling;
+using namespace freeling;
 
 string getEnvVar(string const& key);
 
