@@ -72,6 +72,24 @@ Deskonprimitu, konpilatu eta instalatu (cmake erabiltzen da):
 (prefix-a aldatzeko cmake.sh-ri  -DCMAKE_INSTALL_PREFIX=/path parametroa pasatzea dago)
 (boost liburutegia topatuko ez balu export BOOST_ROOT=/boost_kokapena)
 
+Freeling 3.1
+============
+
+Programa Freeling 3.1rekin probatu dugu (3.0 bertsioak ez du balio).
+
+http://devel.cpl.upc.edu/freeling/downloads/32 helbidetik deskargatu freeling-3.1.tar.gz
+paketea.
+
+Deskonprimitu, konpilatu eta instalatu:
+
+	$ tar -zxvf freeling-3.1.tar.gz
+	$ cd freeling-3.1
+	( Fedora/RedHat sistemetan hau egin behar da: $ export LDFLAGS=-lboost_system )
+	$ ./configure --disable-warnings
+	$ make
+	$ make install
+
+
 eustagger: 
 ==========
 
@@ -103,4 +121,4 @@ Azkenik, eustagger probatzeko ingurunean aldaketa hauek egin:
 
 eustagger egikaritzeko prest gaude:
 
-	$ eustagger_swi sarrera_fitx.txt
+	$ eustagger_lite sarrera_fitx.txt
