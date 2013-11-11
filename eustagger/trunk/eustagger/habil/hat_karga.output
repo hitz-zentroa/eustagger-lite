@@ -4,7 +4,7 @@ Terminals unused in grammar
    BUK_MARKA
 
 
-Grammar
+Gramática
 
     0 $accept: sarrera $end
 
@@ -27,10 +27,10 @@ Grammar
    10 terminoa: zer hitzak erroa term
 
    11 term: PAR_IREKI LEMAA informazioa PAR_ITXI
-   12     | /* empty */
+   12     | /* vacío */
 
    13 informazioa: INFORMAZIOA
-   14            | /* empty */
+   14            | /* vacío */
 
    15 hitzak: hitzak PIPE HITZA ETIK_HAUL
    16       | HITZA ETIK_HAUL
@@ -44,11 +44,11 @@ Grammar
    22        | EZ
 
    23 erroa: ERROA
-   24      | /* empty */
+   24      | /* vacío */
 
    25 erlazioa: ETENA
    26         | EZORD
-   27         | /* empty */
+   27         | /* vacío */
 
    28 testua: esaldiak
 
@@ -62,7 +62,7 @@ Grammar
    34      | HITZ_FORMA etiketa
 
    35 etiketa: ETIK
-   36        | /* empty */
+   36        | /* vacío */
 
    37 puntuazioa: HITZ_FORMA ETIK_PUNT
    38           | AMAITU
@@ -76,7 +76,7 @@ Grammar
    44         | CORRECT PAR_IREKI LEMAA INFORMAZIOA PAR_ITXI
 
 
-Terminals, with rules where they appear
+Terminales con las reglas donde aparecen
 
 $end (0) 0
 error (256)
@@ -108,640 +108,640 @@ CORRECT (282) 43 44
 AMAITU (283) 38
 
 
-Nonterminals, with rules where they appear
+No terminales con las reglas donde aparecen
 
 $accept (29)
-    on left: 0
+    en la izquierda: 0
 sarrera (30)
-    on left: 1, on right: 0
+    en la izquierda: 1, en la derecha: 0
 osagai_kop (31)
-    on left: 2, on right: 5
+    en la izquierda: 2, en la derecha: 5
 ereduak (32)
-    on left: 3 4, on right: 1 3
+    en la izquierda: 3 4, en la derecha: 1 3
 hasiera (33)
-    on left: 5, on right: 6
+    en la izquierda: 5, en la derecha: 6
 eredua (34)
-    on left: 6, on right: 3 4
+    en la izquierda: 6, en la derecha: 3 4
 hat_lema (35)
-    on left: 7, on right: 5
+    en la izquierda: 7, en la derecha: 5
 terminoak (36)
-    on left: 8 9, on right: 6 8
+    en la izquierda: 8 9, en la derecha: 6 8
 terminoa (37)
-    on left: 10, on right: 8 9
+    en la izquierda: 10, en la derecha: 8 9
 term (38)
-    on left: 11 12, on right: 10
+    en la izquierda: 11 12, en la derecha: 10
 informazioa (39)
-    on left: 13 14, on right: 11
+    en la izquierda: 13 14, en la derecha: 11
 hitzak (40)
-    on left: 15 16 17 18, on right: 10 15 17
+    en la izquierda: 15 16 17 18, en la derecha: 10 15 17
 zer (41)
-    on left: 19 20, on right: 10
+    en la izquierda: 19 20, en la derecha: 10
 segurua (42)
-    on left: 21 22, on right: 5
+    en la izquierda: 21 22, en la derecha: 5
 erroa (43)
-    on left: 23 24, on right: 10
+    en la izquierda: 23 24, en la derecha: 10
 erlazioa (44)
-    on left: 25 26 27, on right: 8
+    en la izquierda: 25 26 27, en la derecha: 8
 testua (45)
-    on left: 28, on right: 1
+    en la izquierda: 28, en la derecha: 1
 esaldiak (46)
-    on left: 29 30, on right: 28 29
+    en la izquierda: 29 30, en la derecha: 28 29
 esaldia (47)
-    on left: 31 32, on right: 29 30 31
+    en la izquierda: 31 32, en la derecha: 29 30 31
 hitza (48)
-    on left: 33 34, on right: 31
+    en la izquierda: 33 34, en la derecha: 31
 etiketa (49)
-    on left: 35 36, on right: 33 34
+    en la izquierda: 35 36, en la derecha: 33 34
 puntuazioa (50)
-    on left: 37 38, on right: 32
+    en la izquierda: 37 38, en la derecha: 32
 analisiak (51)
-    on left: 39 40, on right: 33 39
+    en la izquierda: 39 40, en la derecha: 33 39
 analisia (52)
-    on left: 41 42 43 44, on right: 39 40
+    en la izquierda: 41 42 43 44, en la derecha: 39 40
 
 
-state 0
+estado 0
 
     0 $accept: . sarrera $end
 
-    HAT_LEMA  shift, and go to state 1
+    HAT_LEMA  desplazar e ir al estado 1
 
-    sarrera   go to state 2
-    ereduak   go to state 3
-    hasiera   go to state 4
-    eredua    go to state 5
-    hat_lema  go to state 6
+    sarrera   ir al estado 2
+    ereduak   ir al estado 3
+    hasiera   ir al estado 4
+    eredua    ir al estado 5
+    hat_lema  ir al estado 6
 
 
-state 1
+estado 1
 
     7 hat_lema: HAT_LEMA .
 
-    $default  reduce using rule 7 (hat_lema)
+    $default  reduce usando la regla 7 (hat_lema)
 
 
-state 2
+estado 2
 
     0 $accept: sarrera . $end
 
-    $end  shift, and go to state 7
+    $end  desplazar e ir al estado 7
 
 
-state 3
+estado 3
 
     1 sarrera: ereduak . testua
     3 ereduak: ereduak . eredua
 
-    HAT_LEMA    shift, and go to state 1
-    HITZ_FORMA  shift, and go to state 8
-    AMAITU      shift, and go to state 9
+    HAT_LEMA    desplazar e ir al estado 1
+    HITZ_FORMA  desplazar e ir al estado 8
+    AMAITU      desplazar e ir al estado 9
 
-    hasiera     go to state 4
-    eredua      go to state 10
-    hat_lema    go to state 6
-    testua      go to state 11
-    esaldiak    go to state 12
-    esaldia     go to state 13
-    hitza       go to state 14
-    puntuazioa  go to state 15
+    hasiera     ir al estado 4
+    eredua      ir al estado 10
+    hat_lema    ir al estado 6
+    testua      ir al estado 11
+    esaldiak    ir al estado 12
+    esaldia     ir al estado 13
+    hitza       ir al estado 14
+    puntuazioa  ir al estado 15
 
 
-state 4
+estado 4
 
     6 eredua: hasiera . terminoak
 
-    FORMA_DA  shift, and go to state 16
-    LEMA_DA   shift, and go to state 17
+    FORMA_DA  desplazar e ir al estado 16
+    LEMA_DA   desplazar e ir al estado 17
 
-    terminoak  go to state 18
-    terminoa   go to state 19
-    zer        go to state 20
+    terminoak  ir al estado 18
+    terminoa   ir al estado 19
+    zer        ir al estado 20
 
 
-state 5
+estado 5
 
     4 ereduak: eredua .
 
-    $default  reduce using rule 4 (ereduak)
+    $default  reduce usando la regla 4 (ereduak)
 
 
-state 6
+estado 6
 
     5 hasiera: hat_lema . HAT_INFO segurua osagai_kop
 
-    HAT_INFO  shift, and go to state 21
+    HAT_INFO  desplazar e ir al estado 21
 
 
-state 7
+estado 7
 
     0 $accept: sarrera $end .
 
-    $default  accept
+    $default  aceptar
 
 
-state 8
+estado 8
 
    33 hitza: HITZ_FORMA . etiketa analisiak
    34      | HITZ_FORMA . etiketa
    37 puntuazioa: HITZ_FORMA . ETIK_PUNT
 
-    ETIK       shift, and go to state 22
-    ETIK_PUNT  shift, and go to state 23
+    ETIK       desplazar e ir al estado 22
+    ETIK_PUNT  desplazar e ir al estado 23
 
-    $default  reduce using rule 36 (etiketa)
+    $default  reduce usando la regla 36 (etiketa)
 
-    etiketa  go to state 24
+    etiketa  ir al estado 24
 
 
-state 9
+estado 9
 
    38 puntuazioa: AMAITU .
 
-    $default  reduce using rule 38 (puntuazioa)
+    $default  reduce usando la regla 38 (puntuazioa)
 
 
-state 10
+estado 10
 
     3 ereduak: ereduak eredua .
 
-    $default  reduce using rule 3 (ereduak)
+    $default  reduce usando la regla 3 (ereduak)
 
 
-state 11
+estado 11
 
     1 sarrera: ereduak testua .
 
-    $default  reduce using rule 1 (sarrera)
+    $default  reduce usando la regla 1 (sarrera)
 
 
-state 12
+estado 12
 
    28 testua: esaldiak .
    29 esaldiak: esaldiak . esaldia
 
-    HITZ_FORMA  shift, and go to state 8
-    AMAITU      shift, and go to state 9
+    HITZ_FORMA  desplazar e ir al estado 8
+    AMAITU      desplazar e ir al estado 9
 
-    $default  reduce using rule 28 (testua)
+    $default  reduce usando la regla 28 (testua)
 
-    esaldia     go to state 25
-    hitza       go to state 14
-    puntuazioa  go to state 15
+    esaldia     ir al estado 25
+    hitza       ir al estado 14
+    puntuazioa  ir al estado 15
 
 
-state 13
+estado 13
 
    30 esaldiak: esaldia .
 
-    $default  reduce using rule 30 (esaldiak)
+    $default  reduce usando la regla 30 (esaldiak)
 
 
-state 14
+estado 14
 
    31 esaldia: hitza . esaldia
 
-    HITZ_FORMA  shift, and go to state 8
-    AMAITU      shift, and go to state 9
+    HITZ_FORMA  desplazar e ir al estado 8
+    AMAITU      desplazar e ir al estado 9
 
-    esaldia     go to state 26
-    hitza       go to state 14
-    puntuazioa  go to state 15
+    esaldia     ir al estado 26
+    hitza       ir al estado 14
+    puntuazioa  ir al estado 15
 
 
-state 15
+estado 15
 
    32 esaldia: puntuazioa .
 
-    $default  reduce using rule 32 (esaldia)
+    $default  reduce usando la regla 32 (esaldia)
 
 
-state 16
+estado 16
 
    19 zer: FORMA_DA .
 
-    $default  reduce using rule 19 (zer)
+    $default  reduce usando la regla 19 (zer)
 
 
-state 17
+estado 17
 
    20 zer: LEMA_DA .
 
-    $default  reduce using rule 20 (zer)
+    $default  reduce usando la regla 20 (zer)
 
 
-state 18
+estado 18
 
     6 eredua: hasiera terminoak .
     8 terminoak: terminoak . erlazioa terminoa
 
-    ETENA  shift, and go to state 27
-    EZORD  shift, and go to state 28
+    ETENA  desplazar e ir al estado 27
+    EZORD  desplazar e ir al estado 28
 
-    FORMA_DA  reduce using rule 27 (erlazioa)
-    LEMA_DA   reduce using rule 27 (erlazioa)
-    $default  reduce using rule 6 (eredua)
+    FORMA_DA  reduce usando la regla 27 (erlazioa)
+    LEMA_DA   reduce usando la regla 27 (erlazioa)
+    $default  reduce usando la regla 6 (eredua)
 
-    erlazioa  go to state 29
+    erlazioa  ir al estado 29
 
 
-state 19
+estado 19
 
     9 terminoak: terminoa .
 
-    $default  reduce using rule 9 (terminoak)
+    $default  reduce usando la regla 9 (terminoak)
 
 
-state 20
+estado 20
 
    10 terminoa: zer . hitzak erroa term
 
-    HITZA  shift, and go to state 30
+    HITZA  desplazar e ir al estado 30
 
-    hitzak  go to state 31
+    hitzak  ir al estado 31
 
 
-state 21
+estado 21
 
     5 hasiera: hat_lema HAT_INFO . segurua osagai_kop
 
-    BAI  shift, and go to state 32
-    EZ   shift, and go to state 33
+    BAI  desplazar e ir al estado 32
+    EZ   desplazar e ir al estado 33
 
-    segurua  go to state 34
+    segurua  ir al estado 34
 
 
-state 22
+estado 22
 
    35 etiketa: ETIK .
 
-    $default  reduce using rule 35 (etiketa)
+    $default  reduce usando la regla 35 (etiketa)
 
 
-state 23
+estado 23
 
    37 puntuazioa: HITZ_FORMA ETIK_PUNT .
 
-    $default  reduce using rule 37 (puntuazioa)
+    $default  reduce usando la regla 37 (puntuazioa)
 
 
-state 24
+estado 24
 
    33 hitza: HITZ_FORMA etiketa . analisiak
    34      | HITZ_FORMA etiketa .
 
-    PAR_IREKI  shift, and go to state 35
-    CORRECT    shift, and go to state 36
+    PAR_IREKI  desplazar e ir al estado 35
+    CORRECT    desplazar e ir al estado 36
 
-    $default  reduce using rule 34 (hitza)
+    $default  reduce usando la regla 34 (hitza)
 
-    analisiak  go to state 37
-    analisia   go to state 38
+    analisiak  ir al estado 37
+    analisia   ir al estado 38
 
 
-state 25
+estado 25
 
    29 esaldiak: esaldiak esaldia .
 
-    $default  reduce using rule 29 (esaldiak)
+    $default  reduce usando la regla 29 (esaldiak)
 
 
-state 26
+estado 26
 
    31 esaldia: hitza esaldia .
 
-    $default  reduce using rule 31 (esaldia)
+    $default  reduce usando la regla 31 (esaldia)
 
 
-state 27
+estado 27
 
    25 erlazioa: ETENA .
 
-    $default  reduce using rule 25 (erlazioa)
+    $default  reduce usando la regla 25 (erlazioa)
 
 
-state 28
+estado 28
 
    26 erlazioa: EZORD .
 
-    $default  reduce using rule 26 (erlazioa)
+    $default  reduce usando la regla 26 (erlazioa)
 
 
-state 29
+estado 29
 
     8 terminoak: terminoak erlazioa . terminoa
 
-    FORMA_DA  shift, and go to state 16
-    LEMA_DA   shift, and go to state 17
+    FORMA_DA  desplazar e ir al estado 16
+    LEMA_DA   desplazar e ir al estado 17
 
-    terminoa  go to state 39
-    zer       go to state 20
+    terminoa  ir al estado 39
+    zer       ir al estado 20
 
 
-state 30
+estado 30
 
    16 hitzak: HITZA . ETIK_HAUL
    18       | HITZA .
 
-    ETIK_HAUL  shift, and go to state 40
+    ETIK_HAUL  desplazar e ir al estado 40
 
-    $default  reduce using rule 18 (hitzak)
+    $default  reduce usando la regla 18 (hitzak)
 
 
-state 31
+estado 31
 
    10 terminoa: zer hitzak . erroa term
    15 hitzak: hitzak . PIPE HITZA ETIK_HAUL
    17       | hitzak . PIPE HITZA
 
-    ERROA  shift, and go to state 41
-    PIPE   shift, and go to state 42
+    ERROA  desplazar e ir al estado 41
+    PIPE   desplazar e ir al estado 42
 
-    $default  reduce using rule 24 (erroa)
+    $default  reduce usando la regla 24 (erroa)
 
-    erroa  go to state 43
+    erroa  ir al estado 43
 
 
-state 32
+estado 32
 
    21 segurua: BAI .
 
-    $default  reduce using rule 21 (segurua)
+    $default  reduce usando la regla 21 (segurua)
 
 
-state 33
+estado 33
 
    22 segurua: EZ .
 
-    $default  reduce using rule 22 (segurua)
+    $default  reduce usando la regla 22 (segurua)
 
 
-state 34
+estado 34
 
     5 hasiera: hat_lema HAT_INFO segurua . osagai_kop
 
-    OSAGAI_KOP  shift, and go to state 44
+    OSAGAI_KOP  desplazar e ir al estado 44
 
-    osagai_kop  go to state 45
+    osagai_kop  ir al estado 45
 
 
-state 35
+estado 35
 
    41 analisia: PAR_IREKI . LEMAA ALDAERA INFORMAZIOA PAR_ITXI
    42         | PAR_IREKI . LEMAA INFORMAZIOA PAR_ITXI
 
-    LEMAA  shift, and go to state 46
+    LEMAA  desplazar e ir al estado 46
 
 
-state 36
+estado 36
 
    43 analisia: CORRECT . PAR_IREKI LEMAA ALDAERA INFORMAZIOA PAR_ITXI
    44         | CORRECT . PAR_IREKI LEMAA INFORMAZIOA PAR_ITXI
 
-    PAR_IREKI  shift, and go to state 47
+    PAR_IREKI  desplazar e ir al estado 47
 
 
-state 37
+estado 37
 
    33 hitza: HITZ_FORMA etiketa analisiak .
    39 analisiak: analisiak . analisia
 
-    PAR_IREKI  shift, and go to state 35
-    CORRECT    shift, and go to state 36
+    PAR_IREKI  desplazar e ir al estado 35
+    CORRECT    desplazar e ir al estado 36
 
-    $default  reduce using rule 33 (hitza)
+    $default  reduce usando la regla 33 (hitza)
 
-    analisia  go to state 48
+    analisia  ir al estado 48
 
 
-state 38
+estado 38
 
    40 analisiak: analisia .
 
-    $default  reduce using rule 40 (analisiak)
+    $default  reduce usando la regla 40 (analisiak)
 
 
-state 39
+estado 39
 
     8 terminoak: terminoak erlazioa terminoa .
 
-    $default  reduce using rule 8 (terminoak)
+    $default  reduce usando la regla 8 (terminoak)
 
 
-state 40
+estado 40
 
    16 hitzak: HITZA ETIK_HAUL .
 
-    $default  reduce using rule 16 (hitzak)
+    $default  reduce usando la regla 16 (hitzak)
 
 
-state 41
+estado 41
 
    23 erroa: ERROA .
 
-    $default  reduce using rule 23 (erroa)
+    $default  reduce usando la regla 23 (erroa)
 
 
-state 42
+estado 42
 
    15 hitzak: hitzak PIPE . HITZA ETIK_HAUL
    17       | hitzak PIPE . HITZA
 
-    HITZA  shift, and go to state 49
+    HITZA  desplazar e ir al estado 49
 
 
-state 43
+estado 43
 
    10 terminoa: zer hitzak erroa . term
 
-    PAR_IREKI  shift, and go to state 50
+    PAR_IREKI  desplazar e ir al estado 50
 
-    $default  reduce using rule 12 (term)
+    $default  reduce usando la regla 12 (term)
 
-    term  go to state 51
+    term  ir al estado 51
 
 
-state 44
+estado 44
 
     2 osagai_kop: OSAGAI_KOP . ZIFRA
 
-    ZIFRA  shift, and go to state 52
+    ZIFRA  desplazar e ir al estado 52
 
 
-state 45
+estado 45
 
     5 hasiera: hat_lema HAT_INFO segurua osagai_kop .
 
-    $default  reduce using rule 5 (hasiera)
+    $default  reduce usando la regla 5 (hasiera)
 
 
-state 46
+estado 46
 
    41 analisia: PAR_IREKI LEMAA . ALDAERA INFORMAZIOA PAR_ITXI
    42         | PAR_IREKI LEMAA . INFORMAZIOA PAR_ITXI
 
-    INFORMAZIOA  shift, and go to state 53
-    ALDAERA      shift, and go to state 54
+    INFORMAZIOA  desplazar e ir al estado 53
+    ALDAERA      desplazar e ir al estado 54
 
 
-state 47
+estado 47
 
    43 analisia: CORRECT PAR_IREKI . LEMAA ALDAERA INFORMAZIOA PAR_ITXI
    44         | CORRECT PAR_IREKI . LEMAA INFORMAZIOA PAR_ITXI
 
-    LEMAA  shift, and go to state 55
+    LEMAA  desplazar e ir al estado 55
 
 
-state 48
+estado 48
 
    39 analisiak: analisiak analisia .
 
-    $default  reduce using rule 39 (analisiak)
+    $default  reduce usando la regla 39 (analisiak)
 
 
-state 49
+estado 49
 
    15 hitzak: hitzak PIPE HITZA . ETIK_HAUL
    17       | hitzak PIPE HITZA .
 
-    ETIK_HAUL  shift, and go to state 56
+    ETIK_HAUL  desplazar e ir al estado 56
 
-    $default  reduce using rule 17 (hitzak)
+    $default  reduce usando la regla 17 (hitzak)
 
 
-state 50
+estado 50
 
    11 term: PAR_IREKI . LEMAA informazioa PAR_ITXI
 
-    LEMAA  shift, and go to state 57
+    LEMAA  desplazar e ir al estado 57
 
 
-state 51
+estado 51
 
    10 terminoa: zer hitzak erroa term .
 
-    $default  reduce using rule 10 (terminoa)
+    $default  reduce usando la regla 10 (terminoa)
 
 
-state 52
+estado 52
 
     2 osagai_kop: OSAGAI_KOP ZIFRA .
 
-    $default  reduce using rule 2 (osagai_kop)
+    $default  reduce usando la regla 2 (osagai_kop)
 
 
-state 53
+estado 53
 
    42 analisia: PAR_IREKI LEMAA INFORMAZIOA . PAR_ITXI
 
-    PAR_ITXI  shift, and go to state 58
+    PAR_ITXI  desplazar e ir al estado 58
 
 
-state 54
+estado 54
 
    41 analisia: PAR_IREKI LEMAA ALDAERA . INFORMAZIOA PAR_ITXI
 
-    INFORMAZIOA  shift, and go to state 59
+    INFORMAZIOA  desplazar e ir al estado 59
 
 
-state 55
+estado 55
 
    43 analisia: CORRECT PAR_IREKI LEMAA . ALDAERA INFORMAZIOA PAR_ITXI
    44         | CORRECT PAR_IREKI LEMAA . INFORMAZIOA PAR_ITXI
 
-    INFORMAZIOA  shift, and go to state 60
-    ALDAERA      shift, and go to state 61
+    INFORMAZIOA  desplazar e ir al estado 60
+    ALDAERA      desplazar e ir al estado 61
 
 
-state 56
+estado 56
 
    15 hitzak: hitzak PIPE HITZA ETIK_HAUL .
 
-    $default  reduce using rule 15 (hitzak)
+    $default  reduce usando la regla 15 (hitzak)
 
 
-state 57
+estado 57
 
    11 term: PAR_IREKI LEMAA . informazioa PAR_ITXI
 
-    INFORMAZIOA  shift, and go to state 62
+    INFORMAZIOA  desplazar e ir al estado 62
 
-    $default  reduce using rule 14 (informazioa)
+    $default  reduce usando la regla 14 (informazioa)
 
-    informazioa  go to state 63
+    informazioa  ir al estado 63
 
 
-state 58
+estado 58
 
    42 analisia: PAR_IREKI LEMAA INFORMAZIOA PAR_ITXI .
 
-    $default  reduce using rule 42 (analisia)
+    $default  reduce usando la regla 42 (analisia)
 
 
-state 59
+estado 59
 
    41 analisia: PAR_IREKI LEMAA ALDAERA INFORMAZIOA . PAR_ITXI
 
-    PAR_ITXI  shift, and go to state 64
+    PAR_ITXI  desplazar e ir al estado 64
 
 
-state 60
+estado 60
 
    44 analisia: CORRECT PAR_IREKI LEMAA INFORMAZIOA . PAR_ITXI
 
-    PAR_ITXI  shift, and go to state 65
+    PAR_ITXI  desplazar e ir al estado 65
 
 
-state 61
+estado 61
 
    43 analisia: CORRECT PAR_IREKI LEMAA ALDAERA . INFORMAZIOA PAR_ITXI
 
-    INFORMAZIOA  shift, and go to state 66
+    INFORMAZIOA  desplazar e ir al estado 66
 
 
-state 62
+estado 62
 
    13 informazioa: INFORMAZIOA .
 
-    $default  reduce using rule 13 (informazioa)
+    $default  reduce usando la regla 13 (informazioa)
 
 
-state 63
+estado 63
 
    11 term: PAR_IREKI LEMAA informazioa . PAR_ITXI
 
-    PAR_ITXI  shift, and go to state 67
+    PAR_ITXI  desplazar e ir al estado 67
 
 
-state 64
+estado 64
 
    41 analisia: PAR_IREKI LEMAA ALDAERA INFORMAZIOA PAR_ITXI .
 
-    $default  reduce using rule 41 (analisia)
+    $default  reduce usando la regla 41 (analisia)
 
 
-state 65
+estado 65
 
    44 analisia: CORRECT PAR_IREKI LEMAA INFORMAZIOA PAR_ITXI .
 
-    $default  reduce using rule 44 (analisia)
+    $default  reduce usando la regla 44 (analisia)
 
 
-state 66
+estado 66
 
    43 analisia: CORRECT PAR_IREKI LEMAA ALDAERA INFORMAZIOA . PAR_ITXI
 
-    PAR_ITXI  shift, and go to state 68
+    PAR_ITXI  desplazar e ir al estado 68
 
 
-state 67
+estado 67
 
    11 term: PAR_IREKI LEMAA informazioa PAR_ITXI .
 
-    $default  reduce using rule 11 (term)
+    $default  reduce usando la regla 11 (term)
 
 
-state 68
+estado 68
 
    43 analisia: CORRECT PAR_IREKI LEMAA ALDAERA INFORMAZIOA PAR_ITXI .
 
-    $default  reduce using rule 43 (analisia)
+    $default  reduce usando la regla 43 (analisia)

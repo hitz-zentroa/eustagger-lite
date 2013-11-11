@@ -3,7 +3,7 @@ Terminals unused in grammar
    t_koma
 
 
-Grammar
+Gramática
 
     0 $accept: testua $end
 
@@ -23,14 +23,14 @@ Grammar
     9 analisiak: analisiak analisia
    10          | analisia
 
-   11 $@1: /* empty */
+   11 $@1: /* vacío */
 
    12 analisia: t_erregela $@1 t_paren_ireki anal lem_morf t_paren_itxi
 
    13 anal: t_paren_ireki t_anal t_sinbolo t_paren_itxi
    14     | t_paren_ireki t_anal t_dolar t_sinbolo t_paren_itxi
 
-   15 $@2: /* empty */
+   15 $@2: /* vacío */
 
    16 lem_morf: $@2 lem_morfak
 
@@ -57,13 +57,13 @@ Grammar
 
    30 morfema_nor: t_paren_ireki t_morfema t_literal t_paren_itxi
 
-   31 $@3: /* empty */
+   31 $@3: /* vacío */
 
-   32 $@4: /* empty */
+   32 $@4: /* vacío */
 
    33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura $@4 besteak t_paren_itxi
 
-   34 $@5: /* empty */
+   34 $@5: /* vacío */
 
    35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera sarrera $@5 sarrera_twol besteak t_paren_itxi
 
@@ -83,7 +83,7 @@ Grammar
    45       | t_sarrera
 
    46 besteak: normalak
-   47        | /* empty */
+   47        | /* vacío */
 
    48 normalak: normalak ezaugarria
    49         | ezaugarria
@@ -111,12 +111,12 @@ Grammar
    64            | t_paren_ireki t_sinbolo hitzak t_paren_itxi
 
    65 sintaktikoak: sintaktikoak funtzioa
-   66             | /* empty */
+   66             | /* vacío */
 
    67 funtzioa: t_paren_ireki t_funtzioak t_sinbolo t_paren_itxi
 
 
-Terminals, with rules where they appear
+Terminales con las reglas donde aparecen
 
 $end (0) 0
 error (256)
@@ -147,795 +147,796 @@ t_atwol (279) 38
 t_lhb (280) 36
 
 
-Nonterminals, with rules where they appear
+No terminales con las reglas donde aparecen
 
 $accept (26)
-    on left: 0
+    en la izquierda: 0
 testua (27)
-    on left: 1, on right: 0
+    en la izquierda: 1, en la derecha: 0
 kohorteak (28)
-    on left: 2 3, on right: 1 2
+    en la izquierda: 2 3, en la derecha: 1 2
 kohortea (29)
-    on left: 4 5 6, on right: 2 3
+    en la izquierda: 4 5 6, en la derecha: 2 3
 forma_lerro (30)
-    on left: 7, on right: 4 5 6
+    en la izquierda: 7, en la derecha: 4 5 6
 forma (31)
-    on left: 8, on right: 4 5
+    en la izquierda: 8, en la derecha: 4 5
 analisiak (32)
-    on left: 9 10, on right: 4 9
+    en la izquierda: 9 10, en la derecha: 4 9
 analisia (33)
-    on left: 12, on right: 9 10
+    en la izquierda: 12, en la derecha: 9 10
 $@1 (34)
-    on left: 11, on right: 12
+    en la izquierda: 11, en la derecha: 12
 anal (35)
-    on left: 13 14, on right: 12
+    en la izquierda: 13 14, en la derecha: 12
 lem_morf (36)
-    on left: 16, on right: 12
+    en la izquierda: 16, en la derecha: 12
 $@2 (37)
-    on left: 15, on right: 16
+    en la izquierda: 15, en la derecha: 16
 lem_morfak (38)
-    on left: 17 18 19 20, on right: 16 17 18
+    en la izquierda: 17 18 19 20, en la derecha: 16 17 18
 lema (39)
-    on left: 21 22, on right: 17 19
+    en la izquierda: 21 22, en la derecha: 17 19
 resto_ald (40)
-    on left: 23, on right: 21 27
+    en la izquierda: 23, en la derecha: 21 27
 lema_ald (41)
-    on left: 24, on right: 21
+    en la izquierda: 24, en la derecha: 21
 lema_nor (42)
-    on left: 25, on right: 22
+    en la izquierda: 25, en la derecha: 22
 aldaera (43)
-    on left: 26, on right: 23
+    en la izquierda: 26, en la derecha: 23
 morfema (44)
-    on left: 27 28, on right: 18 20
+    en la izquierda: 27 28, en la derecha: 18 20
 morfema_ald (45)
-    on left: 29, on right: 27
+    en la izquierda: 29, en la derecha: 27
 morfema_nor (46)
-    on left: 30, on right: 28
+    en la izquierda: 30, en la derecha: 28
 ezaugarriak (47)
-    on left: 33 35, on right: 22 23 28
+    en la izquierda: 33 35, en la derecha: 22 23 28
 $@3 (48)
-    on left: 31, on right: 33
+    en la izquierda: 31, en la derecha: 33
 $@4 (49)
-    on left: 32, on right: 33
+    en la izquierda: 32, en la derecha: 33
 $@5 (50)
-    on left: 34, on right: 35
+    en la izquierda: 34, en la derecha: 35
 lotura (51)
-    on left: 36 37, on right: 33
+    en la izquierda: 36 37, en la derecha: 33
 aldaeraosoa (52)
-    on left: 38, on right: 33
+    en la izquierda: 38, en la derecha: 33
 sarrera_twol (53)
-    on left: 39 40, on right: 33 35
+    en la izquierda: 39 40, en la derecha: 33 35
 sarrera (54)
-    on left: 41, on right: 33 35
+    en la izquierda: 41, en la derecha: 33 35
 hitzak (55)
-    on left: 42 43 44 45, on right: 38 39 41 42 62 63 64
+    en la izquierda: 42 43 44 45, en la derecha: 38 39 41 42 62 63
+    64
 besteak (56)
-    on left: 46 47, on right: 33 35
+    en la izquierda: 46 47, en la derecha: 33 35
 normalak (57)
-    on left: 48 49, on right: 46 48
+    en la izquierda: 48 49, en la derecha: 46 48
 ezaugarria (58)
-    on left: 50 51, on right: 37 40 48 49
+    en la izquierda: 50 51, en la derecha: 37 40 48 49
 ezaugarrial (59)
-    on left: 52 53 54 55, on right: 50
+    en la izquierda: 52 53 54 55, en la derecha: 50
 ezaugarriakfsn (60)
-    on left: 56 57, on right: 52 55 56
+    en la izquierda: 56 57, en la derecha: 52 55 56
 ezaugarriakn (61)
-    on left: 58 59, on right: 53 58
+    en la izquierda: 58 59, en la derecha: 53 58
 fsezaugarriak (62)
-    on left: 60 61, on right: 62
+    en la izquierda: 60 61, en la derecha: 62
 ezaugarriafsn (63)
-    on left: 62, on right: 56 57
+    en la izquierda: 62, en la derecha: 56 57
 ezaugarrian (64)
-    on left: 63 64, on right: 51 58 59
+    en la izquierda: 63 64, en la derecha: 51 58 59
 sintaktikoak (65)
-    on left: 65 66, on right: 54 65
+    en la izquierda: 65 66, en la derecha: 54 65
 funtzioa (66)
-    on left: 67, on right: 65
+    en la izquierda: 67, en la derecha: 65
 
 
-state 0
+estado 0
 
     0 $accept: . testua $end
 
-    t_forma_lerro  shift, and go to state 1
+    t_forma_lerro  desplazar e ir al estado 1
 
-    testua       go to state 2
-    kohorteak    go to state 3
-    kohortea     go to state 4
-    forma_lerro  go to state 5
+    testua       ir al estado 2
+    kohorteak    ir al estado 3
+    kohortea     ir al estado 4
+    forma_lerro  ir al estado 5
 
 
-state 1
+estado 1
 
     7 forma_lerro: t_forma_lerro .
 
-    $default  reduce using rule 7 (forma_lerro)
+    $default  reduce usando la regla 7 (forma_lerro)
 
 
-state 2
+estado 2
 
     0 $accept: testua . $end
 
-    $end  shift, and go to state 6
+    $end  desplazar e ir al estado 6
 
 
-state 3
+estado 3
 
     1 testua: kohorteak .
     2 kohorteak: kohorteak . kohortea
 
-    t_forma_lerro  shift, and go to state 1
+    t_forma_lerro  desplazar e ir al estado 1
 
-    $default  reduce using rule 1 (testua)
+    $default  reduce usando la regla 1 (testua)
 
-    kohortea     go to state 7
-    forma_lerro  go to state 5
+    kohortea     ir al estado 7
+    forma_lerro  ir al estado 5
 
 
-state 4
+estado 4
 
     3 kohorteak: kohortea .
 
-    $default  reduce using rule 3 (kohorteak)
+    $default  reduce usando la regla 3 (kohorteak)
 
 
-state 5
+estado 5
 
     4 kohortea: forma_lerro . t_paren_ireki forma analisiak t_paren_itxi
     5         | forma_lerro . t_paren_ireki forma t_paren_itxi
     6         | forma_lerro .
 
-    t_paren_ireki  shift, and go to state 8
+    t_paren_ireki  desplazar e ir al estado 8
 
-    $default  reduce using rule 6 (kohortea)
+    $default  reduce usando la regla 6 (kohortea)
 
 
-state 6
+estado 6
 
     0 $accept: testua $end .
 
-    $default  accept
+    $default  aceptar
 
 
-state 7
+estado 7
 
     2 kohorteak: kohorteak kohortea .
 
-    $default  reduce using rule 2 (kohorteak)
+    $default  reduce usando la regla 2 (kohorteak)
 
 
-state 8
+estado 8
 
     4 kohortea: forma_lerro t_paren_ireki . forma analisiak t_paren_itxi
     5         | forma_lerro t_paren_ireki . forma t_paren_itxi
 
-    t_forma  shift, and go to state 9
+    t_forma  desplazar e ir al estado 9
 
-    forma  go to state 10
+    forma  ir al estado 10
 
 
-state 9
+estado 9
 
     8 forma: t_forma . t_literal t_paren_itxi
 
-    t_literal  shift, and go to state 11
+    t_literal  desplazar e ir al estado 11
 
 
-state 10
+estado 10
 
     4 kohortea: forma_lerro t_paren_ireki forma . analisiak t_paren_itxi
     5         | forma_lerro t_paren_ireki forma . t_paren_itxi
 
-    t_erregela    shift, and go to state 12
-    t_paren_itxi  shift, and go to state 13
+    t_erregela    desplazar e ir al estado 12
+    t_paren_itxi  desplazar e ir al estado 13
 
-    analisiak  go to state 14
-    analisia   go to state 15
+    analisiak  ir al estado 14
+    analisia   ir al estado 15
 
 
-state 11
+estado 11
 
     8 forma: t_forma t_literal . t_paren_itxi
 
-    t_paren_itxi  shift, and go to state 16
+    t_paren_itxi  desplazar e ir al estado 16
 
 
-state 12
+estado 12
 
    12 analisia: t_erregela . $@1 t_paren_ireki anal lem_morf t_paren_itxi
 
-    $default  reduce using rule 11 ($@1)
+    $default  reduce usando la regla 11 ($@1)
 
-    $@1  go to state 17
+    $@1  ir al estado 17
 
 
-state 13
+estado 13
 
     5 kohortea: forma_lerro t_paren_ireki forma t_paren_itxi .
 
-    $default  reduce using rule 5 (kohortea)
+    $default  reduce usando la regla 5 (kohortea)
 
 
-state 14
+estado 14
 
     4 kohortea: forma_lerro t_paren_ireki forma analisiak . t_paren_itxi
     9 analisiak: analisiak . analisia
 
-    t_erregela    shift, and go to state 12
-    t_paren_itxi  shift, and go to state 18
+    t_erregela    desplazar e ir al estado 12
+    t_paren_itxi  desplazar e ir al estado 18
 
-    analisia  go to state 19
+    analisia  ir al estado 19
 
 
-state 15
+estado 15
 
    10 analisiak: analisia .
 
-    $default  reduce using rule 10 (analisiak)
+    $default  reduce usando la regla 10 (analisiak)
 
 
-state 16
+estado 16
 
     8 forma: t_forma t_literal t_paren_itxi .
 
-    $default  reduce using rule 8 (forma)
+    $default  reduce usando la regla 8 (forma)
 
 
-state 17
+estado 17
 
    12 analisia: t_erregela $@1 . t_paren_ireki anal lem_morf t_paren_itxi
 
-    t_paren_ireki  shift, and go to state 20
+    t_paren_ireki  desplazar e ir al estado 20
 
 
-state 18
+estado 18
 
     4 kohortea: forma_lerro t_paren_ireki forma analisiak t_paren_itxi .
 
-    $default  reduce using rule 4 (kohortea)
+    $default  reduce usando la regla 4 (kohortea)
 
 
-state 19
+estado 19
 
     9 analisiak: analisiak analisia .
 
-    $default  reduce using rule 9 (analisiak)
+    $default  reduce usando la regla 9 (analisiak)
 
 
-state 20
+estado 20
 
    12 analisia: t_erregela $@1 t_paren_ireki . anal lem_morf t_paren_itxi
 
-    t_paren_ireki  shift, and go to state 21
+    t_paren_ireki  desplazar e ir al estado 21
 
-    anal  go to state 22
+    anal  ir al estado 22
 
 
-state 21
+estado 21
 
    13 anal: t_paren_ireki . t_anal t_sinbolo t_paren_itxi
    14     | t_paren_ireki . t_anal t_dolar t_sinbolo t_paren_itxi
 
-    t_anal  shift, and go to state 23
+    t_anal  desplazar e ir al estado 23
 
 
-state 22
+estado 22
 
    12 analisia: t_erregela $@1 t_paren_ireki anal . lem_morf t_paren_itxi
 
-    $default  reduce using rule 15 ($@2)
+    $default  reduce usando la regla 15 ($@2)
 
-    lem_morf  go to state 24
-    $@2       go to state 25
+    lem_morf  ir al estado 24
+    $@2       ir al estado 25
 
 
-state 23
+estado 23
 
    13 anal: t_paren_ireki t_anal . t_sinbolo t_paren_itxi
    14     | t_paren_ireki t_anal . t_dolar t_sinbolo t_paren_itxi
 
-    t_sinbolo  shift, and go to state 26
-    t_dolar    shift, and go to state 27
+    t_sinbolo  desplazar e ir al estado 26
+    t_dolar    desplazar e ir al estado 27
 
 
-state 24
+estado 24
 
    12 analisia: t_erregela $@1 t_paren_ireki anal lem_morf . t_paren_itxi
 
-    t_paren_itxi  shift, and go to state 28
+    t_paren_itxi  desplazar e ir al estado 28
 
 
-state 25
+estado 25
 
    16 lem_morf: $@2 . lem_morfak
 
-    t_paren_ireki  shift, and go to state 29
+    t_paren_ireki  desplazar e ir al estado 29
 
-    lem_morfak  go to state 30
-    lema        go to state 31
-    morfema     go to state 32
+    lem_morfak  ir al estado 30
+    lema        ir al estado 31
+    morfema     ir al estado 32
 
 
-state 26
+estado 26
 
    13 anal: t_paren_ireki t_anal t_sinbolo . t_paren_itxi
 
-    t_paren_itxi  shift, and go to state 33
+    t_paren_itxi  desplazar e ir al estado 33
 
 
-state 27
+estado 27
 
    14 anal: t_paren_ireki t_anal t_dolar . t_sinbolo t_paren_itxi
 
-    t_sinbolo  shift, and go to state 34
+    t_sinbolo  desplazar e ir al estado 34
 
 
-state 28
+estado 28
 
    12 analisia: t_erregela $@1 t_paren_ireki anal lem_morf t_paren_itxi .
 
-    $default  reduce using rule 12 (analisia)
+    $default  reduce usando la regla 12 (analisia)
 
 
-state 29
+estado 29
 
    21 lema: t_paren_ireki . lema_ald resto_ald t_paren_itxi
    22     | t_paren_ireki . lema_nor ezaugarriak t_paren_itxi
    27 morfema: t_paren_ireki . morfema_ald resto_ald t_paren_itxi
    28        | t_paren_ireki . morfema_nor ezaugarriak t_paren_itxi
 
-    t_lema         shift, and go to state 35
-    t_paren_ireki  shift, and go to state 36
+    t_lema         desplazar e ir al estado 35
+    t_paren_ireki  desplazar e ir al estado 36
 
-    lema_ald     go to state 37
-    lema_nor     go to state 38
-    morfema_ald  go to state 39
-    morfema_nor  go to state 40
+    lema_ald     ir al estado 37
+    lema_nor     ir al estado 38
+    morfema_ald  ir al estado 39
+    morfema_nor  ir al estado 40
 
 
-state 30
+estado 30
 
    16 lem_morf: $@2 lem_morfak .
    17 lem_morfak: lem_morfak . lema
    18           | lem_morfak . morfema
 
-    t_paren_ireki  shift, and go to state 29
+    t_paren_ireki  desplazar e ir al estado 29
 
-    $default  reduce using rule 16 (lem_morf)
+    $default  reduce usando la regla 16 (lem_morf)
 
-    lema     go to state 41
-    morfema  go to state 42
+    lema     ir al estado 41
+    morfema  ir al estado 42
 
 
-state 31
+estado 31
 
    19 lem_morfak: lema .
 
-    $default  reduce using rule 19 (lem_morfak)
+    $default  reduce usando la regla 19 (lem_morfak)
 
 
-state 32
+estado 32
 
    20 lem_morfak: morfema .
 
-    $default  reduce using rule 20 (lem_morfak)
+    $default  reduce usando la regla 20 (lem_morfak)
 
 
-state 33
+estado 33
 
    13 anal: t_paren_ireki t_anal t_sinbolo t_paren_itxi .
 
-    $default  reduce using rule 13 (anal)
+    $default  reduce usando la regla 13 (anal)
 
 
-state 34
+estado 34
 
    14 anal: t_paren_ireki t_anal t_dolar t_sinbolo . t_paren_itxi
 
-    t_paren_itxi  shift, and go to state 43
+    t_paren_itxi  desplazar e ir al estado 43
 
 
-state 35
+estado 35
 
    24 lema_ald: t_lema . t_dolar t_literal t_paren_itxi
    25 lema_nor: t_lema . t_literal t_paren_itxi
 
-    t_literal  shift, and go to state 44
-    t_dolar    shift, and go to state 45
+    t_literal  desplazar e ir al estado 44
+    t_dolar    desplazar e ir al estado 45
 
 
-state 36
+estado 36
 
    29 morfema_ald: t_paren_ireki . t_morfema t_dolar t_literal t_paren_itxi
    30 morfema_nor: t_paren_ireki . t_morfema t_literal t_paren_itxi
 
-    t_morfema  shift, and go to state 46
+    t_morfema  desplazar e ir al estado 46
 
 
-state 37
+estado 37
 
    21 lema: t_paren_ireki lema_ald . resto_ald t_paren_itxi
 
-    t_paren_ireki  shift, and go to state 47
+    t_paren_ireki  desplazar e ir al estado 47
 
-    resto_ald  go to state 48
-    aldaera    go to state 49
+    resto_ald  ir al estado 48
+    aldaera    ir al estado 49
 
 
-state 38
+estado 38
 
    22 lema: t_paren_ireki lema_nor . ezaugarriak t_paren_itxi
 
-    t_paren_ireki  shift, and go to state 50
+    t_paren_ireki  desplazar e ir al estado 50
 
-    ezaugarriak  go to state 51
+    ezaugarriak  ir al estado 51
 
 
-state 39
+estado 39
 
    27 morfema: t_paren_ireki morfema_ald . resto_ald t_paren_itxi
 
-    t_paren_ireki  shift, and go to state 47
+    t_paren_ireki  desplazar e ir al estado 47
 
-    resto_ald  go to state 52
-    aldaera    go to state 49
+    resto_ald  ir al estado 52
+    aldaera    ir al estado 49
 
 
-state 40
+estado 40
 
    28 morfema: t_paren_ireki morfema_nor . ezaugarriak t_paren_itxi
 
-    t_paren_ireki  shift, and go to state 50
+    t_paren_ireki  desplazar e ir al estado 50
 
-    ezaugarriak  go to state 53
+    ezaugarriak  ir al estado 53
 
 
-state 41
+estado 41
 
    17 lem_morfak: lem_morfak lema .
 
-    $default  reduce using rule 17 (lem_morfak)
+    $default  reduce usando la regla 17 (lem_morfak)
 
 
-state 42
+estado 42
 
    18 lem_morfak: lem_morfak morfema .
 
-    $default  reduce using rule 18 (lem_morfak)
+    $default  reduce usando la regla 18 (lem_morfak)
 
 
-state 43
+estado 43
 
    14 anal: t_paren_ireki t_anal t_dolar t_sinbolo t_paren_itxi .
 
-    $default  reduce using rule 14 (anal)
+    $default  reduce usando la regla 14 (anal)
 
 
-state 44
+estado 44
 
    25 lema_nor: t_lema t_literal . t_paren_itxi
 
-    t_paren_itxi  shift, and go to state 54
+    t_paren_itxi  desplazar e ir al estado 54
 
 
-state 45
+estado 45
 
    24 lema_ald: t_lema t_dolar . t_literal t_paren_itxi
 
-    t_literal  shift, and go to state 55
+    t_literal  desplazar e ir al estado 55
 
 
-state 46
+estado 46
 
    29 morfema_ald: t_paren_ireki t_morfema . t_dolar t_literal t_paren_itxi
    30 morfema_nor: t_paren_ireki t_morfema . t_literal t_paren_itxi
 
-    t_literal  shift, and go to state 56
-    t_dolar    shift, and go to state 57
+    t_literal  desplazar e ir al estado 56
+    t_dolar    desplazar e ir al estado 57
 
 
-state 47
+estado 47
 
    26 aldaera: t_paren_ireki . t_ald t_literal t_paren_itxi
 
-    t_ald  shift, and go to state 58
+    t_ald  desplazar e ir al estado 58
 
 
-state 48
+estado 48
 
    21 lema: t_paren_ireki lema_ald resto_ald . t_paren_itxi
 
-    t_paren_itxi  shift, and go to state 59
+    t_paren_itxi  desplazar e ir al estado 59
 
 
-state 49
+estado 49
 
    23 resto_ald: aldaera . ezaugarriak
 
-    t_paren_ireki  shift, and go to state 50
+    t_paren_ireki  desplazar e ir al estado 50
 
-    ezaugarriak  go to state 60
+    ezaugarriak  ir al estado 60
 
 
-state 50
+estado 50
 
    33 ezaugarriak: t_paren_ireki . t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura $@4 besteak t_paren_itxi
    35            | t_paren_ireki . t_paren_ireki t_sarrera sarrera $@5 sarrera_twol besteak t_paren_itxi
 
-    t_paren_ireki  shift, and go to state 61
+    t_paren_ireki  desplazar e ir al estado 61
 
 
-state 51
+estado 51
 
    22 lema: t_paren_ireki lema_nor ezaugarriak . t_paren_itxi
 
-    t_paren_itxi  shift, and go to state 62
+    t_paren_itxi  desplazar e ir al estado 62
 
 
-state 52
+estado 52
 
    27 morfema: t_paren_ireki morfema_ald resto_ald . t_paren_itxi
 
-    t_paren_itxi  shift, and go to state 63
+    t_paren_itxi  desplazar e ir al estado 63
 
 
-state 53
+estado 53
 
    28 morfema: t_paren_ireki morfema_nor ezaugarriak . t_paren_itxi
 
-    t_paren_itxi  shift, and go to state 64
+    t_paren_itxi  desplazar e ir al estado 64
 
 
-state 54
+estado 54
 
    25 lema_nor: t_lema t_literal t_paren_itxi .
 
-    $default  reduce using rule 25 (lema_nor)
+    $default  reduce usando la regla 25 (lema_nor)
 
 
-state 55
+estado 55
 
    24 lema_ald: t_lema t_dolar t_literal . t_paren_itxi
 
-    t_paren_itxi  shift, and go to state 65
+    t_paren_itxi  desplazar e ir al estado 65
 
 
-state 56
+estado 56
 
    30 morfema_nor: t_paren_ireki t_morfema t_literal . t_paren_itxi
 
-    t_paren_itxi  shift, and go to state 66
+    t_paren_itxi  desplazar e ir al estado 66
 
 
-state 57
+estado 57
 
    29 morfema_ald: t_paren_ireki t_morfema t_dolar . t_literal t_paren_itxi
 
-    t_literal  shift, and go to state 67
+    t_literal  desplazar e ir al estado 67
 
 
-state 58
+estado 58
 
    26 aldaera: t_paren_ireki t_ald . t_literal t_paren_itxi
 
-    t_literal  shift, and go to state 68
+    t_literal  desplazar e ir al estado 68
 
 
-state 59
+estado 59
 
    21 lema: t_paren_ireki lema_ald resto_ald t_paren_itxi .
 
-    $default  reduce using rule 21 (lema)
+    $default  reduce usando la regla 21 (lema)
 
 
-state 60
+estado 60
 
    23 resto_ald: aldaera ezaugarriak .
 
-    $default  reduce using rule 23 (resto_ald)
+    $default  reduce usando la regla 23 (resto_ald)
 
 
-state 61
+estado 61
 
    33 ezaugarriak: t_paren_ireki t_paren_ireki . t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura $@4 besteak t_paren_itxi
    35            | t_paren_ireki t_paren_ireki . t_sarrera sarrera $@5 sarrera_twol besteak t_paren_itxi
 
-    t_aldaera  shift, and go to state 69
-    t_sarrera  shift, and go to state 70
+    t_aldaera  desplazar e ir al estado 69
+    t_sarrera  desplazar e ir al estado 70
 
 
-state 62
+estado 62
 
    22 lema: t_paren_ireki lema_nor ezaugarriak t_paren_itxi .
 
-    $default  reduce using rule 22 (lema)
+    $default  reduce usando la regla 22 (lema)
 
 
-state 63
+estado 63
 
    27 morfema: t_paren_ireki morfema_ald resto_ald t_paren_itxi .
 
-    $default  reduce using rule 27 (morfema)
+    $default  reduce usando la regla 27 (morfema)
 
 
-state 64
+estado 64
 
    28 morfema: t_paren_ireki morfema_nor ezaugarriak t_paren_itxi .
 
-    $default  reduce using rule 28 (morfema)
+    $default  reduce usando la regla 28 (morfema)
 
 
-state 65
+estado 65
 
    24 lema_ald: t_lema t_dolar t_literal t_paren_itxi .
 
-    $default  reduce using rule 24 (lema_ald)
+    $default  reduce usando la regla 24 (lema_ald)
 
 
-state 66
+estado 66
 
    30 morfema_nor: t_paren_ireki t_morfema t_literal t_paren_itxi .
 
-    $default  reduce using rule 30 (morfema_nor)
+    $default  reduce usando la regla 30 (morfema_nor)
 
 
-state 67
+estado 67
 
    29 morfema_ald: t_paren_ireki t_morfema t_dolar t_literal . t_paren_itxi
 
-    t_paren_itxi  shift, and go to state 71
+    t_paren_itxi  desplazar e ir al estado 71
 
 
-state 68
+estado 68
 
    26 aldaera: t_paren_ireki t_ald t_literal . t_paren_itxi
 
-    t_paren_itxi  shift, and go to state 72
+    t_paren_itxi  desplazar e ir al estado 72
 
 
-state 69
+estado 69
 
    33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera . $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura $@4 besteak t_paren_itxi
 
-    $default  reduce using rule 31 ($@3)
+    $default  reduce usando la regla 31 ($@3)
 
-    $@3  go to state 73
+    $@3  ir al estado 73
 
 
-state 70
+estado 70
 
    35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera . sarrera $@5 sarrera_twol besteak t_paren_itxi
 
-    t_anal     shift, and go to state 74
-    t_sarrera  shift, and go to state 75
-    t_sinbolo  shift, and go to state 76
+    t_anal     desplazar e ir al estado 74
+    t_sarrera  desplazar e ir al estado 75
+    t_sinbolo  desplazar e ir al estado 76
 
-    sarrera  go to state 77
-    hitzak   go to state 78
+    sarrera  ir al estado 77
+    hitzak   ir al estado 78
 
 
-state 71
+estado 71
 
    29 morfema_ald: t_paren_ireki t_morfema t_dolar t_literal t_paren_itxi .
 
-    $default  reduce using rule 29 (morfema_ald)
+    $default  reduce usando la regla 29 (morfema_ald)
 
 
-state 72
+estado 72
 
    26 aldaera: t_paren_ireki t_ald t_literal t_paren_itxi .
 
-    $default  reduce using rule 26 (aldaera)
+    $default  reduce usando la regla 26 (aldaera)
 
 
-state 73
+estado 73
 
    33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 . aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura $@4 besteak t_paren_itxi
 
-    t_anal     shift, and go to state 74
-    t_sarrera  shift, and go to state 75
-    t_sinbolo  shift, and go to state 76
+    t_anal     desplazar e ir al estado 74
+    t_sarrera  desplazar e ir al estado 75
+    t_sinbolo  desplazar e ir al estado 76
 
-    aldaeraosoa  go to state 79
-    hitzak       go to state 80
+    aldaeraosoa  ir al estado 79
+    hitzak       ir al estado 80
 
 
-state 74
+estado 74
 
    44 hitzak: t_anal .
 
-    $default  reduce using rule 44 (hitzak)
+    $default  reduce usando la regla 44 (hitzak)
 
 
-state 75
+estado 75
 
    45 hitzak: t_sarrera .
 
-    $default  reduce using rule 45 (hitzak)
+    $default  reduce usando la regla 45 (hitzak)
 
 
-state 76
+estado 76
 
    43 hitzak: t_sinbolo .
 
-    $default  reduce using rule 43 (hitzak)
+    $default  reduce usando la regla 43 (hitzak)
 
 
-state 77
+estado 77
 
    35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera sarrera . $@5 sarrera_twol besteak t_paren_itxi
 
-    $default  reduce using rule 34 ($@5)
+    $default  reduce usando la regla 34 ($@5)
 
-    $@5  go to state 81
+    $@5  ir al estado 81
 
 
-state 78
+estado 78
 
    41 sarrera: hitzak . t_paren_itxi
    42 hitzak: hitzak . t_sinbolo
 
-    t_sinbolo     shift, and go to state 82
-    t_paren_itxi  shift, and go to state 83
+    t_sinbolo     desplazar e ir al estado 82
+    t_paren_itxi  desplazar e ir al estado 83
 
 
-state 79
+estado 79
 
    33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa . t_paren_ireki t_sarrera sarrera sarrera_twol lotura $@4 besteak t_paren_itxi
 
-    t_paren_ireki  shift, and go to state 84
+    t_paren_ireki  desplazar e ir al estado 84
 
 
-state 80
+estado 80
 
    38 aldaeraosoa: hitzak . t_paren_itxi t_paren_ireki t_atwol hitzak t_paren_itxi
    42 hitzak: hitzak . t_sinbolo
 
-    t_sinbolo     shift, and go to state 82
-    t_paren_itxi  shift, and go to state 85
+    t_sinbolo     desplazar e ir al estado 82
+    t_paren_itxi  desplazar e ir al estado 85
 
 
-state 81
+estado 81
 
    35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera sarrera $@5 . sarrera_twol besteak t_paren_itxi
 
-    t_paren_ireki  shift, and go to state 86
+    t_paren_ireki  desplazar e ir al estado 86
 
-    sarrera_twol  go to state 87
-    ezaugarria    go to state 88
-    ezaugarrial   go to state 89
-    ezaugarrian   go to state 90
+    sarrera_twol  ir al estado 87
+    ezaugarria    ir al estado 88
+    ezaugarrial   ir al estado 89
+    ezaugarrian   ir al estado 90
 
 
-state 82
+estado 82
 
    42 hitzak: hitzak t_sinbolo .
 
-    $default  reduce using rule 42 (hitzak)
+    $default  reduce usando la regla 42 (hitzak)
 
 
-state 83
+estado 83
 
    41 sarrera: hitzak t_paren_itxi .
 
-    $default  reduce using rule 41 (sarrera)
+    $default  reduce usando la regla 41 (sarrera)
 
 
-state 84
+estado 84
 
    33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki . t_sarrera sarrera sarrera_twol lotura $@4 besteak t_paren_itxi
 
-    t_sarrera  shift, and go to state 91
+    t_sarrera  desplazar e ir al estado 91
 
 
-state 85
+estado 85
 
    38 aldaeraosoa: hitzak t_paren_itxi . t_paren_ireki t_atwol hitzak t_paren_itxi
 
-    t_paren_ireki  shift, and go to state 92
+    t_paren_ireki  desplazar e ir al estado 92
 
 
-state 86
+estado 86
 
    39 sarrera_twol: t_paren_ireki . t_stwol hitzak t_paren_itxi
    52 ezaugarrial: t_paren_ireki . t_sinbolo_set ezaugarriakfsn t_paren_itxi
@@ -945,136 +946,136 @@ state 86
    63 ezaugarrian: t_paren_ireki . t_erroa hitzak t_paren_itxi
    64            | t_paren_ireki . t_sinbolo hitzak t_paren_itxi
 
-    t_sinbolo           shift, and go to state 93
-    t_sinbolo_list      shift, and go to state 94
-    t_sinbolo_list_sym  shift, and go to state 95
-    t_sinbolo_set       shift, and go to state 96
-    t_erroa             shift, and go to state 97
-    t_stwol             shift, and go to state 98
+    t_sinbolo           desplazar e ir al estado 93
+    t_sinbolo_list      desplazar e ir al estado 94
+    t_sinbolo_list_sym  desplazar e ir al estado 95
+    t_sinbolo_set       desplazar e ir al estado 96
+    t_erroa             desplazar e ir al estado 97
+    t_stwol             desplazar e ir al estado 98
 
 
-state 87
+estado 87
 
    35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera sarrera $@5 sarrera_twol . besteak t_paren_itxi
 
-    t_paren_ireki  shift, and go to state 99
+    t_paren_ireki  desplazar e ir al estado 99
 
-    $default  reduce using rule 47 (besteak)
+    $default  reduce usando la regla 47 (besteak)
 
-    besteak      go to state 100
-    normalak     go to state 101
-    ezaugarria   go to state 102
-    ezaugarrial  go to state 89
-    ezaugarrian  go to state 90
+    besteak      ir al estado 100
+    normalak     ir al estado 101
+    ezaugarria   ir al estado 102
+    ezaugarrial  ir al estado 89
+    ezaugarrian  ir al estado 90
 
 
-state 88
+estado 88
 
    40 sarrera_twol: ezaugarria .
 
-    $default  reduce using rule 40 (sarrera_twol)
+    $default  reduce usando la regla 40 (sarrera_twol)
 
 
-state 89
+estado 89
 
    50 ezaugarria: ezaugarrial .
 
-    $default  reduce using rule 50 (ezaugarria)
+    $default  reduce usando la regla 50 (ezaugarria)
 
 
-state 90
+estado 90
 
    51 ezaugarria: ezaugarrian .
 
-    $default  reduce using rule 51 (ezaugarria)
+    $default  reduce usando la regla 51 (ezaugarria)
 
 
-state 91
+estado 91
 
    33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera . sarrera sarrera_twol lotura $@4 besteak t_paren_itxi
 
-    t_anal     shift, and go to state 74
-    t_sarrera  shift, and go to state 75
-    t_sinbolo  shift, and go to state 76
+    t_anal     desplazar e ir al estado 74
+    t_sarrera  desplazar e ir al estado 75
+    t_sinbolo  desplazar e ir al estado 76
 
-    sarrera  go to state 103
-    hitzak   go to state 78
+    sarrera  ir al estado 103
+    hitzak   ir al estado 78
 
 
-state 92
+estado 92
 
    38 aldaeraosoa: hitzak t_paren_itxi t_paren_ireki . t_atwol hitzak t_paren_itxi
 
-    t_atwol  shift, and go to state 104
+    t_atwol  desplazar e ir al estado 104
 
 
-state 93
+estado 93
 
    55 ezaugarrial: t_paren_ireki t_sinbolo . ezaugarriakfsn t_paren_itxi
    64 ezaugarrian: t_paren_ireki t_sinbolo . hitzak t_paren_itxi
 
-    t_anal         shift, and go to state 74
-    t_sarrera      shift, and go to state 75
-    t_sinbolo      shift, and go to state 76
-    t_paren_ireki  shift, and go to state 105
+    t_anal         desplazar e ir al estado 74
+    t_sarrera      desplazar e ir al estado 75
+    t_sinbolo      desplazar e ir al estado 76
+    t_paren_ireki  desplazar e ir al estado 105
 
-    hitzak          go to state 106
-    ezaugarriakfsn  go to state 107
-    ezaugarriafsn   go to state 108
+    hitzak          ir al estado 106
+    ezaugarriakfsn  ir al estado 107
+    ezaugarriafsn   ir al estado 108
 
 
-state 94
+estado 94
 
    53 ezaugarrial: t_paren_ireki t_sinbolo_list . ezaugarriakn t_paren_itxi
 
-    t_paren_ireki  shift, and go to state 109
+    t_paren_ireki  desplazar e ir al estado 109
 
-    ezaugarriakn  go to state 110
-    ezaugarrian   go to state 111
+    ezaugarriakn  ir al estado 110
+    ezaugarrian   ir al estado 111
 
 
-state 95
+estado 95
 
    54 ezaugarrial: t_paren_ireki t_sinbolo_list_sym . sintaktikoak t_paren_itxi
 
-    $default  reduce using rule 66 (sintaktikoak)
+    $default  reduce usando la regla 66 (sintaktikoak)
 
-    sintaktikoak  go to state 112
+    sintaktikoak  ir al estado 112
 
 
-state 96
+estado 96
 
    52 ezaugarrial: t_paren_ireki t_sinbolo_set . ezaugarriakfsn t_paren_itxi
 
-    t_paren_ireki  shift, and go to state 105
+    t_paren_ireki  desplazar e ir al estado 105
 
-    ezaugarriakfsn  go to state 113
-    ezaugarriafsn   go to state 108
+    ezaugarriakfsn  ir al estado 113
+    ezaugarriafsn   ir al estado 108
 
 
-state 97
+estado 97
 
    63 ezaugarrian: t_paren_ireki t_erroa . hitzak t_paren_itxi
 
-    t_anal     shift, and go to state 74
-    t_sarrera  shift, and go to state 75
-    t_sinbolo  shift, and go to state 76
+    t_anal     desplazar e ir al estado 74
+    t_sarrera  desplazar e ir al estado 75
+    t_sinbolo  desplazar e ir al estado 76
 
-    hitzak  go to state 114
+    hitzak  ir al estado 114
 
 
-state 98
+estado 98
 
    39 sarrera_twol: t_paren_ireki t_stwol . hitzak t_paren_itxi
 
-    t_anal     shift, and go to state 74
-    t_sarrera  shift, and go to state 75
-    t_sinbolo  shift, and go to state 76
+    t_anal     desplazar e ir al estado 74
+    t_sarrera  desplazar e ir al estado 75
+    t_sinbolo  desplazar e ir al estado 76
 
-    hitzak  go to state 115
+    hitzak  ir al estado 115
 
 
-state 99
+estado 99
 
    52 ezaugarrial: t_paren_ireki . t_sinbolo_set ezaugarriakfsn t_paren_itxi
    53            | t_paren_ireki . t_sinbolo_list ezaugarriakn t_paren_itxi
@@ -1083,317 +1084,317 @@ state 99
    63 ezaugarrian: t_paren_ireki . t_erroa hitzak t_paren_itxi
    64            | t_paren_ireki . t_sinbolo hitzak t_paren_itxi
 
-    t_sinbolo           shift, and go to state 93
-    t_sinbolo_list      shift, and go to state 94
-    t_sinbolo_list_sym  shift, and go to state 95
-    t_sinbolo_set       shift, and go to state 96
-    t_erroa             shift, and go to state 97
+    t_sinbolo           desplazar e ir al estado 93
+    t_sinbolo_list      desplazar e ir al estado 94
+    t_sinbolo_list_sym  desplazar e ir al estado 95
+    t_sinbolo_set       desplazar e ir al estado 96
+    t_erroa             desplazar e ir al estado 97
 
 
-state 100
+estado 100
 
    35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera sarrera $@5 sarrera_twol besteak . t_paren_itxi
 
-    t_paren_itxi  shift, and go to state 116
+    t_paren_itxi  desplazar e ir al estado 116
 
 
-state 101
+estado 101
 
    46 besteak: normalak .
    48 normalak: normalak . ezaugarria
 
-    t_paren_ireki  shift, and go to state 99
+    t_paren_ireki  desplazar e ir al estado 99
 
-    $default  reduce using rule 46 (besteak)
+    $default  reduce usando la regla 46 (besteak)
 
-    ezaugarria   go to state 117
-    ezaugarrial  go to state 89
-    ezaugarrian  go to state 90
+    ezaugarria   ir al estado 117
+    ezaugarrial  ir al estado 89
+    ezaugarrian  ir al estado 90
 
 
-state 102
+estado 102
 
    49 normalak: ezaugarria .
 
-    $default  reduce using rule 49 (normalak)
+    $default  reduce usando la regla 49 (normalak)
 
 
-state 103
+estado 103
 
    33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera . sarrera_twol lotura $@4 besteak t_paren_itxi
 
-    t_paren_ireki  shift, and go to state 86
+    t_paren_ireki  desplazar e ir al estado 86
 
-    sarrera_twol  go to state 118
-    ezaugarria    go to state 88
-    ezaugarrial   go to state 89
-    ezaugarrian   go to state 90
+    sarrera_twol  ir al estado 118
+    ezaugarria    ir al estado 88
+    ezaugarrial   ir al estado 89
+    ezaugarrian   ir al estado 90
 
 
-state 104
+estado 104
 
    38 aldaeraosoa: hitzak t_paren_itxi t_paren_ireki t_atwol . hitzak t_paren_itxi
 
-    t_anal     shift, and go to state 74
-    t_sarrera  shift, and go to state 75
-    t_sinbolo  shift, and go to state 76
+    t_anal     desplazar e ir al estado 74
+    t_sarrera  desplazar e ir al estado 75
+    t_sinbolo  desplazar e ir al estado 76
 
-    hitzak  go to state 119
+    hitzak  ir al estado 119
 
 
-state 105
+estado 105
 
    62 ezaugarriafsn: t_paren_ireki . fsezaugarriak hitzak t_paren_itxi
 
-    t_sarrera  shift, and go to state 120
-    t_sinbolo  shift, and go to state 121
+    t_sarrera  desplazar e ir al estado 120
+    t_sinbolo  desplazar e ir al estado 121
 
-    fsezaugarriak  go to state 122
+    fsezaugarriak  ir al estado 122
 
 
-state 106
+estado 106
 
    42 hitzak: hitzak . t_sinbolo
    64 ezaugarrian: t_paren_ireki t_sinbolo hitzak . t_paren_itxi
 
-    t_sinbolo     shift, and go to state 82
-    t_paren_itxi  shift, and go to state 123
+    t_sinbolo     desplazar e ir al estado 82
+    t_paren_itxi  desplazar e ir al estado 123
 
 
-state 107
+estado 107
 
    55 ezaugarrial: t_paren_ireki t_sinbolo ezaugarriakfsn . t_paren_itxi
    56 ezaugarriakfsn: ezaugarriakfsn . ezaugarriafsn
 
-    t_paren_ireki  shift, and go to state 105
-    t_paren_itxi   shift, and go to state 124
+    t_paren_ireki  desplazar e ir al estado 105
+    t_paren_itxi   desplazar e ir al estado 124
 
-    ezaugarriafsn  go to state 125
+    ezaugarriafsn  ir al estado 125
 
 
-state 108
+estado 108
 
    57 ezaugarriakfsn: ezaugarriafsn .
 
-    $default  reduce using rule 57 (ezaugarriakfsn)
+    $default  reduce usando la regla 57 (ezaugarriakfsn)
 
 
-state 109
+estado 109
 
    63 ezaugarrian: t_paren_ireki . t_erroa hitzak t_paren_itxi
    64            | t_paren_ireki . t_sinbolo hitzak t_paren_itxi
 
-    t_sinbolo  shift, and go to state 126
-    t_erroa    shift, and go to state 97
+    t_sinbolo  desplazar e ir al estado 126
+    t_erroa    desplazar e ir al estado 97
 
 
-state 110
+estado 110
 
    53 ezaugarrial: t_paren_ireki t_sinbolo_list ezaugarriakn . t_paren_itxi
    58 ezaugarriakn: ezaugarriakn . ezaugarrian
 
-    t_paren_ireki  shift, and go to state 109
-    t_paren_itxi   shift, and go to state 127
+    t_paren_ireki  desplazar e ir al estado 109
+    t_paren_itxi   desplazar e ir al estado 127
 
-    ezaugarrian  go to state 128
+    ezaugarrian  ir al estado 128
 
 
-state 111
+estado 111
 
    59 ezaugarriakn: ezaugarrian .
 
-    $default  reduce using rule 59 (ezaugarriakn)
+    $default  reduce usando la regla 59 (ezaugarriakn)
 
 
-state 112
+estado 112
 
    54 ezaugarrial: t_paren_ireki t_sinbolo_list_sym sintaktikoak . t_paren_itxi
    65 sintaktikoak: sintaktikoak . funtzioa
 
-    t_paren_ireki  shift, and go to state 129
-    t_paren_itxi   shift, and go to state 130
+    t_paren_ireki  desplazar e ir al estado 129
+    t_paren_itxi   desplazar e ir al estado 130
 
-    funtzioa  go to state 131
+    funtzioa  ir al estado 131
 
 
-state 113
+estado 113
 
    52 ezaugarrial: t_paren_ireki t_sinbolo_set ezaugarriakfsn . t_paren_itxi
    56 ezaugarriakfsn: ezaugarriakfsn . ezaugarriafsn
 
-    t_paren_ireki  shift, and go to state 105
-    t_paren_itxi   shift, and go to state 132
+    t_paren_ireki  desplazar e ir al estado 105
+    t_paren_itxi   desplazar e ir al estado 132
 
-    ezaugarriafsn  go to state 125
+    ezaugarriafsn  ir al estado 125
 
 
-state 114
+estado 114
 
    42 hitzak: hitzak . t_sinbolo
    63 ezaugarrian: t_paren_ireki t_erroa hitzak . t_paren_itxi
 
-    t_sinbolo     shift, and go to state 82
-    t_paren_itxi  shift, and go to state 133
+    t_sinbolo     desplazar e ir al estado 82
+    t_paren_itxi  desplazar e ir al estado 133
 
 
-state 115
+estado 115
 
    39 sarrera_twol: t_paren_ireki t_stwol hitzak . t_paren_itxi
    42 hitzak: hitzak . t_sinbolo
 
-    t_sinbolo     shift, and go to state 82
-    t_paren_itxi  shift, and go to state 134
+    t_sinbolo     desplazar e ir al estado 82
+    t_paren_itxi  desplazar e ir al estado 134
 
 
-state 116
+estado 116
 
    35 ezaugarriak: t_paren_ireki t_paren_ireki t_sarrera sarrera $@5 sarrera_twol besteak t_paren_itxi .
 
-    $default  reduce using rule 35 (ezaugarriak)
+    $default  reduce usando la regla 35 (ezaugarriak)
 
 
-state 117
+estado 117
 
    48 normalak: normalak ezaugarria .
 
-    $default  reduce using rule 48 (normalak)
+    $default  reduce usando la regla 48 (normalak)
 
 
-state 118
+estado 118
 
    33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol . lotura $@4 besteak t_paren_itxi
 
-    t_paren_ireki  shift, and go to state 135
+    t_paren_ireki  desplazar e ir al estado 135
 
-    lotura       go to state 136
-    ezaugarria   go to state 137
-    ezaugarrial  go to state 89
-    ezaugarrian  go to state 90
+    lotura       ir al estado 136
+    ezaugarria   ir al estado 137
+    ezaugarrial  ir al estado 89
+    ezaugarrian  ir al estado 90
 
 
-state 119
+estado 119
 
    38 aldaeraosoa: hitzak t_paren_itxi t_paren_ireki t_atwol hitzak . t_paren_itxi
    42 hitzak: hitzak . t_sinbolo
 
-    t_sinbolo     shift, and go to state 82
-    t_paren_itxi  shift, and go to state 138
+    t_sinbolo     desplazar e ir al estado 82
+    t_paren_itxi  desplazar e ir al estado 138
 
 
-state 120
+estado 120
 
    61 fsezaugarriak: t_sarrera .
 
-    $default  reduce using rule 61 (fsezaugarriak)
+    $default  reduce usando la regla 61 (fsezaugarriak)
 
 
-state 121
+estado 121
 
    60 fsezaugarriak: t_sinbolo .
 
-    $default  reduce using rule 60 (fsezaugarriak)
+    $default  reduce usando la regla 60 (fsezaugarriak)
 
 
-state 122
+estado 122
 
    62 ezaugarriafsn: t_paren_ireki fsezaugarriak . hitzak t_paren_itxi
 
-    t_anal     shift, and go to state 74
-    t_sarrera  shift, and go to state 75
-    t_sinbolo  shift, and go to state 76
+    t_anal     desplazar e ir al estado 74
+    t_sarrera  desplazar e ir al estado 75
+    t_sinbolo  desplazar e ir al estado 76
 
-    hitzak  go to state 139
+    hitzak  ir al estado 139
 
 
-state 123
+estado 123
 
    64 ezaugarrian: t_paren_ireki t_sinbolo hitzak t_paren_itxi .
 
-    $default  reduce using rule 64 (ezaugarrian)
+    $default  reduce usando la regla 64 (ezaugarrian)
 
 
-state 124
+estado 124
 
    55 ezaugarrial: t_paren_ireki t_sinbolo ezaugarriakfsn t_paren_itxi .
 
-    $default  reduce using rule 55 (ezaugarrial)
+    $default  reduce usando la regla 55 (ezaugarrial)
 
 
-state 125
+estado 125
 
    56 ezaugarriakfsn: ezaugarriakfsn ezaugarriafsn .
 
-    $default  reduce using rule 56 (ezaugarriakfsn)
+    $default  reduce usando la regla 56 (ezaugarriakfsn)
 
 
-state 126
+estado 126
 
    64 ezaugarrian: t_paren_ireki t_sinbolo . hitzak t_paren_itxi
 
-    t_anal     shift, and go to state 74
-    t_sarrera  shift, and go to state 75
-    t_sinbolo  shift, and go to state 76
+    t_anal     desplazar e ir al estado 74
+    t_sarrera  desplazar e ir al estado 75
+    t_sinbolo  desplazar e ir al estado 76
 
-    hitzak  go to state 106
+    hitzak  ir al estado 106
 
 
-state 127
+estado 127
 
    53 ezaugarrial: t_paren_ireki t_sinbolo_list ezaugarriakn t_paren_itxi .
 
-    $default  reduce using rule 53 (ezaugarrial)
+    $default  reduce usando la regla 53 (ezaugarrial)
 
 
-state 128
+estado 128
 
    58 ezaugarriakn: ezaugarriakn ezaugarrian .
 
-    $default  reduce using rule 58 (ezaugarriakn)
+    $default  reduce usando la regla 58 (ezaugarriakn)
 
 
-state 129
+estado 129
 
    67 funtzioa: t_paren_ireki . t_funtzioak t_sinbolo t_paren_itxi
 
-    t_funtzioak  shift, and go to state 140
+    t_funtzioak  desplazar e ir al estado 140
 
 
-state 130
+estado 130
 
    54 ezaugarrial: t_paren_ireki t_sinbolo_list_sym sintaktikoak t_paren_itxi .
 
-    $default  reduce using rule 54 (ezaugarrial)
+    $default  reduce usando la regla 54 (ezaugarrial)
 
 
-state 131
+estado 131
 
    65 sintaktikoak: sintaktikoak funtzioa .
 
-    $default  reduce using rule 65 (sintaktikoak)
+    $default  reduce usando la regla 65 (sintaktikoak)
 
 
-state 132
+estado 132
 
    52 ezaugarrial: t_paren_ireki t_sinbolo_set ezaugarriakfsn t_paren_itxi .
 
-    $default  reduce using rule 52 (ezaugarrial)
+    $default  reduce usando la regla 52 (ezaugarrial)
 
 
-state 133
+estado 133
 
    63 ezaugarrian: t_paren_ireki t_erroa hitzak t_paren_itxi .
 
-    $default  reduce using rule 63 (ezaugarrian)
+    $default  reduce usando la regla 63 (ezaugarrian)
 
 
-state 134
+estado 134
 
    39 sarrera_twol: t_paren_ireki t_stwol hitzak t_paren_itxi .
 
-    $default  reduce using rule 39 (sarrera_twol)
+    $default  reduce usando la regla 39 (sarrera_twol)
 
 
-state 135
+estado 135
 
    36 lotura: t_paren_ireki . t_lhb t_sinbolo t_paren_itxi
    52 ezaugarrial: t_paren_ireki . t_sinbolo_set ezaugarriakfsn t_paren_itxi
@@ -1403,119 +1404,119 @@ state 135
    63 ezaugarrian: t_paren_ireki . t_erroa hitzak t_paren_itxi
    64            | t_paren_ireki . t_sinbolo hitzak t_paren_itxi
 
-    t_sinbolo           shift, and go to state 93
-    t_sinbolo_list      shift, and go to state 94
-    t_sinbolo_list_sym  shift, and go to state 95
-    t_sinbolo_set       shift, and go to state 96
-    t_erroa             shift, and go to state 97
-    t_lhb               shift, and go to state 141
+    t_sinbolo           desplazar e ir al estado 93
+    t_sinbolo_list      desplazar e ir al estado 94
+    t_sinbolo_list_sym  desplazar e ir al estado 95
+    t_sinbolo_set       desplazar e ir al estado 96
+    t_erroa             desplazar e ir al estado 97
+    t_lhb               desplazar e ir al estado 141
 
 
-state 136
+estado 136
 
    33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura . $@4 besteak t_paren_itxi
 
-    $default  reduce using rule 32 ($@4)
+    $default  reduce usando la regla 32 ($@4)
 
-    $@4  go to state 142
+    $@4  ir al estado 142
 
 
-state 137
+estado 137
 
    37 lotura: ezaugarria .
 
-    $default  reduce using rule 37 (lotura)
+    $default  reduce usando la regla 37 (lotura)
 
 
-state 138
+estado 138
 
    38 aldaeraosoa: hitzak t_paren_itxi t_paren_ireki t_atwol hitzak t_paren_itxi .
 
-    $default  reduce using rule 38 (aldaeraosoa)
+    $default  reduce usando la regla 38 (aldaeraosoa)
 
 
-state 139
+estado 139
 
    42 hitzak: hitzak . t_sinbolo
    62 ezaugarriafsn: t_paren_ireki fsezaugarriak hitzak . t_paren_itxi
 
-    t_sinbolo     shift, and go to state 82
-    t_paren_itxi  shift, and go to state 143
+    t_sinbolo     desplazar e ir al estado 82
+    t_paren_itxi  desplazar e ir al estado 143
 
 
-state 140
+estado 140
 
    67 funtzioa: t_paren_ireki t_funtzioak . t_sinbolo t_paren_itxi
 
-    t_sinbolo  shift, and go to state 144
+    t_sinbolo  desplazar e ir al estado 144
 
 
-state 141
+estado 141
 
    36 lotura: t_paren_ireki t_lhb . t_sinbolo t_paren_itxi
 
-    t_sinbolo  shift, and go to state 145
+    t_sinbolo  desplazar e ir al estado 145
 
 
-state 142
+estado 142
 
    33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura $@4 . besteak t_paren_itxi
 
-    t_paren_ireki  shift, and go to state 99
+    t_paren_ireki  desplazar e ir al estado 99
 
-    $default  reduce using rule 47 (besteak)
+    $default  reduce usando la regla 47 (besteak)
 
-    besteak      go to state 146
-    normalak     go to state 101
-    ezaugarria   go to state 102
-    ezaugarrial  go to state 89
-    ezaugarrian  go to state 90
+    besteak      ir al estado 146
+    normalak     ir al estado 101
+    ezaugarria   ir al estado 102
+    ezaugarrial  ir al estado 89
+    ezaugarrian  ir al estado 90
 
 
-state 143
+estado 143
 
    62 ezaugarriafsn: t_paren_ireki fsezaugarriak hitzak t_paren_itxi .
 
-    $default  reduce using rule 62 (ezaugarriafsn)
+    $default  reduce usando la regla 62 (ezaugarriafsn)
 
 
-state 144
+estado 144
 
    67 funtzioa: t_paren_ireki t_funtzioak t_sinbolo . t_paren_itxi
 
-    t_paren_itxi  shift, and go to state 147
+    t_paren_itxi  desplazar e ir al estado 147
 
 
-state 145
+estado 145
 
    36 lotura: t_paren_ireki t_lhb t_sinbolo . t_paren_itxi
 
-    t_paren_itxi  shift, and go to state 148
+    t_paren_itxi  desplazar e ir al estado 148
 
 
-state 146
+estado 146
 
    33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura $@4 besteak . t_paren_itxi
 
-    t_paren_itxi  shift, and go to state 149
+    t_paren_itxi  desplazar e ir al estado 149
 
 
-state 147
+estado 147
 
    67 funtzioa: t_paren_ireki t_funtzioak t_sinbolo t_paren_itxi .
 
-    $default  reduce using rule 67 (funtzioa)
+    $default  reduce usando la regla 67 (funtzioa)
 
 
-state 148
+estado 148
 
    36 lotura: t_paren_ireki t_lhb t_sinbolo t_paren_itxi .
 
-    $default  reduce using rule 36 (lotura)
+    $default  reduce usando la regla 36 (lotura)
 
 
-state 149
+estado 149
 
    33 ezaugarriak: t_paren_ireki t_paren_ireki t_aldaera $@3 aldaeraosoa t_paren_ireki t_sarrera sarrera sarrera_twol lotura $@4 besteak t_paren_itxi .
 
-    $default  reduce using rule 33 (ezaugarriak)
+    $default  reduce usando la regla 33 (ezaugarriak)
