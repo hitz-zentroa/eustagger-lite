@@ -1,12 +1,14 @@
 # MORFOSINTAXIA MAKEFILE (SWI-PROLOG)
 #
 
-#deps: swi-prolog, flex, bison
+#deps: pcre++, swi-prolog, flex, bison
 
 #swi prolog
 INCLUDE_SWIPL = @CONF_INCLUDE_SWIPL@
+#pcre++
+INCLUDE_PCREPLUSPLUS = @CONF_INCLUDE_PCREPLUSPLUS@
 
-INCLUDE = @CPPFLAGS@ $(INCLUDE_SWIPL) -I../morfologia
+INCLUDE = @CPPFLAGS@ $(INCLUDE_SWIPL) $(INCLUDE_PCREPLUSPLUS) -I../morfologia
 
 PROLOG = swi
 FST = foma
