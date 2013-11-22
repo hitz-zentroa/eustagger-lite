@@ -123,6 +123,8 @@ install: FORCE
 	install -m 644 var/morfologia/*.4.4.9 $(INSTALL_DIR)/var/eustagger_lite/morfologia
 	install -m 644 var/morfosintaxia/*.4.4.1 $(INSTALL_DIR)/var/eustagger_lite/morfosintaxia
 	install -m 644 var/morfosintaxia/prolog-swi/*.pl $(INSTALL_DIR)/var/eustagger_lite/morfosintaxia/prolog-swi
+	sed -i '2 c $(INSTALL_DIR)/var/eustagger_lite/mg/tagset.dat' $(INSTALL_DIR)/var/eustagger_lite/mg/eustaggerhmmf.dat
+	sed -i '2 c $(INSTALL_DIR)/var/eustagger_lite/mg/tagset.dat' $(INSTALL_DIR)/var/eustagger_lite/mg/probabilitateak.dat
 	@(echo "")
 	@(echo "WARNING: To run eustagger_lite you must set IXA_PREFIX environment var to $(INSTALL_DIR)")
 
