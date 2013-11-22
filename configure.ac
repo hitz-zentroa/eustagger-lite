@@ -16,7 +16,7 @@ AC_HEADER_STDC
 
 dnl BOOST goiburuak non daude?
 AC_ARG_WITH(boost-include,
-            [  --with-boosts-include=DIR			Path of BOOST headers],
+            [  --with-boost-include=DIR			Path of BOOST headers],
             if test [ x$withval != x ] -a [ -d $withval ]; then
             CONF_INCLUDE_BOOST=$withval
             else
