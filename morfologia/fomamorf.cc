@@ -52,7 +52,7 @@ int fomaMorf::hasieratu_transd(const string fitx_iz, int n_lex) {
 
   string tmpPath = getEnvVar("IXA_PREFIX");
   if (tmpPath.length()>0) {
-    tmpPath = tmpPath + "/var/morfologia/" +fitx_iz;
+    tmpPath = tmpPath + "/var/eustagger_lite/morfologia/" +fitx_iz;
   }
   else
     tmpPath = fitx_iz;

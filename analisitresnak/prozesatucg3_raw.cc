@@ -61,7 +61,7 @@ int prozesatuCG3Raw(int maila, string &oinIzen) {
   if (maila != 0) {
 
     if (tmpVar.length()>0) {
-      tmpVar += "/var/mg/";
+      tmpVar += "/var/eustagger_lite/mg/";
       gramatika = tmpVar + "gramatika4.4.1.cg3.dat";
     }
     else {
@@ -118,7 +118,7 @@ void desHMM(int maila, string &desIrteera,string &oinIzen) {
   string tmpName;
   
   if (tmpVar.length()>0) {
-    tmpVar += "/var/mg/";
+    tmpVar += "/var/eustagger_lite/mg/";
     tmpName = tmpVar + "eustaggerhmmf.dat";
   }
   else {

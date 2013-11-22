@@ -50,7 +50,7 @@ void Morfsar2Raw::kargatuDatuak() {
   string strVarOrokorra(cpVarOrokorra);
   string strVersion= "4.4.1";
 
-  this->prologHasieraQL = strVarOrokorra + "/var/morfosintaxia/prolog/hasiera.ql" + strVersion;
+  this->prologHasieraQL = strVarOrokorra + "/var/eustagger_lite/morfosintaxia/prolog/hasiera.ql" + strVersion;
 }
 
 /* *************************************************************************************** */

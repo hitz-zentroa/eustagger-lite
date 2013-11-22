@@ -48,7 +48,7 @@ int ireki_maiztasun_handikoak() {
     strcpy( fitxIzena , tmp);
   } 
   else return(0);
-  strcat( fitxIzena, "/var/morfologia/maiztasun_handikoak.dat" );
+  strcat( fitxIzena, "/var/eustagger_lite/morfologia/maiztasun_handikoak.dat" );
   if((MHINPUT=fopen(fitxIzena,"r"))==NULL)
     fprintf(stderr,"ezin izan dugu %s ireki", fitxIzena);
   while(!feof(MHINPUT) && hm==2){
