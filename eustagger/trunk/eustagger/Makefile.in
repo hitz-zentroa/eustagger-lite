@@ -104,12 +104,25 @@ clean: FORCE
 install: FORCE
 	install -d -m 755 $(INSTALL_DIR)/bin
 	install -d -m 755 $(INSTALL_DIR)/lib
-	install -d -m 755 $(INSTALL_DIR)/var
 	install -d -m 755 $(INSTALL_DIR)/tmp
 	install -m 755 $(BINPROGRAM) $(INSTALL_DIR)/bin
 	install -m 755 $(BINPROGRAM_MORFOSINTAXIA) $(INSTALL_DIR)/bin
 	install -m 755 $(LIBRARY) $(INSTALL_DIR)/lib
-	cp -r var/* $(INSTALL_DIR)/var
+	install -d -m 755 $(INSTALL_DIR)/var
+	install -d -m 755 $(INSTALL_DIR)/var/eustagger_lite
+	install -d -m 755 $(INSTALL_DIR)/var/eustagger_lite/aurreprozesua
+	install -d -m 755 $(INSTALL_DIR)/var/eustagger_lite/habil
+	install -d -m 755 $(INSTALL_DIR)/var/eustagger_lite/mg
+	install -d -m 755 $(INSTALL_DIR)/var/eustagger_lite/morfologia
+	install -d -m 755 $(INSTALL_DIR)/var/eustagger_lite/morfosintaxia
+	install -d -m 755 $(INSTALL_DIR)/var/eustagger_lite/morfosintaxia/prolog-swi
+	install -m 644 var/aurreprozesua/aurrean_lex.auto $(INSTALL_DIR)/var/eustagger_lite/aurreprozesua
+	install -m 644 var/habil/HAT_seguruak.dat $(INSTALL_DIR)/var/eustagger_lite/habil
+	install -m 644 var/mg/*.dat $(INSTALL_DIR)/var/eustagger_lite/mg
+	install -m 644 var/morfologia/*.dat $(INSTALL_DIR)/var/eustagger_lite/morfologia
+	install -m 644 var/morfologia/*.4.4.9 $(INSTALL_DIR)/var/eustagger_lite/morfologia
+	install -m 644 var/morfosintaxia/*.4.4.1 $(INSTALL_DIR)/var/eustagger_lite/morfosintaxia
+	install -m 644 var/morfosintaxia/prolog-swi/*.pl $(INSTALL_DIR)/var/eustagger_lite/morfosintaxia/prolog-swi
 	@(echo "")
 	@(echo "WARNING: To run eustagger_lite you must set IXA_PREFIX environment var to $(INSTALL_DIR)")
 

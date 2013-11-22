@@ -67,7 +67,7 @@ void euParole::loadMap() {
   string tmpVar = getEnvVar("IXA_PREFIX");
   string tmpName;
   if (tmpVar.length()>0) {
-    tmpVar += "/var/mg/";
+    tmpVar += "/var/eustagger_lite/mg/";
     tmpName = tmpVar + "tagmap.dat";
   }
   else {

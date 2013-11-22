@@ -51,7 +51,7 @@ int automata::init(char *fitxategi)       // hasieraketa funtzioa
 char *tmp;
 string izen_luze, eslaxvar;
 
- eslaxvar = "/var/aurreprozesua/"; 
+ eslaxvar = "/var/eustagger_lite/aurreprozesua/"; 
  if((tmp = (char *) getenv("IXA_PREFIX"))!=NULL)  {
    izen_luze = tmp;
    izen_luze = izen_luze + eslaxvar;

@@ -70,7 +70,7 @@ map <string, ZerMotaType> Prolog2Raw::kargatuZerMota() {
   string strVarOrokorra(cpVarOrokorra);
   string strVersion = ".4.4.1";
 
-  string zerMotaFitx = strVarOrokorra + "/var/morfosintaxia/" + ZER_MOTA_FITX + strVersion;
+  string zerMotaFitx = strVarOrokorra + "/var/eustagger_lite/morfosintaxia/" + ZER_MOTA_FITX + strVersion;
 
   ifstream in(zerMotaFitx.c_str());
   if (!in) {

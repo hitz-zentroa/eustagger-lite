@@ -117,7 +117,7 @@ anaBihurtzailea::anaBihurtzailea() {
   tmp[0] = '\0';
   if ((tmp = getenv("IXA_PREFIX")) != NULL) { 
     path = tmp;
-    path = path + "/var/morfologia";
+    path = path + "/var/eustagger_lite/morfologia";
   }
   else
     path = ".";
