@@ -109,7 +109,7 @@ map <string, vector<string> > Prolog2Raw::kargatuItzulpenT() {
   string strVarOrokorra(cpVarOrokorra);
   string strVersion = ".4.4.1";
   
-  string itzulpenTaulaFitx = strVarOrokorra + "/var/morfosintaxia/" + ITZULPEN_TAULA_FITX + strVersion;
+  string itzulpenTaulaFitx = strVarOrokorra + "/var/eustagger_lite/morfosintaxia/" + ITZULPEN_TAULA_FITX + strVersion;
      
 
   ifstream in(itzulpenTaulaFitx.c_str());
