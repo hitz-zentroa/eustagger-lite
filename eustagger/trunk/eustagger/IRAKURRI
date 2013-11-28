@@ -1,9 +1,22 @@
-EUSTAGGER INSTALATZEKO
-======================
+EUSTAGGER LITE INSTALATZEKO
+===========================
 
-Dependentziak instalatu:
+Eustagger Lite linux sistema ezberdinetan probatu dugu, batzuk zaharragoak 
+(RHEL/Centos 6), beste batzuk berriagoak (Ubuntu 13.10). Jarraian dauden
+azalpenak Ubuntu 12.04-13.10 eta Fedora 18-20 bertsioekin funtzionatu beharko
+lukete.
 
-Horietako batzuk linux banaketaren pakete ofizialak jarriz instalatu ahal izango dira:
+Eustagger Lite programak dependentzia hauek ditu:
+
+pcre++ (0.9.5 bertsioarekin probatuta)
+vislcg 3 (20130826 bertsioarekin probatuta)
+SWI Prolog (5.10.5 eta 6.0 bertsioekin probatuta)
+Foma (0.9.17 bertsioarekin probatuta)
+Freeling (3.1 bertsioarekin probatuta)
+Boost (1.53 bertsioarekin probatuta)
+
+Aldi berean programa/liburutegi horiek beraien dependentziak dituzte. Batzuk 
+linux banaketaren pakete ofizialak jarriz instalatu ahal izango dira:
 
 Ubuntu:
 =======
@@ -28,11 +41,14 @@ Fedoran pcre++ eskuz instalatu behar da. Horretarako
 
 	$ tar -zxvf pcre++-0.9.5.tar.gz
 	$ cd pcre++-0.9.5
-	$ ./configure
+	$ ./configure (64 bit-eko sistema batzuetan --with-pcre-lib=/usr/lib64 erabili)
 	$ make
 	$ make install
 
 (lehenetsitako instalazio prefix-a /usr/local da, aldatzeko ./configure --prefix=path)
+
+
+ESKUZ INSTALATU BEHARREKOAK:
 
 foma:
 =====
@@ -88,6 +104,22 @@ Deskonprimitu, konpilatu eta instalatu:
 	$ ./configure --disable-warnings
 	$ make
 	$ make install
+
+* Linux banaketarena ez den Boost instalazio jakin bat erabili nahi izanez gero,
+configure egikaritu baino lehen hau egin:
+
+$ export LDFLAGS="-L/nire_boost_instalazioa/lib -lboost_system"
+$ export CPPFLAGS="-I/nire_boost_instalazioa/include"
+
+
+* Freeling 3.1 konpilatzean honako errore hau eman dezake:
+
+../../src/include/freeling/morfo/foma_FSM.h:1: error: stray '\357' in program
+../../src/include/freeling/morfo/foma_FSM.h:1: error: stray '\273' in program
+../../src/include/freeling/morfo/foma_FSM.h:1: error: stray '\277' in program
+
+Hori ekiditzeko src/include/freeling/morfo/foma_FSM.h fitxategia editatu
+eta hasierako komentario lerroak ezabatu.
 
 
 eustagger: 
