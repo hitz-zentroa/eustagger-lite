@@ -52,7 +52,7 @@ int irakur_automata(char *fp,automata *aut,int erre,int zut)
    char *tmp,izen_luze[200];
    if((tmp= (char *) getenv("IXA_PREFIX"))!=NULL) {
      strcpy(izen_luze,tmp);
-     strcat(izen_luze,"/var/morfologia/");
+     strcat(izen_luze,"/var/eustagger_lite/morfologia/");
    }
    else strcpy(izen_luze,"");
    strcat(izen_luze,fp);
