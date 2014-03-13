@@ -36,6 +36,7 @@ using namespace std;
  string analisiMota;   /* A, T[01], G */
  string etiketaString; /* Aurreprozesuko etiketa */ 
  bool   etiketaDago = false;
+ int    trickCount = 1;
 
  extern int edbl_bertsioa;
  %}
@@ -79,9 +80,39 @@ kohorteak    : kohorteak kohortea
  * *********************************************************** */
 
 kohortea     : forma_lerro t_paren_ireki forma analisiak t_paren_itxi
+               {
+		stringstream formaStringC;
+		formaStringC << formaString << trickCount;
+		yyparseAna2Morfsar->setForma(formaStringC.str(),"NOTNULL");
+		stringstream tmpIdLerro;
+		tmpIdLerro << analisiMota[0] << formaLerro;
+		yyparseAna2Morfsar->add2Gorputza(ID, tmpIdLerro.str());
+		yyparseAna2Morfsar->add2Gorputza(FORMA, formaString);
+		yyparseAna2Morfsar->add2Gorputza(EDBL_SARRERA, "NOTNULL");
+		yyparseAna2Morfsar->add2Gorputza(HOMOGRAFOA,"0");
+		yyparseAna2Morfsar->add2Gorputza(TWOL,"null");
+		yyparseAna2Morfsar->add2Gorputza("kat","NULL");
+		yyparseAna2Morfsar->analisiaBukatu();
+               }
              | forma_lerro t_paren_ireki forma t_paren_itxi
+               {
+		stringstream formaStringC;
+		formaStringC << formaString << trickCount;
+		yyparseAna2Morfsar->setForma(formaStringC.str(),"NOTNULL");
+		stringstream tmpIdLerro;
+		tmpIdLerro << 'G' << formaLerro;
+		yyparseAna2Morfsar->add2Gorputza(ID, tmpIdLerro.str());
+		yyparseAna2Morfsar->add2Gorputza(FORMA, formaString);
+		yyparseAna2Morfsar->add2Gorputza(EDBL_SARRERA, "NOTNULL");
+		yyparseAna2Morfsar->add2Gorputza(HOMOGRAFOA,"0");
+		yyparseAna2Morfsar->add2Gorputza(TWOL,"null");
+		yyparseAna2Morfsar->add2Gorputza("kat","NULL");
+		yyparseAna2Morfsar->analisiaBukatu();
+               }
              | forma_lerro {
-                yyparseAna2Morfsar->setForma(formaString,"NULL");
+                stringstream formaStringC;
+                formaStringC << formaString << trickCount;
+                yyparseAna2Morfsar->setForma(formaStringC.str(),"NULL");
 		yyparseAna2Morfsar->add2Gorputza(ID, formaLerro);
 		yyparseAna2Morfsar->add2Gorputza(FORMA, "NULL");
 		yyparseAna2Morfsar->add2Gorputza(EDBL_SARRERA, "NULL");
@@ -109,7 +140,7 @@ forma_lerro : t_forma_lerro
     cpForma = strdup( formatmp );
     formaString = cpForma;
     etiketaString = "";
-
+    trickCount++;
     strcpy( formatmp, cpLer+strlen(cpForma)+2 ); /* pasatu >/ ere */
     if ( formatmp[0] == '<' ) {
       etiketaDago = true;
@@ -181,7 +212,9 @@ anal         : t_paren_ireki t_anal t_sinbolo t_paren_itxi
 lem_morf     : {
                 lehenMorfema = true;
 		ezaugOrd=0;
-                yyparseAna2Morfsar->setForma(formaString,"NOTNULL");
+                stringstream formaStringC;
+                formaStringC << formaString << trickCount;
+		yyparseAna2Morfsar->setForma(formaStringC.str(),"NOTNULL");
 		stringstream tmpIdLerro;
 		tmpIdLerro << analisiMota[0] << formaLerro;
 		yyparseAna2Morfsar->add2Gorputza(ID, tmpIdLerro.str());
@@ -189,7 +222,7 @@ lem_morf     : {
                }
                lem_morfak
                {
-		 yyparseAna2Morfsar->analisiaBukatu();
+ 		yyparseAna2Morfsar->analisiaBukatu();
 	       }
                ;
 

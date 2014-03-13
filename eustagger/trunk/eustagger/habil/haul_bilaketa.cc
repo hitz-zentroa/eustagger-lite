@@ -65,8 +65,7 @@ main(int argc, char *argv[])
     exit(EXIT_FAILURE);
   }
 
-  // tmp += "/var/habil/";
-  tmp = "/sc01a4/users/jipecran/svn_lana/Eustagger/var/habil/";
+  tmp += "/var/eustagger_lite/habil/";
   tmp += SEG_FITX;
 
   if ((jat_fitx = fopen(tmp.c_str(),"r")) == NULL)

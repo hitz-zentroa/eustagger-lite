@@ -76,6 +76,7 @@ class Prolog2Raw {
   std::string lemaOsatua;
   std::string aldaeraOsatua;
   std::string fsLista;
+  std::string forma;
   bool cg3form;
 
 #ifdef _USE_SWI_
