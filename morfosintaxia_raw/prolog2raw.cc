@@ -320,10 +320,12 @@ string Prolog2Raw::sortuF_BalAtom (string ezaugIzen, PlTerm plBalio) throw(char*
       this->aldaeraOsatua = balio; 
       return "";
     }
-    else balio = "\"" + balio + "\"";
+    else if (ezaugIzen != FORMA)
+      balio = "\"" + balio + "\"";
     if (ezaugIzen != SARRERA && ezaugIzen != TWOL && ezaugIzen != EDBL_SARRERA && ezaugIzen != FORMA && ezaugIzen != ADOIN)
       return balio;
     else
+      if (ezaugIzen == FORMA) this->forma = balio;
       return "";
   case PLUSMINUS_ZM:
     transform(ezaugIzen.begin(), ezaugIzen.end(), ezaugIzen.begin(),  static_cast<int (*)(int)> (std::toupper));
@@ -443,13 +445,14 @@ void Prolog2Raw::sortuAnalisiak(PlTerm plstruct) {
   Pcre ni_t(sni_t.str(),"g");
   sni_h<< NI_H;
   Pcre ni_h(sni_h.str(),"g");
+  string hasierakoaCG3;
 
   while(tail.next(e)) {
     bool lehena = true;
     bool analisirik = false;
     PlTail tail2(e);
     PlTerm e2;
-    string etiketa, forma;
+    string etiketa, formaTmp;
     char anMota = hasierakoLerroa[0];
     
     while(tail2.next(e2)) {
@@ -465,7 +468,7 @@ void Prolog2Raw::sortuAnalisiak(PlTerm plstruct) {
 	}
 	if (lehena) {
 	  if (cg3form) {
-	    string hasierakoaCG3 = hasierakoLerroa;
+	    hasierakoaCG3 = hasierakoLerroa;
 	    while (hasierakoaCG3.find("/<") != string::npos) {
 	      hasierakoaCG3.replace(hasierakoaCG3.find("/<"),2,"\"<");
 	    }
@@ -475,7 +478,8 @@ void Prolog2Raw::sortuAnalisiak(PlTerm plstruct) {
 	    
 	    if (hasierakoaCG3.find(">\"") != string::npos) {
 	      string tmpZ = hasierakoaCG3.substr(hasierakoaCG3.find(">\""),string::npos);
-	      forma = hasierakoaCG3.substr(2,hasierakoaCG3.length()-tmpZ.length()-2);
+	      formaTmp = hasierakoaCG3.substr(2,hasierakoaCG3.length()-tmpZ.length()-2);
+	      this->forma = formaTmp;
 	      if (forma == "." || forma == ";" || forma == ":" || forma == "!" || forma == "?") {
 		string formaDolar = "$" + forma;
 		hasierakoaCG3.replace(hasierakoaCG3.find(forma),1,formaDolar);
@@ -494,7 +498,7 @@ void Prolog2Raw::sortuAnalisiak(PlTerm plstruct) {
 	  hasierakoLerroa = "";
 	  lehena = false;
 	}
-	if (this->lemaOsatua != "\"NULL\"") { // ANALISIRIK GABEKO TOKENETAN, puntuazio-ikurrak, etab.
+	if (this->lemaOsatua != "\"NULL\"" && this->lemaOsatua != "\"NOTNULL\"") { // ANALISIRIK GABEKO TOKENETAN, puntuazio-ikurrak, etab.
 	  if (this->lemaOsatua.length() == 2) { // salbuespena, bait, ba
 	    lemaOsatua = "\"" + forma + "\"";
 	    if (cg3form) 
@@ -544,9 +548,9 @@ void Prolog2Raw::sortuAnalisiak(PlTerm plstruct) {
 	      morfDoc << " " << etiketa;
 	      lehena = false;
 	    }
+	    analisirik = true;
 	    if (fsLista.length()>0) {
 	      morfDoc << " " << fsLista << endl;
-	      analisirik = true;
 	    }
 	    else
 	      morfDoc << endl;
@@ -583,23 +587,54 @@ void Prolog2Raw::sortuAnalisiak(PlTerm plstruct) {
 	         morfDoc << this->aldaeraOsatua << " ";
 	    }
 	    morfDoc << " " << fs ;
+	    analisirik = true;
 	    if (fsLista.length()>0) {
 	      morfDoc << " " << fsLista << ")" << endl; 
-	      analisirik = true;
 	    }
 	    else
 	      morfDoc << ")" << endl; 
 	  }
 	  this->fsLista = "";
 	}
-	else if (cg3form) { 
-	  morfDoc << "\t" << " " << etiketa << endl;
-	  analisirik = true;
+	else {
+	  if (this->lemaOsatua == "\"NULL\"" && this->lemaOsatua != "\"NOTNULL\"") { 
+	    if (cg3form)
+	      morfDoc << "\t" << " " << etiketa << endl;
+	    analisirik = true;
+	  }
 	}
       } catch (char* msg) {
 	cerr << msg << endl;
       } catch (...) {}
       
+    }
+    if (this->lemaOsatua == "\"NOTNULL\"" && !analisirik) {
+      // Hona dator morfosintaxiak analisi guztiak baztertu baditu ala ez badago hasieratik analisirik
+      if (cg3form) 
+	aldaeraOsatua = "\"" + forma + "\"";
+      else
+	aldaeraOsatua = "/" + forma + "/";
+      this->lemaOsatua = "";
+      if (cg3form) {
+	morfDoc << "\t\"\"  " << aldaeraOsatua << " EZEZAG IZE ARR" ;
+	if (etiketa.length()>0)
+	  morfDoc << " " << etiketa;
+	morfDoc << endl;
+	morfDoc << "\t\"\"  " << aldaeraOsatua << " EZEZAG IZE ARR ABS MG" ;
+	if (etiketa.length()>0)
+	  morfDoc << " " << etiketa;
+	morfDoc << " @OBJ @PRED @SUBJ" << endl;
+      }
+      else {
+	morfDoc << "\t(\"\"  " << aldaeraOsatua << " IZE ARR" ;
+	if (etiketa.length()>0)
+	  morfDoc << " " << etiketa ;
+	morfDoc << ")" << endl;
+	morfDoc << "\t(\"\"  " << aldaeraOsatua << " IZE ARR ABS MG" ;
+	if (etiketa.length()>0)
+	  morfDoc << " " << etiketa ;
+	morfDoc << " @OBJ @PRED @SUBJ)" << endl;
+      }
     }
     this->lemaOsatua = "";
     this->aldaeraOsatua = "";

@@ -100,10 +100,8 @@ int main(int argc, char *argv[])
  int deslokala = 1;
  int parentizatua = 1;
  bool haul_seguruak = false;
- int cg3form = OUT_LEM; // Defektuz hau beharko luke: OUT_LEM;
  char c;
  string lex_izena; 
- int IRT = IN_MORF;
 
  while ((c = getopt(argc, argv, "sShHM:m:")) != EOF) {
    switch (c) {
@@ -132,8 +130,7 @@ int main(int argc, char *argv[])
      string fitxategiIzena = argv[i];
      string segIrteera;
      segmentazioaSortuRaw(fitxategiIzena,segIrteera);
-     morfosintaxiaSortuRaw(fitxategiIzena,segIrteera,haul_seguruak,OUT_MG); // Honek sortzen du .morf/.hat?
-     // Hemen faltako litzateke CG3 formatua sortzea beharrezkoa balitz
+     morfosintaxiaSortuRaw(fitxategiIzena,segIrteera,haul_seguruak,OUT_MG); 
      prozesatuCG3Raw(maila,fitxategiIzena) ;
 
    }

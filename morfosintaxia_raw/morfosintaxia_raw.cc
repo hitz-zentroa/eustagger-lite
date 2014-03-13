@@ -58,7 +58,7 @@ using std::stringstream;
 int edbl_bertsioa = 4;
 // MorfsarFormatu morfSar;
 
-main(int argc, char **argv){
+int main(int argc, char **argv){
 
 #ifdef _USE_SWI_
   PlEngine e(argv[0]);
@@ -103,7 +103,7 @@ main(int argc, char **argv){
       break;
     }    
   }  
-  if (!errflg && !aflg || hflg) {
+  if ((!errflg && !aflg) || hflg) {
      stringstream morfosintaxiaVersion;
      morfosintaxiaVersion << "morfosintaxia_raw honako aukerekin konpilatu da:" << endl;
 #ifdef _USE_FOMA_
