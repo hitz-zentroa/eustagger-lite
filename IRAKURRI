@@ -21,29 +21,32 @@ linux banaketaren pakete ofizialak jarriz instalatu ahal izango dira:
 Ubuntu:
 =======
 
-	$ apt-get install subversion make cmake cpp libicu48 libicu-dev\
-	  autoconf bison flex swi-prolog zlib1g zlib1g-dev libpcre3 libpcre3-dev\
-	  libpcre++0 libpcre++-dev libboost-all-dev
+        $ apt-get install subversion make cmake cpp libicu48 libicu-dev\
+          autoconf bison flex swi-prolog zlib1g zlib1g-dev libpcre3 libpcre3-dev\
+          libpcre++0 libpcre++-dev libboost-all-dev
 
 Fedora:
 =======
 
-	$ yum install subversion make cmake gcc-c++ libicu libicu-devel\
-	  autoconf bison flex pl pl-devel zlib zlib-devel pcre pcre-devel\
-	  boost boost-devel
+        $ yum install subversion make cmake gcc-c++ libicu libicu-devel\
+          autoconf bison flex pl pl-devel zlib zlib-devel pcre pcre-devel\
+          boost boost-devel
 
 
 Fedoran pcre++ eskuz instalatu behar da. Horretarako 
 
-	$ wget http://www.daemon.de/idisk/Apps/pcre++/pcre++-0.9.5.tar.gz
+        $ wget http://www.daemon.de/idisk/Apps/pcre++/pcre++-0.9.5.tar.gz
+        edo bestela gure webgunetik:
+        $ wget http://ixa2.si.ehu.es/eustagger/pcre++-0.9.5.tar.gz
 
-	Deskonprimitu eta nahi duzun prefix-ean instalatu:
 
-	$ tar -zxvf pcre++-0.9.5.tar.gz
-	$ cd pcre++-0.9.5
-	$ ./configure (64 bit-eko sistema batzuetan --with-pcre-lib=/usr/lib64 erabili)
-	$ make
-	$ make install
+        Deskonprimitu eta nahi duzun prefix-ean instalatu:
+
+        $ tar -zxvf pcre++-0.9.5.tar.gz
+        $ cd pcre++-0.9.5
+        $ ./configure (64 bit-eko sistema batzuetan --with-pcre-lib=/usr/lib64 erabili)
+        $ make
+        $ make install
 
 (lehenetsitako instalazio prefix-a /usr/local da, aldatzeko ./configure --prefix=path)
 
@@ -55,14 +58,17 @@ foma:
 
 Deskargatu:
 
-	$ wget https://foma.googlecode.com/files/foma-0.9.17.tar.gz
+        $ wget https://foma.googlecode.com/files/foma-0.9.17.tar.gz
+        edo bestela gure webgunetik:
+        $ wget http://ixa2.si.ehu.es/eustagger/foma-0.9.17.tar.gz
+
 
 Deskonprimitu, konpilatu eta instalatu:
 
-	$ tar -zxvf foma-0.9.17.tar.gz
-	$ cd foma-0.9.17
-	$ make
-	$ make install
+        $ tar -zxvf foma-0.9.17.tar.gz
+        $ cd foma-0.9.17
+        $ make
+        $ make install
 
 (lehenetsitako instalazio prefix-a /usr/local da, aldatzeko editatu Makefile fitxategia)
 
@@ -71,19 +77,21 @@ vislcg3:
 
 Deskargatu:
 
-	$ wget http://beta.visl.sdu.dk/download/vislcg3/vislcg3-20130826.tar.gz
+        $ wget http://beta.visl.sdu.dk/download/vislcg3/vislcg3-20130826.tar.gz
+        edo bestela gure webgunetik:
+        $ wget http://ixa2.si.ehu.es/eustagger/vislcg3-20130826.tar.gz
 
 Deskonprimitu, konpilatu eta instalatu (cmake erabiltzen da):
 
-	$ tar -zxvf vislcg3-20130826.tar.gz
-	$ cd vislcg3-20130826
-	$ ./cmake.sh
-	$ make -j3
-	$ make install
+        $ tar -zxvf vislcg3-20130826.tar.gz
+        $ cd vislcg3-20130826
+        $ ./cmake.sh
+        $ make -j3
+        $ make install
 
 *.h eta *.hpp fitxategiak eskuz kopiatu behar dira erabakitako prefix-era:
 
-	$ cp src/*.h src/*.hpp /gure_prefix_include (adib. /usr/local/include)
+        $ cp src/*.h src/*.hpp /gure_prefix_include (adib. /usr/local/include)
 
 (prefix-a aldatzeko cmake.sh-ri  -DCMAKE_INSTALL_PREFIX=/path parametroa pasatzea dago)
 (boost liburutegia topatuko ez balu export BOOST_ROOT=/boost_kokapena)
@@ -94,16 +102,19 @@ Freeling 3.1
 Programa Freeling 3.1rekin probatu dugu (3.0 bertsioak ez du balio).
 
 http://devel.cpl.upc.edu/freeling/downloads/32 helbidetik deskargatu freeling-3.1.tar.gz
-paketea.
+paketea. Edo bestela gure webgunetik deskargatu:
+
+         $ wget http://ixa2.si.ehu.es/eustagger/freeling-3.1.tar.gz
+
 
 Deskonprimitu, konpilatu eta instalatu:
 
-	$ tar -zxvf freeling-3.1.tar.gz
-	$ cd freeling-3.1
-	( Fedora/RedHat sistemetan hau egin behar da: $ export LDFLAGS=-lboost_system )
-	$ ./configure --disable-warnings
-	$ make
-	$ make install
+        $ tar -zxvf freeling-3.1.tar.gz
+        $ cd freeling-3.1
+        ( Fedora/RedHat sistemetan hau egin behar da: $ export LDFLAGS=-lboost_system )
+        $ ./configure --disable-warnings
+        $ make
+        $ make install
 
 * Linux banaketarena ez den Boost instalazio jakin bat erabili nahi izanez gero,
 configure egikaritu baino lehen hau egin:
@@ -127,13 +138,15 @@ eustagger:
 
 Eskuratu eustagger:
 
-	$ svn co https://siuc05.si.ehu.es/svn/eustagger/trunk/eustagger
+        $ svn co https://siuc05.si.ehu.es/svn/eustagger/trunk/eustagger
+        edo bestela:
+        $ wget http://ixa2.si.ehu.es/eustagger/eustagger_latest.tar.bz2
 
 Konpilatu eta instalatzeko (goiko dependentziak ):
 
-	$ cd eustagger
-	$ autoconf
-	$ ./configure
+        $ cd eustagger
+        $ autoconf
+        $ ./configure
 
 	Sistema eragileko swipl erabiltzen bada seguraski swipl-ren fitxategiak
 	non dauden adierazi behar zaio 	"--with-swipl-include="  eta "--with-lib-include="
