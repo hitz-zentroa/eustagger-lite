@@ -22,28 +22,30 @@ citadas distribuciones de GNU/Linux:
 Ubuntu:
 =======
 
-	$ apt-get install subversion make cmake cpp libicu48 libicu-dev\
-	  autoconf bison flex swi-prolog zlib1g zlib1g-dev libpcre3 libpcre3-dev\
-	  libpcre++0 libpcre++-dev libboost-all-dev
+        $ apt-get install subversion make cmake cpp libicu48 libicu-dev\
+          autoconf bison flex swi-prolog zlib1g zlib1g-dev libpcre3 libpcre3-dev\
+          libpcre++0 libpcre++-dev libboost-all-dev
 
 Fedora:
 =======
 
-	$ yum install subversion make cmake gcc-c++ libicu libicu-devel\
-	  autoconf bison flex pl pl-devel zlib zlib-devel pcre pcre-devel\
-	  boost boost-devel
+        $ yum install subversion make cmake gcc-c++ libicu libicu-devel\
+          autoconf bison flex pl pl-devel zlib zlib-devel pcre pcre-devel\
+          boost boost-devel
 
 En Fedora es necesario instalar pcre++ a mano. Para ello:
 
-	$ wget http://www.daemon.de/idisk/Apps/pcre++/pcre++-0.9.5.tar.gz
+        $ wget http://www.daemon.de/idisk/Apps/pcre++/pcre++-0.9.5.tar.gz
+        o descargar de nuestro servidor:
+        $ wget http://ixa2.si.ehu.es/eustagger/pcre++-0.9.5.tar.gz
 
-	Descomprimir e instalar en el prefix elegido:
+        Descomprimir e instalar en el prefix elegido:
 
-	$ tar -zxvf pcre++-0.9.5.tar.gz
-	$ cd pcre++-0.9.5
-	$ ./configure (en algunos sistemas 64bit usar --with-pcre-lib=/usr/lib64)
-	$ make
-	$ make install
+        $ tar -zxvf pcre++-0.9.5.tar.gz
+        $ cd pcre++-0.9.5
+        $ ./configure (en algunos sistemas de 64 bit es necesario --with-pcre-lib=/usr/lib64)
+        $ make
+        $ make install
 
 (el prefix por defecto es /usr/local, para cambiarlo utilizar la opción --prefix
 de la orden configure)
@@ -56,14 +58,16 @@ foma:
 
 Descargar:
 
-	$ wget https://foma.googlecode.com/files/foma-0.9.17.tar.gz
+        $ wget https://foma.googlecode.com/files/foma-0.9.17.tar.gz
+        o descargar de nuestro servidor:
+        $ wget http://ixa2.si.ehu.es/eustagger/foma-0.9.17.tar.gz
 
 Descomprimir, compilar e instalar:
 
-	$ tar -zxvf foma-0.9.17.tar.gz
-	$ cd foma-0.9.17
-	$ make
-	$ make install
+        $ tar -zxvf foma-0.9.17.tar.gz
+        $ cd foma-0.9.17
+        $ make
+        $ make install
 
 (el prefix por defecto es /usr/local, para cambiarlo modificar el fichero Makefile)
 
@@ -72,20 +76,22 @@ vislcg3:
 
 Descargar:
 
-	$ wget http://beta.visl.sdu.dk/download/vislcg3/vislcg3-20130826.tar.gz
+        $ wget http://beta.visl.sdu.dk/download/vislcg3/vislcg3-20130826.tar.gz
+        o descargar de nuestro servidor:
+        $ wget http://ixa2.si.ehu.es/eustagger/vislcg3-20130826.tar.gz
 
 Descomprimir, compilar e instalar (se usa cmake):
 
-	$ tar -zxvf vislcg3-20130826.tar.gz
-	$ cd vislcg3-20130826
-	$ ./cmake.sh
-	$ make -j3
-	$ make install
+        $ tar -zxvf vislcg3-20130826.tar.gz
+        $ cd vislcg3-20130826
+        $ ./cmake.sh
+        $ make -j3
+        $ make install
 
 Copiar manualmente los ficheros *.h y *.hpp a nuestro prefix de instalación (por
 ejemplo /usr/local/include):
 
-	$ cp src/*.h src/*.hpp /usr/local/include
+        $ cp src/*.h src/*.hpp /usr/local/include
 
 (si se desea cambiar el prefix es necesario pasar la opción 
 -DCMAKE_INSTALL_PREFIX=/path a cmake.sh)
@@ -102,14 +108,19 @@ Descargar el paquete de:
 
 http://devel.cpl.upc.edu/freeling/downloads/32
 
+O descargar de nuestro servidor:
+
+         $ wget http://ixa2.si.ehu.es/eustagger/freeling-3.1.tar.gz
+
+
 Descomprimir, compilar e instalar:
 
-	$ tar -zxvf freeling-3.1.tar.gz
-	$ cd freeling-3.1
-	( En fedora/RH: $ export LDFLAGS=-lboost_system )
-	$ ./configure --disable-warnings
-	$ make
-	$ make install
+        $ tar -zxvf freeling-3.1.tar.gz
+        $ cd freeling-3.1
+        ( En fedora/RH: $ export LDFLAGS=-lboost_system )
+        $ ./configure --disable-warnings
+        $ make
+        $ make install
 
 * Importante: --disable-warnings para la orden configure
 
@@ -135,12 +146,14 @@ eustagger:
 
 Descargar eustagger (se trata de lo que hay en este directorio):
 
-	$ svn co https://siuc05.si.ehu.es/svn/eustagger/trunk/eustagger
+        $ svn co https://siuc05.si.ehu.es/svn/eustagger/trunk/eustagger
+        o directamente:
+        $ wget http://ixa2.si.ehu.es/eustagger/eustagger_latest.tar.bz2
 
 Para compilar e instalar:
 
-	$ cd eustagger
-	$ autoconf
+        $ cd eustagger
+        $ autoconf
 	$ ./configure
 
 	Si se usa el swipl del sistema operativo seguramente habrá que
