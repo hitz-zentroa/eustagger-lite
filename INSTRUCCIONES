@@ -36,14 +36,12 @@ Fedora:
 En Fedora es necesario instalar pcre++ a mano. Para ello:
 
 	$ wget http://www.daemon.de/idisk/Apps/pcre++/pcre++-0.9.5.tar.gz
-	o descargar de nuestro servidor:
-	$ wget http://ixa2.si.ehu.es/eustagger/pcre++-0.9.5.tar.gz
 
 	Descomprimir e instalar en el prefix elegido:
 
 	$ tar -zxvf pcre++-0.9.5.tar.gz
 	$ cd pcre++-0.9.5
-	$ ./configure (en algunos sistemas de 64 bit es necesario --with-pcre-lib=/usr/lib64)
+	$ ./configure (en algunos sistemas 64bit usar --with-pcre-lib=/usr/lib64)
 	$ make
 	$ make install
 
@@ -59,8 +57,6 @@ foma:
 Descargar:
 
 	$ wget https://foma.googlecode.com/files/foma-0.9.17.tar.gz
-	o descargar de nuestro servidor:
-	$ wget http://ixa2.si.ehu.es/eustagger/foma-0.9.17.tar.gz
 
 Descomprimir, compilar e instalar:
 
@@ -77,8 +73,6 @@ vislcg3:
 Descargar:
 
 	$ wget http://beta.visl.sdu.dk/download/vislcg3/vislcg3-20130826.tar.gz
-	o descargar de nuestro servidor:
-	$ wget http://ixa2.si.ehu.es/eustagger/vislcg3-20130826.tar.gz
 
 Descomprimir, compilar e instalar (se usa cmake):
 
@@ -107,11 +101,6 @@ Hemos usado la versión 3.1 de Freeling (la 3.0 no vale).
 Descargar el paquete de:
 
 http://devel.cpl.upc.edu/freeling/downloads/32
-
-O descargar de nuestro servidor:
-
-	 $ wget http://ixa2.si.ehu.es/eustagger/freeling-3.1.tar.gz
-
 
 Descomprimir, compilar e instalar:
 
@@ -147,14 +136,19 @@ eustagger:
 Descargar eustagger (se trata de lo que hay en este directorio):
 
 	$ svn co https://siuc05.si.ehu.es/svn/eustagger/trunk/eustagger
-	o directamente:
-	$ wget http://ixa2.si.ehu.es/eustagger/eustagger_latest.tar.bz2
 
 Para compilar e instalar:
 
 	$ cd eustagger
 	$ autoconf
-	$ ./configure (en Ubuntu añadir: --with-swipl-include=/usr/lib/swi-prolog/include)
+	$ ./configure
+
+	Si se usa el swipl del sistema operativo seguramente habrá que
+	indicar a configure donde están los ficheros con las opciones 
+	"--with-swipl-include=" y "--with-lib-include=". Por ejemplo en Ubuntu
+	hay que añadir "--with-swipl-include=/usr/lib/swi-prolog/include"...
+	
+ (en Ubuntu añadir: --with-swipl-include=/usr/lib/swi-prolog/include)
 	$ make
 	$ make install
 

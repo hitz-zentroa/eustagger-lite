@@ -36,9 +36,6 @@ Fedora:
 Fedoran pcre++ eskuz instalatu behar da. Horretarako 
 
 	$ wget http://www.daemon.de/idisk/Apps/pcre++/pcre++-0.9.5.tar.gz
-	edo bestela gure webgunetik:
-	$ wget http://ixa2.si.ehu.es/eustagger/pcre++-0.9.5.tar.gz
-
 
 	Deskonprimitu eta nahi duzun prefix-ean instalatu:
 
@@ -59,9 +56,6 @@ foma:
 Deskargatu:
 
 	$ wget https://foma.googlecode.com/files/foma-0.9.17.tar.gz
-	edo bestela gure webgunetik:
-	$ wget http://ixa2.si.ehu.es/eustagger/foma-0.9.17.tar.gz
-
 
 Deskonprimitu, konpilatu eta instalatu:
 
@@ -78,8 +72,6 @@ vislcg3:
 Deskargatu:
 
 	$ wget http://beta.visl.sdu.dk/download/vislcg3/vislcg3-20130826.tar.gz
-	edo bestela gure webgunetik:
-	$ wget http://ixa2.si.ehu.es/eustagger/vislcg3-20130826.tar.gz
 
 Deskonprimitu, konpilatu eta instalatu (cmake erabiltzen da):
 
@@ -102,10 +94,7 @@ Freeling 3.1
 Programa Freeling 3.1rekin probatu dugu (3.0 bertsioak ez du balio).
 
 http://devel.cpl.upc.edu/freeling/downloads/32 helbidetik deskargatu freeling-3.1.tar.gz
-paketea. Edo bestela gure webgunetik deskargatu:
-
-	 $ wget http://ixa2.si.ehu.es/eustagger/freeling-3.1.tar.gz
-
+paketea.
 
 Deskonprimitu, konpilatu eta instalatu:
 
@@ -139,14 +128,18 @@ eustagger:
 Eskuratu eustagger:
 
 	$ svn co https://siuc05.si.ehu.es/svn/eustagger/trunk/eustagger
-	edo bestela:
-	$ wget http://ixa2.si.ehu.es/eustagger/eustagger_latest.tar.bz2
 
 Konpilatu eta instalatzeko (goiko dependentziak ):
 
 	$ cd eustagger
 	$ autoconf
-	$ ./configure (ubuntun gehitu: --with-swipl-include=/usr/lib/swi-prolog/include)
+	$ ./configure
+
+	Sistema eragileko swipl erabiltzen bada seguraski swipl-ren fitxategiak
+	non dauden adierazi behar zaio 	"--with-swipl-include="  eta "--with-lib-include="
+	parametroak erabiliz. Adibidez Ubuntun "--with-swipl-include=/usr/lib/swi-prolog/include"
+	gehitu behar da...
+	
 	$ make
 	$ make install
 
