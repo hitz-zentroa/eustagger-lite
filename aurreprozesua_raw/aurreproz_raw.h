@@ -30,7 +30,7 @@
 #ifndef AURREPROZ_RAW_H
 #define AURREPROZ_RAW_H
 
-#include "an_lex_raw.h"
+#include "tokenizatzaile.h"
 #include "file_mng_raw.h"
 #include "token_raw.h"
 #include "automata.h"
@@ -43,7 +43,7 @@ class aurreprozRaw
 /*   automata aurrep_auto; */
   fileMngRaw sarrera_f;
   tokenRaw hitza;
-  anLexRaw analizatu;
+  tokenizatzaile *analizatu;
   string fitxategiIzena;	// tratatzen ari den fitxategiaren izena
   void tratatu_hitza();		// tratamendua egin tokenaren gainean
   void ken_gidoia();		// gidoia + CR agertzean kentzeko
@@ -51,7 +51,7 @@ class aurreprozRaw
 public:
   
   aurreprozRaw();
-  void  init(char *auto_izena, char *sarrera_izena);
+  void  init(char *auto_izena, char *sarrera_izena, int zuriuneetan);
   
   void  aurreprozesua(int irteera, vector<string> *emaitza); // aurreprozesuaren ziklo osoa betetzen duena
   // irteera ANALIRA baldin bada, orduan emaitza taulan itzuliko da, bestela zuzenean idatziko da

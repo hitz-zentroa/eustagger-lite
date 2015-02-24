@@ -64,6 +64,7 @@ class fileMngRaw
   int back(long offset);                    // fitxategia birkokatu
   int back_token(long offset_pre,long offset);                    // fitxategia birkokatu
   char get();                               // hurrengo karakterea lortu fitxategitik
+  string get_line();                        // hurrengo lerroa lortu fitxategitik
   long non();                               // offset-a ematen du
   void close();                             // fitxategia itxi
   int eof();                                // fitxategia bukatu den

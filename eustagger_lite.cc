@@ -47,13 +47,16 @@ using namespace std;
 
 int edbl_bertsioa = 4;
 
+const int PAROLE_OUTPUT = 1;
+const int MG_OUTPUT     = 2;
+const int NAF_OUTPUT    = 3;
 
 extern void segHasieraketak(int sar_lem, int lex_uzei, int bigarren, int ez_est, int erab_lex, string &lexiko_izena, int parentizatua, int deslokala);
 extern void segAmaierakoak();
 
-extern void segmentazioaSortuRaw(string &fitxategiIzena, string &segIrteera);
+extern void segmentazioaSortuRaw(string &fitxategiIzena, string &segIrteera, int zuriuneetan);
 extern void morfosintaxiaSortuRaw(string &fitxategiIzena, string &segIrteera, bool haul_seguruak, bool cg3form);
-extern int prozesatuCG3Raw(int maila, string &oinIzen);
+extern int prozesatuCG3Raw(int maila, string &oinIzen, int zuriuneetan, int format);
 
 void help() {
   stringstream eustaggerVersion;
@@ -96,24 +99,36 @@ int main(int argc, char *argv[])
  int bigarren_aukera = 0; /*** 2000/11/20 -2 aukerarako */
  int lex_ald = 0; /*** 2000/12/20 erabiltzailearen lexikorako -L eta -2 ez dira onartzen*/
  int ez_estandarrak = 0;
+ int zuriune_token = 0;
  int maila = 2;
  int deslokala = 1;
  int parentizatua = 1;
+ // int out_format = NAF_OUTPUT;
+ int out_format = PAROLE_OUTPUT;
  bool haul_seguruak = false;
  char c;
  string lex_izena; 
+ string format;
 
- while ((c = getopt(argc, argv, "sShHM:m:")) != EOF) {
+ while ((c = getopt(argc, argv, "sShHzZm:M:f:F:")) != EOF) {
    switch (c) {
    case 'S':
    case 's': haul_seguruak = 1; break;
+   case 'Z':
+   case 'z': zuriune_token = 1; break;
    case 'M':
    case 'm': maila =atoi(optarg); break;
+   case 'F':
+   case 'f': format = optarg; break;
    case 'H':
    case 'h':
    default: help();
    }
  }
+
+ if (format == "naf") out_format = NAF_OUTPUT;
+ else if (format == "mg") out_format = MG_OUTPUT;
+ else out_format = PAROLE_OUTPUT;
 
 #ifdef _USE_SWI_
  PlEngine e(argv[0]);
@@ -126,12 +141,17 @@ int main(int argc, char *argv[])
  segHasieraketak(Sarrera_berezia,lexiko_uzei,bigarren_aukera,ez_estandarrak,lex_ald,lex_izena,parentizatua,deslokala);
 
  if (optind < argc) {
+   char pid[10];
+   sprintf(pid, "%d", getpid());
+
    for (int i=optind;i<argc;i++) {
      string fitxategiIzena = argv[i];
      string segIrteera;
-     segmentazioaSortuRaw(fitxategiIzena,segIrteera);
+     segmentazioaSortuRaw(fitxategiIzena,segIrteera, zuriune_token);
+
+     fitxategiIzena += pid;
      morfosintaxiaSortuRaw(fitxategiIzena,segIrteera,haul_seguruak,OUT_MG); 
-     prozesatuCG3Raw(maila,fitxategiIzena) ;
+     prozesatuCG3Raw(maila,fitxategiIzena, zuriune_token, out_format) ;
 
    }
  }
