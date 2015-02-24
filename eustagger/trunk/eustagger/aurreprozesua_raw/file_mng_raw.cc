@@ -78,9 +78,6 @@ void  fileMngRaw::init( const string & fitxIzen ) // hasieraketa funtzioa
     
   }
     
-  // sarrera estandarra bada
-  this->kargatuStdBufferra();
-
   if (fitxIzen == "stdin") {    
     this->sarreraEstandarra = 1;
   }
@@ -88,6 +85,9 @@ void  fileMngRaw::init( const string & fitxIzen ) // hasieraketa funtzioa
     this->sarreraEstandarra = 0;
   }
   
+  // sarrera estandarra bada
+  this->kargatuStdBufferra();
+
 }
 
 void  fileMngRaw::reset()                   // fitxategia lehen posizioan kokatu
@@ -131,6 +131,17 @@ char  fileMngRaw::get() {                    // hurrengo karakterea lortu
     uneko_c = this->buffer[this->posizioa];
     this->posizioa++;
     return uneko_c;
+  }
+  else return (0);
+   
+}
+
+string fileMngRaw::get_line() {                    // hurrengo lerroa lortu
+
+  if (this->posizioa == this->bufferLuzera) this->kargatuStdBufferra();
+  if (!this->sarreraAmaitua) { 
+    this->posizioa = this->posizioa+buffer.size();
+    return this->buffer;
   }
   else return (0);
    

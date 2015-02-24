@@ -2,9 +2,10 @@
 
 #deps: morfologia
 
-INCLUDE= @CPPFLAGS@ -I../morfologia
+INCLUDE_PCREPLUSPLUS = @CONF_INCLUDE_PCREPLUSPLUS@
+INCLUDE= @CPPFLAGS@ $(INCLUDE_PCREPLUSPLUS) -I../morfologia
 
-SOURCES= automata.cc token_raw.cc file_mng_raw.cc status_raw.cc an_lex_raw.cc aurreproz_raw.cc
+SOURCES= automata.cc token_raw.cc file_mng_raw.cc status_raw.cc an_lex_raw.cc zuriune_token.cc aurreproz_raw.cc
 
 INCLUDEMORF=$(INCLUDE) 
 

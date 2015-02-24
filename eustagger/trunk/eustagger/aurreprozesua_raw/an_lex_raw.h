@@ -34,10 +34,11 @@
 #include "status_raw.h"
 #include "file_mng_raw.h"
 #include "token_raw.h"
+#include "tokenizatzaile.h"
 #define MAX_STRING 1500+1
 using namespace std;
 
-class anLexRaw
+class anLexRaw : public tokenizatzaile
 {
  statusRaw aurrekoa;      // badaezpada aurreko token-a eta sarreraren estadua gorde
  statusRaw azkena;        // azken token-a eta sarreraren estadua gorde

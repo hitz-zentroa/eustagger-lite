@@ -28,6 +28,8 @@
 
 
 #include "aurreproz_raw.h"
+#include "an_lex_raw.h"
+#include "zuriune_token.h"
 #include <string.h>
 #include <vector>
 #include <strings.h>
@@ -38,12 +40,21 @@
 
 aurreprozRaw::aurreprozRaw() {}
 
-void aurreprozRaw::init(char *auto_izena, char *sarrera_izena)
+void aurreprozRaw::init(char *auto_izena, char *sarrera_izena, int zuriuneetan)
 {
-
-  sarrera_f.init(string(sarrera_izena));
-  analizatu.init(auto_izena,&sarrera_f);
   fitxategiIzena = sarrera_izena;
+  sarrera_f.init(string(sarrera_izena));
+
+  if (!zuriuneetan) {
+    anLexRaw *tmp = new anLexRaw;
+    tmp->init(auto_izena, &sarrera_f);
+    analizatu=tmp;
+  }
+  else {
+    zuriune_token *tmp = new zuriune_token;
+    tmp->init(&sarrera_f);
+    analizatu=tmp;
+  }
 }
 
 extern void aztertu_zenbakia(char *,char *);
@@ -110,8 +121,9 @@ void  aurreprozRaw::tratatu_hitza()  // tratamendua egin hitzaren gainean
    strcpy(tmp,hitz);
    strcpy(aurreko,strtok(hitz,"'’´")); // t
    strcpy(atzeko,strtok(NULL,"'’´"));  // erdi?
-   if (!strcmp(aurreko,"t") && !strcmp(atzeko,"erdi"))
+   if ((!strcmp(aurreko,"t") && !strcmp(atzeko,"erdi")))
      {
+       //cerr << "re_token-1: " << hitz << endl;
        // banatu
        long offseta;
        int kom = strlen(aurreko);
@@ -122,7 +134,7 @@ void  aurreprozRaw::tratatu_hitza()  // tratamendua egin hitzaren gainean
        hitza.reset_h();
        hitza.s_hitza(aurreko);
        offseta = (long) strlen(aurreko);
-       analizatu.back_token(offseta);
+       analizatu->back_token(offseta);
        hitza.reset_e();
        strcpy(aurreko,"eta");
        hitza.s_egiaztatzeko(aurreko);
@@ -190,21 +202,23 @@ void  aurreprozRaw::tratatu_hitza()  // tratamendua egin hitzaren gainean
        hitza.reset_etq();
        hitza.s_etiketa(ERROMATARRAK);
        if (strlen(atzizkia) == 0) {
+	 //cerr << "re_token-2: " << hitz << endl;
 	 // Begiratu ea hurrengo tokena puntua den
 	 tokenRaw hitza2;
-	 analizatu.next_token();
-	 hitza2 = analizatu.e_azkena();
+	 analizatu->next_token();
+	 hitza2 = analizatu->e_azkena();
 	 if (hitza2.e_hitza().c_str()[0] == '.') {
 	   strcpy(atzizkia,hitza2.e_hitza().c_str());
-	   analizatu.next_token();
-	   hitza2 = analizatu.e_azkena();
-	   if (hitza2.e_hitza().c_str()[0] != ' ' && 
+	   analizatu->next_token();
+	   hitza2 = analizatu->e_azkena();
+	   if (hitza2.e_etiketa() != "ID" &&
+	       hitza2.e_hitza().c_str()[0] != ' ' && 
 	       hitza2.e_hitza().c_str()[0] != '\t' &&
 	       hitza2.e_hitza().c_str()[0] != '\n')
 	     strcat(atzizkia,hitza2.e_hitza().c_str());
-	   else analizatu.back();
+	   else analizatu->back();
 	 }
-	 else analizatu.back();
+	 else analizatu->back();
 	 if (strlen(atzizkia) != 0) {
 	   egiaz[0] = '\0';
 	   strcpy(egiaz,hitza.e_hitza().c_str());
@@ -278,11 +292,12 @@ void  aurreprozRaw::tratatu_hitza()  // tratamendua egin hitzaren gainean
    strcpy(hitz,hitza.e_hitza().c_str());
    strcpy(aurreko,strtok(hitz,"-"));
    strcpy(atzeko,strtok(NULL,"-"));
-   if (!strcmp(atzeko,"edo")  || !strcmp(atzeko,"eta"))
+   if ((!strcmp(atzeko,"edo")  || !strcmp(atzeko,"eta")))
      {
+       //cerr << "re_token-3: " << hitz << endl;
        // banatu
        long offseta = (long) strlen(aurreko);
-       analizatu.back_token(offseta);
+       analizatu->back_token(offseta);
        hitza.reset_h();
        hitza.s_hitza(aurreko);
        hitza.reset_e();
@@ -397,8 +412,8 @@ void  aurreprozRaw::aurreprozesua(int irteera,vector<string> *emaitza)  // aurre
  // extern int INTERAMORFO;
  int amaitu_interamorfo=0;
  
- while (!amaitu_interamorfo && analizatu.next_token() > 0) {
-   hitza = analizatu.e_azkena();
+ while (!amaitu_interamorfo && analizatu->next_token() > 0) {
+   hitza = analizatu->e_azkena();
    tratatu_hitza();
 
    if (irteera == TOKENAK) {
@@ -436,6 +451,12 @@ void  aurreprozRaw::aurreprozesua(int irteera,vector<string> *emaitza)  // aurre
      }
    }
  }
+
+ // cerr << endl;
+ // for (vector<string>::iterator iter=emaitza->begin(); iter != emaitza->end(); iter++) {
+ //   cerr << *iter << endl;
+ // }
+ // cerr << endl;
 }
 
 string aurreprozRaw::kenduMaj(const string & str) {
@@ -504,5 +525,4 @@ string aurreprozRaw::jarriMaj(const string & str) {
   return ema;
 
 }
-
 

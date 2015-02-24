@@ -60,7 +60,7 @@ void segAmaierakoak() {
  anali.amaierakoak();
 }
 
-void segmentazioaSortuRaw(string &fitxategiIzena, string &segIrteera) {
+void segmentazioaSortuRaw(string &fitxategiIzena, string &segIrteera, int zuriuneetan) {
   vector<string>::iterator hasi,amai,non;
   string lerro,segFitx;
   vector<string> emaitza;
@@ -71,14 +71,14 @@ void segmentazioaSortuRaw(string &fitxategiIzena, string &segIrteera) {
   irakur_automata(autoFil,&autofil2,ESTADU2_MAX,MULTZO2_MAX);
   free(autoFil);
 
-  if (fitxategiIzena.length() == 0) {
+  if (fitxategiIzena == "-") {
    char *stdIn=strdup("stdin");
-   proz.init(autoAurre,stdIn);
+   proz.init(autoAurre,stdIn, zuriuneetan);
    free(stdIn);
   }
   else {
     char *sarfitx = strdup(fitxategiIzena.c_str());
-    proz.init(autoAurre,sarfitx);
+    proz.init(autoAurre,sarfitx, zuriuneetan);
     free(sarfitx);
   }
   free(autoAurre);

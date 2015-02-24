@@ -63,11 +63,14 @@ void Ana2Morfsar::toMorfsar(){
 void Ana2Morfsar::toMorfsar(const std::string segString){
   extern void bufferParse(char *buffer, int size);
   char *buffer;
-  ofstream out ("tmp.segp");
-  if (!out) {
-    cerr << "Ezin daiteke tmp.segp fitxategia sortu" << endl;
-  }
-  out << segString << endl;
+
+  // char tmpName[20];
+  // sprintf(tmpName, "tmp.%d.segp", getpid());
+  // ofstream out (tmpName);
+  // if (!out) {
+  //   cerr << "Ezin daiteke tmp.segp fitxategia sortu" << endl;
+  // }
+  // out << segString << endl;
   if (fpFitxAna != NULL) {
     fpFitxAna = NULL;
   }

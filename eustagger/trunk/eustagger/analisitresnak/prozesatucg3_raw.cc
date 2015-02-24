@@ -44,14 +44,52 @@ using namespace std;
 using namespace pcrepp;
 using namespace freeling;
 
+const int PAROLE_OUTPUT = 1;
+const int MG_OUTPUT     = 2;
+const int NAF_OUTPUT    = 3;
 
 string getEnvVar(string const& key);
 string kendu_cg3rako_etiketak(string info);
-void PrintResults (list < sentence > &ls, int level);
-void desHMM(int maila, string &desIrteera, string &oinIzen);
+void PrintParole (list < sentence > &ls, int level);
+void PrintMG (list < sentence > &ls, int level);
+void PrintNAF (list < sentence > &ls, int level);
+void desHMM(int maila, string &desIrteera, string &oinIzen, int zuriuneetan, int format);
 
+// trim from start
+static inline string &ltrim(string &s) {
+        s.erase(s.begin(), std::find_if(s.begin(), s.end(), std::not1(std::ptr_fun<int, int>(std::isspace))));
+        return s;
+}
 
-int prozesatuCG3Raw(int maila, string &oinIzen) {
+// trim from end
+static inline string &rtrim(string &s) {
+        s.erase(std::find_if(s.rbegin(), s.rend(), std::not1(std::ptr_fun<int, int>(std::isspace))).base(), s.end());
+        return s;
+}
+
+// trim from both ends
+static inline string &trim(string &s) {
+        return ltrim(rtrim(s));
+}
+
+// XML entities
+string XML_entities(string s) {
+  Pcre amp("&", "g");
+  Pcre gt(">", "g");
+  Pcre lt("<", "g");
+  Pcre quot("\\\"", "g");
+  
+  s= trim(s);
+
+  s=amp.replace(s, "&amp;");
+  s=lt.replace(s, "&lt;");
+  s=gt.replace(s, "&gt;");
+  s=quot.replace(s, "&quot;");
+  
+  return s;
+}
+
+int prozesatuCG3Raw(int maila, string &oinIzen, int zuriuneetan, int format) {
   string tmpVar = getEnvVar("IXA_PREFIX");
   string tmpName;
   string gramatika;
@@ -97,18 +135,18 @@ int prozesatuCG3Raw(int maila, string &oinIzen) {
     cgApp.clean();
     
     unlink(desSarrera.c_str());
-    desHMM(maila,desIrteera,oinIzen);
+    desHMM(maila,desIrteera,oinIzen, zuriuneetan, format);
     unlink(desIrteera.c_str());
   }
   else {
-    desHMM(maila,desSarrera,oinIzen);
+    desHMM(maila,desSarrera,oinIzen, zuriuneetan, format);
     unlink(desSarrera.c_str());
   }
 
   return EXIT_SUCCESS;
 }
 
-void desHMM(int maila, string &desIrteera,string &oinIzen) {
+void desHMM(int maila, string &desIrteera,string &oinIzen, int zuriuneetan, int format) {
   euParole parolera(maila);
   list<sentence> ls;
   sentence lws;
@@ -142,17 +180,23 @@ void desHMM(int maila, string &desIrteera,string &oinIzen) {
     string formL;
     wstring form,lemma,tag,ambclass;
     Pcre firstL("\\\"<\\$?(.[^>]*)>\\\"");
+
     if (firstL.search(sars)) {
       string formTmp = firstL.get_match(0);
       form = util::string2wstring(formTmp);
     }
     word w(form);
+
+    formL = sars;
     sars.clear();
     getline(in,sars);
     while (sars.length()>0 && sars[0] != '"') {
       parolera.getLemmaTag(sars,lemma,tag);
+
+      string user = formL + "\n" + sars;
       if (lemma.length()>0) {
 	analysis an(lemma,tag);
+	an.user.push_back(util::string2wstring(user));
 	w.add_analysis(an);
 	if (ambclass.length()) ambclass += L"-";
 	ambclass += tag;
@@ -160,6 +204,7 @@ void desHMM(int maila, string &desIrteera,string &oinIzen) {
       else if (tag.length()>0) {
 	lemma = form;
 	analysis an(lemma,tag);
+	an.user.push_back(util::string2wstring(user));
 	w.add_analysis(an);
 	if (ambclass.length()) ambclass += L"-";
 	ambclass += tag;
@@ -174,14 +219,19 @@ void desHMM(int maila, string &desIrteera,string &oinIzen) {
     probs.annotate_word(w);
     w.set_form(form);
 
-    lws.push_back(w);
-    if (form == L"." || form == L"!" || form == L"?") {
+    if (zuriuneetan && form == L"@@SENT_END") {
       ls.push_back(lws);
       lws.clear();
-      taggerEu.analyze(ls);
-      PrintResults(ls,maila);
-      ls.clear();
     }
+    else {
+      lws.push_back(w);
+    }
+
+    if (!zuriuneetan && (form == L"." || form == L"!" || form == L"?")) {
+      ls.push_back(lws);
+      lws.clear();
+    }
+
     if (sars[0] != '"') {
       sars.clear();
       getline(in,sars);
@@ -194,11 +244,20 @@ void desHMM(int maila, string &desIrteera,string &oinIzen) {
   }
   if (ls.size() > 0) {
     taggerEu.analyze(ls);
-    PrintResults(ls,maila);
+    if (format == NAF_OUTPUT) {
+      PrintNAF(ls,maila);
+    }
+    else if (format == MG_OUTPUT) {
+      PrintMG(ls,maila);
+    }
+    else {
+      PrintParole(ls,maila);
+    }
     ls.clear();
   }  
 }
-void PrintResults (list < sentence > &ls, int level) {
+
+void PrintParole (list < sentence > &ls, int level) {
   sentence::const_iterator w;
   list < sentence >::iterator si;
  
@@ -221,5 +280,120 @@ void PrintResults (list < sentence > &ls, int level) {
     // sentence separator: blank line.
     wcout << endl;
   }
+  wcout.flush();
+}
+
+void PrintMG (list < sentence > &ls, int level) {
+  sentence::const_iterator w;
+  list < sentence >::iterator si;
+ 
+  for (si = ls.begin (); si != ls.end (); si++) {
+    for (w = si->begin (); w != si->end (); w++) {
+
+      word::const_iterator an;
+      word::const_iterator last;
+      if (level > 0) {
+	an = w->selected_begin();
+	last = w->selected_end();
+      }
+      else {
+	an = w->analysis_begin();
+	last = w->analysis_end();
+      }
+
+      for (word::const_iterator an = w->selected_begin (); an != w->selected_end (); an++) {
+	  if (an->user.begin() != an->user.end())
+	    wcout << *(an->user.begin());
+	  else 
+	    wcout << w->get_form() << endl;
+      }
+      wcout << endl;
+    }
+    // sentence separator: blank line.
+    wcout << endl;
+  }
+  wcout.flush();
+}
+
+wstring MG2XML(wstring input) {
+  string output;
+  string tmp = util::wstring2string(input);
+  
+  Pcre anTmp("\\s+\\\"(.[^\\\"]+)\\\"\\s+(.+)\\s*$");
+  Pcre anTmp2("\\s+(.+)\\s*$");
+
+  if (anTmp.search(tmp)) {
+    output = XML_entities(anTmp.get_match(1));
+  }
+  else if (anTmp2.search(tmp)) {
+    output = XML_entities(anTmp2.get_match(0));	
+  }
+
+  return util::string2wstring(output);
+}
+
+void PrintNAF (list < sentence > &ls, int level) {
+  sentence::const_iterator w;
+  list < sentence >::iterator si;
+ 
+  wostringstream text;
+  wostringstream terms;
+
+  int sent = 1;
+  int word = 1;
+  int term = 1;
+  for (si = ls.begin (); si != ls.end (); si++) {
+    for (w = si->begin (); w != si->end (); w++) {
+      string form = util::wstring2string(w->get_form());
+      form = XML_entities(form);
+      text << "  <wf id=\"w" << word << "\" sent=\"" << sent << "\"";
+      //text << " offset=\"" << w->get_span_start() << "\"";
+      text << ">" <<  util::string2wstring(form) << "</wf>" << endl;
+
+      word::const_iterator an;
+      word::const_iterator last;
+      
+      if (level > 0) {
+	an = w->selected_begin();
+	last = w->selected_end();
+      }
+      else {
+	an = w->analysis_begin();
+	last = w->analysis_end();
+      }
+
+      if (an != last) { 
+	string lemma = util::wstring2string(w->get_lemma());
+	string form = util::wstring2string(w->get_form());
+	lemma = XML_entities(lemma);
+
+	Pcre kendu("--", "g");
+	terms << "  <!-- " << util::string2wstring(kendu.replace(form, "- - ")) << " -->" << endl;
+
+	terms << "  <term id=\"t" << term << "\" lemma=\"" << util::string2wstring(lemma) << "\" morphofeat=\"" << an->get_tag();
+	if (an->user.begin() != an->user.end()) terms << "\"" << " case=\"" << MG2XML(*(an->user.begin()));
+	terms << "\">" << endl;
+	terms << "   <span>" << endl << "    <target id=\"w" << word << "\"/>" << endl;
+	terms << "   </span>" << endl << "  </term>" << endl;
+	
+	term++;
+      }
+
+      word++;
+    }
+
+    sent++;
+  }
+
+  wcout << L"<NAF xml:lang=\"eu\" version=\"2.0\">" << endl;
+  //wcout << L"" << endl
+
+  wcout << L" <text>" << endl << text.str() << L" </text>"<< endl;
+  wcout << L" <terms>" << endl << terms.str() << L" </terms>"<< endl;
+
+  wcout << L"</NAF>" << endl;
+
+  wcerr << L"Finished: " << sent << L" sentences analyzed." << endl;
+
   wcout.flush();
 }
