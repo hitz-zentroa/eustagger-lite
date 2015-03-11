@@ -1,0 +1,178 @@
+INSTRUCCIONES PARA PROBAR EUSTAGGER LITE 
+========================================
+
+We have tested Eustagger Lite in several GNU/Linux versions, some newer than 
+others (since RHEL5 to Ubuntu 13.10). The following instructions should work 
+for Ubuntu 12.04-13.10 and Fedora 18-20.
+
+Eustagger Lite has the following dependencies:
+
+pcre++ (tested with version 0.9.5)
+vislcg 3 (tested with version 20130826)
+SWI Prolog (tested with versions 5.10.5 and 6.0)
+Foma (tested with version 0.9.17)
+Freeling (tested with version 3.1)
+Boost (tested with version 1.53)
+
+At the same time, those libriries and programs have their own dependencies.
+Some of them can be instaled from the official repositories of those
+GNU/Linux repositories.
+
+Ubuntu:
+=======
+
+        $ apt-get install subversion make cmake cpp libicu48 libicu-dev\
+          autoconf bison flex swi-prolog zlib1g zlib1g-dev libpcre3 libpcre3-dev\
+          libpcre++0 libpcre++-dev libboost-all-dev
+
+Fedora:
+=======
+
+        $ yum install subversion make cmake gcc-c++ libicu libicu-devel\
+          autoconf bison flex pl pl-devel zlib zlib-devel pcre pcre-devel\
+          boost boost-devel
+
+In Fedora pcre++ should be installed by hand. For that:
+
+        $ wget http://www.daemon.de/idisk/Apps/pcre++/pcre++-0.9.5.tar.gz
+        or from our server
+        $ wget http://ixa2.si.ehu.es/eustagger/pcre++-0.9.5.tar.gz
+
+        decompress and install in the selected prefix:
+
+        $ tar -zxvf pcre++-0.9.5.tar.gz
+        $ cd pcre++-0.9.5
+        $ ./configure (in some 64 bit systems --with-pcre-lib=/usr/lib64 is also needed)
+        $ make
+        $ make install
+
+(the default prefix is /usr/local, if wanted to change it use the --prefix option 
+in configure)
+
+
+NEEDS MANUAL INSTALLATION:
+
+foma:
+=====
+
+Donwload:
+
+        $ wget https://foma.googlecode.com/files/foma-0.9.17.tar.gz
+        or from our server
+        $ wget http://ixa2.si.ehu.es/eustagger/foma-0.9.17.tar.gz
+
+Decompress, compile and install:
+
+        $ tar -zxvf foma-0.9.17.tar.gz
+        $ cd foma-0.9.17
+        $ make
+        $ make install
+
+(the default prefix is /usr/local, if wanted to change it modify the Makefile)
+
+vislcg3:
+========
+
+Donwload:
+
+        $ wget http://beta.visl.sdu.dk/download/vislcg3/vislcg3-20130826.tar.gz
+        o from our server:
+        $ wget http://ixa2.si.ehu.es/eustagger/vislcg3-20130826.tar.gz
+
+Decompress, compile and install (cmake is needed):
+
+        $ tar -zxvf vislcg3-20130826.tar.gz
+        $ cd vislcg3-20130826
+        $ ./cmake.sh
+        $ make -j3
+        $ make install
+
+Copy the *.h and *.hpp files to our installation prefix (/usr/local/include by default):
+
+        $ cp src/*.h src/*.hpp /usr/local/include
+
+(If wanted to change the prefix pass the -DCMAKE_INSTALL_PREFIX=/path to cmake.sh)
+(If couldn't found the Boost library export the following environment variables
+BOOST_ROOT=/instalacion_boost)
+
+
+Freeling 3.1
+============
+
+We tested the Freeling 3.1 (3.0 version doesn't work)
+
+Download:
+
+	http://devel.cpl.upc.edu/freeling/downloads/32
+
+	of from our server
+
+         $ wget http://ixa2.si.ehu.es/eustagger/freeling-3.1.tar.gz
+
+
+Decompress, compile and install:
+
+        $ tar -zxvf freeling-3.1.tar.gz
+        $ cd freeling-3.1
+        ( In fedora/RH: $ export LDFLAGS=-lboost_system )
+        $ ./configure --disable-warnings
+        $ make
+        $ make install
+
+* If wanted to change the default boost instalation by another one, before the 
+configure command execute the following:
+
+$ export LDFLAGS="-L/mi_instalacion_de_boost/lib -lboost_system"
+$ export CPPFLAGS="-I/mi_instalacion_de_boost/include"
+
+
+* When copiling Freeling 3.1 the following error may happend:
+
+../../src/include/freeling/morfo/foma_FSM.h:1: error: stray '\357' in program
+../../src/include/freeling/morfo/foma_FSM.h:1: error: stray '\273' in program
+../../src/include/freeling/morfo/foma_FSM.h:1: error: stray '\277' in program
+
+Remove the first comment lines from the src/include/freeling/morfo/foma_FSM.h file
+to solve the problem.
+ 
+
+eustagger: 
+==========
+
+Download eustagger (already in this directory?):
+
+        $ svn co https://siuc05.si.ehu.es/svn/eustagger/trunk/eustagger
+        o directly:
+        $ wget http://ixa2.si.ehu.es/eustagger/eustagger_latest.tar.bz2
+
+Compile and install
+
+        $ cd eustagger
+        $ autoconf
+	$ ./configure
+
+	If swipl of the operative system is used there will probably needed
+	to indicate where the files are with the "--with-swipl-include="
+	and "--with-lib-include=" options. For example in Ubuntu, add
+	"--with-swipl-include=/usr/lib/swi-prolog/include"...
+	
+ (in Ubuntu add: --with-swipl-include=/usr/lib/swi-prolog/include)
+	$ make
+	$ make install
+
+The default prefix is /usr/local. If wanted to change it use the --prefix option
+for configure. If any library can be found, there options to indicate where look
+for them. List all options executing './configure --help'
+
+Different GNU/Linux distributions place swipl header in different places. For example
+in Ubuntu, you need to use the --with-swipl-include=/usr/lib/swi-prolog/include option
+to found those headers.
+
+Finally, before try eustagger you need to change the following envaironment variables:
+
+	$ export IXA_PREFIX=nuestro_prefix (/usr/local?)
+	$ export LD_LIBRARY_PATH=nuestro_prefix/lib:$LD_LIBRARY_PATH
+
+Execute eustagger with the following command:
+
+	$ eustagger_lite fichero_de_texto.txt
