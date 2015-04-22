@@ -50,6 +50,7 @@ const int NAF_OUTPUT    = 3;
 
 string getEnvVar(string const& key);
 string kendu_cg3rako_etiketak(string info);
+string getPoS(string tag);
 void PrintParole (list < sentence > &ls, int level);
 void PrintMG (list < sentence > &ls, int level);
 void PrintNAF (list < sentence > &ls, int level);
@@ -72,19 +73,35 @@ static inline string &trim(string &s) {
         return ltrim(rtrim(s));
 }
 
+// Get current date/time, format is YYYY-MM-DD.HH:mm:ss
+const std::string currentDateTime() {
+  time_t     now = time(0);
+  struct tm  tstruct;
+  char       buf[80];
+  tstruct = *localtime(&now);
+  // Visit http://en.cppreference.com/w/cpp/chrono/c/strftime
+  // for more information about date/time format
+  strftime(buf, sizeof(buf), "%Y-%m-%dT%T%z", &tstruct);
+
+  return buf;
+}
+
 // XML entities
 string XML_entities(string s) {
   Pcre amp("&", "g");
   Pcre gt(">", "g");
   Pcre lt("<", "g");
+  //Pcre quot("\\\"|“|”", "g");
   Pcre quot("\\\"", "g");
   
   s= trim(s);
 
+  //cerr << s;
   s=amp.replace(s, "&amp;");
   s=lt.replace(s, "&lt;");
   s=gt.replace(s, "&gt;");
   s=quot.replace(s, "&quot;");
+  //cerr << "\t" << s << endl;
   
   return s;
 }
@@ -257,6 +274,29 @@ void desHMM(int maila, string &desIrteera,string &oinIzen, int zuriuneetan, int 
   }  
 }
 
+string getPoS(string tag) {
+  string PoS = "O";
+  string tmp = tag.substr(0,1);
+  if (tmp == "V" || tmp == "C" || tmp == "D") {
+    PoS = tmp;
+  }
+  else if (tmp == "R") {
+    PoS = "A";
+  }
+  else if (tmp == "A") {
+    PoS = "G";
+  }
+  else if (tmp == "N") {
+    if (tag.substr(1,1) == "P" || tag.substr(1,1) == "L") {
+      PoS = "R";
+    }
+    else {
+      PoS = tmp;
+    }
+  }
+  return PoS;
+}
+
 void PrintParole (list < sentence > &ls, int level) {
   sentence::const_iterator w;
   list < sentence >::iterator si;
@@ -315,9 +355,9 @@ void PrintMG (list < sentence > &ls, int level) {
   wcout.flush();
 }
 
-wstring MG2XML(wstring input) {
+string MG2XML(string input) {
   string output;
-  string tmp = util::wstring2string(input);
+  string tmp = input;
   
   Pcre anTmp("\\s+\\\"(.[^\\\"]+)\\\"\\s+(.+)\\s*$");
   Pcre anTmp2("\\s+(.+)\\s*$");
@@ -329,15 +369,16 @@ wstring MG2XML(wstring input) {
     output = XML_entities(anTmp2.get_match(0));	
   }
 
-  return util::string2wstring(output);
+  return output;
 }
 
 void PrintNAF (list < sentence > &ls, int level) {
   sentence::const_iterator w;
   list < sentence >::iterator si;
  
-  wostringstream text;
-  wostringstream terms;
+  std::locale::global(std::locale(""));
+  ostringstream text;
+  ostringstream terms;
 
   int sent = 1;
   int word = 1;
@@ -348,7 +389,7 @@ void PrintNAF (list < sentence > &ls, int level) {
       form = XML_entities(form);
       text << "  <wf id=\"w" << word << "\" sent=\"" << sent << "\"";
       //text << " offset=\"" << w->get_span_start() << "\"";
-      text << ">" <<  util::string2wstring(form) << "</wf>" << endl;
+      text << ">" << form << "</wf>" << endl;
 
       word::const_iterator an;
       word::const_iterator last;
@@ -365,13 +406,16 @@ void PrintNAF (list < sentence > &ls, int level) {
       if (an != last) { 
 	string lemma = util::wstring2string(w->get_lemma());
 	string form = util::wstring2string(w->get_form());
+	string tag = util::wstring2string(an->get_tag());
 	lemma = XML_entities(lemma);
 
 	Pcre kendu("--", "g");
-	terms << "  <!-- " << util::string2wstring(kendu.replace(form, "- - ")) << " -->" << endl;
+	form = kendu.replace(form, " - -");
 
-	terms << "  <term id=\"t" << term << "\" lemma=\"" << util::string2wstring(lemma) << "\" morphofeat=\"" << an->get_tag();
-	if (an->user.begin() != an->user.end()) terms << "\"" << " case=\"" << MG2XML(*(an->user.begin()));
+	terms << "  <!-- " << form << " -->" << endl;
+	terms << "  <term id=\"t" << term << "\" lemma=\"" << lemma << "\" morphofeat=\"" << tag;
+	terms << "\" pos=\"" << getPoS(tag);
+	if (an->user.begin() != an->user.end()) terms << "\" case=\"" << MG2XML(util::wstring2string(*(an->user.begin())));
 	terms << "\">" << endl;
 	terms << "   <span>" << endl << "    <target id=\"w" << word << "\"/>" << endl;
 	terms << "   </span>" << endl << "  </term>" << endl;
@@ -385,15 +429,24 @@ void PrintNAF (list < sentence > &ls, int level) {
     sent++;
   }
 
-  wcout << L"<NAF xml:lang=\"eu\" version=\"2.0\">" << endl;
-  //wcout << L"" << endl
+  cout << "<?xml version='1.0' encoding='UTF-8'?>" << endl;
+  cout << "<NAF xml:lang=\"eu\" version=\"2.0\">" << endl;
 
-  wcout << L" <text>" << endl << text.str() << L" </text>"<< endl;
-  wcout << L" <terms>" << endl << terms.str() << L" </terms>"<< endl;
+  //<lp name="ixa-pipe-dependencies-Basque" beginTimestamp="2015-04-13T18:38:37+0200" endTimestamp="2015-04-13T18:39:01+0200" version="1.0" hostname="basajaun"/>
 
-  wcout << L"</NAF>" << endl;
+  string endtime = currentDateTime();
 
-  wcerr << L"Finished: " << sent << L" sentences analyzed." << endl;
+  cout << "<nafHeader>" << endl;
+  cout << " <linguisticProcessors layer=\"text\">\n  <lp name=\"EHU-eustagger\" version=\"1.0.0\" beginTimestamp=\"" << endtime << "\" endTimestamp=\"" << endtime << "\"/>\n </linguisticProcessors>" << endl;
+  cout << " <linguisticProcessors layer=\"terms\">\n  <lp name=\"EHU-eustagger\" version=\"1.0.0\" beginTimestamp=\"" << endtime << "\" endTimestamp=\"" << endtime << "\"/>\n </linguisticProcessors>" << endl;
+  cout << "</nafHeader>" << endl;
 
-  wcout.flush();
+  cout << " <text>" << endl << text.str() << " </text>"<< endl;
+  cout << " <terms>" << endl << terms.str() << " </terms>"<< endl;
+
+  cout << "</NAF>" << endl;
+
+  cerr << "Finished: " << sent << " sentences analyzed." << endl;
+
+  cout.flush();
 }
