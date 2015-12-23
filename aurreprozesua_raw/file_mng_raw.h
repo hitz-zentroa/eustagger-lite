@@ -50,6 +50,8 @@ class fileMngRaw
   int posizioa;                  // testu zatian mugitzeko indizea
   int stdLerroa;                 // sarrera estandarra irakurtzen ari bagara zenbat lerro irakurri ditugun
   string sarreraIzena;           // tokenizatutako fitxategiaren izena gordetzeko
+  int paragrafoa;
+  int offsetMetatuta;
 
  public:
   
@@ -68,7 +70,8 @@ class fileMngRaw
   long non();                               // offset-a ematen du
   void close();                             // fitxategia itxi
   int eof();                                // fitxategia bukatu den
-
+  int get_paragrafoa();
+  int get_offset_metatuta();
   ~fileMngRaw();                            // funtzio suntsitzailea
   
  private:

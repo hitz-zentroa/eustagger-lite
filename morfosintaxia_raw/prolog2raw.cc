@@ -488,6 +488,13 @@ void Prolog2Raw::sortuAnalisiak(PlTerm plstruct) {
 	    if (hasierakoaCG3.find(">\"<") != string::npos) {	    
 	      string tmpZ = hasierakoaCG3.substr(hasierakoaCG3.find(">\"<")+3,string::npos);
 	      etiketa = tmpZ.substr(0,tmpZ.length()-2);
+
+		  if (etiketa != "")
+			{
+				Pcre reg("#([0-9]+\\-[0-9]+)#(.*)#");
+				etiketa = reg.replace(etiketa,"");
+			}
+
 	    }
 	    if (etiketa == forma) etiketa = "";
 	    morfDoc << hasierakoaCG3 << endl;

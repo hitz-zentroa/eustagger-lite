@@ -34,7 +34,7 @@
 
 using namespace std;
 
-tokenRaw::tokenRaw() { tratamendua = 0; analizatu = true;}
+tokenRaw::tokenRaw() { tratamendua = 0; paragrafoa = 0; analizatu = true;}
 
 tokenRaw::tokenRaw(const tokenRaw & t) {
  hitza = t.hitza;
@@ -43,6 +43,8 @@ tokenRaw::tokenRaw(const tokenRaw & t) {
  tratamendua = t.tratamendua;
  hasPos = t.hasPos;
  bukPos = t.bukPos;
+ paragrafoa = t.paragrafoa;
+ parPos = t.parPos;
  orig = t.orig;
  analizatu = t.analizatu;
 }
@@ -55,6 +57,8 @@ void tokenRaw::init(string h, string e, string eg, int t, int has, int buk) {
  tratamendua = t;
  hasPos = has;
  bukPos = buk;
+ paragrafoa = 0;
+ parPos = 0;
  analizatu = true;
 }
 
@@ -70,6 +74,10 @@ void tokenRaw::s_tratamendua(int t) { tratamendua = t; }
 void tokenRaw::s_hasieraPos(int hp) { hasPos = hp; }
 
 void tokenRaw::s_bukaeraPos(int bp) { bukPos = bp; }
+
+void tokenRaw::s_paragrafoa(int pp) { paragrafoa = pp; }
+
+void tokenRaw::s_paragrafoPos(int pp) { parPos = pp; }
 
 void tokenRaw::s_orig(string ori) { orig = ori;  } 
 
@@ -95,6 +103,10 @@ int tokenRaw::e_hasieraPos() { return hasPos; }
 
 int tokenRaw::e_bukaeraPos() { return bukPos; }
 
+int tokenRaw::e_paragrafoa() { return paragrafoa; }
+
+int tokenRaw::e_paragrafoPos() { return parPos; }
+
 string tokenRaw::e_orig() { return orig; } 
 
 bool tokenRaw::e_analizatu() { return analizatu; }
@@ -106,6 +118,8 @@ tokenRaw tokenRaw::operator =(const tokenRaw & t) {
  tratamendua  = t.tratamendua;
  hasPos       = t.hasPos;
  bukPos       = t.bukPos;
+ paragrafoa   = t.paragrafoa;
+ parPos       = t.parPos;
  orig         = t.orig;
  analizatu    = t.analizatu;
  return *this;
@@ -116,15 +130,19 @@ void     tokenRaw::print_token(vector<string> *emaitza){
 // token-a taulan inprimatu lerro bakoitza posizio batean
  string lag;
 
+ stringstream ss;
+ ss << "#" << (parPos+hasPos-1) << "-" << (parPos+bukPos-1) << "#" << "p" << paragrafoa << "#";
+
  lag = "/<";
  lag = lag + hitza;
  lag = lag + ">/";
- if (etiketa.c_str()[0] != '\0')
-   {
-    lag = lag + "<";
-    lag = lag + etiketa;
-    lag = lag + ">";
-   }
+
+
+ // offset-ak eta paragrafoa etiketan jarriko ditugu
+  lag = lag + "<";
+  lag = lag + etiketa + ss.str();
+  lag = lag + ">";
+
  lag = lag + "/";
  emaitza->push_back(lag);
 
