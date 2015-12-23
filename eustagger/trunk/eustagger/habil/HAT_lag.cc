@@ -30,7 +30,9 @@
 #include "HAT_class.h"
 #include <math.h>
 #include <algorithm>
+#include <pcre++.h>
 
+using namespace pcrepp;
 using namespace std;
 // *********************************************************************//
 void HAT_class::bilatu_HAT_Esaldi()
@@ -298,8 +300,9 @@ void HAT_class::bilatu_HAT_Esaldi()
 	 if (det[p][0] != -1) {
 	   int os;
 	   string hat_forma,et,nag_ima,hat_an;
+	   string hat_etik_offset;
 	   string_lista hat_im;
-	   if (Esaldi[det[p][0]].eman_etiketa() == "HAUL_EDBL")
+	   if (Esaldi[det[p][0]].eman_etiketa() == "HAUL_EDBL")  // FIXME OFFSET -> NOIZ APLIKATZEN DA HAU?
 	     hat_forma = Esaldi[det[p][0]].eman_forma();
 	   else {
 	     int_lista osagaiak;
@@ -313,17 +316,26 @@ void HAT_class::bilatu_HAT_Esaldi()
 	     for (ot = ohasi; ot != oamaitu; ++ot) {
 	       int os = *ot;
 	       string f = Esaldi[os].eman_forma();
+		   string eo = Esaldi[os].eman_etiketa();
 	       if (ot != ohasi) 
-		 hat_forma += "_";
+			 hat_forma += "_";
 	       if (os == det[p][nag]) {
-		 nag_ima = HAT_taula[h].eman_nagusiaren_im(p);
-		 Esaldi[os].eman_im(nag_ima,hat_im);
+			 nag_ima = HAT_taula[h].eman_nagusiaren_im(p);
+			 Esaldi[os].eman_im(nag_ima,hat_im);
 	       }
 	       hat_forma += f;
+		   hat_etik_offset += eo;
 	     }
 	   }
 	   et = Esaldi[det[p][0]].eman_etiketa();
 	   
+	   Pcre reg("#([0-9]+)\\-.+\\-([0-9]+)#(p[0-9]+)");
+	   if(reg.search(hat_etik_offset) == true) {
+		 if(reg.matches() >= 2) {
+		   hat_etik_offset = "#"+ reg.get_match(0) + "-" + reg.get_match(1)+"#"+reg.get_match(2)+"#";
+		 }
+	   }
+
 	   if (nag != -1) {
 	     string_lista::iterator hanhasi, hanamaitu,hant;
 	     
@@ -334,7 +346,7 @@ void HAT_class::bilatu_HAT_Esaldi()
 	       hat_an = hat_analisi;
 	       hat_an += hantmp;
 	       for (os=0;os<kop;os++) {
-		 Esaldi[det[p][os]].Sartu_forma(hat_forma,"HAUL_EDBL");
+		 Esaldi[det[p][os]].Sartu_forma(hat_forma,"HAUL_EDBL"+hat_etik_offset);
 		 Esaldi[det[p][os]].Sartu_osagai_kopurua(kop);
 		 Esaldi[det[p][os]].Sartu_analisi_hat(hat_an,HAT_taula[h].segurua());
 	       }
@@ -343,7 +355,7 @@ void HAT_class::bilatu_HAT_Esaldi()
 	   else {
 	     hat_an = hat_analisi;
 	     for (os=0;os<kop;os++) {
-	       Esaldi[det[p][os]].Sartu_forma(hat_forma,"HAUL_EDBL");
+	       Esaldi[det[p][os]].Sartu_forma(hat_forma,"HAUL_EDBL"+hat_etik_offset);
 	       Esaldi[det[p][os]].Sartu_osagai_kopurua(kop);
 	       Esaldi[det[p][os]].Sartu_analisi_hat(hat_an,HAT_taula[h].segurua());
 	     }

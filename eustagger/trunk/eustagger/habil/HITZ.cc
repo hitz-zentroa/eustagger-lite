@@ -113,9 +113,12 @@ int    HITZ::begiratu_hitza(string etq)
 // *********************************************************************//
 void   HITZ::Sartu_forma(string f, string e)
 {
+
+  Pcre reg("#([0-9]+\\-[0-9]+)#(.*)#");
+  string e2 = reg.replace(e,"");
  forma = f;
  etiketa = e;
- begiratu = begiratu_hitza(e);
+ begiratu = begiratu_hitza(e2);
  terminoa = 0;
  segurua = 0;
 }
@@ -226,7 +229,7 @@ void   HITZ::inprimatu()
  }
  else
    fprintf(hat_kargaout,"\"<%s>\"",forma.c_str());
- if (etiketa.length()>0)
+ if (etiketa.length()>0) 
    fprintf(hat_kargaout,"<%s>\"",etiketa.c_str());
  fprintf(hat_kargaout,"\n");
 // markatu HAT batean badago
@@ -237,8 +240,11 @@ void   HITZ::inprimatu()
      hat_anali = *t;
      analisirik = true;
      //     fprintf(hat_kargaout,"\t%s)\n",hat_anali.c_str());
-     if (etiketa.length()>0)
-       fprintf(hat_kargaout,"\t%s %s\n",hat_anali.c_str(),etiketa.c_str());
+	 // offset eta par info kendu
+	 Pcre reg("#([0-9]+\\-[0-9]+)#(.*)#");
+	 string elag = reg.replace(etiketa,"");
+     if (elag.length()>0)
+       fprintf(hat_kargaout,"\t%s %s\n",hat_anali.c_str(),elag.c_str());
      else
        fprintf(hat_kargaout,"\t%s\n",hat_anali.c_str());
    }
@@ -248,15 +254,27 @@ void   HITZ::inprimatu()
    aamaitu = anali.end();
    for ( at = ahasi; at != aamaitu; ++at) {
      at->inprimatu();
-     if (etiketa.length()>0) {
-       fprintf(hat_kargaout," %s",etiketa.c_str());
+
+	 // offset eta par info kendu
+	 Pcre reg("#([0-9]+\\-[0-9]+)#(.*)#");
+	 string elag = reg.replace(etiketa,"");
+
+     if (elag.length()>0) {
+       fprintf(hat_kargaout," %s",elag.c_str());
      }
      fprintf(hat_kargaout,"\n");
      analisirik = true;
    }
  }
- if (!analisirik && etiketa.length()>0)
-   fprintf(hat_kargaout,"\t%s\n",etiketa.c_str());
+ if (!analisirik) {
+   // offset eta par info kendu
+   Pcre reg("#([0-9]+\\-[0-9]+)#(.*)#");
+   string elag = reg.replace(etiketa,"");
+   if (elag.length()>0)
+   fprintf(hat_kargaout,"\t%s\n",elag.c_str());
+
+ }
+
 }
 
 // *********************************************************************//

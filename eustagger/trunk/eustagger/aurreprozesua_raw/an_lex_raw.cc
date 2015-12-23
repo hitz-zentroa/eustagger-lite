@@ -233,7 +233,10 @@ int   anLexRaw::next_token()
 
     if (berezia) t.init(h,etikstr,e,-1,hasiera,(int)sarrera->non()-hasierapar);    
     else t.init(h,etikstr,e,aurre_auto.tratamendua(),hasiera,(int)sarrera->non()-hasierapar);
-    
+	
+	t.s_paragrafoa(sarrera->get_paragrafoa());
+	t.s_paragrafoPos(sarrera->get_offset_metatuta());
+
     aurreko.s_token(t);
     // gorde offseta eta aurreko bete dela adierazi
     aurreko.s_offset(sarrera->non());

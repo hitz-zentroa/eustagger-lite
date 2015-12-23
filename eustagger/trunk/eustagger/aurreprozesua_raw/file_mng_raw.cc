@@ -37,7 +37,6 @@
 
 fileMngRaw::fileMngRaw()                           // hasieraketa funtzioa
 {
-
   this->sarreraEstandarra = false;
   this->sarreraAmaitua = false;
   this->buffer = "";
@@ -45,11 +44,11 @@ fileMngRaw::fileMngRaw()                           // hasieraketa funtzioa
   this->posizioa = 0;
   this->stdLerroa = 0;
   this->sarreraIzena = "";
-
+  this->paragrafoa = 0;
+  this->offsetMetatuta = 0;
 }
 
 fileMngRaw::fileMngRaw(const fileMngRaw & fm) {
-
   this->sarreraEstandarra = fm.sarreraEstandarra;
   this->sarreraAmaitua = fm.sarreraAmaitua;
   this->buffer = fm.buffer;
@@ -57,7 +56,8 @@ fileMngRaw::fileMngRaw(const fileMngRaw & fm) {
   this->posizioa = fm.posizioa;
   this->stdLerroa = fm.stdLerroa;
   this->sarreraIzena = fm.sarreraIzena;
-
+  this->paragrafoa = fm.paragrafoa;
+  this->offsetMetatuta = fm.offsetMetatuta;
 }
 
 void  fileMngRaw::init( const string & fitxIzen ) // hasieraketa funtzioa
@@ -160,6 +160,17 @@ int fileMngRaw::eof() {                      // fitxategia bukatu den
   return this->sarreraAmaitua;
 }
 
+int fileMngRaw::get_paragrafoa() {
+
+  return this->paragrafoa;
+
+}
+
+int fileMngRaw::get_offset_metatuta() {
+
+  return this->offsetMetatuta;
+
+}
 
 fileMngRaw::~fileMngRaw()                // funtzio suntsitzailea
 {
@@ -170,6 +181,8 @@ fileMngRaw::~fileMngRaw()                // funtzio suntsitzailea
 void fileMngRaw::kargatuStdBufferra() {
   string buf;
   // char buf[MAX_BUFFER];
+
+  this->offsetMetatuta = this->offsetMetatuta + this->bufferLuzera;
 
   if (this->sarreraEstandarra) {
     if (!getline(cin,buf,'\n')) this->sarreraAmaitua = true;
@@ -184,6 +197,7 @@ void fileMngRaw::kargatuStdBufferra() {
   this->bufferLuzera = this->buffer.size();
   this->posizioa = 0;
   this->stdLerroa++;
- 
+  this->paragrafoa++;
+
 }
 

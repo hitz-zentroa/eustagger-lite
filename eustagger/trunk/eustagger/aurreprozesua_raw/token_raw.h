@@ -45,6 +45,8 @@ class tokenRaw
  int    tratamendua;
  int    hasPos;
  int    bukPos;
+ int    paragrafoa;
+ int    parPos;
 
  string orig;                   // 
  bool analizatu;                // hitza analizatzera bidali behar al dugu?
@@ -62,6 +64,8 @@ public:
  void s_tratamendua(int t);             // tratamendua asignatu
  void s_hasieraPos(int hp);             // tokenaren hasiera posizioa
  void s_bukaeraPos(int bp);             // tokenaren bukaera posizioa
+ void s_paragrafoa(int pp);             // tokenaren paragrafoa
+ void s_paragrafoPos(int pp);           // paragrafo pos
  void s_orig(string ori);               // hitz originala
  void s_analizatu(bool ana);            // hitza analizatu?
 
@@ -75,6 +79,8 @@ public:
  int    e_tratamendua();          // tratamendua lortu
  int    e_hasieraPos();           // hasiera posizioa lortu
  int    e_bukaeraPos();           // bukaera posizioa lortu
+ int    e_paragrafoa();           // paragrafoa lortu
+ int    e_paragrafoPos();         // paragrafo pos
  string e_orig();                 // hitz originala lortu
  bool e_analizatu();              // hitza analizatu?
 

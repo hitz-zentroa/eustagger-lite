@@ -47,7 +47,7 @@ hat_informazioa \#[ \t]*[^\n]*
 
 forma2          \/\<.[^\>]*\>\/
 aldaera         \/([^ ])*\/[ ]
-etiketa         \<[A-Z_\(\)]+\>\/
+etiketa         \<[A-Z_\(\)\-#p0-9]+\>\/
 etiketa_haul    HAS_MAI
 informazioa2    [A-Z\.][^\)]+
 correct         ^[C|X]

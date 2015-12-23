@@ -387,9 +387,9 @@ void PrintNAF (list < sentence > &ls, int level) {
     for (w = si->begin (); w != si->end (); w++) {
       string form = util::wstring2string(w->get_form());
       form = XML_entities(form);
-      text << "  <wf id=\"w" << word << "\" sent=\"" << sent << "\"";
+	  //      text << "  <wf id=\"w" << word << "\" sent=\"" << sent << "\"";
       //text << " offset=\"" << w->get_span_start() << "\"";
-      text << ">" << form << "</wf>" << endl;
+	  //      text << ">" << form << "</wf>" << endl;
 
       word::const_iterator an;
       word::const_iterator last;
@@ -404,6 +404,28 @@ void PrintNAF (list < sentence > &ls, int level) {
       }
 
       if (an != last) { 
+
+		string ana = util::wstring2string(*(an->user.begin()));
+		string xoffset = "";
+		string xoffset2 = "";
+		int xlength = 0;
+		string xpara = "";
+		Pcre reg("#([0-9]+)\\-([0-9]+)#p([0-9]+)#");
+		if(reg.search(ana) == true) {
+		  if(reg.matches() >= 2) {
+			xoffset = reg.get_match(0);
+			xoffset2 = reg.get_match(1);
+			xlength = (atoi(xoffset2.c_str()) - atoi(xoffset.c_str()))+1;
+			xpara = reg.get_match(2);
+		  }
+		}
+
+		
+		text << "  <wf id=\"w" << word << "\" offset=\""<< xoffset << "\" lenght=\""<< xlength <<"\" sent=\"" << sent << "\" para=\""<< xpara <<"\"";
+		text << ">" << form << "</wf>" << endl;
+
+
+
 	string lemma = util::wstring2string(w->get_lemma());
 	string form = util::wstring2string(w->get_form());
 	string tag = util::wstring2string(an->get_tag());
