@@ -84,6 +84,7 @@ void help() {
   cerr << "-m [0|1|2|3|4] (defektuz 2)" << endl;
   cerr << "-m 0 denean ez du desanbiguatuko" << endl;  
   cerr << "-m 4 denean bakarrik aplikatuko du CG3 desanbiguatzeko" << endl;
+  cerr << "-f [mg|naf] (defektuz freeling/parole formatua)" << endl;
   cerr << eustaggerVersion.str() ;
   exit(EXIT_FAILURE);
 }
