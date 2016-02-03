@@ -421,7 +421,7 @@ void PrintNAF (list < sentence > &ls, int level) {
 		}
 
 		
-		text << "  <wf id=\"w" << word << "\" offset=\""<< xoffset << "\" lenght=\""<< xlength <<"\" sent=\"" << sent << "\" para=\""<< xpara <<"\"";
+		text << "  <wf id=\"w" << word << "\" offset=\""<< xoffset << "\" length=\""<< xlength <<"\" sent=\"" << sent << "\" para=\""<< xpara <<"\"";
 		text << ">" << form << "</wf>" << endl;
 
 
