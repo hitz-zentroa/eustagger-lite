@@ -56,9 +56,12 @@ INCLUDE_LOCAL = $(DIRS:%=-I./%)
 
 SOURCE= eustagger_lite.cc
 SOURCE_MORFOSINTAXIA= morfosintaxia_raw/morfosintaxia_raw.cc
+SOURCE_IXA_PIPE_POS_EU=ixa-pipe-pos-eu.cc
+
 
 BINPROGRAM=$(SOURCE:%.cc=%)
 BINPROGRAM_MORFOSINTAXIA=morfosintaxia_raw_swi
+BINPROGRAM_IXA_PIPE_POS_EU = $(SOURCE_IXA_PIPE_POS_EU:%.cc=%)
 
 DIRS = aurreprozesua_raw morfologia morfosintaxia_raw habil cg3manager analisitresnak
 
@@ -78,10 +81,11 @@ CPPFLAGS= $(DEFINE)
 
 LINK.cc = swipl-ld -fpic -goal true -D_USE_SWI_ $(CPPFLAGS) -o $(BINPROGRAM) $(SOURCE) $(INCLUDE) -L./ -leustagger $(LDLIBS) var/morfosintaxia/prolog-swi/chart_parser_2004_morf.pl var/morfosintaxia/prolog-swi/morfosintaxia_gramatika_441.pl
 LINK_MORFOS.cc = swipl-ld -fpic -goal true -D_USE_SWI_ $(CPPFLAGS) -o $(BINPROGRAM_MORFOSINTAXIA) $(SOURCE_MORFOSINTAXIA) $(INCLUDE) -L./ -leustagger $(LDLIBS) var/morfosintaxia/prolog-swi/chart_parser_2004_morf.pl var/morfosintaxia/prolog-swi/morfosintaxia_gramatika_441.pl
+LINK_IXA_PIPE_POS_EU.cc = swipl-ld -fpic -goal true -D_USE_SWI_ $(CPPFLAGS) -o $(BINPROGRAM_IXA_PIPE_POS_EU) $(SOURCE_IXA_PIPE_POS_EU) $(INCLUDE) -L./ -leustagger $(LDLIBS) var/morfosintaxia/prolog-swi/chart_parser_2004_morf.pl var/morfosintaxia/prolog-swi/morfosintaxia_gramatika_441.pl
 
 .PHONY: $(DIRS) clean
 
-all: $(DIRS) $(LIBRARY) $(BINPROGRAM) $(BINPROGRAM_MORFOSINTAXIA)
+all: $(DIRS) $(LIBRARY) $(BINPROGRAM) $(BINPROGRAM_MORFOSINTAXIA) $(BINPROGRAM_IXA_PIPE_POS_EU)
 
 $(DIRS):
 	$(MAKE) -C $@
@@ -92,11 +96,15 @@ $(BINPROGRAM): $(LIBRARY)
 $(BINPROGRAM_MORFOSINTAXIA): $(DIRS)
 	$(LINK_MORFOS.cc)
 
+$(BINPROGRAM_IXA_PIPE_POS_EU): $(LIBRARY)
+	$(LINK_IXA_PIPE_POS_EU.cc)
+
+
 $(LIBRARY): $(DIRS)
 	$(CCC) -o $(LIBRARY) $(INCLUDE) $(LDLIBS) -shared $(MEMBERS)
 
 clean: FORCE
-	'rm' -f $(BINPROGRAM) $(BINPROGRAM_MORFOSINTAXIA) $(LIBRARY)
+	'rm' -f $(BINPROGRAM) $(BINPROGRAM_MORFOSINTAXIA) $(LIBRARY) $(BINPROGRAM_IXA_PIPE_POS_EU)
 	@for dir in $(DIRS); do \
 	(cd $$dir; $(MAKE) clean); \
 	done
@@ -107,6 +115,7 @@ install: FORCE
 	install -d -m 755 $(INSTALL_DIR)/tmp
 	install -m 755 $(BINPROGRAM) $(INSTALL_DIR)/bin
 	install -m 755 $(BINPROGRAM_MORFOSINTAXIA) $(INSTALL_DIR)/bin
+	install -m 755 $(BINPROGRAM_IXA_PIPE_POS_EU) $(INSTALL_DIR)/bin
 	install -m 755 $(LIBRARY) $(INSTALL_DIR)/lib
 	install -d -m 755 $(INSTALL_DIR)/var
 	install -d -m 755 $(INSTALL_DIR)/var/eustagger_lite
