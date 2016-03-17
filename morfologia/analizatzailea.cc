@@ -2177,54 +2177,64 @@ void analizatzailea::lortu_hitza(char *hitza,vector<string> *sarrerako_taula,vec
 //  if (!lehena && (strstr(lerroa,"<ID>") == NULL)) aurrekoa_puntua = 0;
 
  while (jarraitu && ((irteera_nola == ESTANDAR_AN && !feof(stdin)) || (irteera_nola == TAULAN && *indizea <= sar_luz)) ) {
-   if (strstr(lerroa,">/<IDENT>/") != NULL ) {
+   if (strstr(lerroa,">/<IDENT#") != NULL ) {
      // forma eta lema aldatu behar dira
      ident_da = 1;
      forma_ident[0] = '\0';
      strcpy(forma_ident,&lerroa[2]);
-     if (irteera_nola == TAULAN) // kasu honetan \n ez dauka amaieran
-       forma_ident[strlen(lerroa)-strlen(">/<IDENT>/")-strlen("/<")] = '\0';
+	 char* bila = strstr(forma_ident, ">/<IDENT#");
+	 int posip = bila - forma_ident;
+	 if (irteera_nola == TAULAN) // kasu honetan \n ez dauka amaieran
+       forma_ident[posip] = '\0';
      else
-       forma_ident[strlen(lerroa)-strlen(">/<IDENT>/")-strlen("/<\n")] = '\0';
+	   forma_ident[posip-1] = '\0';
    }
-   if (strstr(lerroa,">/<ZEN>/") != NULL ) {
+   if (strstr(lerroa,">/<ZEN#") != NULL ) {
      // forma eta lema aldatu behar dira
      zen_da = 1;
      forma_ident[0] = '\0';
      strcpy(forma_ident,&lerroa[2]);
-     if (irteera_nola == TAULAN) // kasu honetan \n ez dauka amaieran
-       forma_ident[strlen(lerroa)-strlen(">/<ZEN>/")-strlen("/<")] = '\0';
+	 char* bila = strstr(forma_ident, ">/<ZEN#");
+	 int posip = bila - forma_ident;
+	 if (irteera_nola == TAULAN) // kasu honetan \n ez dauka amaieran
+       forma_ident[posip] = '\0';
      else
-       forma_ident[strlen(lerroa)-strlen(">/<ZEN>/")-strlen("/<\n")] = '\0';
+	   forma_ident[posip-1] = '\0';
    }
-   if (strstr(lerroa,">/<ZEN_DEK>/") != NULL ) {
+   if (strstr(lerroa,">/<ZEN_DEK#") != NULL ) {
      // forma eta lema aldatu behar dira
      zen_dek_da = 1;
      forma_ident[0] = '\0';
      strcpy(forma_ident,&lerroa[2]);
-     if (irteera_nola == TAULAN) // kasu honetan \n ez dauka amaieran
-       forma_ident[strlen(lerroa)-strlen(">/<ZEN_DEK>/")-strlen("/<")] = '\0';
+	 char* bila = strstr(forma_ident, ">/<ZEN_DEK#");
+	 int posip = bila - forma_ident;
+	 if (irteera_nola == TAULAN) // kasu honetan \n ez dauka amaieran
+       forma_ident[posip] = '\0';
      else
-       forma_ident[strlen(lerroa)-strlen(">/<ZEN_DEK>/")-strlen("/<\n")] = '\0';
+	   forma_ident[posip-1] = '\0';
    }
-   if (strstr(lerroa,">/<ERROM>/") != NULL ) {
+   if (strstr(lerroa,">/<ERROM#") != NULL ) {
      // forma eta lema aldatu behar dira
      errom_da = 1;
      forma_ident[0] = '\0';
      strcpy(forma_ident,&lerroa[2]);
-     if (irteera_nola == TAULAN) // kasu honetan \n ez dauka amaieran
-       forma_ident[strlen(lerroa)-strlen(">/<ERROM>/")-strlen("/<")] = '\0';
+	 char* bila = strstr(forma_ident, ">/<ERROM#");
+	 int posip = bila - forma_ident;
+	 if (irteera_nola == TAULAN) // kasu honetan \n ez dauka amaieran
+       forma_ident[posip] = '\0';
      else
-       forma_ident[strlen(lerroa)-strlen(">/<ERROM>/")-strlen("/<\n")] = '\0';
+	   forma_ident[posip-1] = '\0';
    }
    if ( strstr(lerroa,">/<KAR_BER>/") ) {
      kar_ber = 1;
      forma_ident[0] = '\0';
      strcpy(forma_ident,&lerroa[2]);
-     if (irteera_nola == TAULAN) // kasu honetan \n ez dauka amaieran
-       forma_ident[strlen(lerroa)-strlen(">/<KAR_BER>/")-strlen("/<")] = '\0';
+	 char* bila = strstr(forma_ident, ">/<KAR_BER#");
+	 int posip = bila - forma_ident;
+	 if (irteera_nola == TAULAN) // kasu honetan \n ez dauka amaieran
+       forma_ident[posip] = '\0';
      else
-       forma_ident[strlen(lerroa)-strlen(">/<KAR_BER>/")-strlen("/<\n")] = '\0';
+	   forma_ident[posip-1] = '\0';
    }
    if (strstr(lerroa,"((forma") != 0) { /*** forma bada, hitza jaso */
      if (irteera_nola == TAULAN) {
@@ -2254,10 +2264,10 @@ void analizatzailea::lortu_hitza(char *hitza,vector<string> *sarrerako_taula,vec
    }
    else {
      if (lerroa[0] == '/') {
-       if (strstr(lerroa,">/<IDENT>/") == NULL ) ident_da = 0;
-       if (strstr(lerroa,">/<ZEN>/") == NULL ) zen_da = 0;
-       if (strstr(lerroa,">/<ZEN_DEK>/") == NULL ) zen_dek_da = 0;
-       if (strstr(lerroa,">/<ERROM>/") == NULL ) errom_da = 0;
+       if (strstr(lerroa,">/<IDENT#") == NULL ) ident_da = 0;
+       if (strstr(lerroa,">/<ZEN#") == NULL ) zen_da = 0;
+       if (strstr(lerroa,">/<ZEN_DEK#") == NULL ) zen_dek_da = 0;
+       if (strstr(lerroa,">/<ERROM#") == NULL ) errom_da = 0;
  //       if ( strstr(lerroa,"<.>") ||
 // 	    strstr(lerroa,"<!>") ||
 // 	    strstr(lerroa,"<?>") ||
@@ -2271,7 +2281,7 @@ void analizatzailea::lortu_hitza(char *hitza,vector<string> *sarrerako_taula,vec
        if (!strstr(lerroa,"<PUNT") && !strstr(lerroa,"BEREIZ")) {
 // 	 aurrekoa_den_mai = den_mai;
 // 	 aurrekoa_has_mai = has_mai;
-	 if ( strstr(lerroa,"<HAS_MAI>") ) has_mai = 1;
+	 if ( strstr(lerroa,"<HAS_MAI") ) has_mai = 1;
 	 else has_mai = 0;
 	 if ( strstr(lerroa,"<DEN_MAI") ) den_mai = 1;
 	 else den_mai = 0;
