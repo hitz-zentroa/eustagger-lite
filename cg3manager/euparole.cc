@@ -49,8 +49,10 @@ euParole::euParole() {
 }
 
 euParole::euParole(int tagLevel) {
-  if (tagLevel == 0) 
+  if (tagLevel == 0)
     euParole::level = 4;
+  else if (tagLevel == 5)
+	euParole::level = 3;
   else
     euParole::level = tagLevel;
   try {

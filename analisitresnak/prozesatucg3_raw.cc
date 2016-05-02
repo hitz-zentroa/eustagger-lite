@@ -55,6 +55,9 @@ void PrintParole (list < sentence > &ls, int level);
 void PrintMG (list < sentence > &ls, int level);
 void PrintNAF (list < sentence > &ls, int level);
 void desHMM(int maila, string &desIrteera, string &oinIzen, int zuriuneetan, int format);
+int prozesatuCG3RawFuntzioSintaktikoak (int maila, string &oinIzen, int zuriuneetan, int format);
+list<sentence> bihurtuFreeling (int maila, string &desIrteera, int zuriuneetan);
+
 
 // trim from start
 static inline string &ltrim(string &s) {
@@ -109,51 +112,51 @@ string XML_entities(string s) {
 int prozesatuCG3Raw(int maila, string &oinIzen, int zuriuneetan, int format) {
   string tmpVar = getEnvVar("IXA_PREFIX");
   string tmpName;
-  string gramatika;
+  string gramatika,gramatika2;
   string desSarrera = oinIzen + PHAT;
   string desIrteera = oinIzen ;
+  string desIrteera2 = oinIzen ;
 
   if (maila != 0) {
 
     if (tmpVar.length()>0) {
       tmpVar += "/var/eustagger_lite/mg/";
       gramatika = tmpVar + "gramatika4.4.1.cg3.dat";
+	  gramatika2 = tmpVar + "gramatikaFSdesanb4.4.1.cg3.dat";
     }
     else {
       cerr << "prozesatuCG3Raw => ERRORE LARRIA: 'IXA_PREFIX' ingurune aldagaia ezin daiteke atzitu" << endl;
       exit(EXIT_FAILURE);
     }
-    
-    
+
     desIrteera += ".irteera";
+
     // LEM formatua bada, .irteera ipini hemen eta bukaeran bihurketa egin
-    
-    
+
     cgManager cgApp;
     int sekzioak = 11;
     if (maila == 1) sekzioak = 3;
     else if (maila == 2) sekzioak = 4;
     else if (maila == 3) sekzioak = 5;
-    
-    
+	else if (maila == 5) sekzioak = 5; // FIXME maila 4 eta >5 ???
+
+
     if (cgApp.initGrammar(gramatika,sekzioak,'@',0) == 0) {// gramatika, zenbat sekzio, @ aurrizkia eta trace=0
       cerr << "Error in initGrammar: "<<gramatika << endl;
       return EXIT_FAILURE;
     }
-    
+
     if (cgApp.initIO(desSarrera,desIrteera) == 0) {
       cerr << "Error in initIO " << desSarrera << " or " << desIrteera<< endl;
       return EXIT_FAILURE;
     }
-    
+
     cgApp.applyGrammar();// aplikatu sekzio eta mapaketa guztiak
-    
-    
     cgApp.clean();
-    
     unlink(desSarrera.c_str());
     desHMM(maila,desIrteera,oinIzen, zuriuneetan, format);
     unlink(desIrteera.c_str());
+
   }
   else {
     desHMM(maila,desSarrera,oinIzen, zuriuneetan, format);
@@ -259,20 +262,218 @@ void desHMM(int maila, string &desIrteera,string &oinIzen, int zuriuneetan, int 
     ls.push_back(lws);
     lws.clear();
   }
+
   if (ls.size() > 0) {
     taggerEu.analyze(ls);
-    if (format == NAF_OUTPUT) {
-      PrintNAF(ls,maila);
+
+	if (maila != 5) {
+
+	  if (format == NAF_OUTPUT) {
+		PrintNAF(ls,maila);
+	  }
+	  else if (format == MG_OUTPUT) {
+		PrintMG(ls,maila);
+	  }
+	  else {
+		PrintParole(ls,maila);
+	  }
+	  ls.clear();
+
+	} else {
+
+	  // inprimatu fitxategi batean prozesatzen jarraitzeko
+
+	  ofstream outf((oinIzen+".hmm").c_str());
+
+	  sentence::const_iterator w;
+	  list < sentence >::iterator si;
+
+	  for (si = ls.begin (); si != ls.end (); si++) {
+		for (w = si->begin (); w != si->end (); w++) {
+
+		  word::const_iterator an;
+		  word::const_iterator last;
+		  if (maila > 0) {
+			an = w->selected_begin();
+			last = w->selected_end();
+		  }
+		  else {
+			an = w->analysis_begin();
+			last = w->analysis_end();
+		  }
+
+		  for (word::const_iterator an = w->selected_begin (); an != w->selected_end (); an++) {
+			if (an->user.begin() != an->user.end())
+			  outf << util::wstring2string(*(an->user.begin()));
+
+			else
+			  outf << util::wstring2string(w->get_form()) << endl;
+		  }
+		  outf << endl;
+		}
+	  }
+	  outf.flush();
+	  prozesatuCG3RawFuntzioSintaktikoak (maila, oinIzen, zuriuneetan, format);
+	}
+
+  }
+
+}
+
+
+int prozesatuCG3RawFuntzioSintaktikoak (int maila, string &oinIzen, int zuriuneetan, int format) {
+
+
+  string tmpVar = getEnvVar("IXA_PREFIX");
+  string tmpName;
+  string gramatika;
+  string gramatika2;
+  string desSarrera = oinIzen + ".hmm";
+  string desIrteera = oinIzen;
+  string desIrteera2 = oinIzen;
+
+  if (tmpVar.length()>0) {
+	tmpVar += "/var/eustagger_lite/mg/";
+	gramatika = tmpVar + "gramatika4.4.1.cg3.dat";
+	gramatika2 = tmpVar + "gramatikaFSdesanb4.4.1.cg3.dat";
+  }
+  else {
+	cerr << "prozesatuCG3Raw => ERRORE LARRIA: 'IXA_PREFIX' ingurune aldagaia ezin daiteke atzitu" << endl;
+	exit(EXIT_FAILURE);
+  }
+
+  desIrteera += ".irteerasek";
+  desIrteera2 += ".irteerafs";
+
+  cgManager cgApp;
+  int sekzioak = 11;
+  if (cgApp.initGrammar(gramatika,sekzioak,'@',0) == 0) {// gramatika, zenbat sekzio, @ aurrizkia eta trace=0
+	cerr << "Error in initGrammar: "<<gramatika << endl;
+	return EXIT_FAILURE;
+  }
+  if (cgApp.initIO(desSarrera,desIrteera) == 0) {
+	cerr << "Error in initIO " << desSarrera << " or " << desIrteera<< endl;
+	return EXIT_FAILURE;
+  }
+  cgApp.applyGrammar();// aplikatu sekzio eta mapaketa guztiak
+  cgApp.clean();
+
+  cgManager cgApp2;
+  int sekzioak2 = 7;
+  if (cgApp2.initGrammar(gramatika2,sekzioak2,'@',0) == 0) { // gramatika, zenbat sekzio, @ aurrizkia eta trace=0
+	cerr << "Error in initGrammar: "<<gramatika2 << endl;
+	return EXIT_FAILURE;
+  }
+  if (cgApp2.initIO(desIrteera,desIrteera2) == 0) {
+	cerr << "Error in initIO " << desIrteera << " or " << desIrteera2<< endl;
+	return EXIT_FAILURE;
+  }
+  cgApp2.applyGrammar();// aplikatu sekzio eta mapaketa guztiak
+  cgApp2.clean();
+
+  list<sentence> ls = bihurtuFreeling(maila,desIrteera2,zuriuneetan);
+
+  unlink(desSarrera.c_str());
+  unlink(desIrteera.c_str());
+  unlink(desIrteera2.c_str());
+
+  if (format == NAF_OUTPUT) {
+	PrintNAF(ls,maila);
+  }
+  else if (format == MG_OUTPUT) {
+	PrintMG(ls,maila);
+  }
+  else {
+	PrintParole(ls,maila);
+  }
+  return EXIT_SUCCESS;
+
+
+}
+
+
+list<sentence> bihurtuFreeling (int maila, string &desIrteera, int zuriuneetan) {
+
+  euParole parolera(maila);
+  list<sentence> ls;
+  sentence lws;
+  ifstream in(desIrteera.c_str());
+  string sars;
+  string tmpVar = getEnvVar("IXA_PREFIX");
+  string tmpName;
+
+  wstring tagDat = util::string2wstring(tmpName);
+
+  getline(in,sars);
+  while (sars.length()>0) {
+    string formL;
+    wstring form,lemma,tag,ambclass;
+    Pcre firstL("\\\"<\\$?(.[^>]*)>\\\"");
+
+    if (firstL.search(sars)) {
+      string formTmp = firstL.get_match(0);
+      form = util::string2wstring(formTmp);
     }
-    else if (format == MG_OUTPUT) {
-      PrintMG(ls,maila);
+    word w(form);
+
+    formL = sars;
+    sars.clear();
+    getline(in,sars);
+    while (sars.length()>0 && sars[0] != '"') {
+      parolera.getLemmaTag(sars,lemma,tag);
+      string user = formL + "\n" + sars;
+      if (lemma.length()>0) {
+		analysis an(lemma,tag);
+		an.user.push_back(util::string2wstring(user));
+		w.add_analysis(an);
+		if (ambclass.length()) ambclass += L"-";
+		ambclass += tag;
+      }
+      else if (tag.length()>0) {
+		lemma = form;
+		analysis an(lemma,tag);
+		an.user.push_back(util::string2wstring(user));
+		w.add_analysis(an);
+		if (ambclass.length()) ambclass += L"-";
+		ambclass += tag;
+      }
+      sars.clear();
+      getline(in,sars);
+    }
+    //set prob
+    wstring fakeform = ambclass + L"&-&";
+    fakeform = fakeform + form;
+    w.set_form(fakeform);
+    w.set_form(form);
+
+    if (zuriuneetan && form == L"@@SENT_END") {
+      ls.push_back(lws);
+      lws.clear();
     }
     else {
-      PrintParole(ls,maila);
+      lws.push_back(w);
     }
-    ls.clear();
-  }  
+
+    if (!zuriuneetan && (form == L"." || form == L"!" || form == L"?")) {
+      ls.push_back(lws);
+      lws.clear();
+    }
+
+    if (sars[0] != '"') {
+      sars.clear();
+      getline(in,sars);
+    }
+  }
+  
+  if (lws.size() > 0) {
+    ls.push_back(lws);
+    lws.clear();
+  }
+
+  return ls;
+
 }
+
 
 string getPoS(string tag) {
   string PoS = "O";
@@ -300,7 +501,7 @@ string getPoS(string tag) {
 void PrintParole (list < sentence > &ls, int level) {
   sentence::const_iterator w;
   list < sentence >::iterator si;
- 
+
   for (si = ls.begin (); si != ls.end (); si++) {
     for (w = si->begin (); w != si->end (); w++) {
       wcout << w->get_form ();
