@@ -52,9 +52,9 @@ const int NAF_OUTPUT    = 3;
 extern void segHasieraketak(int sar_lem, int lex_uzei, int bigarren, int ez_est, int erab_lex, string &lexiko_izena, int parentizatua, int deslokala);
 extern void segAmaierakoak();
 
-extern void segmentazioaSortuRaw(string &fitxategiIzena, string &segIrteera, int zuriuneetan);
+extern void segmentazioaSortuRaw(string &fitxategiIzena, string &segIrteera, int zuriuneetan, bool utf8in);
 extern void morfosintaxiaSortuRaw(string &fitxategiIzena, string &segIrteera, bool haul_seguruak, bool cg3form);
-extern int prozesatuCG3Raw(int maila, string &oinIzen, int zuriuneetan, int format);
+extern int prozesatuCG3Raw(int maila, string &oinIzen, int zuriuneetan, int format, bool utf8out);
 
 void help() {
   stringstream eustaggerVersion;
@@ -139,10 +139,10 @@ int main(int argc, char *argv[])
    sprintf(pid, "%d", getpid());
    string fitxategiIzena = "-"; // ixa-pipeek sarrera estandarretik elikatzen dira
    string segIrteera;
-   segmentazioaSortuRaw(fitxategiIzena,segIrteera, zuriune_token);
+   segmentazioaSortuRaw(fitxategiIzena,segIrteera, zuriune_token,true);
    fitxategiIzena += pid;
    morfosintaxiaSortuRaw(fitxategiIzena,segIrteera,haul_seguruak,OUT_MG); 
-   prozesatuCG3Raw(maila,fitxategiIzena, zuriune_token, out_format) ;
+   prozesatuCG3Raw(maila,fitxategiIzena, zuriune_token, out_format,true) ;
 
  }
  else {

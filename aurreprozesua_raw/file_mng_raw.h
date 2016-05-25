@@ -35,6 +35,7 @@
 #include <iostream>
 #include <fstream>
 #include "token_raw.h"
+#include "iconv.hpp"
 
 #define MAX_BUFFER 100000       // irakurriko dugun lerroaren luzera maximoa
 using namespace std;
@@ -52,6 +53,8 @@ class fileMngRaw
   string sarreraIzena;           // tokenizatutako fitxategiaren izena gordetzeko
   int paragrafoa;
   int offsetMetatuta;
+  bool utf8input;
+  static iconvpp::converter utf2latin;
 
  public:
   
@@ -61,7 +64,7 @@ class fileMngRaw
   fileMngRaw(bool, bool, bool, const string &, int, int, int);
   fileMngRaw(const fileMngRaw &);
   
-  void init(const string &);                // hasieraketa funtzioa
+  void init(const string &, bool utf8in);   // hasieraketa funtzioa
   void reset();                             // fitxategia lehen posizioan kokatu
   int back(long offset);                    // fitxategia birkokatu
   int back_token(long offset_pre,long offset);                    // fitxategia birkokatu

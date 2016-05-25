@@ -1,10 +1,10 @@
 # Hau erabiltzeko honako ingurune aldagaiak definitu behar dira:
 
-#deps: morfologia
+#deps: morfologia analisitresnak(iconv)
 
 INCLUDE_PCREPLUSPLUS = @CONF_INCLUDE_PCREPLUSPLUS@
 INCLUDE_BOOST = @CONF_INCLUDE_BOOST@
-INCLUDE= @CPPFLAGS@ $(INCLUDE_PCREPLUSPLUS) -I../morfologia $(INCLUDE_BOOST)
+INCLUDE= @CPPFLAGS@ $(INCLUDE_PCREPLUSPLUS) -I../morfologia $(INCLUDE_BOOST) -I../analisitresnak
 
 SOURCES= automata.cc token_raw.cc file_mng_raw.cc status_raw.cc an_lex_raw.cc zuriune_token.cc aurreproz_raw.cc
 

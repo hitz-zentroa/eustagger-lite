@@ -53,9 +53,9 @@ string kendu_cg3rako_etiketak(string info);
 string getPoS(string tag);
 void PrintParole (list < sentence > &ls, int level);
 void PrintMG (list < sentence > &ls, int level);
-void PrintNAF (list < sentence > &ls, int level);
-void desHMM(int maila, string &desIrteera, string &oinIzen, int zuriuneetan, int format);
-int prozesatuCG3RawFuntzioSintaktikoak (int maila, string &oinIzen, int zuriuneetan, int format);
+void PrintNAF (list < sentence > &ls, int level, bool utf8out);
+void desHMM(int maila, string &desIrteera, string &oinIzen, int zuriuneetan, int format, bool utf8out);
+int prozesatuCG3RawFuntzioSintaktikoak (int maila, string &oinIzen, int zuriuneetan, int format, bool utf8out);
 list<sentence> bihurtuFreeling (int maila, string &desIrteera, int zuriuneetan);
 
 
@@ -109,7 +109,7 @@ string XML_entities(string s) {
   return s;
 }
 
-int prozesatuCG3Raw(int maila, string &oinIzen, int zuriuneetan, int format) {
+int prozesatuCG3Raw(int maila, string &oinIzen, int zuriuneetan, int format, bool utf8out) {
   string tmpVar = getEnvVar("IXA_PREFIX");
   string tmpName;
   string gramatika,gramatika2;
@@ -154,19 +154,19 @@ int prozesatuCG3Raw(int maila, string &oinIzen, int zuriuneetan, int format) {
     cgApp.applyGrammar();// aplikatu sekzio eta mapaketa guztiak
     cgApp.clean();
     unlink(desSarrera.c_str());
-    desHMM(maila,desIrteera,oinIzen, zuriuneetan, format);
-    unlink(desIrteera.c_str());
+    desHMM(maila,desIrteera,oinIzen, zuriuneetan, format, utf8out);
+	unlink(desIrteera.c_str());
 
   }
   else {
-    desHMM(maila,desSarrera,oinIzen, zuriuneetan, format);
+    desHMM(maila,desSarrera,oinIzen, zuriuneetan, format, utf8out);
     unlink(desSarrera.c_str());
   }
 
   return EXIT_SUCCESS;
 }
 
-void desHMM(int maila, string &desIrteera,string &oinIzen, int zuriuneetan, int format) {
+void desHMM(int maila, string &desIrteera,string &oinIzen, int zuriuneetan, int format, bool utf8out) {
   euParole parolera(maila);
   list<sentence> ls;
   sentence lws;
@@ -267,9 +267,12 @@ void desHMM(int maila, string &desIrteera,string &oinIzen, int zuriuneetan, int 
     taggerEu.analyze(ls);
 
 	if (maila != 5) {
+	 
+	  if (utf8out) util::init_locale(L"en_US.utf-8");
+	  else util::init_locale(L"en_US.iso-8859-15");
 
 	  if (format == NAF_OUTPUT) {
-		PrintNAF(ls,maila);
+		PrintNAF(ls,maila,utf8out);
 	  }
 	  else if (format == MG_OUTPUT) {
 		PrintMG(ls,maila);
@@ -313,7 +316,7 @@ void desHMM(int maila, string &desIrteera,string &oinIzen, int zuriuneetan, int 
 		}
 	  }
 	  outf.flush();
-	  prozesatuCG3RawFuntzioSintaktikoak (maila, oinIzen, zuriuneetan, format);
+	  prozesatuCG3RawFuntzioSintaktikoak (maila, oinIzen, zuriuneetan, format, utf8out);
 	}
 
   }
@@ -321,7 +324,7 @@ void desHMM(int maila, string &desIrteera,string &oinIzen, int zuriuneetan, int 
 }
 
 
-int prozesatuCG3RawFuntzioSintaktikoak (int maila, string &oinIzen, int zuriuneetan, int format) {
+int prozesatuCG3RawFuntzioSintaktikoak (int maila, string &oinIzen, int zuriuneetan, int format, bool utf8out) {
 
 
   string tmpVar = getEnvVar("IXA_PREFIX");
@@ -377,8 +380,11 @@ int prozesatuCG3RawFuntzioSintaktikoak (int maila, string &oinIzen, int zuriunee
   unlink(desIrteera.c_str());
   unlink(desIrteera2.c_str());
 
+  if (utf8out) util::init_locale(L"en_US.utf-8");
+  else util::init_locale(L"en_US.iso-8859-15");
+
   if (format == NAF_OUTPUT) {
-	PrintNAF(ls,maila);
+	PrintNAF(ls,maila,utf8out);
   }
   else if (format == MG_OUTPUT) {
 	PrintMG(ls,maila);
@@ -499,6 +505,7 @@ string getPoS(string tag) {
 }
 
 void PrintParole (list < sentence > &ls, int level) {
+
   sentence::const_iterator w;
   list < sentence >::iterator si;
 
@@ -573,11 +580,14 @@ string MG2XML(string input) {
   return output;
 }
 
-void PrintNAF (list < sentence > &ls, int level) {
+void PrintNAF (list < sentence > &ls, int level, bool utf8out) {
   sentence::const_iterator w;
   list < sentence >::iterator si;
- 
-  std::locale::global(std::locale(""));
+
+  // FIXME zer da hauuu?
+  //  std::locale::global(std::locale(""));
+
+
   ostringstream text;
   ostringstream terms;
 
@@ -594,17 +604,17 @@ void PrintNAF (list < sentence > &ls, int level) {
 
       word::const_iterator an;
       word::const_iterator last;
-      
+
       if (level > 0) {
-	an = w->selected_begin();
-	last = w->selected_end();
+		an = w->selected_begin();
+		last = w->selected_end();
       }
       else {
-	an = w->analysis_begin();
-	last = w->analysis_end();
+		an = w->analysis_begin();
+		last = w->analysis_end();
       }
 
-      if (an != last) { 
+      if (an != last) {
 
 		string ana = util::wstring2string(*(an->user.begin()));
 		string xoffset = "";
@@ -621,29 +631,28 @@ void PrintNAF (list < sentence > &ls, int level) {
 		  }
 		}
 
-		
 		text << "  <wf id=\"w" << word << "\" offset=\""<< xoffset << "\" length=\""<< xlength <<"\" sent=\"" << sent << "\" para=\""<< xpara <<"\"";
 		text << ">" << form << "</wf>" << endl;
 
 
 
-	string lemma = util::wstring2string(w->get_lemma());
-	string form = util::wstring2string(w->get_form());
-	string tag = util::wstring2string(an->get_tag());
-	lemma = XML_entities(lemma);
+		string lemma = util::wstring2string(w->get_lemma());
+		string form = util::wstring2string(w->get_form());
+		string tag = util::wstring2string(an->get_tag());
+		lemma = XML_entities(lemma);
 
-	Pcre kendu("--", "g");
-	form = kendu.replace(form, " - -");
+		Pcre kendu("--", "g");
+		form = kendu.replace(form, " - -");
 
-	terms << "  <!-- " << form << " -->" << endl;
-	terms << "  <term id=\"t" << term << "\" lemma=\"" << lemma << "\" morphofeat=\"" << tag;
-	terms << "\" pos=\"" << getPoS(tag);
-	if (an->user.begin() != an->user.end()) terms << "\" case=\"" << MG2XML(util::wstring2string(*(an->user.begin())));
-	terms << "\">" << endl;
-	terms << "   <span>" << endl << "    <target id=\"w" << word << "\"/>" << endl;
-	terms << "   </span>" << endl << "  </term>" << endl;
-	
-	term++;
+		terms << "  <!-- " << form << " -->" << endl;
+		terms << "  <term id=\"t" << term << "\" lemma=\"" << lemma << "\" morphofeat=\"" << tag;
+		terms << "\" pos=\"" << getPoS(tag);
+		if (an->user.begin() != an->user.end()) terms << "\" case=\"" << MG2XML(util::wstring2string(*(an->user.begin())));
+		terms << "\">" << endl;
+		terms << "   <span>" << endl << "    <target id=\"w" << word << "\"/>" << endl;
+		terms << "   </span>" << endl << "  </term>" << endl;
+
+		term++;
       }
 
       word++;
@@ -652,24 +661,28 @@ void PrintNAF (list < sentence > &ls, int level) {
     sent++;
   }
 
-  cout << "<?xml version='1.0' encoding='UTF-8'?>" << endl;
-  cout << "<NAF xml:lang=\"eu\" version=\"2.0\">" << endl;
+
+
+  if (utf8out) wcout << L"<?xml version='1.0' encoding='UTF-8'?>" << endl;
+  else wcout << L"<?xml version='1.0' encoding='ISO-8859-15'?>" << endl;
+
+  wcout << L"<NAF xml:lang=\"eu\" version=\"2.0\">" << endl;
 
   //<lp name="ixa-pipe-dependencies-Basque" beginTimestamp="2015-04-13T18:38:37+0200" endTimestamp="2015-04-13T18:39:01+0200" version="1.0" hostname="basajaun"/>
 
   string endtime = currentDateTime();
 
-  cout << "<nafHeader>" << endl;
-  cout << " <linguisticProcessors layer=\"text\">\n  <lp name=\"EHU-eustagger\" version=\"1.0.0\" beginTimestamp=\"" << endtime << "\" endTimestamp=\"" << endtime << "\"/>\n </linguisticProcessors>" << endl;
-  cout << " <linguisticProcessors layer=\"terms\">\n  <lp name=\"EHU-eustagger\" version=\"1.0.0\" beginTimestamp=\"" << endtime << "\" endTimestamp=\"" << endtime << "\"/>\n </linguisticProcessors>" << endl;
-  cout << "</nafHeader>" << endl;
+  wcout << L"<nafHeader>" << endl;
+  wcout << L" <linguisticProcessors layer=\"text\">\n  <lp name=\"EHU-eustagger\" version=\"1.0.0\" beginTimestamp=\"" << util::string2wstring(endtime) << L"\" endTimestamp=\"" << util::string2wstring(endtime) << L"\"/>\n </linguisticProcessors>" << endl;
+  wcout << L" <linguisticProcessors layer=\"terms\">\n  <lp name=\"EHU-eustagger\" version=\"1.0.0\" beginTimestamp=\"" << util::string2wstring(endtime) << L"\" endTimestamp=\"" << util::string2wstring(endtime) << L"\"/>\n </linguisticProcessors>" << endl;
+  wcout << L"</nafHeader>" << endl;
 
-  cout << " <text>" << endl << text.str() << " </text>"<< endl;
-  cout << " <terms>" << endl << terms.str() << " </terms>"<< endl;
+  wcout << L" <text>" << endl << util::string2wstring(text.str()) << L" </text>"<< endl;
+  wcout << L" <terms>" << endl << util::string2wstring(terms.str()) << L" </terms>"<< endl;
 
-  cout << "</NAF>" << endl;
+  wcout << L"</NAF>" << endl;
 
-  cerr << "Finished: " << sent << " sentences analyzed." << endl;
+  wcerr << L"Finished: " << util::string2wstring(sent) << L" sentences analyzed." << endl;
+  wcout.flush();
 
-  cout.flush();
 }

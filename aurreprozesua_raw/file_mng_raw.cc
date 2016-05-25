@@ -35,6 +35,9 @@
 #include <fstream>
 #include <sstream>
 
+iconvpp::converter fileMngRaw::utf2latin = iconvpp::converter("ISO-8859-15//TRANSLIT","UTF-8");
+
+
 fileMngRaw::fileMngRaw()                           // hasieraketa funtzioa
 {
   this->sarreraEstandarra = false;
@@ -46,6 +49,7 @@ fileMngRaw::fileMngRaw()                           // hasieraketa funtzioa
   this->sarreraIzena = "";
   this->paragrafoa = 0;
   this->offsetMetatuta = 0;
+  this->utf8input = false;
 }
 
 fileMngRaw::fileMngRaw(const fileMngRaw & fm) {
@@ -58,12 +62,14 @@ fileMngRaw::fileMngRaw(const fileMngRaw & fm) {
   this->sarreraIzena = fm.sarreraIzena;
   this->paragrafoa = fm.paragrafoa;
   this->offsetMetatuta = fm.offsetMetatuta;
+  this->utf8input = fm.utf8input;
 }
 
-void  fileMngRaw::init( const string & fitxIzen ) // hasieraketa funtzioa
+void  fileMngRaw::init( const string & fitxIzen, bool utf8in ) // hasieraketa funtzioa
 {
 
   this->sarreraIzena = fitxIzen;
+  this->utf8input = utf8in;
   
   if (fitxIzen != "stdin") {
     
@@ -179,7 +185,7 @@ fileMngRaw::~fileMngRaw()                // funtzio suntsitzailea
 }
 
 void fileMngRaw::kargatuStdBufferra() {
-  string buf;
+  string buf,buf2;
   // char buf[MAX_BUFFER];
 
   this->offsetMetatuta = this->offsetMetatuta + this->bufferLuzera;
@@ -192,7 +198,12 @@ void fileMngRaw::kargatuStdBufferra() {
     if (!getline(this->fitxategia,buf,'\n')) this->sarreraAmaitua = true;
     // this->fitxategia.getline(buf,MAX_BUFFER);
   }
-  this->buffer = buf;
+
+  if (this->utf8input) {
+	fileMngRaw::utf2latin.convert(buf,buf2);
+	this->buffer = buf2;
+  } else this->buffer = buf;
+
   this->buffer = this->buffer + "\n";
   this->bufferLuzera = this->buffer.size();
   this->posizioa = 0;

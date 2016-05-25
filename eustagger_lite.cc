@@ -36,6 +36,7 @@
 #include "dat_orok.h"
 #include "constants_decl.h"
 
+#include "iconv.hpp"
 #include "formatua.h"
 
 #ifdef _USE_SWI_
@@ -54,9 +55,9 @@ const int NAF_OUTPUT    = 3;
 extern void segHasieraketak(int sar_lem, int lex_uzei, int bigarren, int ez_est, int erab_lex, string &lexiko_izena, int parentizatua, int deslokala);
 extern void segAmaierakoak();
 
-extern void segmentazioaSortuRaw(string &fitxategiIzena, string &segIrteera, int zuriuneetan);
+extern void segmentazioaSortuRaw(string &fitxategiIzena, string &segIrteera, int zuriuneetan, bool utf8in);
 extern void morfosintaxiaSortuRaw(string &fitxategiIzena, string &segIrteera, bool haul_seguruak, bool cg3form);
-extern int prozesatuCG3Raw(int maila, string &oinIzen, int zuriuneetan, int format);
+extern int prozesatuCG3Raw(int maila, string &oinIzen, int zuriuneetan, int format, bool utf8out);
 
 void help() {
   stringstream eustaggerVersion;
@@ -80,6 +81,8 @@ void help() {
   cerr << "Erabilera:" <<endl;
   cerr << "eustagger_lite [-hs] [-m maila]" << endl;
   cerr << "-h laguntza hau" << endl;
+  cerr << "-i [iso-8859-15|utf-8] Sarrerako testuaren kodeketa (defektuz iso-8859-15)" << endl;
+  cerr << "-o [iso-8859-15|utf-8] Irteerako testuaren kodeketa (defektuz iso-8859-15)" << endl;
   cerr << "-s HAUL seguruak prozesatu (defektuz ez)" << endl;
   cerr << "-m [0|1|2|3|4|5] (defektuz 2)" << endl;
   cerr << "-m 0 denean ez du desanbiguatuko" << endl;  
@@ -112,9 +115,16 @@ int main(int argc, char *argv[])
  char c;
  string lex_izena; 
  string format;
+ string inenc_str = "";
+ string outenc_str = "";
+ int inenc, outenc;
 
- while ((c = getopt(argc, argv, "sShHzZm:M:f:F:")) != EOF) {
+ while ((c = getopt(argc, argv, "sShHzZm:M:f:F:i:I:o:O")) != EOF) {
    switch (c) {
+   case 'I':
+   case 'i': inenc_str = optarg; break;
+   case 'O':
+   case 'o': outenc_str = optarg; break;
    case 'S':
    case 's': haul_seguruak = 1; break;
    case 'Z':
@@ -133,6 +143,16 @@ int main(int argc, char *argv[])
  else if (format == "mg") out_format = MG_OUTPUT;
  else out_format = PAROLE_OUTPUT;
 
+ if (inenc_str == "" || inenc_str == "iso-8859-15") inenc = EUSTAGGER_ISO_8859_15;
+ else if (inenc_str == "utf-8") inenc = EUSTAGGER_UTF_8;
+ else help();
+
+ if (outenc_str == "" || outenc_str == "iso-8859-15") outenc = EUSTAGGER_ISO_8859_15;
+ else if (outenc_str == "utf-8") outenc = EUSTAGGER_UTF_8;
+ else help();
+
+
+
 #ifdef _USE_SWI_
  PlEngine e(argv[0]);
 #endif
@@ -150,12 +170,10 @@ int main(int argc, char *argv[])
    for (int i=optind;i<argc;i++) {
      string fitxategiIzena = argv[i];
      string segIrteera;
-     segmentazioaSortuRaw(fitxategiIzena,segIrteera, zuriune_token);
-
+     segmentazioaSortuRaw(fitxategiIzena,segIrteera, zuriune_token,(bool)inenc);
      fitxategiIzena += pid;
-     morfosintaxiaSortuRaw(fitxategiIzena,segIrteera,haul_seguruak,OUT_MG); 
-     prozesatuCG3Raw(maila,fitxategiIzena, zuriune_token, out_format) ;
-
+     morfosintaxiaSortuRaw(fitxategiIzena,segIrteera,haul_seguruak,OUT_MG);
+     prozesatuCG3Raw(maila,fitxategiIzena, zuriune_token, out_format,(bool)outenc);
    }
  }
  else {

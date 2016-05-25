@@ -31,6 +31,8 @@
 #include "token_raw.h"
 #include "dat_orok.h"
 #include "filtro.h"
+#include "iconv.hpp"
+
 
 #define LEMA_GENERIKOA_BOK "cc"
 #define LEMA_GENERIKOA_KON "co"
@@ -39,6 +41,8 @@
 // statusRaw azkena;        // azken token-a eta sarreraren estadua gorde
 // automata aurre_auto;  // transizio posibleak eta bestelako informazioa
 // fileMngRaw sarrera;     // sarrera (fitxategia edo buffer bat)
+
+iconvpp::converter anLexRaw::latin2utf = iconvpp::converter("UTF-8","ISO-8859-15");
 
 anLexRaw::anLexRaw()         // hasieraketa funtzioa
 {
@@ -58,7 +62,7 @@ anLexRaw::anLexRaw()         // hasieraketa funtzioa
 //  aurre_auto.init(AURREAN_LEX);
 }
 
-void anLexRaw::init(char *auto_izena, fileMngRaw *fitx) 
+void anLexRaw::init(char *auto_izena, fileMngRaw *fitx, bool utf8in) 
                          // hasieraketa funtzioa
 {
 
@@ -112,12 +116,7 @@ int anLexRaw::trans_berria(char *kar)
  if (sarrera->eof())
    return 0;
  *kar = sarrera->get();
- // if (*kar == '\303')  *kar = sarrera->get();
 
- if (*kar == '\221') 
-   *kar=NI_H;
- if (*kar == '\261') 
-   *kar=NI_T;
  trans = aurre_auto.mugitu(*kar);
  if (trans == 0)
    {
@@ -140,7 +139,7 @@ int   anLexRaw::next_token()
  int luz_i,luz_ie;                      // irakurritakoaren indizea
  int aurreko_betea = 0;
  extern int filtratu(char k);
- string h,e;
+ string h,e,h_utf8;
  tokenRaw t;
  int berezia = 0;                // karaktere bereziak detektatu diren
  int trans_bai;                  // transizio berria egin daitekeen jakiteko
@@ -201,27 +200,10 @@ int   anLexRaw::next_token()
     if (!berezia) {
       irakurritakoaeg[luz_ie++] = kar;
     }
-    if (kar == NI_H ) { 
-      if (luz_i>0 && irakurritakoa[luz_i-1] == '\303')
-	irakurritakoa[luz_i++] = '\221';
-      else {
-	if (luz_i==0 || irakurritakoa[luz_i-1] != '\303')
-	  irakurritakoa[luz_i++] = '\303';
-	irakurritakoa[luz_i++] = '\221';
-      }
-    }
-    else if (kar == NI_T) {
-      if (luz_i>0 && irakurritakoa[luz_i-1] == '\303')
-	irakurritakoa[luz_i++] = '\261';
-      else {
-	if (luz_i==0 || irakurritakoa[luz_i-1] != '\303')
-	  irakurritakoa[luz_i++] = '\303';
-	irakurritakoa[luz_i++] = '\261';
-      }
-    }
-    else {
-      irakurritakoa[luz_i++] = kar;
-    }
+    
+
+	irakurritakoa[luz_i++] = kar;
+
     berezia = 0;
     irakurritakoa[luz_i] = '\0';
     irakurritakoaeg[luz_ie] = '\0';
@@ -231,8 +213,10 @@ int   anLexRaw::next_token()
     e = irakurritakoaeg;
     etikstr = aurre_auto.etiketa();
 
-    if (berezia) t.init(h,etikstr,e,-1,hasiera,(int)sarrera->non()-hasierapar);    
-    else t.init(h,etikstr,e,aurre_auto.tratamendua(),hasiera,(int)sarrera->non()-hasierapar);
+	latin2utf.convert(h, h_utf8);
+
+    if (berezia) t.init(h_utf8,etikstr,e,-1,hasiera,(int)sarrera->non()-hasierapar);    
+    else t.init(h_utf8,etikstr,e,aurre_auto.tratamendua(),hasiera,(int)sarrera->non()-hasierapar);
 	
 	t.s_paragrafoa(sarrera->get_paragrafoa());
 	t.s_paragrafoPos(sarrera->get_offset_metatuta());

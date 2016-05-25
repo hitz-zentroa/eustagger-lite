@@ -51,7 +51,7 @@ class aurreprozRaw
 public:
   
   aurreprozRaw();
-  void  init(char *auto_izena, char *sarrera_izena, int zuriuneetan);
+  void  init(char *auto_izena, char *sarrera_izena, int zuriuneetan, bool utf8in);
   
   void  aurreprozesua(int irteera, vector<string> *emaitza); // aurreprozesuaren ziklo osoa betetzen duena
   // irteera ANALIRA baldin bada, orduan emaitza taulan itzuliko da, bestela zuzenean idatziko da

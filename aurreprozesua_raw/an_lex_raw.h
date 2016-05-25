@@ -46,12 +46,13 @@ class anLexRaw : public tokenizatzaile
  fileMngRaw *sarrera;    // sarrera (fitxategia edo buffer bat)
  string paragrafoa;
  int hasierapar;
- int trans_berria(char *kar);  
-                      // hurrengo karakterea lortu eta transizioa egin
+ int trans_berria(char *kar);    // hurrengo karakterea lortu eta transizioa egin
+ static iconvpp::converter latin2utf;
+
 public:
 
        anLexRaw();      // hasieraketa funtzioa
-void   init(char *auto_izena, fileMngRaw *fitx);
+       void   init(char *auto_izena, fileMngRaw *fitx, bool utf8in);
                       // hasieraketa funtzioa
 
  void  reset();       // sarrera reseteatu

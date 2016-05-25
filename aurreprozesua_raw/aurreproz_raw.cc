@@ -40,14 +40,14 @@
 
 aurreprozRaw::aurreprozRaw() {}
 
-void aurreprozRaw::init(char *auto_izena, char *sarrera_izena, int zuriuneetan)
+void aurreprozRaw::init(char *auto_izena, char *sarrera_izena, int zuriuneetan, bool utf8in)
 {
   fitxategiIzena = sarrera_izena;
-  sarrera_f.init(string(sarrera_izena));
+  sarrera_f.init(string(sarrera_izena),utf8in);
 
   if (!zuriuneetan) {
     anLexRaw *tmp = new anLexRaw;
-    tmp->init(auto_izena, &sarrera_f);
+    tmp->init(auto_izena, &sarrera_f,utf8in);
     analizatu=tmp;
   }
   else {
