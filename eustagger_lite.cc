@@ -79,11 +79,12 @@ void help() {
 #endif //__BRIDGE_VARIANTS__
 
   cerr << "Erabilera:" <<endl;
-  cerr << "eustagger_lite [-hs] [-m maila]" << endl;
+  cerr << "eustagger_lite [-hsz] [-m maila] [-i enc] [-o enc]" << endl;
   cerr << "-h laguntza hau" << endl;
   cerr << "-i [iso-8859-15|utf-8] Sarrerako testuaren kodeketa (defektuz iso-8859-15)" << endl;
   cerr << "-o [iso-8859-15|utf-8] Irteerako testuaren kodeketa (defektuz iso-8859-15)" << endl;
   cerr << "-s HAUL seguruak prozesatu (defektuz ez)" << endl;
+  cerr << "-z Sarreran testu tokenizatua eman -zuriunez bereiztutako tokenak- (defektuz ez)" << endl;
   cerr << "-m [0|1|2|3|4|5] (defektuz 2)" << endl;
   cerr << "-m 0 denean ez du desanbiguatuko" << endl;  
   cerr << "-m 4 denean bakarrik aplikatuko du CG3 desanbiguatzeko" << endl;
