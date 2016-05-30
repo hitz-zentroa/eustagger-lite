@@ -52,7 +52,7 @@ class anLexRaw : public tokenizatzaile
 public:
 
        anLexRaw();      // hasieraketa funtzioa
-       void   init(char *auto_izena, fileMngRaw *fitx, bool utf8in);
+       void   init(char *auto_izena, fileMngRaw *fitx);
                       // hasieraketa funtzioa
 
  void  reset();       // sarrera reseteatu

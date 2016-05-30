@@ -62,7 +62,7 @@ anLexRaw::anLexRaw()         // hasieraketa funtzioa
 //  aurre_auto.init(AURREAN_LEX);
 }
 
-void anLexRaw::init(char *auto_izena, fileMngRaw *fitx, bool utf8in) 
+void anLexRaw::init(char *auto_izena, fileMngRaw *fitx) 
                          // hasieraketa funtzioa
 {
 

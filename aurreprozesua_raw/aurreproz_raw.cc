@@ -47,7 +47,7 @@ void aurreprozRaw::init(char *auto_izena, char *sarrera_izena, int zuriuneetan, 
 
   if (!zuriuneetan) {
     anLexRaw *tmp = new anLexRaw;
-    tmp->init(auto_izena, &sarrera_f,utf8in);
+    tmp->init(auto_izena, &sarrera_f);
     analizatu=tmp;
   }
   else {
