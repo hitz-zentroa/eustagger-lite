@@ -35,6 +35,7 @@
 #include "file_mng_raw.h"
 #include "token_raw.h"
 #include "tokenizatzaile.h"
+#include "iconv.hpp"
 #define MAX_STRING 1500+1
 using namespace std;
 

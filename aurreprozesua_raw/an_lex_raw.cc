@@ -31,8 +31,6 @@
 #include "token_raw.h"
 #include "dat_orok.h"
 #include "filtro.h"
-#include "iconv.hpp"
-
 
 #define LEMA_GENERIKOA_BOK "cc"
 #define LEMA_GENERIKOA_KON "co"
