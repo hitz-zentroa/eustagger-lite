@@ -32,6 +32,7 @@
 #include "file_mng_raw.h"
 #include "token_raw.h"
 #include "tokenizatzaile.h"
+#include "iconv.hpp"
 #include <fstream>
 #include <boost/algorithm/string.hpp>
 
@@ -44,6 +45,10 @@ class zuriune_token : public tokenizatzaile
   bool sarreraStandar;
   vector<string> tokenak;
   int pos;
+  static iconvpp::converter latin2utf;
+
+  string l2u(const string & str);
+
 public:
 
  zuriune_token();               // hasieraketa funtzioa
