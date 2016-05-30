@@ -139,7 +139,7 @@ int   anLexRaw::next_token()
  int luz_i,luz_ie;                      // irakurritakoaren indizea
  int aurreko_betea = 0;
  extern int filtratu(char k);
- string h,e,h_utf8;
+ string h,e,h_utf8,e_utf8;
  tokenRaw t;
  int berezia = 0;                // karaktere bereziak detektatu diren
  int trans_bai;                  // transizio berria egin daitekeen jakiteko
@@ -214,9 +214,9 @@ int   anLexRaw::next_token()
     etikstr = aurre_auto.etiketa();
 
 	latin2utf.convert(h, h_utf8);
-
-    if (berezia) t.init(h_utf8,etikstr,e,-1,hasiera,(int)sarrera->non()-hasierapar);    
-    else t.init(h_utf8,etikstr,e,aurre_auto.tratamendua(),hasiera,(int)sarrera->non()-hasierapar);
+	latin2utf.convert(e, e_utf8);
+    if (berezia) t.init(h_utf8,etikstr,e_utf8,-1,hasiera,(int)sarrera->non()-hasierapar);    
+    else t.init(h_utf8,etikstr,e_utf8,aurre_auto.tratamendua(),hasiera,(int)sarrera->non()-hasierapar);
 	
 	t.s_paragrafoa(sarrera->get_paragrafoa());
 	t.s_paragrafoPos(sarrera->get_offset_metatuta());
