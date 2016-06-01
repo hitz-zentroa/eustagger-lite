@@ -44,8 +44,13 @@ class zuriune_token : public tokenizatzaile
   fileMngRaw *sarrera; // sarrera (fitxategia)
   bool sarreraStandar;
   vector<string> tokenak;
+  vector<unsigned int> vposhas;
+  vector<unsigned int> vposbuk;
   int pos;
   static iconvpp::converter latin2utf;
+
+  int linenum;
+  int poffset;  
 
   string l2u(const string & str);
 
