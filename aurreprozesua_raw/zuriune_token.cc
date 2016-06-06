@@ -162,7 +162,7 @@ tokenRaw zuriune_token::e_azkena()                // azken tokena ematen duena
 
   if (tokenak.at(pos).substr(0,2) == "@@") {
     token = karakBerezi.replace(token, "?");
-    tmp.init(l2u(token), "ID", l2u(token_eg), 9, vposhas[pos], vposbuk[pos]);
+    tmp.init(l2u(token), "ID", token_eg, 9, vposhas[pos], vposbuk[pos]);
 	tmp.s_paragrafoa(linenum);
 	tmp.s_paragrafoPos(poffset);
     return(tmp);
@@ -177,7 +177,7 @@ tokenRaw zuriune_token::e_azkena()                // azken tokena ematen duena
 
   Pcre BEREIZ("^[\\.\\-',\\\"\\/:;!\\?∫%\\^~#&\\*\\+=\\|\\{\\}<>ø°\\\\(\\)\\[\\]_]+$");
   if (BEREIZ.search(token)) {
-    tmp.init(l2u(token), "BEREIZ", l2u(token_eg), 1, vposhas[pos], vposbuk[pos]);
+    tmp.init(l2u(token), "BEREIZ", token_eg, 1, vposhas[pos], vposbuk[pos]);
 	tmp.s_paragrafoa(linenum);
 	tmp.s_paragrafoPos(poffset);
     return(tmp);
@@ -199,7 +199,7 @@ tokenRaw zuriune_token::e_azkena()                // azken tokena ematen duena
 
   Pcre BAK_punt("^[A-Z¡…Õ”⁄—a-z·ÈÌÛ˙Ò]\\.$");
   if (BAK_punt.search(token)) {
-    tmp.init(l2u(token), "BAK", l2u(token_eg), 5, vposhas[pos], vposbuk[pos]);
+    tmp.init(l2u(token), "BAK", token_eg, 5, vposhas[pos], vposbuk[pos]);
    	tmp.s_paragrafoa(linenum);
 	tmp.s_paragrafoPos(poffset);
     return(tmp);
@@ -207,7 +207,7 @@ tokenRaw zuriune_token::e_azkena()                // azken tokena ematen duena
 
   Pcre BAK("^[A-Z¡…Õ”⁄—a-z·ÈÌÛ˙Ò]$");
   if (BAK.search(token)) {
-    tmp.init(l2u(token), "BAK", l2u(token_eg), 6, vposhas[pos], vposbuk[pos]);
+    tmp.init(l2u(token), "BAK", token_eg, 6, vposhas[pos], vposbuk[pos]);
 	tmp.s_paragrafoa(linenum);
 	tmp.s_paragrafoPos(poffset);
     return(tmp);
@@ -215,7 +215,7 @@ tokenRaw zuriune_token::e_azkena()                // azken tokena ematen duena
 
   Pcre ZENB("^[0-9\\.\\,\\-\\:\\'\\\"]+$");
   if (ZENB.search(token)) {
-    tmp.init(l2u(token), "ZENB", l2u(token_eg), 2, vposhas[pos], vposbuk[pos]);
+    tmp.init(l2u(token), "ZENB", token_eg, 2, vposhas[pos], vposbuk[pos]);
 	tmp.s_paragrafoa(linenum);
 	tmp.s_paragrafoPos(poffset);
     return(tmp);
@@ -224,7 +224,7 @@ tokenRaw zuriune_token::e_azkena()                // azken tokena ematen duena
   Pcre ZENB_DEK("^[0-9\\.\\,\\-\\:\\'\\\"]+[a-z·ÈÌÛ˙Ò]+$");
   Pcre Digi("[0-9]");
   if (ZENB_DEK.search(token) && Digi.search(token)) {
-    tmp.init(l2u(token), "ZENB_DEK", l2u(token_eg), 2, vposhas[pos], vposbuk[pos]);
+    tmp.init(l2u(token), "ZENB_DEK", token_eg, 2, vposhas[pos], vposbuk[pos]);
 	tmp.s_paragrafoa(linenum);
 	tmp.s_paragrafoPos(poffset);
     return(tmp);
@@ -232,7 +232,7 @@ tokenRaw zuriune_token::e_azkena()                // azken tokena ematen duena
 
   Pcre LABDEK("^[A-Z¡…Õ”⁄—a-z·ÈÌÛ˙Ò]+\\.(-?)[a-z·ÈÌÛ˙Ò]*$");
   if (LABDEK.search(token)) {
-    tmp.init(l2u(token), "LAB_DEK", l2u(token_eg), 0, vposhas[pos], vposbuk[pos]);
+    tmp.init(l2u(token), "LAB_DEK", token_eg, 0, vposhas[pos], vposbuk[pos]);
 	tmp.s_paragrafoa(linenum);
 	tmp.s_paragrafoPos(poffset);
     return(tmp);
@@ -240,7 +240,7 @@ tokenRaw zuriune_token::e_azkena()                // azken tokena ematen duena
 
   Pcre HASMAI("^[A-Z¡…Õ”⁄—][a-z·ÈÌÛ˙Ò\\-]+$");
   if (HASMAI.search(token)) {
-    tmp.init(l2u(token), "HAS_MAI", l2u(token_eg), 3, vposhas[pos], vposbuk[pos]);
+    tmp.init(l2u(token), "HAS_MAI", token_eg, 3, vposhas[pos], vposbuk[pos]);
 	tmp.s_paragrafoa(linenum);
 	tmp.s_paragrafoPos(poffset);
     return(tmp);
@@ -248,7 +248,7 @@ tokenRaw zuriune_token::e_azkena()                // azken tokena ematen duena
 
   Pcre DENMAI("^[A-Z¡…Õ”⁄—\\-]+$");
   if (DENMAI.search(token)) {
-    tmp.init(l2u(token), "DEN_MAI", l2u(token_eg), 5, vposhas[pos], vposbuk[pos]);
+    tmp.init(l2u(token), "DEN_MAI", token_eg, 5, vposhas[pos], vposbuk[pos]);
 	tmp.s_paragrafoa(linenum);
 	tmp.s_paragrafoPos(poffset);
     return(tmp);
@@ -260,7 +260,7 @@ tokenRaw zuriune_token::e_azkena()                // azken tokena ematen duena
     tratamendua = 4;
     if (PUNT.search(token)) tratamendua = 5;
 
-    tmp.init(l2u(token), "DEN_MAI_DEK", l2u(token_eg), tratamendua, vposhas[pos], vposbuk[pos]);
+    tmp.init(l2u(token), "DEN_MAI_DEK", token_eg, tratamendua, vposhas[pos], vposbuk[pos]);
 	tmp.s_paragrafoa(linenum);
 	tmp.s_paragrafoPos(poffset);
     return(tmp);
@@ -268,7 +268,7 @@ tokenRaw zuriune_token::e_azkena()                // azken tokena ematen duena
 
   Pcre SIG_MIN("^([a-z·ÈÌÛ˙Ò]\\.)+$");
   if (SIG_MIN.search(token)) {
-    tmp.init(l2u(token), "SIG_MIN", l2u(token_eg), 0, vposhas[pos], vposbuk[pos]);
+    tmp.init(l2u(token), "SIG_MIN", token_eg, 0, vposhas[pos], vposbuk[pos]);
 	tmp.s_paragrafoa(linenum);
 	tmp.s_paragrafoPos(poffset);
     return(tmp);
@@ -276,7 +276,7 @@ tokenRaw zuriune_token::e_azkena()                // azken tokena ematen duena
 
   Pcre SIG_MAI("^([A-Z¡…Õ”⁄—]\\.)+$");
   if (SIG_MAI.search(token)) {
-    tmp.init(l2u(token), "SIG_MAI", l2u(token_eg), 0, vposhas[pos], vposbuk[pos]);
+    tmp.init(l2u(token), "SIG_MAI", token_eg, 0, vposhas[pos], vposbuk[pos]);
 	tmp.s_paragrafoa(linenum);
 	tmp.s_paragrafoPos(poffset);
     return(tmp);
@@ -284,7 +284,7 @@ tokenRaw zuriune_token::e_azkena()                // azken tokena ematen duena
 
   Pcre SIG_MIN_DEK("^([a-z·ÈÌÛ˙Ò]\\.)+[a-z·ÈÌÛ˙Ò\\-]+$");
   if (SIG_MIN_DEK.search(token)) {
-    tmp.init(l2u(token), "SIG_MIN_DEK", l2u(token_eg), 0, vposhas[pos], vposbuk[pos]);
+    tmp.init(l2u(token), "SIG_MIN_DEK", token_eg, 0, vposhas[pos], vposbuk[pos]);
 	tmp.s_paragrafoa(linenum);
 	tmp.s_paragrafoPos(poffset);
     return(tmp);
@@ -292,7 +292,7 @@ tokenRaw zuriune_token::e_azkena()                // azken tokena ematen duena
 
   Pcre SIG_MAI_DEK("^([A-Z¡…Õ”⁄—]\\.)+[a-z·ÈÌÛ˙Ò\\-]+$");
   if (SIG_MAI_DEK.search(token)) {
-    tmp.init(l2u(token), "SIG_MAI_DEK", l2u(token_eg), 0, vposhas[pos], vposbuk[pos]);
+    tmp.init(l2u(token), "SIG_MAI_DEK", token_eg, 0, vposhas[pos], vposbuk[pos]);
 	tmp.s_paragrafoa(linenum);
 	tmp.s_paragrafoPos(poffset);
     return(tmp);
@@ -302,7 +302,7 @@ tokenRaw zuriune_token::e_azkena()                // azken tokena ematen duena
   if (IDENT.search(token)) {
     token = karakBerezi.replace(token, "?");
 
-    tmp.init(l2u(token), "IDENT", l2u(token_eg), 8, vposhas[pos], vposbuk[pos]);
+    tmp.init(l2u(token), "IDENT", token_eg, 8, vposhas[pos], vposbuk[pos]);
 	tmp.s_paragrafoa(linenum);
 	tmp.s_paragrafoPos(poffset);
     return(tmp);
@@ -311,7 +311,7 @@ tokenRaw zuriune_token::e_azkena()                // azken tokena ematen duena
   Pcre quote("\\'");
   if (quote.search(token)) tratamendua=7;
 
-  tmp.init(l2u(token), etik, l2u(token_eg), tratamendua, vposhas[pos], vposbuk[pos]);
+  tmp.init(l2u(token), etik, token_eg, tratamendua, vposhas[pos], vposbuk[pos]);
 	tmp.s_paragrafoa(linenum);
 	tmp.s_paragrafoPos(poffset);
   return(tmp);
