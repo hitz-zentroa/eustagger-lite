@@ -57,6 +57,8 @@ void PrintNAF (list < sentence > &ls, int level, bool utf8out);
 void desHMM(int maila, string &desIrteera, string &oinIzen, int zuriuneetan, int format, bool utf8out);
 int prozesatuCG3RawFuntzioSintaktikoak (int maila, string &oinIzen, int zuriuneetan, int format, bool utf8out);
 list<sentence> bihurtuFreeling (int maila, string &desIrteera, int zuriuneetan);
+void askatuOffsetak(string fize);
+void lotuOffsetak(string fize);
 
 
 // trim from start
@@ -140,6 +142,7 @@ int prozesatuCG3Raw(int maila, string &oinIzen, int zuriuneetan, int format, boo
     else if (maila == 3) sekzioak = 5;
 	else if (maila == 5) sekzioak = 5; // FIXME maila 4 eta >5 ???
 
+	askatuOffsetak(desSarrera);
 
     if (cgApp.initGrammar(gramatika,sekzioak,'@',0) == 0) {// gramatika, zenbat sekzio, @ aurrizkia eta trace=0
       cerr << "Error in initGrammar: "<<gramatika << endl;
@@ -153,7 +156,10 @@ int prozesatuCG3Raw(int maila, string &oinIzen, int zuriuneetan, int format, boo
 
     cgApp.applyGrammar();// aplikatu sekzio eta mapaketa guztiak
     cgApp.clean();
-    unlink(desSarrera.c_str());
+
+	lotuOffsetak(desIrteera);
+
+	unlink(desSarrera.c_str());
     desHMM(maila,desIrteera,oinIzen, zuriuneetan, format, utf8out);
 	unlink(desIrteera.c_str());
 
@@ -348,6 +354,8 @@ int prozesatuCG3RawFuntzioSintaktikoak (int maila, string &oinIzen, int zuriunee
   desIrteera += ".irteerasek";
   desIrteera2 += ".irteerafs";
 
+  askatuOffsetak(desSarrera);
+
   cgManager cgApp;
   int sekzioak = 11;
   if (cgApp.initGrammar(gramatika,sekzioak,'@',0) == 0) {// gramatika, zenbat sekzio, @ aurrizkia eta trace=0
@@ -373,6 +381,9 @@ int prozesatuCG3RawFuntzioSintaktikoak (int maila, string &oinIzen, int zuriunee
   }
   cgApp2.applyGrammar();// aplikatu sekzio eta mapaketa guztiak
   cgApp2.clean();
+
+
+  lotuOffsetak(desIrteera2);
 
   list<sentence> ls = bihurtuFreeling(maila,desIrteera2,zuriuneetan);
 
@@ -685,4 +696,80 @@ void PrintNAF (list < sentence > &ls, int level, bool utf8out) {
   wcerr << L"Finished: " << util::string2wstring(sent) << L" sentences analyzed." << endl;
   wcout.flush();
 
+}
+
+
+void askatuOffsetak(string fize) {
+
+  Pcre tokarrunt_rx(">\\\"<(#[0-9\\-]+#p[0-9]+#)>\\\"");
+  Pcre tokarrunt_rx_rp("(<#[0-9\\-]+#p[0-9]+#>\\\")");
+  Pcre tokberezi_rx(">\\\"<[A-Z_]+(#[0-9\\-]+#p[0-9]+#)>\\\"");
+  Pcre tokberezi_rx_rp("(#[0-9\\-]+#p[0-9]+#)");
+  ifstream file;
+  file.open(fize.c_str());
+  ofstream ofile;
+  ofile.open((fize+".noffset").c_str());
+  string str="";
+  if (file.is_open() && ofile.is_open()) {
+	while (getline(file, str)) {
+	  if (str[0] == '"') {
+		if (tokarrunt_rx.search(str)) {
+		  if(tokarrunt_rx.matches() >= 1) {
+			string match = tokarrunt_rx.get_match(tokarrunt_rx.matches()-1);
+			str = tokarrunt_rx_rp.replace(str,"");
+			str = str+" "+match;
+		  }
+		  ofile << str << endl;
+		}
+		else {
+		  if (tokberezi_rx.search(str)) {
+			if(tokberezi_rx.matches() >= 1) {
+			  string match = tokberezi_rx.get_match(tokberezi_rx.matches()-1);
+			  str = tokberezi_rx_rp.replace(str,"");
+			  str = str+" "+match;
+			}
+			ofile << str << endl;
+		  }
+		}
+	  } else {
+		ofile << str << endl;
+	  }
+	}
+	unlink(fize.c_str());
+	rename((fize + ".noffset").c_str(),fize.c_str());
+  } else cerr << "ERRORE larria fitxategiak ireki edo sortzerakoan (prozesatucg3_raw)." << endl;
+}
+
+void lotuOffsetak(string fize) {
+
+  Pcre offset_rx(" (#[0-9\\-]+#p[0-9]+#)");
+  Pcre tokberezi_rx(">\\\"<[A-Z_]+>\\\"");
+  ifstream file;
+  file.open(fize.c_str());
+  ofstream ofile;
+  ofile.open((fize+".noffset").c_str());
+  string str="";
+  if (file.is_open() && ofile.is_open()) {
+	while (getline(file, str)) {
+	  if (str[0] == '"') {
+		if (offset_rx.search(str)) {
+		  if(offset_rx.matches() >= 1) {
+			string offset =  offset_rx.get_match(offset_rx.matches()-1);
+			str = offset_rx.replace(str,"");
+			if (tokberezi_rx.search(str)) {
+			  str.insert(str.length()-2,offset);
+			} else {
+			  offset = "\"<" + offset + ">";
+			  str.insert(str.length()-1,offset);
+			}
+		  }
+		}
+		ofile << str << endl;
+	  } else {
+		ofile << str << endl;
+	  }
+	}
+	unlink(fize.c_str());
+	rename((fize + ".noffset").c_str(),fize.c_str());
+  } else cerr << "ERRORE larria fitxategiak ireki edo sortzerakoan (prozesatucg3_raw)." << endl;
 }
