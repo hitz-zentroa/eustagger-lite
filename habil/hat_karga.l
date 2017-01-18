@@ -11,11 +11,11 @@ int yylex(void);
 
 int puntuazioa_da(char *etq)
 {
- if ((strcmp(etq,PUNTUA) == 0) ||
-     (strcmp(etq,GALDERA) == 0) ||
-     (strcmp(etq,PUNTU_KOMA) == 0) ||
-     (strcmp(etq,ESKLAM) == 0) ||
-     (strcmp(etq,BI_PUNTU) == 0))
+ if ((strstr(etq,PUNTUA) != NULL) ||
+     (strstr(etq,GALDERA) != NULL) ||
+     (strstr(etq,PUNTU_KOMA) != NULL) ||
+     (strstr(etq,ESKLAM) != NULL) ||
+     (strstr(etq,BI_PUNTU) != NULL))
    return 1;
  return 0;
 }
