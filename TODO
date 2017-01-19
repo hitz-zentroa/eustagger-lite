@@ -1,0 +1,7 @@
+- Habil-en HAT_class.cc-ean bektore batzuk (HAT_taula, FORMA_taula, LEMA_taula, Esaldi...) eskuz berdimensionatzen dira. Aldatu kodea hori ez  egiteko (erreserba eta resize).
+
+- Habil-en offset-en tratamendua errebisatu, flex/bison-en behar den bezala integratu.
+
+- aurreporozesuan utf-8 string-ak erabili (berridazketa sakona eskatzen du).
+
+- xml liburutegi bat erabili naf sortzeko
