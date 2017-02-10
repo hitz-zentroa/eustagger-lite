@@ -120,6 +120,10 @@ int main(int argc, char *argv[])
  string outenc_str = "";
  int inenc, outenc;
 
+ // eustagger-ek Latin kodeketarekin lan egiten du barrutik
+ // morfosintaxiak (prolog?) karaktere bereziak ondo landu ditzan LANG egokia jarriko dugu gure ingurunean
+ putenv("LANG=en_US.ISO-8859-15");
+
  while ((c = getopt(argc, argv, "sShHzZm:M:f:F:i:I:o:O")) != EOF) {
    switch (c) {
    case 'I':
