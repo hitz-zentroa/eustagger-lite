@@ -495,7 +495,8 @@ void Prolog2Raw::sortuAnalisiak(PlTerm plstruct) {
 	  lehena = false;
 	}
 	if (this->lemaOsatua != "\"NULL\"" && this->lemaOsatua != "\"NOTNULL\"") { // ANALISIRIK GABEKO TOKENETAN, puntuazio-ikurrak, etab.
-	  if (this->lemaOsatua.length() == 2) { // salbuespena, bait, ba
+	  //	  if (this->lemaOsatua.length() == 2) { // salbuespena, bait, ba
+	  if (this->forma == "bait" || this->forma == "Bait" || this->forma == "BAIT" || this->forma == "ba" || this->forma == "Ba" || this->forma == "BA" ) {
 	    lemaOsatua = "\"" + forma + "\"";
 	    if (cg3form) 
 	      aldaeraOsatua = "\"" + forma + "\"";
