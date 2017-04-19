@@ -424,7 +424,7 @@ void  HAT_class::Esaldi_anali_insert(AN an)
   {
     if (hitz_indizea == HITZ_kopurua)
       {
-	HITZ_kopurua = HITZ_kopurua+50;
+	HITZ_kopurua = HITZ_kopurua+100;
 	Esaldi.resize(HITZ_kopurua);
 	//fprintf(stderr,"Esaldi handitu: %d\n", HITZ_kopurua);
 
