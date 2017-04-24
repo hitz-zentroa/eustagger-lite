@@ -51,9 +51,11 @@ void yyerror(const char *msg)
 %type <str> hat_lema informazioa
 %type <str> etiketa
 %%
-sarrera     : ereduak testua
-              {
+sarrera     : {
                 denak.Hasieraketa();
+              }
+              ereduak testua
+              {
                 denak.Esaldi_reset_hitza();
               }
             ;

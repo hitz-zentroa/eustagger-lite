@@ -415,6 +415,13 @@ void  HAT_class::Esaldi_Sartu_forma(string f, string e)
     // Esaldiaren hitz_indizeari dagokion hitza hasieratu f forma,
     // e etiketa eta begiratu behar den ala ez sartuaz.
   {
+    if (hitz_indizea == HITZ_kopurua)
+      {
+	HITZ_kopurua = HITZ_kopurua+10;
+	Esaldi.resize(HITZ_kopurua);
+	//fprintf(stderr,"Esaldi handitu: %d\n", HITZ_kopurua);
+
+      }
     Esaldi[hitz_indizea].Sartu_forma(f,e);
   }
 
@@ -424,7 +431,7 @@ void  HAT_class::Esaldi_anali_insert(AN an)
   {
     if (hitz_indizea == HITZ_kopurua)
       {
-	HITZ_kopurua = HITZ_kopurua+50;
+	HITZ_kopurua = HITZ_kopurua+10;
 	Esaldi.resize(HITZ_kopurua);
 	//fprintf(stderr,"Esaldi handitu: %d\n", HITZ_kopurua);
 
