@@ -693,7 +693,7 @@ void PrintNAF (list < sentence > &ls, int level, bool utf8out) {
 
   wcout << L"</NAF>" << endl;
 
-  wcerr << L"Finished: " << util::string2wstring(sent) << L" sentences analyzed." << endl;
+  wcerr << L"Finished: " << util::string2wstring(sent-1) << L" sentences analyzed." << endl;
   wcout.flush();
 
 }
