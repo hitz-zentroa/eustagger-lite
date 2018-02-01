@@ -2,7 +2,7 @@ EUSTAGGER LITE INSTALATZEKO
 ===========================
 
 Eustagger Lite linux sistema ezberdinetan probatu dugu, batzuk zaharragoak 
-(RHEL/Centos 6), beste batzuk berriagoak (Ubuntu 13.10). Jarraian dauden
+(RHEL/Centos 5), beste batzuk berriagoak (Ubuntu 16.04, 17.10...). Jarraian dauden
 azalpenak Ubuntu 12.04-13.10 eta Fedora 18-20 bertsioekin funtzionatu beharko
 lukete.
 
@@ -10,13 +10,15 @@ Eustagger Lite programak dependentzia hauek ditu:
 
 pcre++ (0.9.5 bertsioarekin probatuta)
 vislcg 3 (20130826 bertsioarekin probatuta)
-SWI Prolog (5.10.5 eta 6.0 bertsioekin probatuta)
+SWI Prolog (5.10.5 eta 6.0 bertsioekin probatuta, 7.X ez du balio)
 Foma (0.9.17 bertsioarekin probatuta)
 Freeling (3.1 bertsioarekin probatuta)
 Boost (1.53 bertsioarekin probatuta)
 
 Aldi berean programa/liburutegi horiek beraien dependentziak dituzte. Batzuk 
-linux banaketaren pakete ofizialak jarriz instalatu ahal izango dira:
+linux banaketaren pakete ofizialak jarriz instalatu ahal izango dira (kontuan
+izan linux banaketa berrietan paketeen izenak ezberdinak izan daitezkela):
+
 
 Ubuntu:
 =======
@@ -31,6 +33,9 @@ Fedora:
         $ yum install subversion make cmake gcc-c++ libicu libicu-devel\
           autoconf bison flex pl pl-devel zlib zlib-devel pcre pcre-devel\
           boost boost-devel
+
+
+Konpiladoreari dagokionez GCC 4 edo 5 bertsioa erabili beharra dago.
 
 
 Fedoran pcre++ eskuz instalatu behar da. Horretarako 
@@ -51,7 +56,14 @@ Fedoran pcre++ eskuz instalatu behar da. Horretarako
 (lehenetsitako instalazio prefix-a /usr/local da, aldatzeko ./configure --prefix=path)
 
 
+
 ESKUZ INSTALATU BEHARREKOAK:
+
+SWI prolog
+==========
+
+Linux banaketarekin datorren bertsioa =>7 bada SWI prolog 5 edo 6 eskuz konpilatu eta
+instalatuko dugu.
 
 foma:
 =====
