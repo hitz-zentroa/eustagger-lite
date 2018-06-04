@@ -35,6 +35,8 @@
 #include <sstream>
 #include <map>
 #include "ana2morfsar.h"
+#include "iconv.hpp"
+
 
 class MorfosRaw {
   std::string execpr;
@@ -61,10 +63,13 @@ class MorfosRaw {
   void txertatuMorfDoc(std::string & tmpAmaraun, int kont);
   std::string waitMorfsar2Raw(std::string & currentFitx, std::string & prCmd, int kont);
   
+  static iconvpp::converter latin2utf;
+  
  public:
   MorfosRaw(const std::string & argv0, std::string & amaraunIzen, int tam, bool debug, bool cg3form=false);
   void sortuAnalisiak(std::string segpIzena);
   void writeResult();
+  void writeResultUtf8();
 
   void setTamaina(int tamaina);
   int getTamaina();
@@ -73,6 +78,7 @@ class MorfosRaw {
   bool getDebug();
 
   std::string getResult();
+  std::string getResultUtf8();
 };
 
 #endif // _MORFOSRAW_H	

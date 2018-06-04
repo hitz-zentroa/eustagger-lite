@@ -48,6 +48,10 @@ using namespace std;
 #define WAIT         7
 #define PRINT        8
 
+
+iconvpp::converter MorfosRaw::latin2utf = iconvpp::converter("UTF-8", "ISO-8859-15//TRANSLIT");
+
+
 /* *************************************************************************************** */
 /* **** Metodo pribatuak ***************************************************************** */
 /* *************************************************************************************** */
@@ -293,6 +297,19 @@ void MorfosRaw::writeResult() {
   res.close();
 }
 
+void MorfosRaw::writeResultUtf8() {
+  string resIzen = this->amaraunIzen + ".morf";
+  ofstream res(resIzen.c_str());
+  if (!res) {
+    cerr << "Errorea " << resIzen << " irekitzean" << endl;
+    exit(EXIT_FAILURE);
+  }
+  string str_utf8;
+  MorfosRaw::latin2utf.convert(morfDocStream.str(), str_utf8);
+  res << str_utf8;
+  res.close();
+}
+
 /* *************************************************************************************** */
 /* **** Metodo publikoak ***************************************************************** */
 /* *************************************************************************************** */
@@ -325,5 +342,14 @@ bool MorfosRaw::getDebug() {return this->debug; }
 /* *************************************************************************************** */
 
 string MorfosRaw::getResult() { return morfDocStream.str(); }
+
+
+string MorfosRaw::getResultUtf8() {
+
+  string str_utf8;
+  MorfosRaw::latin2utf.convert(morfDocStream.str(), str_utf8);
+  return str_utf8;
+
+}
 
 

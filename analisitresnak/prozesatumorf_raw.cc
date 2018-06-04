@@ -33,8 +33,8 @@
 #include <fstream>
 #include <string.h>
 #include <string>
-
 #include "morfosraw.h"
+#include "iconv.hpp"
 
 using namespace std;
 
@@ -51,6 +51,11 @@ int buffer_size;
 
 
 void morfosintaxiaSortuRaw(string &oinIzen, string &segIrteera, bool haul_seguruak, bool cg3form) {
+
+  iconvpp::converter utf2latin("ISO-8859-15","UTF-8");
+  string segIrteeraLatin;
+  utf2latin.convert(segIrteera,segIrteeraLatin);
+
  // Definitu morfosintaxi exekutagarriaren izena ingurune aldagaien arabera
   string execPath;
 
@@ -70,7 +75,7 @@ void morfosintaxiaSortuRaw(string &oinIzen, string &segIrteera, bool haul_seguru
   bool cg3zuz = cg3form;
   if (haul_seguruak) cg3zuz = false; // habil-ek ez du CG3 formatua jaten
   MorfosRaw morfosintaxia(execPath, oinIzen, 100, false,cg3zuz); // 1 beharrean 100 beharko luke
-  morfosintaxia.sortuAnalisiak(segIrteera);
+  morfosintaxia.sortuAnalisiak(segIrteeraLatin);
 
 
   if (haul_seguruak) {
@@ -88,7 +93,8 @@ void morfosintaxiaSortuRaw(string &oinIzen, string &segIrteera, bool haul_seguru
       exit(EXIT_FAILURE);
     }
 
-    string irtMorfos = morfosintaxia.getResult(); // Hemen emaitza string batean jaso
+    string irtMorfos = morfosintaxia.getResultUtf8(); // Hemen emaitza string batean jaso
+
 
     int length = irtMorfos.length();
     testu_buffer = (char *) malloc(length+2);
@@ -106,7 +112,7 @@ void morfosintaxiaSortuRaw(string &oinIzen, string &segIrteera, bool haul_seguru
     hat_kargaparse();
   }
   else {
-    morfosintaxia.writeResult(); 
+    morfosintaxia.writeResultUtf8(); 
   }
 
 }
