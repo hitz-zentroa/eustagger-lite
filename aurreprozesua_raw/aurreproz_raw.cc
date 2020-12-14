@@ -465,7 +465,39 @@ string aurreprozRaw::kenduMaj(const string & str) {
   
   for (unsigned int i = 0; i <  str.size(); i++) {
 
-    if (isupper(lag[i]) && (lag[i]!='\321') && (lag[i]!='\361')) {
+	if (lag[i] == 'Ä') { ema.append(1,ASTERIS); ema.append(1,'a');}
+    else if (lag[i] == 'Ë') { ema.append(1,ASTERIS); ema.append(1,'e');}
+    else if (lag[i] == 'Ï') { ema.append(1,ASTERIS); ema.append(1,'i');}
+    else if (lag[i] == 'Ö') { ema.append(1,ASTERIS); ema.append(1,'o');}
+    else if (lag[i] == 'Ü') { ema.append(1,ASTERIS); ema.append(1,'u');}
+    else if (lag[i] == 'Á') { ema.append(1,ASTERIS); ema.append(1,'a');}
+    else if (lag[i] == 'É') { ema.append(1,ASTERIS); ema.append(1,'e');}
+    else if (lag[i] == 'Í') { ema.append(1,ASTERIS); ema.append(1,'i');}
+    else if (lag[i] == 'Ó') { ema.append(1,ASTERIS); ema.append(1,'o');}
+    else if (lag[i] == 'Ú') { ema.append(1,ASTERIS); ema.append(1,'u');}
+    else if (lag[i] == 'À') { ema.append(1,ASTERIS); ema.append(1,'a');}
+    else if (lag[i] == 'È') { ema.append(1,ASTERIS); ema.append(1,'e');}
+    else if (lag[i] == 'Ì') { ema.append(1,ASTERIS); ema.append(1,'i');}
+    else if (lag[i] == 'Ò') { ema.append(1,ASTERIS); ema.append(1,'o');}
+    else if (lag[i] == 'Ù') { ema.append(1,ASTERIS); ema.append(1,'u');}
+    else if (lag[i] == 'Â') { ema.append(1,ASTERIS); ema.append(1,'a');}
+    else if (lag[i] == 'Ê') { ema.append(1,ASTERIS); ema.append(1,'e');}
+    else if (lag[i] == 'Î') { ema.append(1,ASTERIS); ema.append(1,'i');}
+    else if (lag[i] == 'Ô') { ema.append(1,ASTERIS); ema.append(1,'o');}
+    else if (lag[i] == 'Û') { ema.append(1,ASTERIS); ema.append(1,'u');}
+    else if (lag[i] == 'Ã') { ema.append(1,ASTERIS); ema.append(1,'a');}
+    else if (lag[i] == 'Å') { ema.append(1,ASTERIS); ema.append(1,'a');}
+    else if (lag[i] == 'Õ') { ema.append(1,ASTERIS); ema.append(1,'o');}
+    else if (lag[i] == '¦') { ema.append(1,ASTERIS); ema.append(1,'s');}
+    else if (lag[i] == '¾') { ema.append(1,ASTERIS); ema.append(1,'y');}
+    else if (lag[i] == '´') { ema.append(1,ASTERIS); ema.append(1,'z');}
+    else if (lag[i] == 'Ç') { ema.append(1,ASTERIS); ema.append(1,'c');}
+    else if (lag[i] == 'Æ') { ema.append(1,ASTERIS); ema.append(1,'a');}
+    else if (lag[i] == 'Ğ') { ema.append(1,ASTERIS); ema.append(1,'d');}
+    else if (lag[i] == 'Ø') { ema.append(1,ASTERIS); ema.append(1,'o');}
+    else if (lag[i] == 'İ') { ema.append(1,ASTERIS); ema.append(1,'y');}
+    else if (lag[i] == 'Ş') { ema.append(1,ASTERIS); ema.append(1,'z');}
+    else if (isupper(lag[i]) && (lag[i]!='\321') && (lag[i]!='\361')) {
       
       ema.append(1,ASTERIS);
       char c = tolower(lag[i]);
@@ -488,6 +520,39 @@ string aurreprozRaw::kenduMaj(const string & str) {
       ema.append(1,'_');
 
     }
+	else if (lag[i] == 'ä') { ema.append(1,'a');}
+    else if (lag[i] == 'ë') { ema.append(1,'e');}
+    else if (lag[i] == 'ï') { ema.append(1,'i');}
+    else if (lag[i] == 'ö') { ema.append(1,'o');}
+    else if (lag[i] == 'ü') { ema.append(1,'u');}
+    else if (lag[i] == 'á') { ema.append(1,'a');}
+    else if (lag[i] == 'é') { ema.append(1,'e');}
+    else if (lag[i] == 'í') { ema.append(1,'i');}
+    else if (lag[i] == 'ó') { ema.append(1,'o');}
+    else if (lag[i] == 'ú') { ema.append(1,'u');}
+    else if (lag[i] == 'à') { ema.append(1,'a');}
+    else if (lag[i] == 'è') { ema.append(1,'e');}
+    else if (lag[i] == 'ì') { ema.append(1,'i');}
+    else if (lag[i] == 'ò') { ema.append(1,'o');}
+    else if (lag[i] == 'ù') { ema.append(1,'u');}
+    else if (lag[i] == 'â') { ema.append(1,'a');}
+    else if (lag[i] == 'ê') { ema.append(1,'e');}
+    else if (lag[i] == 'î') { ema.append(1,'i');}
+    else if (lag[i] == 'ô') { ema.append(1,'o');}
+    else if (lag[i] == 'û') { ema.append(1,'u');}
+    else if (lag[i] == 'ã') { ema.append(1,'a');}
+    else if (lag[i] == 'å') { ema.append(1,'a');}
+    else if (lag[i] == 'õ') { ema.append(1,'o');}
+    else if (lag[i] == '¨') { ema.append(1,'s');}
+    else if (lag[i] == 'ÿ') { ema.append(1,'y');}
+    else if (lag[i] == '¸') { ema.append(1,'z');}
+    else if (lag[i] == 'ç') { ema.append(1,'c');}
+    else if (lag[i] == 'æ') { ema.append(1,'a');}
+    else if (lag[i] == 'ğ') { ema.append(1,'d');}
+    else if (lag[i] == 'ø') { ema.append(1,'o');}
+    else if (lag[i] == 'ı') { ema.append(1,'y');}
+    else if (lag[i] == 'ş') { ema.append(1,'z');}
+    else if (lag[i] == 'ß') { ema.append(1,'s');}
     else if (lag[i]!='\222' && lag[i] != '\'' && lag[i] != '\"') ema.append(1,lag[i]);
     
   }
