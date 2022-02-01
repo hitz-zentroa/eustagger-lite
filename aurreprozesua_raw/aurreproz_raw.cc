@@ -399,7 +399,7 @@ void  aurreprozRaw::tratatu_hitza()  // tratamendua egin hitzaren gainean
  }
  if (hitza.e_tratamendua() == 3 || hitza.e_tratamendua() == 5) return;
  egiaz[0] = '\0';
- strcpy(tmp2,hitza.e_hitza().c_str());
+ strcpy(tmp2,hitza.e_egiaztatzeko().c_str());
  string bidali = string(tmp2);
  string jaso = this->kenduMaj(bidali);
 
